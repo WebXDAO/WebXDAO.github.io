@@ -1,2 +1,1 @@
-# web3community.github.io
-No designs yet
+<img alt="web3community" src="https://i.imgur.com/xKOfGSM.png"/>
