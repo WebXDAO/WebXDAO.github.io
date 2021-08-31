@@ -2,6 +2,6 @@
 
 ---
 
-<b>Web 3 Community is an Open Source Community that focuses on Web 3 and Blockchain technologies rocket.</b>
+<b>Web 3 Community is an Open Source Community that focuses on Web 3 and Blockchain technologies 🚀 .</b>
 
 ---
