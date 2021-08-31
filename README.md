@@ -1,1 +1,1 @@
-<img alt="web3community" src="https://i.imgur.com/xKOfGSM.png"/>
+<img alt="Web 3 Community" src="https://i.imgur.com/xKOfGSM.png"/>
