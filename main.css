@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+    transition: 3s;
+}
+
+
+.social-icons{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+    }
+.social-icons:hover{
+    color: gray;
+    top: -5px;
+    transition: all 0.15s;
+}
