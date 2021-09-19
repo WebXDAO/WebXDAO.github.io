@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
 
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
@@ -162,7 +162,7 @@
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
 
-        <div class="card">
+        <div class="cursor-pointer">
         <div class="text-black flex">
           <!--Framer-->
           <div class="bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 hover:shadow-lg duration-300 ease-in-out px-4 py-4">
@@ -204,7 +204,7 @@
       </div>
     </div>
 
-      <div class="card">
+      <div class="cursor-pointer">
       <div class="text-black flex">
         <!--MindMaster-->
         <div class="bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 hover:shadow-lg duration-300 ease-in-out px-4 py-4">
@@ -248,20 +248,34 @@
     </section>
 
     <!--Footer-->
-    <footer  style="background:#1F2E35">
+    <footer style="background:#1F2E35">
       <div class="container mx-auto px-8">
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex-1 mb-6 text-black">
-            <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-2xl" href="#">
+            <!-- <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-2xl" href="#"> -->
               <!--Icon from: http://www.potlabicons.com/ -->
-              Social
-            </a>
+              <!-- Social -->
+            <!-- </a> -->
 
-            <!--Put socials icons here-->
+            <!-- social icons start -->
+            <p class="text-white md:mb-6">Follow us on social media</p>
+            <div class=" space-x-4">
+              <a aria-hidden='true' class='text-white fa fa-envelope fa-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100' href='mailto:web3community@gmail.com' rel='noreferrer' target='_blank' title='mail us'></a>
+
+              <a aria-hidden='true' class='text-white fa fa-instagram fa-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100' href='https://www.instagram.com/web3community/'  rel='noreferrer' target='_blank' title='follow us'></a>
+
+              <a aria-hidden='true' class='text-white fa fa-twitter fa-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100' href='https://twitter.com/web3community' rel='noreferrer' target='_blank' title='follow us'></a>
+
+              <a aria-hidden='true' class='text-white fa fa-linkedin fa-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100' href='https://www.linkedin.com/company/web3community' rel='noreferrer' target='_blank' title='follow us'></a>
+
+              <a aria-hidden='true' class='text-white fa fa-github fa-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100' href='https://github.com/web3community' rel='noreferrer' target='_blank' title='follow us'></a>
+            </div>
+
+            <!--socials icons ended-->
 
           </div>
           <div class="flex-1">
-            <p class="text-white md:mb-6">Ressources</p>
+            <p class="text-white md:mb-6">Resources</p>
             <ul class="list-reset mb-6">
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a href="#" class="no-underline text-gray-400 hover:text-blue-500">About Us</a>
