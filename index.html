@@ -95,6 +95,7 @@
     <section class="bg-white py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         
+        <!--Total Courses-->
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center">
           <div class="flex-1 bg-white overflow-hidden">
             <a href="#" class="flex flex-wrap no-underline  hover:no-underline">
@@ -110,6 +111,8 @@
             </a>
           </div>
         </div>
+
+        <!--Free Tools-->
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center">
           <div class="flex-1 bg-white overflow-hidden">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
@@ -125,6 +128,8 @@
             </a>
           </div>
         </div>
+
+        <!--Premium Tools-->
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center">
           <div class="flex-1 bg-white overflow-hidden">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
@@ -157,7 +162,7 @@
         </div>
 
           
-        <div class="text-black flex">
+        <div class="text-black flex flex-wrap -m-2">
           <!--Framer-->
           <div
             class="cursor-pointer bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 hover:shadow-lg duration-300 ease-in-out px-4 py-4">
@@ -167,7 +172,7 @@
                 <h4 id="name" class="text-xl font-semibold mb-2">Framer</h4>
                 <p id="caption" class="text-gray-800 mt-2 mb-2">It's prototyping made simple—no code required, browser-based.
                 </p>
-                <div id="label" class="flex text-sm gap-x-1 mt-2 pointer-events-none">
+                <div id="label" class="flex text-sm gap-x-3 mt-2 pointer-events-none">
                   <button
                     class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
                     Design
@@ -190,7 +195,7 @@
                 <h4 id="name" class="text-xl font-semibold mb-2">Whimsical</h4>
                 <p id="caption" class="text-gray-800 mt-2">Communicate visually at the speed of thought – collaborative
                   flowcharts.</p>
-                <div id="label" class="flex text-sm gap-x-1 mt-2 pointer-events-none">
+                <div id="label" class="flex text-sm gap-x-3 mt-2 pointer-events-none">
                   <button
                     class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
                     Design
@@ -205,44 +210,160 @@
           </div>
         </div>
         
-      <div class="text-black flex">
-        <!--MindMaster-->
-        <div class="cursor-pointer bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 hover:shadow-lg duration-300 ease-in-out px-4 py-4">
-          <div class="flex items-center min-h-full">
-            <img alt="mindmaster" class=" m-5 bg-gray-50 p-5 rounded-md" src="./assets/mindmaster.png" />
-            <div id="body" class="flex flex-col ml-5">
-              <h4 id="name" class="text-xl font-semibold mb-2">MindMaster</h4>
-              <p id="caption" class="text-gray-800 mt-2 mb-2">Full-featured collaborative mind mapping and brainstorming tool.</p>
-              <div id="label" class="flex text-sm gap-x-1 mt-2">
-                <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
-                  Design
-                </button>
-                <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
-                  Development
-                </button>
+        <div class="text-black flex flex-wrap -m-2 mb-8">
+          <!--MindMaster-->
+          <div class="cursor-pointer bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 hover:shadow-lg duration-300 ease-in-out px-4 py-4">
+            <div class="flex items-center min-h-full">
+              <img alt="mindmaster" class=" m-5 bg-gray-50 p-5 rounded-md" src="./assets/mindmaster.png" />
+              <div id="body" class="flex flex-col ml-5">
+                <h4 id="name" class="text-xl font-semibold mb-2">MindMaster</h4>
+                <p id="caption" class="text-gray-800 mt-2 mb-2">Full-featured collaborative mind mapping and brainstorming tool.</p>
+                <div id="label" class="flex text-sm gap-x-3 mt-2">
+                  <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                    Design
+                  </button>
+                  <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                    Development
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Zapier-->
+          <div class="flex-1 cursor-pointer bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+            <div class="flex items-center min-h-full">
+              <img alt="zapier" class="m-5 bg-gray-50 p-5 rounded-md" src="./assets/zapier.png" />
+              <div id="body" class="flex flex-col ml-5">
+                <h4 id="name" class="text-xl font-semibold mb-2">Zapier</h4>
+                <p id="caption" class="text-gray-800 mt-2">Zapier moves info between your web apps automatically.</p>
+                <div id="label" class="flex text-sm gap-x-3 mt-2">
+                  <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                    Design
+                  </button>
+                  <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                    Development
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!--Zapier-->
-        <div class="cursor-pointer  bg-white flex-1 rounded-md m-8 shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
-          <div class="flex items-center min-h-full">
-            <img alt="zapier" class="m-5 bg-gray-50 p-5 rounded-md" src="./assets/zapier.png" />
-            <div id="body" class="flex flex-col ml-5">
-              <h4 id="name" class="text-xl font-semibold mb-2">Zapier</h4>
-              <p id="caption" class="text-gray-800 mt-2">Zapier moves info between your web apps automatically.</p>
-              <div id="label" class="flex text-sm gap-x-1 mt-2">
-                <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
-                  Design
-                </button>
-                <button class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
-                  Development
-                </button>
-              </div>
+        <div class="flex justify-center">
+          <button
+            class="bg-gray-700 text-white mx-auto lg:mx-0 text-white rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out">
+            See All
+          </button>
+        </div>
+    </section>
+
+    <!--Community Blogs-->
+    <section class="bg-white py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h1 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+          Community Blogs
+        </h1>
+        <p class="text-center text-gray-800 text-base px-6 mb-5 mx-10">
+          Highlight Blogs
+        </p>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+      </div>
+    
+      <div class="container max-w-screen-xl mx-auto flex flex-wrap pt-4 grid-cols-3 gap-x-6 mb-8">
+    
+        <!--Figma-->
+        <div
+          class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+          <div class="bg-white p-4 rounded-lg">
+            <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
+              src="./assets/blogs_figma.png" alt="Figma">
+            <div class="flex justify-between">
+              <h2 class="text-xl text-gray-900 font-semibold mb-4">Figma</h2>
+              <h3 class="tracking-widest text-green-500 text-sm font-semibold font-medium title-font ">FREE</h3>
+            </div>
+    
+            <p class="leading-relaxed text-base text-gray-800">Figma helps the teams to create, test, and ship better
+              designs from start to finish.</p>
+    
+            <div id="label" class="flex text-sm gap-x-3 mt-2">
+              <button
+                class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                Design
+              </button>
+              <button
+                class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                Development
+              </button>
             </div>
           </div>
         </div>
+    
+        <!--AdobeXD-->
+        <div
+          class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+          <div class="bg-white p-4 rounded-lg">
+            <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
+              src="./assets/blogs_xd.png" alt="Adobe XD">
+            <div class="flex justify-between">
+              <h2 class="text-xl text-gray-900 font-semibold mb-4">Adobe XD</h2>
+              <h3 class="tracking-widest text-green-500 text-sm font-semibold font-medium title-font">FREE</h3>
+            </div>
+    
+            <p class="leading-relaxed text-base text-gray-800">Adobe XD is your UI/UX design solution platform for website
+              and mobile app creation.</p>
+    
+            <div id="label" class="flex text-sm gap-x-3 mt-2">
+              <button
+                class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                Design
+              </button>
+              <button
+                class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                Development
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!--InVision-->
+        <div
+          class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+          <div class="bg-white p-4 rounded-lg">
+            <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
+              src="./assets/blogs_inVision.png" alt="InVision">
+            <div class="flex justify-between">
+              <h2 class="text-xl text-gray-900 font-semibold mb-4">InVision</h2>
+              <h3 class="tracking-widest text-yellow-500 text-sm font-semibold font-medium title-font">PREMIUM</h3>
+            </div>
+    
+            <p class="leading-relaxed text-base text-gray-800">InVision is the digital product design platform used to make
+              the world's best customer experiences.</p>
+    
+            <div id="label" class="flex text-sm gap-x-3 mt-2">
+              <button
+                class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                Design
+              </button>
+              <button
+                class="font-semibold bg-blue-100 text-blue-600 mx-auto lg:mx-0 text-white rounded-md py-2 px-4 focus:outline-none">
+                Development
+              </button>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+      </div>
+    
+      <div class="flex justify-center">
+        <button
+          class="bg-gray-700 text-white mx-auto lg:mx-0 text-white rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out">
+          See All
+        </button>
       </div>
     </section>
 
