@@ -23,9 +23,16 @@
       .gradient {
         background: linear-gradient(90deg, #00007F 0%, #0086D6 100%);
       }
+
+      .neumorphism {
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow:  20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+      }
     </style>
   </head>
-  <body class="leading-normal tracking-normal text-white" style="font-family: 'Poppins', sans-serif; background-color: #00007F;">
+  <body class="bg-white leading-normal tracking-normal text-white" style="font-family: 'Poppins', sans-serif;">
 
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white bg-white">
@@ -69,8 +76,8 @@
     </nav>
 
     <!--Hero-->
-    <div class="pt-24">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <div class="pt-24" style="background-color: #00007F">
+      <div class="container px-3 sm mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -275,7 +282,7 @@
         </div>
       </div>
     
-      <div class="container max-w-screen-xl mx-auto flex flex-wrap pt-4 grid-cols-3 gap-x-6 mb-8">
+      <div class="container max-w-screen-xl mx-auto flex flex-wrap pt-4 grid-cols-1 md:grid-cols-3 c mb-8 gap-6 px-8">
     
         <!--Figma-->
         <div
@@ -285,7 +292,7 @@
               src="./assets/blogs_figma.png" alt="Figma">
             <div class="flex justify-between">
               <h2 class="text-xl text-gray-900 font-semibold mb-4">Figma</h2>
-              <h3 class="tracking-widest text-green-500 text-sm font-semibold font-medium title-font ">FREE</h3>
+              <h3 class="tracking-widest text-green-500 text-sm font-semibold font-medium title-font">FREE</h3>
             </div>
     
             <p class="leading-relaxed text-base text-gray-800">Figma helps the teams to create, test, and ship better
@@ -381,31 +388,44 @@
         </div>
       </div>
     
-      <div class="container mx-auto text-black max-w-screen-xl flex flex-wrap flex-col pt-4 gap-x-6 mb-8">
-        <div class="items-center text-black flex flex-row flex-wrap grid grid-cols-1 md:grid-cols-3">
-            <div class="flex-1 text-center p-8">
-              <img class="mx-auto h-3/4 object-center mb-6"
-              src="./assets/dev_protocol.png" alt="Figma">
-              <span class="">
-                Dev Protocol integrates with OSS so that projects or creators can authenticate and tokenize their work. It is a whole new creator economy evolving from open creators assets.
-              </span>
-            </div>
+      <div class="container mx-auto text-black max-w-screen-xl flex flex-wrap flex-col pt-4 mb-8 px-8">
+        <div class="items-center gap-6 text-black flex flex-row flex-wrap grid grid-cols-1 md:grid-cols-3">
 
-            <div class="flex-1 text-center p-8">
-              <img class="mx-auto h-3/4 object-center mb-6"
-              src="./assets/stakes_social.png" alt="Figma">
-              <span class="">
-                Stakes.social is a new sponsor platform where both developers and sponsors are rewarded with tokens if they support their favorite projects by staking $DEV tokens.
-              </span>
-            </div>
+            <a href="https://devprotocol.xyz/" class="h-full group">
+              <div class="mx-auto flex flex-col justify-evenly items-center h-full object-center text-center p-8 shadow cursor-pointer rounded-md focus:outline-none focus:shadow-outline transform bg-white transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+                  <img class="object-center h-full object-none"
+                  src="./assets/dev_protocol.png" alt="Dev Protocol">
+                  <p class="text-gray-800 mt-8 mb-2 text-sm px-8 sm:px-4 h-full">
+                    Dev Protocol integrates with OSS so that projects or creators can authenticate and tokenize their work. It is a whole new creator economy evolving from open creators assets.
+                  </p>
+              </div>
+            </a>
 
-            <div class="flex-1 text-center p-8">
-              <img class="mx-auto h-3/4 object-center mb-6"
-              src="./assets/dev_protocol_forum.png" alt="Figma">
-              <span class="">
-                Dev Protocol forum is an open conversation for everyone who can collaborate or propose an ideas to the Dev Protocol team or help other community members.
-              </span>
-            </div>
+
+            <a href="https://stakes.social/" class="h-full filter filter-blur-4">
+              
+              <div class="mx-auto flex flex-col justify-evenly items-center h-full content-center text-center p-8 shadow cursor-pointer rounded-md focus:outline-none focus:shadow-outline transform bg-white transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+                
+                <img class="object-center h-full object-none"
+                src="./assets/stakes_social.png" alt="Stakes.Social">
+
+                <p class="text-gray-800 mt-8 mb-2 text-sm px-8 sm:px-4 h-full">
+                  Stakes.social is a new sponsor platform where both developers and sponsors are rewarded with tokens if they support their favorite projects by staking $DEV tokens.
+                </p>
+
+              </div>
+
+            </a>
+
+            <a href="https://community.devprotocol.xyz/" class="h-full">
+              <div class="mx-auto flex flex-col justify-evenly items-center h-full content-center text-center p-8 shadow cursor-pointer rounded-md focus:outline-none focus:shadow-outline transform bg-white transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+                <img class="object-center h-full object-none"
+                src="./assets/dev_protocol_forum.png" alt="Dev Protocol Forum">
+                <p class="text-gray-800 mt-8 mb-2 text-sm px-8 sm:px-4 h-full">
+                  Dev Protocol forum is an open conversation for everyone who can collaborate or propose an ideas to the Dev Protocol team or help other community members.
+                </p>
+              </div>
+            </a>
         </div>
     </section>
 
