@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Web3Community is a community that focus on Web 3, Blockchain, and somewhat related to decentralized applications (Dapp).",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all --parallel css eleventy browsersync",
+    "eleventy": "eleventy --watch",
+    "debug": "set DEBUG=* & eleventy",
+    "css": "postcss src/static/css/tailwind.css --o _site/static/css/style.css --watch",
+    "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css",
+    "browsersync": "browser-sync start --server '_site' --files '_site' --port 8080 --no-notify --no-open"
   },
   "repository": {
     "type": "git",
@@ -35,5 +40,4 @@
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1"
   }
-  
 }
