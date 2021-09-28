@@ -3,27 +3,27 @@ name: Eleventy Build
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
       
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
-        - uses: actions/checkout@v2
-
-
+        - name: Git checkout
+          uses: actions/checkout@v2
         - name: Setup Node
           uses: actions/setup-node@v1
           with:
-            node-version: '10.x'
-
+            node-version: '14.x'
+            
         - name: Install dependencies & build
-        - run: |
-            npm ci
-            npm run build
-
-        - name: Deploy
+          run: npm ci
+        
+        - name: Run npm build
+          run: npm build
+          
+        - name: Deploy to gh-pages
           uses: peaceiris/actions-gh-pages@v3
           with:
             deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
