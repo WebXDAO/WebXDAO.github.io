@@ -94,6 +94,12 @@ src
 │   └───partials
 │       │   navbar.html
 │       │   footer.html
+│
+└───static
+│   │  
+│   └───css
+│   │
+│   └───img
 .eleventy.js
 .eleventyignore
 .gitignore
@@ -189,38 +195,3 @@ Adding interactivity is easy using Alpine JS. You can learn more about from the 
 </nav>
 ```
 Here you can see the initial data is created for `isOpen` and its set to `false` and it changes the data on button click. Based on the Value, we just toggle the `div` visibility. Wasn't it easy compared to jQuery? We didn't even created a `js` file.
-
-## Schema Folder Structure
-
-```
-src
-│   index.html
-│
-└───__data
-│   │   navigation.yaml
-│   │   settings.yaml
-│   
-└───__includes
-│   │   default.html
-│   │
-│   └───partials
-│       │   navbar.html
-│       │   footer.html
-│
-└───static
-│   │  
-│   └───css
-│   │
-│   └───img
-.eleventy.js
-.eleventyignore
-.gitignore
-.nojekyll
-CODE_OF_CONDUCT.md
-LICENSE
-package.json
-package-lock.json
-postscss.config.js
-tailwind.config.js
-README.md
-```
