@@ -28,6 +28,7 @@
     "browser-sync": "^2.26.14",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
+    "gh-pages": "^3.2.3",
     "html-minifier": "^4.0.0",
     "js-yaml": "^3.14.0",
     "luxon": "^1.25.0",
