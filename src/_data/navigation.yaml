@@ -1,0 +1,13 @@
+---
+items:
+  - text: HOME
+    hack: "/home"
+    url: "/"
+  - text: LEARN
+    url: "#"
+  - text: BLOG
+    url: "#"
+  - text: ABOUT
+    url: "#"
+  - text: PROJECTS
+    url: "#"
