@@ -3,13 +3,29 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
+.gradient {
+  background: linear-gradient(90deg, #00007F 0%, #0086D6 100%);
+}
+
+.neumorphism {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
+}
+
+/*Core CSS*/
 
 h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+  @apply text-4xl tracking-tighter mb-3 lg:text-7xl;
 }
 
 h3 {
   @apply text-2xl font-bold mb-3;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Syntax Highlighting*/
