@@ -59,7 +59,8 @@ module.exports = function (eleventyConfig) {
   // So that we can use .html instead of .njk
   return {
     dir: {
-      input: "src",
+      input: "src"
+      // output: "docs"
     },
     htmlTemplateEngine: "njk",
   };
