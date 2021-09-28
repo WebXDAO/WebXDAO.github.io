@@ -145,7 +145,7 @@ items:
 
 That's it. Adding classes or modifying layout is now easier since Eleventy & Nunjucks combined do all the magic for us.
 
-## Elevently Data
+## Eleventy Data
 
 Since we talked about the `_data` above. If you enter the data as raw text inside a page, it means you cannot edit that text using CMS. So its important to plan initially according to your needs. Make an list on which data you need to change later and which is not.
 
@@ -206,6 +206,12 @@ src
 │   └───partials
 │       │   navbar.html
 │       │   footer.html
+│
+└───static
+│   │  
+│   └───css
+│   │
+│   └───img
 .eleventy.js
 .eleventyignore
 .gitignore
