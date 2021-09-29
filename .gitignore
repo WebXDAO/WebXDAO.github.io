@@ -1,0 +1,7 @@
+_site/
+_tmp/
+.DS_Store
+node_modules/
+.vscode/
+*git/
+.env
