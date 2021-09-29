@@ -1,4 +1,4 @@
-<img alt="Web 3 Community" src="https://i.imgur.com/xKOfGSM.png"/>
+<a href="https://web3community.github.io/"><img alt="Web 3 Community" src="https://i.imgur.com/xKOfGSM.png"/></a>
 
 ---
 
