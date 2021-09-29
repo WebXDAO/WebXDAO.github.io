@@ -3,7 +3,11 @@ name: Eleventy Build
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      # Push events on main branch
+      - main
+      # Push events to branches matching refs/heads/alpine_neat_stack_starter
+      - 'alpine_neat_stack_starter'
       
 jobs:
   deploy:
