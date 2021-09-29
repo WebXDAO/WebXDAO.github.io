@@ -21,17 +21,11 @@ jobs:
           with:
             node-version: '14.x'
             
-        - name: First install dependencies & build
-          run: npm i
-          
-        - name: First css build
-          run: npm run build
-            
         - name: Install dependencies & build
           run: npm ci
         
         - name: Run npm build
-          run: npm build
+          run: npm run build
           
         - name: Deploy to gh-pages
           uses: peaceiris/actions-gh-pages@v3
