@@ -44,3 +44,7 @@ Example how to mark a checkbox:-
  :--------------------: |:--------------------:
  original screenshot | updated screenshot |
  
+## Code of Conduct
+
+- [ ] I agree to follow this project's Code of Conduct
+ 
