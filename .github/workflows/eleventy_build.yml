@@ -21,6 +21,12 @@ jobs:
           with:
             node-version: '14.x'
             
+        - name: First install dependencies & build
+          run: npm i
+          
+        - name: First css build
+          run: npm run build
+            
         - name: Install dependencies & build
           run: npm ci
         
