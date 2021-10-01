@@ -13,6 +13,8 @@ We are currently implementing the design from Figma to code. If you want to help
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/web3community/web3community.github.io&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
 
 
+> Make sure to read our [contributing guidelines](https://github.com/web3community/web3community.github.io/blob/main/CONTRIBUTING.md)
+
 ### 1\. Clone this Repository
 
 ```
