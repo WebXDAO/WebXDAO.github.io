@@ -6,13 +6,12 @@
         <img src="/static/img/logo.png" alt="Web 3 Community" class="h-16 items-start">
       </a>
     </div>
+
     <div class="block lg:hidden pr-4">
-      <button id="nav-toggle"
-        class="flex items-center p-1 text-blue-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
+      <button id="nav-toggle">
+        <span class="transform  h-1 w-8 m-1  bg-blue-600 block toggle transition-all " ></span>
+        <span class="transform  h-1 w-8 m-1 bg-blue-600 block toggle transition-all "></span>
+        <span class="transform  h-1 w-8 m-1  bg-blue-600 block toggle transition-all "></span>
       </button>
     </div>
     <div
@@ -51,18 +50,22 @@
   document.onclick = check;
   function check(e) {
     var target = (e && e.target) || (event && event.srcElement);
-
     //Nav Menu
     if (!checkParent(target, navMenuDiv)) {
       // click NOT on the menu
       if (checkParent(target, navMenu)) {
         // click on the link
+        toggleMenu() ;
         if (navMenuDiv.classList.contains("hidden")) {
           navMenuDiv.classList.remove("hidden");
         } else {
           navMenuDiv.classList.add("hidden");
         }
       } else {
+        // click  outside link and menu is not hidden, toggle.
+        if (!navMenuDiv.classList.contains("hidden")) {
+          toggleMenu() ;
+        }
         // click both outside link and outside menu, hide menu
         navMenuDiv.classList.add("hidden");
       }
@@ -77,4 +80,12 @@
     }
     return false;
   }
+
+  function toggleMenu() {
+    const navToggle = document.getElementsByClassName("toggle");
+    navToggle.item(1).classList.toggle("rotate-45");
+    navToggle.item(0).classList.toggle("hidden");
+    navToggle.item(2).classList.toggle("-translate-y-2");
+    navToggle.item(2).classList.toggle("-rotate-45");
+  } 
 </script>

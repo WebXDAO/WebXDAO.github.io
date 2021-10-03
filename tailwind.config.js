@@ -1,7 +1,7 @@
-   module.exports = {
+module.exports = {
   purge: {
-    mode: "all",
-    content: ["./**/*.html"],
+    mode: 'all',
+    content: ['./**/*.html'],
     options: {
       whitelist: [],
     },
@@ -15,5 +15,5 @@
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography')],
 };
