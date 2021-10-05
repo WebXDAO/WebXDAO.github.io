@@ -6,7 +6,7 @@ items:
   - text: LEARN
     url: "#"
   - text: BLOG
-    url: "#"
+    url: "/blog"
   - text: ABOUT
     url: "#"
   - text: PROJECTS
