@@ -10,7 +10,7 @@ module.exports = async function () {
   });
 
   // uncomment to see json coming from dev.to api
-  console.log("Fetching new dev.to articles...", response)
+  // console.log("Fetching new dev.to articles...", response)
 
   return response;
 };
