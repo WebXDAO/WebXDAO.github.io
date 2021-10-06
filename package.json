@@ -27,7 +27,7 @@
     "alpinejs": "^3.2.4",
     "browser-sync": "^2.26.14",
     "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.8",
     "gh-pages": "^3.2.3",
     "html-minifier": "^4.0.0",
     "js-yaml": "^3.14.0",
