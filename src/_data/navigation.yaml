@@ -10,6 +10,6 @@ items:
   - text: ABOUT
     url: "#"
   - text: PROJECTS
-    url: "/project"
+    url: "/projects"
   - text: COMMUNITY PARTNERS
     url: "/community"  
