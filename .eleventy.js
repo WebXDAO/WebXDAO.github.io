@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
-    yaml.safeLoad(contents)
+    yaml.load(contents)
   );
 
   // Copy Static Files to /_Site
