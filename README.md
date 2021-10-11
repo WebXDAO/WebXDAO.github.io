@@ -2,7 +2,7 @@
 
 ---
 
-<b>Web 3 Community is an Open Source Community that focuses on Web 3 and Blockchain technologies 🚀 </b>
+<b>Web 3 Community is an Open Source Community that focuses on Web3 and Blockchain technologies 🚀 </b>
  
 We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/web3community/web3community.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/web3community/web3community.github.io/issues/new).
 
@@ -11,7 +11,6 @@ We are currently implementing the design from Figma to code. If you want to help
 ## Getting Started
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/web3community/web3community.github.io&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
-
 
 > Make sure to read our [contributing guidelines](https://github.com/web3community/web3community.github.io/blob/main/CONTRIBUTING.md)
 
@@ -55,17 +54,17 @@ npm run start
 
 * [Netlify CMS](https://www.netlifycms.org/) (Currently WIP 🚧) :
 
-Netlify CMS is used to handle the CMS part of this static website. It uses git as backend so there is no need to maintain a different server. Maintained by the awesome folks at Netlify.
+Netlify CMS is used to handle the CMS part of this static website. It usesa Git as backend, so there is no need to maintain a different server. Maintained by the awesome folks of Netlify.
 
-* [Eleventy (11ty)](https://github.com/11ty/eleventy) :
+* [Eleventy (11ty)](https://github.com/11ty/eleventy):
 
-Eleventy is a simpler static site generator using javascript. Eleventy will compile all of our files and generate a static output where we can host it anywhere.
+Eleventy is a simpler static site generator using JavaScript. Eleventy will compile all of our files and generate a static output where we can host it anywhere.
 
-* [Alpine.js](https://alpinejs.dev/) :
+* [Alpine.js](https://alpinejs.dev/):
 
 Alpine JS is a minimal framework to provide JavaScript behavior in our markup. Think it as a lite version of React & Vue. We use Alpine JS to add JavaScript components like Dropdown, Toggle etc.
 
-* [Tailwind CSS](https://tailwindcss.com/) :
+* [Tailwind CSS](https://tailwindcss.com/):
 
 Tailwind CSS is a utility first CSS Framework. It has a set of preset utility classes to style anything without touching CSS file.
     
@@ -77,7 +76,7 @@ Root `/` folder of our project contains all configuration files like `tailwind.c
 
 ## Make Changes
 
-Go to the `/src` folder and open `index.html` file. Now make any changes and save it to see if the changes are reloading or not. If its reloading with your changes, then it means its working perfectly. If you have any issues, comment here or raise an issue in the github.
+Go to the `/src` folder and open `index.html` file. Now make any changes and save it to see if the changes are reloading or not. If it's reloading with your changes, then it means it's working perfectly. If you have any issues, comment here or raise an issue at GitHub.
 
 * This is the new folder structure :
 
@@ -120,7 +119,7 @@ Writing code with NEAT Stack is fun because of [Nunjucks](https://mozilla.github
 
 Including a part of HTML is easy. Go to `src/_includes/partials/navbar.html` and make some changes there. Now we can include the navbar anywhere we wanted using `{% include ..}`
 
-Another great feature of Nunjucks is the Loops. Suppose you have a card block repeating over 10 times, using Nunjucks, just write it once and loop it. means you will be able to modify easily by changing in one place. The data should be seperated here and It will be handled seamlessly by our Eleventy.
+Another great feature of Nunjucks is the Loops. Suppose you have a card block repeating over 10 times, using Nunjucks, just write it once and loop it. That means you will be able to modify easily by changing in one place. The data should be separated here and it will be handled seamlessly by our Eleventy.
 
 Example Nunjucks loop :
 * `_data/navigation.yaml` :
@@ -154,7 +153,7 @@ That's it. Adding classes or modifying layout is now easier since Eleventy & Nun
 
 ## Eleventy Data
 
-Since we talked about the `_data` above. If you enter the data as raw text inside a page, it means you cannot edit that text using CMS. So its important to plan initially according to your needs. Make an list on which data you need to change later and which is not.
+Since we talked about the `_data` above. If you enter the data as raw text inside a page, it means you cannot edit that text using CMS. So it's important to plan initially according to your needs. Make a list on which data you need to change later and which is not.
 
 By default, Eleventy looks for a folder called `_data/` and get the data from the files inside. They accept json, yaml, js etc. So you can write data in any format you like. If you have to fetch a data from a different server, you can create .js file which returns the data.
 
@@ -162,10 +161,12 @@ By default, Eleventy looks for a folder called `_data/` and get the data from th
 
 ## Writing HTML
 
-Its really simple to create pages or sections in Eleventy. Just create an HTML file in the /src folder and it will automatically build it as a page. If you are writing a blog, you can even use markdown .md as well.
+Its really simple to create pages or sections in Eleventy. Just create an HTML file in the /src folder and it will automatically build it as a page. If you are writing a blog, you can even use Markdown (`.md` file type) as well.
 
-Exemple to create a blog page :
+#### Example to create a blog page
+
 1. Create a file called `blog.html`
+
 ```html
 ---
 title: Our Blog
@@ -181,7 +182,8 @@ path: blog
 
 </div>
 ```
-2. Acces it to localhost:8080/blog/
+
+2. Access it to localhost:8080/blog/
 
 ## Alpine JS
 
@@ -195,4 +197,5 @@ Adding interactivity is easy using Alpine JS. You can learn more about from the 
   </div>
 </nav>
 ```
+
 Here you can see the initial data is created for `isOpen` and its set to `false` and it changes the data on button click. Based on the Value, we just toggle the `div` visibility. Wasn't it easy compared to jQuery? We didn't even created a `js` file.
