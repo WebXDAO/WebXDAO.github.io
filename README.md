@@ -54,7 +54,7 @@ npm run start
 
 * [Netlify CMS](https://www.netlifycms.org/) (Currently WIP 🚧) :
 
-Netlify CMS is used to handle the CMS part of this static website. It usesa Git as backend, so there is no need to maintain a different server. Maintained by the awesome folks of Netlify.
+Netlify CMS is used to handle the CMS part of this static website. It uses Git as backend, so there is no need to maintain a different server. Maintained by the awesome folks of Netlify.
 
 * [Eleventy (11ty)](https://github.com/11ty/eleventy):
 
