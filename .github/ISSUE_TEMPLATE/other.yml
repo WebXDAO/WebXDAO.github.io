@@ -25,7 +25,7 @@ body:
     attributes:
       label: Would you like to work on this issue?
       options:
-        - label: Yes I want to work on this issue!
+        - label: Yes, I want to work on this issue!
           required: false
   - type: checkboxes
     id: terms
