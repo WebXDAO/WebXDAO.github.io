@@ -47,4 +47,3 @@ Example how to mark a checkbox:-
 ## Code of Conduct
 
 - [ ] I agree to follow this project's Code of Conduct
- 
