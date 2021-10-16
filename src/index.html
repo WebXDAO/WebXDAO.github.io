@@ -221,7 +221,7 @@ path: home
 <section class="bg-white py-8">
   <div class="container max-w-5xl mx-auto">
     <h1 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
-      Community Blogs
+      Blogs
     </h1>
     <p class="text-center text-gray-800 text-base px-6 mb-5 mx-10">
       Highlight Blogs
@@ -233,8 +233,31 @@ path: home
 
   <div class="container max-w-screen-xl mx-auto flex flex-wrap pt-4 pb-8 grid-cols-1 md:grid-cols-3 c mb-8 gap-6 px-8">
 
+    {% if devto %}
+    {% for article in devto %}
+        <div onclick="window.location='{{ article.url }}'"
+            class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+            <div class="bg-white p-4 rounded-lg">
+                <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
+                    src="{{ article.social_image }}" alt="{{ article.title }}">
+                <div class="flex justify-between">
+                    <h2 class="text-xl text-gray-900 font-semibold mb-4">{{ article.title }}</h2>
+                </div>
+                <p class="leading-relaxed text-sm text-gray-600">{{ article.description }}</p>
+            </div>
+            <time class="   p-4 text-gray-500 opacity-50 text-xs">
+                {{ article.readable_publish_date }} by
+                <a>{{ article.user.name }}</a>
+            </time>
+        </div>
+    {% endfor %}
+    {% else %}
+        <div>No data to query here...</div>
+    {% endif %}
+
+
     <!--Figma-->
-    <div
+    <!-- <div
       class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
       <div class="bg-white p-4 rounded-lg">
         <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
@@ -258,10 +281,10 @@ path: home
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!--AdobeXD-->
-    <div
+    <!-- <div
       class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
       <div class="bg-white p-4 rounded-lg">
         <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
@@ -285,10 +308,10 @@ path: home
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!--InVision-->
-    <div
+    <!-- <div
       class="flex-1 cursor-pointer xl:w-1/3 md:w-1/2 p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
       <div class="bg-white p-4 rounded-lg">
         <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6"
@@ -312,7 +335,8 @@ path: home
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
+
   </div>
 
   <div class="flex justify-center">
