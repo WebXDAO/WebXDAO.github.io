@@ -15,16 +15,27 @@
 }
 
 /*  Tab Content - FAQ */
-.tab {
-  border: 1px solid #E5E7EB;
-  /* cool-gray/200 */
+.tab p {
+  @apply text-xs;
+}
+
+li.tab:first-of-type {
+  border-top: 1px;
+  border-color: #e5e7eb;
+  border-style: solid;
+}
+
+.tab h2 {
+  border-top: 0;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: .5px;
+  border-color: #e5e7eb;
+  border-style: solid;
 }
 
 .tab-content {
-  font-size: 1.25rem;
-  /*.text-xl*/
-  padding: 1.25rem;
-  /*.p-5*/
+
   border-left-width: 2px;
   /*.border-l-2*/
   border-color: #1C64F2;

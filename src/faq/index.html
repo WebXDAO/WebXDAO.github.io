@@ -2,12 +2,12 @@
 layout: faq
 ---
 
-{% if devto %}
-{% for article in devto %}
+{% if faq %}
+{% for question in faq %}
 
-<li class="bg-white my-2 tab" x-data="accordion({{ faq.number }})">
-    <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-        <span>{{ faq.title }}</span>
+<li class="bg-white tab" x-data="accordion({{ question.number }})">
+    <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-6 cursor-pointer">
+        <span>{{ question.title }}</span>
         <svg :class="handleRotate()" class="fill-current text-black h-6 w-6 transform transition-transform duration-500"
             viewBox="0 0 20 20">
             <path
@@ -17,8 +17,8 @@ layout: faq
     </h2>
     <div x-ref="tab" :style="handleToggle()"
         class="border-l-2 border-blue-600 overflow-hidden max-h-0 duration-500 transition-all tab-content">
-        <p class="p-3 text-gray-900">
-            {{faq.description}}
+        <p class="p-6 text-gray-500">
+            {{question.description}}
         </p>
     </div>
 </li>
@@ -28,3 +28,28 @@ layout: faq
 {% else %}
 <div>No data to query here...</div>
 {% endif %}
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('accordion', {
+            tab: 0
+        });
+
+        Alpine.data('accordion', (idx) => ({
+            init() {
+                this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ?
+                    `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    })
+</script>
