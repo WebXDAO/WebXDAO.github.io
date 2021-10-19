@@ -10,27 +10,49 @@
 .neumorphism {
   border-radius: 50px;
   background: #e0e0e0;
-  box-shadow:  20px 20px 60px #bebebe,
-              -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+/*  Tab Content - FAQ */
+.tab {
+  border: 1px solid #E5E7EB;
+  /* cool-gray/200 */
+}
+
+.tab-content {
+  font-size: 1.25rem;
+  /*.text-xl*/
+  padding: 1.25rem;
+  /*.p-5*/
+  border-left-width: 2px;
+  /*.border-l-2*/
+  border-color: #1C64F2;
+  /*.border-indigo*/
+  background-color: #f8fafc;
+  /*.bg-gray-100 */
+  color: #1C64F2;
+  /*.text-indigo*/
 }
 
 /*Core CSS*/
+@layer base {
+  h1 {
+    @apply text-4xl tracking-tighter mb-3;
+  }
 
-h1 {
-  @apply text-4xl tracking-tighter mb-3 lg:text-7xl;
-}
+  h3 {
+    @apply text-2xl font-bold mb-3;
+  }
 
-h3 {
-  @apply text-2xl font-bold mb-3;
-}
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
+  /* Syntax Highlighting*/
 
-/* Syntax Highlighting*/
-
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
+  body :not(pre)>code[class*="language-"],
+  body pre[class*="language-"] {
+    @apply bg-gray-800;
+  }
 }
