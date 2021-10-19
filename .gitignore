@@ -6,3 +6,4 @@ node_modules/
 *git/
 .env
 .cache/
+package-lock.json
