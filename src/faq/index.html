@@ -3,7 +3,7 @@ layout: faq
 ---
 
 {% if faq.faqs %} // faq is your filename, and faqs your dataset
-{% for question in faq %}
+{% for question in faq.faqs %}
 
 <li class="bg-white tab" x-data="accordion({{ question.number }})">
     <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-6 cursor-pointer">
