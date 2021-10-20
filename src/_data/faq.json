@@ -1,10 +1,7 @@
 [
-[
     {
        "number": 1,
        "title":"a title",
-       ...
-        "title": "example 1",
         "description": "lorem ipsum"
     },
     {
@@ -13,4 +10,3 @@
         "description": "lorem ipsum"
     }
   ]
-  
