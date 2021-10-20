@@ -2,7 +2,7 @@
 layout: faq
 ---
 
-{% if faq.faqs %} // faq is your filename, and faqs your dataset
+{% if faq %}
 {% for question in faq.faqs %}
 
 <li class="bg-white tab" x-data="accordion({{ question.number }})">
