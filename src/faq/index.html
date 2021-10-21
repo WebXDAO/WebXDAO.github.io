@@ -2,8 +2,8 @@
 layout: faq
 ---
 
-{% if faq %}
-{% for question in faq.faqs %}
+{% if faqs %}
+{% for faq in faq.faqs %}
 
 <li class="bg-white tab" x-data="accordion({{ question.number }})">
     <h2 @click="handleClick()"

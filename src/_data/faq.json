@@ -1,7 +1,7 @@
 [
     {
-        "number": 1,
-        "title":"a title",
+       "number": 1,
+        "title": "example 1",
         "description": "lorem ipsum"
     },
     {
@@ -9,4 +9,4 @@
         "title": "example 2",
         "description": "lorem ipsum"
     }
-  ]
+]
