@@ -1,12 +1,12 @@
 [
     {
        "number": 1,
-        "title": "example 1",
-        "description": "lorem ipsum"
+        "question": "example 1",
+        "answer": "lorem ipsum"
     },
     {
         "number": 2,
-        "title": "example 2",
-        "description": "lorem ipsum"
+        "question": "example 2",
+        "answer": "lorem ipsum"
     }
 ]
