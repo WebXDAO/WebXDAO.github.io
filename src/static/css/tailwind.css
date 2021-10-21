@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
-.text-gray-800{
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
+
 .gradient {
   background: linear-gradient(90deg, #00007F 0%, #0086D6 100%);
 }
