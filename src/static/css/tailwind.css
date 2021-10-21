@@ -10,27 +10,32 @@
 .neumorphism {
   border-radius: 50px;
   background: #e0e0e0;
-  box-shadow:  20px 20px 60px #bebebe,
-              -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.faq-accordion:first-child {
+  @apply border-t-2 border-gray-100;
 }
 
 /*Core CSS*/
+@layer base {
+  h1 {
+    @apply text-4xl tracking-tighter mb-3;
+  }
 
-h1 {
-  @apply text-4xl tracking-tighter mb-3 lg:text-7xl;
-}
+  h3 {
+    @apply text-2xl font-bold mb-3;
+  }
 
-h3 {
-  @apply text-2xl font-bold mb-3;
-}
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
+  /* Syntax Highlighting*/
 
-/* Syntax Highlighting*/
-
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
+  body :not(pre)>code[class*="language-"],
+  body pre[class*="language-"] {
+    @apply bg-gray-800;
+  }
 }
