@@ -14,38 +14,6 @@
     -20px -20px 60px #ffffff;
 }
 
-/*  Tab Content - FAQ */
-.tab p {
-  @apply text-xs;
-}
-
-li.tab:first-of-type {
-  border-top: 1px;
-  border-color: #e5e7eb;
-  border-style: solid;
-}
-
-.tab h2 {
-  border-top: 0;
-  border-left: 1px;
-  border-right: 1px;
-  border-bottom: .5px;
-  border-color: #e5e7eb;
-  border-style: solid;
-}
-
-.tab-content {
-
-  border-left-width: 2px;
-  /*.border-l-2*/
-  border-color: #1C64F2;
-  /*.border-indigo*/
-  background-color: #f8fafc;
-  /*.bg-gray-100 */
-  color: #1C64F2;
-  /*.text-indigo*/
-}
-
 /*Core CSS*/
 @layer base {
   h1 {

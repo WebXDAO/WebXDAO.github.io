@@ -14,6 +14,10 @@ module.exports = {
       colors: {},
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      border: ['first'],
+    }
+  },
   plugins: [require('@tailwindcss/typography')],
 };

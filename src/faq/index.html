@@ -2,13 +2,13 @@
 layout: faq
 ---
 
-{% if faqs %}
-{% for faq in faq.faqs %}
+{% if faq %}
+{% for faqs in faq %}
 
-<li class="bg-white tab" x-data="accordion({{ question.number }})">
+<li class="bg-white first:border-t-0" x-data="accordion({{ faqs.number }})">
     <h2 @click="handleClick()"
-        class="flex flex-row justify-between items-center font-semibold p-6 cursor-pointer border-l-2 border-r-2 border-b-2 border-gray-50">
-        <span>{{ question.title }}</span>
+        class="flex flex-row justify-between items-center font-semibold p-6 cursor-pointer border-t-0 first:border-t-2 border-l-2 border-r-2 border-b-2 border-gray-100">
+        <span>{{ faqs.title }}</span>
         <svg :class="handleRotate()" class="fill-current text-black h-6 w-6 transform transition-transform duration-500"
             viewBox="0 0 20 20">
             <path
@@ -18,8 +18,8 @@ layout: faq
     </h2>
     <div x-ref="tab" :style="handleToggle()"
         class="border-l-4 border-blue-600 overflow-hidden max-h-0 duration-500 transition-all bg-gray-100">
-        <p class="p-6 text-gray-500">
-            {{question.description}}
+        <p class="p-6 text-gray-500 text-xs">
+            {{faqs.description}}
         </p>
     </div>
 </li>
