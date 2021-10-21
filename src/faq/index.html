@@ -5,9 +5,9 @@ layout: faq
 {% if faq %}
 {% for faqs in faq %}
 
-<li class="bg-white first:border-t-0" x-data="accordion({{ faqs.number }})">
+<li class="bg-white faq-accordion" x-data="accordion({{ faqs.number }})">
     <h2 @click="handleClick()"
-        class="flex flex-row justify-between items-center font-semibold p-6 cursor-pointer border-t-0 first:border-t-2 border-l-2 border-r-2 border-b-2 border-gray-100">
+        class="flex flex-row justify-between items-center font-semibold p-6 cursor-pointer border-t-0 border-l-2 border-r-2 border-b-2 border-gray-100">
         <span>{{ faqs.question }}</span>
         <svg :class="handleRotate()" class="fill-current text-black h-6 w-6 transform transition-transform duration-500"
             viewBox="0 0 20 20">
