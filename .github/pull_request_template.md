@@ -46,4 +46,4 @@ Example how to mark a checkbox:-
  
 ## Code of Conduct
 
-- [ ] I agree to follow this project's Code of Conduct
+- [ ] I agree to follow this project's [Code of Conduct](https://github.com/web3community/web3community.github.io/blob/main/CODE_OF_CONDUCT.md)
