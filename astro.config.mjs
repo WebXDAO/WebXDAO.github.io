@@ -18,7 +18,7 @@ export default {
   devOptions: {
     hostname: 'localhost',
     port: 8080,
-    tailwindConfig: 'tailwind.config.js',
+    tailwindConfig: './tailwind.config.js',
     trailingSlash: 'ignore'
   },
 };

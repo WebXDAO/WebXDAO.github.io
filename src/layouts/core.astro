@@ -1,0 +1,33 @@
+---
+import Navigation from '@components/Global/Navigation.astro'
+import Footer from '@components/Global/Footer.astro'
+
+let { metaTitle, metaDescription, ogImg, ogUrl, customStyle } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{metaTitle}</title>
+  <meta name="description" content={metaDescription}>
+  <meta property="og:title" content={metaTitle} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={ogUrl} />
+  <meta property="og:image" content={ogImg} />
+  <link
+  rel="stylesheet"
+  href={Astro.resolve("../styles/global.css")}
+  >
+</head>
+
+<body>
+  <Navigation></Navigation>
+  <main>
+    <slot />
+  </main>
+  <Footer></Footer>
+</body>
+
+</html>

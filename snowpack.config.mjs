@@ -27,6 +27,8 @@ async function exportConfig() {
       '@components': './src/components',
       '@pages': './src/pages',
       '@layouts': './src/layouts',
+      '@data': "./src/data",
+      '@styles': './src/styles',
       '@public': './public',
     },
     plugins: [

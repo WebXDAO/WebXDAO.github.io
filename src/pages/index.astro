@@ -1,1 +1,20 @@
-<div>Hello World!</div>
+---
+import { oneLine } from 'common-tags'
+
+import CoreLayout from '@layouts/core';
+
+const meta = {
+    title: 'Web3Community | An Open Source Community that focuses on decentralized applications, web 3, and blockchain technologies rocket',
+    desc: oneLine`
+    Web3Community is a community that focus on Web 3, Blockchain, and somewhat related to decentralized applications (Dapps).
+    Blockchain Developer is an interesting field, in demand and the latest trend in the tech industry. 
+    `,
+    og: {
+        img: '',
+        url: 'https://we3community.github.io'
+    }
+}
+---
+
+<CoreLayout metaTitle={meta.title} metaDescription={meta.desc} ogImg={meta.og.img} ogUrl={meta.og.url} styles={meta.styles}>
+</CoreLayout>
