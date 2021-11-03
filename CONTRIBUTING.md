@@ -6,7 +6,7 @@ The following is a set of guidelines for contributing to this project. These are
 
 ## Code of Conduct 📜
 
-This project and everyone participating in it is governed by a [Code of Conduct](https://github.com/web3community/web3community.github.io/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [@vinzvinci](https://github.com/vinzvinci) or in our [Discord server](https://discord.gg/TSRwqx4K2v).
+This project and everyone participating in it is governed by a [Code of Conduct](https://github.com/web3community/web3community.github.io/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to one of our moderators via your preferred platform or in our [Discord server](https://discord.gg/TSRwqx4K2v).
 
 ## How can I contribute? 🤔
 
@@ -30,7 +30,7 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 Unsure where to begin contributing to this project? You can start by looking through these `beginner` and `help-wanted` issues:
 
-- [Beginner issues](https://github.com/web3community/web3community.github.io/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
+- [Beginner-friendly issues](https://github.com/web3community/web3community.github.io/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
 - [Help wanted issues](https://github.com/web3community/web3community.github.io/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
 
 ### Pull Requests 📣
@@ -126,5 +126,5 @@ After this, the project maintainers will review the changes and will merge your 
 
 ## Web3Community 🌐
 
-😕 Not sure where to start? Join our community on [Discord](https://discord.gg/TSRwqx4K2v)\
-✨ You can also take part in [Community Discussion](https://github.com/web3community/web3community.github.io/discussions)
+- 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/TSRwqx4K2v)
+- ✨ You can also take part in [Community Discussion](https://github.com/web3community/web3community.github.io/discussions)
