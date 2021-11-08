@@ -2,8 +2,8 @@
 
 ---
 
-<b>Web 3 Community is an Open Source Community that focuses on Web 3.0 and Blockchain technologies 🚀 </b>
- 
+<b>Web3 Community is an Open Source Community that focuses on Web 3.0 and Blockchain technologies 🚀 </b>
+
 We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/web3community/web3community.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/web3community/web3community.github.io/issues/new).
 
 ---
@@ -14,25 +14,27 @@ We are currently implementing the design from Figma to code. If you want to help
 
 > Make sure to read our [contributing guidelines](https://github.com/web3community/web3community.github.io/blob/main/CONTRIBUTING.md)
 
-### 1\. Clone this Repository
+1. Skip all of the steps below by using Gitpod, which would automatically do all of that for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/web3community.github.io)
+
+### 2\. Clone this Repository
 
 ```
 git clone https://github.com/web3community/web3community.github.io.git
 ```
 
-### 2\. Navigate to the directory
+### 3\. Navigate to the directory
 
 ```
 cd web3community.github.io
 ```
 
-### 3\. Install dependencies
+### 4\. Install dependencies
 
 ```
 npm install
 ```
 
-### 4\. Build the project to generate the first CSS
+### 5\. Build the project to generate the first CSS
 
 This step is only required the very first time.
 
@@ -40,19 +42,19 @@ This step is only required the very first time.
 npm run build
 ```
 
-### 5\. Run Eleventy
+### 6\. Run Eleventy
 
 ```
 npm run start
 ```
 
-### 6\. ✨ Enjoy
+### 7\. ✨ Enjoy
 
 <br />
 
 ## Technologies used
 
-* [Netlify CMS](https://www.netlifycms.org/) (Currently WIP 🚧) :
+* [Netlify CMS](https://www.netlifycms.org/) (Currently WIP 🚧):
 
 Netlify CMS is used to handle the CMS part of this static website. It uses Git as backend, so there is no need to maintain a different server. Maintained by the awesome folks of Netlify.
 
