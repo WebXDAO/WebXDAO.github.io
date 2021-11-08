@@ -50,8 +50,6 @@ npm run start
 
 ### 7\. ✨ Enjoy
 
-<br />
-
 ## Technologies used
 
 * [Netlify CMS](https://www.netlifycms.org/) (Currently WIP 🚧):
