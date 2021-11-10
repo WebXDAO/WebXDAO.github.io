@@ -6,14 +6,14 @@ tasks:
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 3000
+  - port: 8080
     onOpen: open-preview
 
 github:
   prebuilds:
     addBadge: true
     addComment: false
-    addCheck: false
+    addCheck: true
     master: true
     branches: true
     pullRequestsFromForks: true
