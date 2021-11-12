@@ -44,7 +44,7 @@ Example how to mark a checkbox:-
  Original           | Updated
  :--------------------: |:--------------------:
  original screenshot | updated screenshot |
- 
+
 ## Code of Conduct
 
 - [ ] I agree to follow this project's [Code of Conduct](https://github.com/web3community/.github/blob/main/CODE_OF_CONDUCT.md)
