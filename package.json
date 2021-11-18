@@ -15,7 +15,6 @@
     "autoprefixer": "^10.4.0",
     "common-tags": "^1.8.0",
     "postcss": "^8.3.10",
-    "sass": "^1.43.4",
     "tailwindcss": "^2.2.17"
   }
 }
