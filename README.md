@@ -4,7 +4,7 @@
 
 <b>Web3Community is an Open Source Community that focuses on Web 3.0 and Blockchain technologies 🚀 </b>
 
-We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/web3community/web3community.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/web3community/web3community.github.io/issues/new).
+We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/web3community/web3community.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/web3community/web3community.github.io/issues/new/choose).
 
 ---
 
