@@ -2,7 +2,7 @@
 import Navigation from '@components/Global/Navigation.astro'
 import Footer from '@components/Global/Footer.astro'
 
-let { metaTitle, metaDescription, ogImg, ogUrl, customStyle } = Astro.props;
+let { metaTitle, metaDescription, ogImg, ogUrl } = Astro.props;
 ---
 
 <html lang="en">
@@ -18,7 +18,7 @@ let { metaTitle, metaDescription, ogImg, ogUrl, customStyle } = Astro.props;
   <meta property="og:image" content={ogImg} />
   <link
   rel="stylesheet"
-  href={Astro.resolve("../styles/global.css")}
+  href={Astro.resolve("../styles/style.css")}
   >
 </head>
 
