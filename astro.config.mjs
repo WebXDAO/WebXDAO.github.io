@@ -4,7 +4,9 @@ export default {
   src: 'src',
   pages: 'src/pages',
   public: 'public',
-  renderers: [],
+  renderers: [
+    '@astrojs/renderer-react'
+  ],
   markdownOptions: {
     footnotes: true,
     remarkPlugins: [],
