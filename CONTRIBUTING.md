@@ -12,9 +12,7 @@ This project and everyone participating in it is governed by a [Code of Conduct]
 
 ### Reporting Bugs 💣
 
-This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻 💻, and find related reports 🔎.
-
-Since the new GitHub Issue forms we only suggest you to include most information possible. But you can also **Perform a [cursory search](https://github.com/web3community/web3community.github.io/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻 💻, and find related reports 🔎
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
@@ -61,7 +59,7 @@ Please follow all instructions in [the template](https://github.com/web3communit
 
 ## 🚀 How to Contribute
 
-- Please create an [issue](https://github.com/web3community/web3community.github.io/issues) before creating a pull request.
+- Please create an [issue](https://github.com/web3community/web3community.github.io/issues/new/choose) before creating a pull request.
 
 - Fork the repository and create a branch for any issue that you are working on.
 
