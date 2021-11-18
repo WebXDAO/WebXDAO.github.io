@@ -12,8 +12,10 @@
     "@snowpack/plugin-dotenv": "^2.2.0",
     "@snowpack/plugin-optimize": "^0.2.13",
     "astro": "^0.20.12",
+    "autoprefixer": "^10.4.0",
     "common-tags": "^1.8.0",
     "postcss": "^8.3.10",
+    "sass": "^1.43.4",
     "tailwindcss": "^2.2.17"
   }
 }
