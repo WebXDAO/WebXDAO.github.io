@@ -1,33 +1,33 @@
 ---
 const links = [
-    {
-        'name': 'Learn',
-        'href': '/learn'
-    },
-    {
-        'name': 'Projects',
-        'href': '/projects'
-    },
-    {
-        'name': 'Blog',
-        'href': '/blog'
-    },
-        {
-        'name': 'About',
-        'href': '/about'
-    },
+  {
+    'name': 'Learn',
+    'href': '/learn'
+  },
+  {
+    'name': 'Projects',
+    'href': '/projects'
+  },
+  {
+    'name': 'Blog',
+    'href': '/blog'
+  },
+  {
+    'name': 'About',
+    'href': '/about'
+  },
 ]
 ---
 
 <!-- TODO: Hamburger on smaller viewports -->
 
-<nav class="flex items-center justify-between p-8 h-4">
+<nav class="flex items-center justify-between py-6 px-20">
   <a href="/" class="font-semibold text-lg">Web3Community</a>
-  <div class="min-w-0 nav-responsive block md:flex">
+  <div class="min-w-0 nav-responsive hidden md:flex">
     {links.map(link => (
-        <a href={link.href} class="opacity-60 my-4 font-display overflow-ellipsis overflow-hidden hidden mx-4 hover:underline md:my-0 md:block">
-          {link.name}
-        </a>
+      <a href={link.href} class="opacity-60 font-display m-4 transition hover:opacity-100 hover:underline md:my-0">
+        {link.name}
+      </a>
     ))}
   </div>
 </nav>
