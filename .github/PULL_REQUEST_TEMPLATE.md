@@ -1,6 +1,6 @@
 ## Related Issue 
 
-- Information about the related issue 
+- Information about the related issue
 
 Closes: # <!-- issue number that will be closed through this PR -->
 
