@@ -16,7 +16,7 @@ module.exports = {
 	},
 	variants: {
 		extend: {
-			zIndex: ['hover'],
+			zIndex: ["hover],
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],
