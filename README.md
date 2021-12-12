@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-next-line -->
 <img alt="Web 3 Community" src="https://i.imgur.com/xKOfGSM.png"/>
 
 ---
