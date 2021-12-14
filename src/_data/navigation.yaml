@@ -12,6 +12,6 @@ items:
   - text: PROJECTS
     url: "/projects"
   - text: COMMUNITY PARTNERS
-    url: "/community"  
+    url: "/partners"
   - text: OUR MODERATORS
-    url: "/moderators"  
+    url: "/moderators"
