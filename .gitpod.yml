@@ -21,4 +21,3 @@ github:
 vscode:
   extensions:
     - davidanson.vscode-markdownlint
-    - astro-build.astro-vscode
