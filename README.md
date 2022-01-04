@@ -15,7 +15,9 @@ We are currently implementing the design from Figma to code. If you want to help
 
 > Make sure to read our [contributing guidelines](https://github.com/web3community/web3community.github.io/blob/main/CONTRIBUTING.md)
 
-1. Skip all of the steps below by using Gitpod, which would automatically do all of that for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/web3community.github.io)
+### 1\. Skip all of the steps below by using Gitpod, which would automatically do all of that for you
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/web3community.github.io)
 
 ### 2\. Clone this Repository
 
