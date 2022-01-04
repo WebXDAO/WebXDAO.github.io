@@ -91,9 +91,8 @@
         </div>
     </div>
     <div style="background:#1D292F" class="text-center text-sm font-light py-4 text-gray-200">
-        <small>Copyright ©
-            {{ settings.name }}
-            {{ site.time | date: '%Y' }}. Made with ❤️ by
+        <small>Copyright &copy; {{ settings.name }} 
+            <script>document.write(" " + new Date().getFullYear())</script>. Made with ❤️ by
             <a href="{{settings.url}}" target="_blank" class="underline">{{ settings.author }}</a>
             •
             <a href="https://github.com/web3community/web3community.github.io" class="underline" target="_blank"
