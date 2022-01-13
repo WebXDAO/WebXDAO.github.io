@@ -3,9 +3,9 @@
 
 ---
 
-<b>Web3Community is an Open Source Community that focuses on Web 3.0 and Blockchain technologies 🚀 </b>
+<b>WebXDAO is an Open Source Community that focuses on Web 3.0 and Blockchain technologies 🚀 </b>
 
-We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/web3community/web3community.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/web3community/web3community.github.io/issues/new/choose).
+We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/WebXDAO/WebXDAO.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/WebXDAO/WebXDAO.github.io/issues/new/choose).
 
 ---
 
@@ -13,7 +13,7 @@ We are currently implementing the design from Figma to code. If you want to help
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/web3community/web3community.github.io&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
 
-> Make sure to read our [contributing guidelines](https://github.com/web3community/web3community.github.io/blob/main/CONTRIBUTING.md)
+> Make sure to read our [contributing guidelines](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/CONTRIBUTING.md)
 
 ### 1\. Skip all of the steps below by using Gitpod, which would automatically do all of that for you
 
@@ -22,13 +22,13 @@ We are currently implementing the design from Figma to code. If you want to help
 ### 2\. Clone this Repository
 
 ```
-git clone https://github.com/web3community/web3community.github.io.git
+git clone https://github.com/WebXDAO/WebXDAO.github.io.git
 ```
 
 ### 3\. Navigate to the directory
 
 ```
-cd web3community.github.io
+cd WebXDAO.github.io
 ```
 
 ### 4\. Install dependencies
