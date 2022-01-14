@@ -16,38 +16,38 @@ const Footer = () => {
         {
             name: 'Mail',
             url: 'mailto:web3opensourcecommunity@gmail.com',
-            icon: <AiOutlineMail />,
+            icon: AiOutlineMail,
             text: 'Contact us via mail'
         },
         {
             name: 'Instagram',
             url: 'https://www.instagram.com/web3community/',
-            icon: <AiOutlineInstagram />,
+            icon: AiOutlineInstagram,
             text: 'Check our content at Instagram'
         },
         {
             name: 'Twitter',
             url: 'https://twitter.com/web3community',
-            icon: <AiOutlineTwitter />,
+            icon: AiOutlineTwitter,
             text: 'Follow us via Twitter'
         },
 
         {
             name: 'Linkedin',
             url: 'https://www.linkedin.com/company/web3community',
-            icon: <AiFillLinkedin />,
+            icon: AiFillLinkedin,
             text: 'Connect with us at LinkedIn'
         },
         {
             name: 'Twitter',
             url: 'https://github.com/WebXDAO',
-            icon: <AiOutlineGithub />,
+            icon: AiOutlineGithub,
             text: 'Contribute at GitHub'
         },
         {
             name: 'Twitter',
             url: 'https://discord.gg/TSRwqx4K2v',
-            icon: <FaDiscord />,
+            icon: FaDiscord,
             text: 'Join our Discord community'
         }
     ]
@@ -64,17 +64,17 @@ const Footer = () => {
                     <div className='flex-wrap flex-1 md:px-4 mb-6 text-black'>
                         <p className='text-white mb-3 md:mb-6'>Socials</p>
                         <div className='flex space-x-4'>
-                            {socials.map((handle, index) => (
+                            {socials.map(({ url, name, text, icon: Icon }, index) => (
                                 <a
                                     aria-hidden='true'
                                     className='text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100'
-                                    href={handle.url}
-                                    key={handle.name + index}
+                                    href={url}
+                                    key={name + index}
                                     rel='noreferrer'
                                     target='_blank'
-                                    title={handle.text}
+                                    title={text}
                                 >
-                                    {handle.icon}
+                                    <Icon className='w-5 h-5' />
                                 </a>
                             ))}
                         </div>
