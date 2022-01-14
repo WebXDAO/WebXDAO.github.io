@@ -3,9 +3,7 @@
 
 ---
 
-<b>WebXDAO is an Open Source Community that focuses on Web 3.0 and Blockchain technologies 🚀 </b>
-
-We are currently implementing the design from Figma to code. If you want to help, please check the [issue](https://github.com/WebXDAO/WebXDAO.github.io/issues/3) regarding about that. Any suggestions for our website, you can submit an issue [here](https://github.com/WebXDAO/WebXDAO.github.io/issues/new/choose).
+The content in this repository is temporary, we are making new web design for WebX DAO. If you want to help, please message us on [Discord](https://discord.gg/TSRwqx4K2v)
 
 ---
 
