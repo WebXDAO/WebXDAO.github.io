@@ -1,23 +1,7 @@
 module.exports = {
-	purge: {
-		mode: "all",
-		content: ["./**/*.html"],
-		options: {
-			whitelist: [],
-		},
-	},
-	theme: {
-		container: {
-			center: true,
-		},
-		extend: {
-			colors: {},
-		},
-	},
-	variants: {
-		extend: {
-			zIndex: ["hover"],
-		},
-	},
-	plugins: [require("@tailwindcss/typography")],
-};
+    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    theme: {
+        extend: {}
+    },
+    plugins: []
+}
