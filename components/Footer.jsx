@@ -74,7 +74,7 @@ const Footer = () => {
                                     target='_blank'
                                     title={text}
                                 >
-                                    <Icon className='w-5 h-5' />
+                                    <Icon className='w-5 h-5 lg:w-7 lg:h-7' />
                                 </a>
                             ))}
                         </div>
