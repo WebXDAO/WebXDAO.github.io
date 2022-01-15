@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import { DeveloperPaths, Hero, Projects } from '../components/Home'
+import Blogs from '../components/Blogs'
+import { DeveloperPaths, DevprotocolBrands, Hero, Projects, Testimonials } from '../components/Home'
 
-export default function Home() {
+export default function Home({ articles }) {
     return (
         <div className=''>
             <Head>
@@ -10,6 +11,22 @@ export default function Home() {
             <Hero />
             <Projects />
             <DeveloperPaths />
+            <Blogs articles={articles} show={3} />
+            <DevprotocolBrands />
+            <Testimonials />
         </div>
     )
+}
+
+export async function getStaticProps() {
+    const res = await fetch('https://dev.to/api/articles?username=web3community', {
+        method: 'GET'
+    })
+    const articles = await res.json()
+    return {
+        props: {
+            articles
+        },
+        revalidate: 10
+    }
 }

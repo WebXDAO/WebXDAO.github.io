@@ -25,15 +25,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className='block w-full md:w-3/5 py-6 text-center items-end bg-contain'>
-                    <Image
-                        src='/hero.png'
-                        layout='fixed'
-                        width={400}
-                        height={400}
-                        objectFit='contain'
-                        alt='Web3'
-                    />
+                <div className='relative w-full md:w-3/5 h-96 py-6 text-center items-end'>
+                    <Image src='/hero.png' layout='fill' objectFit='contain' alt='Web3' />
                 </div>
             </div>
         </div>
