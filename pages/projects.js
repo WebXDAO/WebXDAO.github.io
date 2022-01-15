@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Projects() {
     const data = [
@@ -52,11 +53,16 @@ export default function Projects() {
                         className='flex flex-col justify-between items-stretch col-span-3 md:col-span-1 cursor-pointer p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out'
                     >
                         <div className='bg-white p-4 rounded-lg flex flex-col justify-between'>
-                            <img
-                                className='lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6'
-                                src={imgUrl}
-                                alt={name}
-                            />
+                            <div className='relative mb-6'>
+                                <Image
+                                    layout='responsive'
+                                    width={800}
+                                    height={800}
+                                    className='lg:h-60 xl:h-56 md:h-64 h-72 w-full object-cover object-center rounded-md'
+                                    src={imgUrl}
+                                    alt={name}
+                                />
+                            </div>
                             <div className='flex justify-between'>
                                 <h2 className='text-xl text-gray-900 font-semibold mb-4'>
                                     {title}

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
@@ -19,11 +20,16 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
                         <Link key={article.title + index} href={article.url} passHref>
                             <div className='flex flex-col justify-between items-stretch col-span-3 md:col-span-1 cursor-pointer p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out'>
                                 <div className='bg-white p-4 rounded-lg'>
-                                    <img
-                                        className='lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6'
-                                        src={article.social_image}
-                                        alt={article.title}
-                                    />
+                                    <div className='relative bg-contain'>
+                                        <Image
+                                            alt={article.title}
+                                            layout='responsive'
+                                            height={150}
+                                            width={150}
+                                            className='lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6'
+                                            src={article.social_image}
+                                        />
+                                    </div>
                                     <div className='flex justify-between'>
                                         <h2 className='text-xl text-gray-900 font-semibold mb-4'>
                                             {article.title}
@@ -34,12 +40,15 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
                                     </p>
                                 </div>
                                 <time className='p-4 text-gray-500 text-xs flex items-end'>
-                                    <img
+                                    <Image
+                                        layout='fixed'
+                                        width={40}
+                                        height={40}
                                         src={article?.user?.profile_image}
                                         alt={article.user.name}
-                                        className='w-10 h-10 rounded-full mr-2'
+                                        className='rounded-full'
                                     />
-                                    <p className='opacity-50'>
+                                    <p className='ml-2 opacity-50'>
                                         by {article.user.name} on
                                         {' ' + article.readable_publish_date}
                                     </p>

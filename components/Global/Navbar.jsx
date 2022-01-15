@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const NavBarItem = ({ item, pathname, classprops }) => (
-    <Link href={item.url} passHref>
+    <a href={item.url}>
         <li
             className={`${
                 pathname === item.url && 'font-bold'
@@ -14,7 +14,7 @@ const NavBarItem = ({ item, pathname, classprops }) => (
         >
             {item.title}
         </li>
-    </Link>
+    </a>
 )
 
 const Navbar = () => {
@@ -39,7 +39,15 @@ const Navbar = () => {
                         href='/'
                         passHref
                     >
-                        <img src='/logo.png' alt='Web 3 Community' className='h-16 items-start' />
+                        <div>
+                            <Image
+                                layout='fixed'
+                                width={180}
+                                height={60}
+                                src='/logo.png'
+                                alt='WebXDAO'
+                            />
+                        </div>
                     </Link>
                 </div>
                 <ul className='lg:flex hidden list-none flex-row justify-end items-center ml-auto'>

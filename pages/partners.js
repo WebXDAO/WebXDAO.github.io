@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Partners() {
     const data = [
@@ -52,19 +53,20 @@ export default function Partners() {
                                         key={name + index}
                                         className='cursor-pointer bg-white flex-1 rounded-md shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 hover:z-10 duration-300 ease-in-out p-4'
                                     >
-                                        <div className='flex items-center justify-start overflow-hidden'>
-                                            <img
-                                                alt={name}
-                                                className='bg-gray-50 p-5 rounded-md'
-                                                src={imgUrl}
-                                            />
-                                            <div id='body' className='flex flex-col gap-y-3 pl-5'>
-                                                <h4 id='name' className='text-xl font-semibold'>
-                                                    {title}
-                                                </h4>
-                                                <p id='caption' className='text-gray-800'>
-                                                    {text}
-                                                </p>
+                                        <div className='grid grid-cols-3 items-center justify-start overflow-hidden'>
+                                            <div className='relative col-span-1'>
+                                                <Image
+                                                    layout='responsive'
+                                                    width={800}
+                                                    height={800}
+                                                    alt={name}
+                                                    className='bg-gray-50 p-5 rounded-md'
+                                                    src={imgUrl}
+                                                />
+                                            </div>
+                                            <div className='flex flex-col col-span-2 gap-y-3 pl-5'>
+                                                <h4 className='text-xl font-semibold'>{title}</h4>
+                                                <p className='text-gray-800'>{text}</p>
                                             </div>
                                         </div>
                                     </div>

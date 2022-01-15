@@ -60,10 +60,10 @@ const Footer = () => {
     return (
         <footer className='bg-[#1F2E35]'>
             <div className='container mx-auto px-8'>
-                <div className='w-full flex flex-col md:flex-row py-6'>
+                <div className='w-full flex flex-col md:flex-row py-6 gap-x-4'>
                     <div className='flex-wrap flex-1 md:px-4 mb-6 text-black'>
                         <p className='text-white mb-3 md:mb-6'>Socials</p>
-                        <div className='flex space-x-4'>
+                        <div className='flex space-x-2'>
                             {socials.map(({ url, name, text, icon: Icon }, index) => (
                                 <a
                                     aria-hidden='true'
@@ -137,7 +137,7 @@ const Footer = () => {
                             <li className='mt-2 inline-block mr-2 md:block md:mr-0'>
                                 <a
                                     href='mailto:web3opensourcecommunity@gmail.com'
-                                    className='no-underline text-gray-400 hover:text-blue-500'
+                                    className='no-underline text-sm md:text-base text-gray-400 hover:text-blue-500'
                                 >
                                     web3opensourcecommunity@gmail.com
                                 </a>
