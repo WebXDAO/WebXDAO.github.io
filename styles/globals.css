@@ -1,23 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /*Core CSS*/
 @layer base {
+    html {
+        @apply font-poppins;
+    }
     h1 {
         @apply text-4xl tracking-tighter mb-3;
     }
 
     h3 {
         @apply text-2xl font-bold mb-3;
-    }
-
-    body {
-        font-family: 'Poppins', sans-serif;
-    }
-
-    body :not(pre) > code[class*='language-'],
-    body pre[class*='language-'] {
-        @apply bg-gray-800;
     }
 }
 .gradient {

@@ -47,7 +47,7 @@ const Navbar = () => {
                         <NavBarItem key={item.title + index} item={item} pathname={router.asPath} />
                     ))}
                 </ul>
-                <div className='flex relative'>
+                <div className='flex relative p-2'>
                     {!toggleMenu && (
                         <HiMenuAlt4
                             fontSize={28}
@@ -75,7 +75,7 @@ flex flex-col justify-start items-end rounded-md blue-glassmorphism'
                                     key={item + index}
                                     item={item}
                                     pathname={router.asPath}
-                                    classprops={'my-2 text-lg'}
+                                    classprops={'my-2 text-lg !text-black font-bold'}
                                 />
                             ))}
                         </ul>

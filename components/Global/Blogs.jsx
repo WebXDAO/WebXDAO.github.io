@@ -1,16 +1,18 @@
 import Link from 'next/link'
 
-const Blogs = ({ articles, show = articles.length }) => {
+const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
     return (
         <section className='bg-white py-8'>
-            <div className='container max-w-5xl mx-auto'>
-                <h1 className='w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800'>
-                    Blogs
-                </h1>
-                <div className='w-full mb-4'>
-                    <div className='h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t'></div>
+            {!contentOnly && (
+                <div className='container max-w-5xl mx-auto'>
+                    <h1 className='w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800'>
+                        Blogs
+                    </h1>
+                    <div className='w-full mb-4'>
+                        <div className='h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t'></div>
+                    </div>
                 </div>
-            </div>
+            )}
             <div className='container max-w-screen-xl mx-auto pt-4 pb-8 grid grid-cols-3 mb-8 gap-6 px-8'>
                 {articles.length > 0 ? (
                     articles.slice(0, show).map((article, index) => (
@@ -49,14 +51,15 @@ const Blogs = ({ articles, show = articles.length }) => {
                     <div className='text-center w-full'>No Blogs found....</div>
                 )}
             </div>
-
-            <div className='flex justify-center'>
-                <a href='https://dev.to/web3community' target='_blank' rel='noreferrer'>
-                    <button className='bg-gray-700 text-white mx-auto lg:mx-0 rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out'>
-                        See All
-                    </button>
-                </a>
-            </div>
+            {!contentOnly && (
+                <div className='flex justify-center'>
+                    <a href='https://dev.to/web3community' target='_blank' rel='noreferrer'>
+                        <button className='bg-gray-700 text-white mx-auto lg:mx-0 rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out'>
+                            See All
+                        </button>
+                    </a>
+                </div>
+            )}
         </section>
     )
 }

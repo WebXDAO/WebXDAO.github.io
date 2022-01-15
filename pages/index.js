@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Blogs from '../components/Blogs'
+import { Blogs } from '../components/Global'
 import { DeveloperPaths, DevprotocolBrands, Hero, Projects, Testimonials } from '../components/Home'
 
 export default function Home({ articles }) {
