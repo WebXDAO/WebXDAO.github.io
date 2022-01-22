@@ -5,50 +5,50 @@
 @tailwind utilities;
 /*Core CSS*/
 @layer base {
-    html {
-        @apply font-poppins;
-    }
-    h1 {
-        @apply text-4xl tracking-tighter mb-3;
-    }
+  html {
+    @apply font-poppins;
+  }
+  h1 {
+    @apply text-4xl tracking-tighter mb-3;
+  }
 
-    h3 {
-        @apply text-2xl font-bold mb-3;
-    }
+  h3 {
+    @apply text-2xl font-bold mb-3;
+  }
 }
 .gradient {
-    background: linear-gradient(90deg, #00007f 0%, #0086d6 100%);
+  background: linear-gradient(90deg, #00007f 0%, #0086d6 100%);
 }
 
 .neumorphism {
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .blue-glassmorphism {
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
