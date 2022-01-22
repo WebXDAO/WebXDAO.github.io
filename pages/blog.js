@@ -21,7 +21,7 @@ export default function Blog({ articles }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetch('https://dev.to/api/articles?username=web3community', {
+    const res = await fetch('https://dev.to/api/articles?username=webxdao', {
         method: 'GET'
     })
     const articles = await res.json()
