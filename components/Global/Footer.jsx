@@ -39,13 +39,13 @@ const Footer = () => {
       text: 'Connect with us at LinkedIn'
     },
     {
-      name: 'Twitter',
+      name: 'GitHub',
       url: 'https://github.com/WebXDAO',
       icon: AiOutlineGithub,
       text: 'Contribute at GitHub'
     },
     {
-      name: 'Twitter',
+      name: 'Discord',
       url: 'https://discord.gg/TSRwqx4K2v',
       icon: FaDiscord,
       text: 'Join our Discord community'
