@@ -1,11 +1,4 @@
-import {
-  AiOutlineMail,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-  AiFillLinkedin,
-  AiOutlineGithub
-} from 'react-icons/ai'
-import { FaDiscord } from 'react-icons/fa'
+import { FaEnvelope, FaTwitter, FaLinkedin, FaGithub, FaInstagram, FaDiscord } from 'react-icons/fa'
 const Footer = () => {
   const settings = {
     name: 'WebXDAO',
@@ -16,32 +9,32 @@ const Footer = () => {
     {
       name: 'Mail',
       url: 'mailto:web3opensourcecommunity@gmail.com',
-      icon: AiOutlineMail,
+      icon: FaEnvelope,
       text: 'Contact us via mail'
     },
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/web3community/',
-      icon: AiOutlineInstagram,
+      icon: FaInstagram,
       text: 'Check our content at Instagram'
     },
     {
       name: 'Twitter',
       url: 'https://twitter.com/web3community',
-      icon: AiOutlineTwitter,
+      icon: FaTwitter,
       text: 'Follow us via Twitter'
     },
 
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/company/web3community',
-      icon: AiFillLinkedin,
+      icon: FaLinkedin,
       text: 'Connect with us at LinkedIn'
     },
     {
       name: 'GitHub',
       url: 'https://github.com/WebXDAO',
-      icon: AiOutlineGithub,
+      icon: FaGithub,
       text: 'Contribute at GitHub'
     },
     {
