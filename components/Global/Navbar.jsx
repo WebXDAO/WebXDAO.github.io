@@ -39,9 +39,7 @@ const Navbar = () => {
             href='/'
             passHref
           >
-            <div>
-              <Image layout='fixed' width={180} height={60} src='/logo.png' alt='WebXDAO' />
-            </div>
+            <Image layout='fixed' width={150} height={80} src='/logo.png' alt='WebXDAO' />
           </Link>
         </div>
         <ul className='lg:flex hidden list-none flex-row justify-end items-center ml-auto'>
