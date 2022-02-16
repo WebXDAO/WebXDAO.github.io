@@ -42,7 +42,7 @@ export default function Moderators() {
     {
       name: 'Krish Gupta',
       bio: "Started my tech journey on 30th September 2021. Since then, I am learning new things and growing my network. I love to chat, collaborate and contribute. I am an open sourcer, that's my complete bio.",
-      imgUrl: 'https://github.com/krishguptadev.png',
+      imgUrl: 'https://github.com/krshdev.png',
       twitterUrl: 'https://twitter.com/krishguptadev',
       githubUrl: 'https://github.com/krishguptadev'
     }
