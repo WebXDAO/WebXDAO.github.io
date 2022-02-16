@@ -50,11 +50,8 @@ const DeveloperPath = () => {
             >
               <div className='flex items-center justify-start overflow-hidden'>
                 <div className='relative bg-contain w-1/3'>
-                  <Image
+                  <img
                     alt={name}
-                    layout='responsive'
-                    height={150}
-                    width={150}
                     className='bg-gray-50 p-5 rounded-md'
                     src={imgUrl}
                   />

@@ -1,10 +1,9 @@
-import Image from 'next/image'
 
 const Hero = () => {
   return (
     <div className='text-white bg-[#00007F] pt-24 py-24'>
       <div className='container px-5 mx-auto flex flex-wrap flex-col md:flex-row items-center'>
-        <div className='px-5 flex flex-col w-full md:w-2/5 items-start text-center md:text-left'>
+        <div className='px-5 flex flex-col mx-auto w-full md:w-2/5 items-start text-center md:text-left'>
           <h1 className='my-4 text-3xl font-bold leading-tight'>
             A new community for Blockchain developers, designers, and Dapp Owners
           </h1>
@@ -21,8 +20,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='relative w-full md:w-3/5 h-96 py-6 text-center items-end'>
-          <Image src='/hero.gif' layout='fill' objectFit='contain' alt='Web3' />
+        <div className='w-full md:w-2/5 flex mx-auto items-end'>
+          <img src='/hero.gif' className='object-contain' alt='Web3' />
         </div>
       </div>
     </div>

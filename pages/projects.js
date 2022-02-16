@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Projects() {
   const data = [
@@ -52,10 +51,7 @@ export default function Projects() {
           >
             <div className='bg-white p-4 rounded-lg flex flex-col justify-between'>
               <div className='relative mb-6'>
-                <Image
-                  layout='responsive'
-                  width={800}
-                  height={800}
+                <img
                   className='lg:h-60 xl:h-56 md:h-64 h-72 w-full object-cover object-center rounded-md'
                   src={imgUrl}
                   alt={name}

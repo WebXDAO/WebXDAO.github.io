@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 const Testimonials = () => {
   const data = [
@@ -73,7 +72,7 @@ const Testimonials = () => {
               <p className='text-gray-600 text-base mb-2'>{text}</p>
               <div className='flex flex-row items-center justify-start py-2'>
                 <div className='relative h-16 w-16 flex-shrink-0'>
-                  <Image src={imgUrl} alt={name} layout='fill' objectFit='contain' />
+                  <img src={imgUrl} alt={name} className='object-contain' />
                 </div>
 
                 <div className='flex flex-col justify-center pl-3'>

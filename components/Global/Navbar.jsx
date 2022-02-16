@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { HiMenuAlt4 } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -39,7 +38,7 @@ const Navbar = () => {
             href='/'
             passHref
           >
-            <Image layout='fixed' width={150} height={80} src='/logo.png' alt='WebXDAO' />
+            <img src='/logo.png' alt='WebXDAO' className='w-24 h-14 md:w-36 md:h-20'/>
           </Link>
         </div>
         <ul className='lg:flex hidden list-none flex-row justify-end items-center ml-auto'>
@@ -67,7 +66,7 @@ const Navbar = () => {
               className='z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl lg:hidden list-none
 flex flex-col justify-start items-end rounded-md blue-glassmorphism'
             >
-              <li className='text-xl w-full my-2 text-blue-600'>
+              <li className='text-xl w-full my-2 text-blue-600 cursor-pointer '>
                 <AiOutlineClose onClick={() => setToggleMenu(false)} />
               </li>
               {navItems.map((item, index) => (

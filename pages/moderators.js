@@ -74,14 +74,7 @@ export default function Moderators() {
                   >
                     <div className='grid grid-cols-3 items-center justify-start overflow-hidden p-4'>
                       <div className='relative col-span-1 bg-gray-50 w-full rounded-full p-6'>
-                        <Image
-                          layout='responsive'
-                          width={800}
-                          height={800}
-                          alt={name}
-                          className='rounded-full'
-                          src={imgUrl}
-                        />
+                        <img alt={name} className='rounded-full' src={imgUrl} />
                       </div>
                       <div className='flex flex-col col-span-2 gap-y-3 pl-5'>
                         <h4 className='text-xl font-semibold'>{name}</h4>

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Partners() {
   const data = [
@@ -55,14 +54,7 @@ export default function Partners() {
                   >
                     <div className='grid grid-cols-3 items-center justify-start overflow-hidden'>
                       <div className='relative col-span-1'>
-                        <Image
-                          layout='responsive'
-                          width={800}
-                          height={800}
-                          alt={name}
-                          className='bg-gray-50 p-5 rounded-md'
-                          src={imgUrl}
-                        />
+                        <img alt={name} className='bg-gray-50 p-5 rounded-md' src={imgUrl} />
                       </div>
                       <div className='flex flex-col col-span-2 gap-y-3 pl-5'>
                         <h4 className='text-xl font-semibold'>{title}</h4>
