@@ -4,6 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {prefix} from '../../constants'
+
 const NavBarItem = ({ item, pathname, classprops }) => (
   <a href={item.url}>
     <li
@@ -20,13 +21,13 @@ const Navbar = () => {
   const router = useRouter()
   const [toggleMenu, setToggleMenu] = useState(false)
   const navItems = [
-    { title: 'HOME', url: '/' },
-    { title: 'LEARN', url: '#' },
-    { title: 'BLOG', url: '/blog' },
-    { title: 'ABOUT', url: '#' },
-    { title: 'PROJECTS', url: '/projects' },
-    { title: 'COMMUNITY PARTNERS', url: '/partners' },
-    { title: 'OUR MODERATORS', url: '/moderators' }
+    { title: 'HOME', url: prefix+'/' },
+    { title: 'LEARN', url: prefix+'#' },
+    { title: 'BLOG', url: prefix+'/blog' },
+    { title: 'ABOUT', url: prefix+'#' },
+    { title: 'PROJECTS', url: prefix+'/projects' },
+    { title: 'COMMUNITY PARTNERS', url: prefix+'/partners' },
+    { title: 'OUR MODERATORS', url: prefix+'/moderators' }
   ]
 
   return (

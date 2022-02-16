@@ -27,7 +27,11 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /WebXDAO.github.io
       - run: npm run export
+        env:
+          NEXT_PUBLIC_BASE_PATH: /WebXDAO.github.io
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
