@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { prefix } from '../constants'
 
 export default function Projects() {
   const data = [
@@ -53,7 +54,7 @@ export default function Projects() {
               <div className='relative mb-6'>
                 <img
                   className='lg:h-60 xl:h-56 md:h-64 h-72 w-full object-cover object-center rounded-md'
-                  src={imgUrl}
+                  src={prefix + imgUrl}
                   alt={name}
                 />
               </div>

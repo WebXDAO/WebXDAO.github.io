@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { prefix } from '../../constants'
 
 const DevprotocolBrands = () => {
   const projects = [
@@ -42,7 +43,7 @@ const DevprotocolBrands = () => {
             <Link key={name + index} href={url} passHref className='h-full group'>
               <div className='mx-auto flex flex-col justify-evenly items-center h-full object-center text-center p-8 shadow cursor-pointer rounded-md focus:outline-none focus:shadow-outline transform bg-white transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out'>
                 <div className='relative h-24 w-full flex-shrink-0'>
-                  <img src={imgUrl} alt={name} className="object-contain" />
+                  <img src={prefix + imgUrl} alt={name} className="object-contain" />
                 </div>
                 <p className='text-gray-800 mt-8 mb-2 text-sm px-8 sm:px-4 h-full'>{text}</p>
               </div>

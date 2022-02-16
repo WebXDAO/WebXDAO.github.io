@@ -1,4 +1,6 @@
 module.exports = {
+  basePath: '/WebXDAO.github.io',
+  assetPrefix: '/WebXDAO.github.io',
   exportPathMap: function () {
     return {
       '/': { page: '/' }

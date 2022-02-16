@@ -1,3 +1,5 @@
+import { prefix } from "../../constants"
+
 const DeveloperPath = () => {
   const devPaths = [
     {
@@ -51,7 +53,7 @@ const DeveloperPath = () => {
                   <img
                     alt={name}
                     className='bg-gray-50 p-5 rounded-md'
-                    src={imgUrl}
+                    src={prefix+imgUrl}
                   />
                 </div>
                 <div id='body' className='flex flex-col gap-y-3 pl-5'>
