@@ -28,10 +28,10 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /WebXDAO.github.io
+          NEXT_PUBLIC_BASE_PATH: /
       - run: npm run export
         env:
-          NEXT_PUBLIC_BASE_PATH: /WebXDAO.github.io
+          NEXT_PUBLIC_BASE_PATH: /
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
