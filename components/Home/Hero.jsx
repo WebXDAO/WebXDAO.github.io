@@ -1,3 +1,4 @@
+import {prefix} from '../../constants'
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
         </div>
 
         <div className='w-full md:w-2/5 flex mx-auto items-end'>
-          <img src='/hero.gif' className='object-contain' alt='Web3' />
+          <img src={prefix+'/hero.gif'} className='object-contain' alt='Web3' />
         </div>
       </div>
     </div>

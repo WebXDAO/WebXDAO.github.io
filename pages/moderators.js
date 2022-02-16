@@ -1,52 +1,7 @@
 import Head from 'next/head'
 import { AiOutlineTwitter, AiOutlineGithub } from 'react-icons/ai'
 
-export default function Moderators() {
-  const data = [
-    {
-      name: 'David Leal',
-      bio: 'Open-source maintainer/contributor 💻 Bot/website maintainer for @Heptagram 🤖 @Minetest mod/game maintainer & creator 🎮 Discord moderator in 20+ servers 🛡 Open-source/DSA mentor 🛠',
-      imgUrl: 'https://github.com/Panquesito7.png',
-      twitterUrl: 'https://twitter.com/David_Leal_7',
-      githubUrl: 'https://github.com/Panquesito7'
-    },
-    {
-      name: 'Ritvik Shukla',
-      bio: 'Co-Founder | Open Source Enthusiast | Poet | Community 💛',
-      imgUrl: 'https://github.com/shuklaritvik06.png',
-      twitterUrl: 'https://twitter.com/ShuklaRitvik06',
-      githubUrl: 'https://github.com/shuklaritvik06'
-    },
-    {
-      name: 'Shubham Kukreti',
-      bio: 'Co-Founder | Web3 & Open Source Enthusiast | Community ❤️',
-      imgUrl: 'https://github.com/KukretiShubham.png',
-      twitterUrl: 'https://twitter.com/ShubhamKukretii',
-      githubUrl: 'https://github.com/KukretiShubham'
-    },
-    {
-      name: 'Vincent Villafuerte',
-      bio: 'Founder | Octocat lover | OSS Advocate | DevRel | Community guy 🚩',
-      imgUrl: 'https://github.com/vinzvinci.png',
-      twitterUrl: 'https://twitter.com/vinzvinci',
-      githubUrl: 'https://github.com/vinzvinci'
-    },
-    {
-      name: 'Max Kubik',
-      bio: 'Web2 Fullstack Software Engineer 💠 I build webapps and mobile apps for the industry field 🔧 Transitioning to Web3 stacks 🌠 Maintainer for @Web3community 🍬 Open-source newbie!',
-      imgUrl: 'https://github.com/mkubdev.png',
-      twitterUrl: 'https://twitter.com/digikube1',
-      githubUrl: 'https://github.com/mkubdev'
-    },
-    {
-      name: 'Krish Gupta',
-      bio: "Started my tech journey on 30th September 2021. Since then, I am learning new things and growing my network. I love to chat, collaborate and contribute. I am an open sourcer, that's my complete bio.",
-      imgUrl: 'https://github.com/krshdev.png',
-      twitterUrl: 'https://twitter.com/krishguptadev',
-      githubUrl: 'https://github.com/krishguptadev'
-    }
-  ]
-
+export default function Moderators({ moderatorsdata }) {
   return (
     <>
       <Head>
@@ -66,7 +21,7 @@ export default function Moderators() {
           <div className='container mx-auto'>
             <div className='flex flex-wrap md:-mx-3 gap-6'>
               <div className='text-black grid grid-col-1 p-3 gap-y-3 md:grid lg:grid-cols-2 md:gap-3 md:p-3'>
-                {data.map(({ name, bio, imgUrl, twitterUrl, githubUrl }, index) => (
+                {moderatorsdata.map(({ name, bio, imgUrl, twitterUrl, githubUrl }, index) => (
                   <div
                     key={name + index}
                     className='cursor-pointer hover:z-10 bg-white flex-1 rounded-md shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out p-4'
@@ -112,4 +67,56 @@ export default function Moderators() {
       </div>
     </>
   )
+}
+
+export function getStaticProps() {
+  const data = [
+    {
+      name: 'David Leal',
+      bio: 'Open-source maintainer/contributor 💻 Bot/website maintainer for @Heptagram 🤖 @Minetest mod/game maintainer & creator 🎮 Discord moderator in 20+ servers 🛡 Open-source/DSA mentor 🛠',
+      imgUrl: 'https://github.com/Panquesito7.png',
+      twitterUrl: 'https://twitter.com/David_Leal_7',
+      githubUrl: 'https://github.com/Panquesito7'
+    },
+    {
+      name: 'Ritvik Shukla',
+      bio: 'Co-Founder | Open Source Enthusiast | Poet | Community 💛',
+      imgUrl: 'https://github.com/shuklaritvik06.png',
+      twitterUrl: 'https://twitter.com/ShuklaRitvik06',
+      githubUrl: 'https://github.com/shuklaritvik06'
+    },
+    {
+      name: 'Shubham Kukreti',
+      bio: 'Co-Founder | Web3 & Open Source Enthusiast | Community ❤️',
+      imgUrl: 'https://github.com/KukretiShubham.png',
+      twitterUrl: 'https://twitter.com/ShubhamKukretii',
+      githubUrl: 'https://github.com/KukretiShubham'
+    },
+    {
+      name: 'Vincent Villafuerte',
+      bio: 'Founder | Octocat lover | OSS Advocate | DevRel | Community guy 🚩',
+      imgUrl: 'https://github.com/vinzvinci.png',
+      twitterUrl: 'https://twitter.com/vinzvinci',
+      githubUrl: 'https://github.com/vinzvinci'
+    },
+    {
+      name: 'Max Kubik',
+      bio: 'Web2 Fullstack Software Engineer 💠 I build webapps and mobile apps for the industry field 🔧 Transitioning to Web3 stacks 🌠 Maintainer for @Web3community 🍬 Open-source newbie!',
+      imgUrl: 'https://github.com/mkubdev.png',
+      twitterUrl: 'https://twitter.com/digikube1',
+      githubUrl: 'https://github.com/mkubdev'
+    },
+    {
+      name: 'Krish Gupta',
+      bio: "Started my tech journey on 30th September 2021. Since then, I am learning new things and growing my network. I love to chat, collaborate and contribute. I am an open sourcer, that's my complete bio.",
+      imgUrl: 'https://github.com/krshdev.png',
+      twitterUrl: 'https://twitter.com/krishguptadev',
+      githubUrl: 'https://github.com/krishguptadev'
+    }
+  ]
+  return {
+    props: {
+      moderatorsdata: data
+    }
+  }
 }

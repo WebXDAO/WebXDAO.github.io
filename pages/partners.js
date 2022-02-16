@@ -1,34 +1,7 @@
 import Head from 'next/head'
 import { prefix } from '../constants'
 
-export default function Partners() {
-  const data = [
-    {
-      name: 'dev protocol',
-      imgUrl: '/logo 3.4.png',
-      title: 'DEV PROTOCOL',
-      text: 'Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.'
-    },
-    {
-      name: 'logo1',
-      imgUrl: '/logo 3 1.png',
-      title: 'Logo 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-      name: 'logo2',
-      imgUrl: '/logo 3 2.png',
-      title: 'Logo 2',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-      name: 'logo3',
-      imgUrl: '/logo 3 3.png',
-      title: 'Logo 3',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    }
-  ]
-
+export default function Partners({ partnerData }) {
   return (
     <>
       <Head>
@@ -48,7 +21,7 @@ export default function Partners() {
           <div className='container mx-auto'>
             <div className='flex flex-wrap gap-6'>
               <div className='text-black grid grid-col-1 p-3 gap-y-3 md:grid md:grid-cols-2 md:gap-3 md:p-3'>
-                {data.map(({ name, title, imgUrl, text }, index) => (
+                {partnerData.map(({ name, title, imgUrl, text }, index) => (
                   <div
                     key={name + index}
                     className='cursor-pointer bg-white flex-1 rounded-md shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 hover:z-10 duration-300 ease-in-out p-4'
@@ -75,4 +48,38 @@ export default function Partners() {
       </div>
     </>
   )
+}
+
+export function getStaticProps() {
+  const data = [
+    {
+      name: 'dev protocol',
+      imgUrl: '/logo 3.4.png',
+      title: 'DEV PROTOCOL',
+      text: 'Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.'
+    },
+    {
+      name: 'logo1',
+      imgUrl: '/logo 3 1.png',
+      title: 'Logo 1',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      name: 'logo2',
+      imgUrl: '/logo 3 2.png',
+      title: 'Logo 2',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      name: 'logo3',
+      imgUrl: '/logo 3 3.png',
+      title: 'Logo 3',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    }
+  ]
+  return {
+    props: {
+      partnerData: data
+    }
+  }
 }
