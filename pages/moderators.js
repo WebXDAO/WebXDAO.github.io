@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { AiOutlineTwitter, AiOutlineGithub } from 'react-icons/ai'
 
 export default function Moderators() {

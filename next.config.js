@@ -1,6 +1,11 @@
 module.exports = {
-    reactStrictMode: true,
-    images: {
-        domains: ['res.cloudinary.com', 'github.com']
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' }
     }
+  },
+  reactStrictMode: true,
+  images: {
+    domains: ['res.cloudinary.com', 'github.com']
+  }
 }
