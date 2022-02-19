@@ -31,7 +31,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky w-full z-30 top-0 bg-black flex text-gray justify-between items-center">
+    <nav className="sticky w-full z-30 top-0 bg-white flex text-gray justify-between items-center">
       <div className="pl-4 my-2 flex items-center cursor-pointer">
         <Link
           className="no-underline hover:no-underline font-bold text-2xl lg:text-2xl"
@@ -62,14 +62,14 @@ const Navbar = () => {
         {!toggleMenu && (
           <HiMenuAlt4
             fontSize={28}
-            className="lg:hidden cursor-pointer text-indigo-700"
+            className="lg:hidden cursor-pointer text-fuchsia-700"
             onClick={() => setToggleMenu(true)}
           />
         )}
         {toggleMenu && (
           <AiOutlineClose
             fontSize={28}
-            className="lg:hidden cursor-pointer text-indigo-700"
+            className="lg:hidden cursor-pointer text-fuchsia-700"
             onClick={() => setToggleMenu(false)}
           />
         )}
@@ -78,7 +78,7 @@ const Navbar = () => {
             className="z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl lg:hidden list-none
 flex flex-col justify-start items-end rounded-md blue-glassmorphism"
           >
-            <li className="text-xl w-full my-2 text-indigo-700">
+            <li className="text-xl w-full my-2 text-fuchsia-700">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
             {navItems.map((item, index) => (
@@ -86,7 +86,7 @@ flex flex-col justify-start items-end rounded-md blue-glassmorphism"
                 key={item + index}
                 item={item}
                 pathname={router.asPath}
-                classprops={"my-2 text-lg !text-black font-bold"}
+                classprops={"my-2 text-lg text-gray-500 font-bold"}
               />
             ))}
             <div className="text-white flex flex-col">
