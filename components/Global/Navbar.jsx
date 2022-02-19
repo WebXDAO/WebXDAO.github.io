@@ -10,7 +10,7 @@ const NavBarItem = ({ item, pathname, classprops }) => (
     <li
       className={`${
         pathname === item.url && "font-bold"
-      } ${classprops} cursor-pointer text-lg inline-block text-gray-500 no-underline hover:text-indigo-700 p-2 xl:px-4 items-center`}
+      } ${classprops} cursor-pointer text-lg inline-block text-gray-500 no-underline hover:text-fuchsia-700 p-2 xl:px-4 items-center`}
     >
       {item.title}
     </li>
