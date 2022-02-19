@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -39,13 +38,7 @@ const Navbar = () => {
           passHref
         >
           <a>
-            <Image
-              layout="fixed"
-              width={65}
-              height={65}
-              src="/new logo.svg"
-              alt="WebXDAO"
-            />
+            <img src="/new logo.svg" alt="WebXDAO" />
           </a>
         </Link>
       </div>
