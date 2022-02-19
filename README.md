@@ -9,8 +9,6 @@ The content in this repository is temporary, we are making new web design for We
 
 ## Getting Started
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/web3community/web3community.github.io&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
-
 > Make sure to read our [contributing guidelines](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/CONTRIBUTING.md)
 
 ### 1\. Skip all of the steps below by using Gitpod, which would automatically do all of that for you
@@ -35,18 +33,8 @@ cd WebXDAO.github.io
 npm install
 ```
 
-### 5\. Build the project to generate the first CSS
-
-This step is only required the very first time.
+### 5\. Run Nextjs
 
 ```
-npm run build
+npm run dev
 ```
-
-### 6\. Run Nextjs
-
-```
-npm run start
-```
-
-### 7\. ✨ Enjoy

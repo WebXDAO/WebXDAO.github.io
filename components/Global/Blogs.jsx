@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
@@ -21,11 +20,8 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
               <div className='flex flex-col justify-between items-stretch col-span-3 md:col-span-1 cursor-pointer p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out'>
                 <div className='bg-white p-4 rounded-lg'>
                   <div className='relative bg-contain'>
-                    <Image
+                    <img
                       alt={article.title}
-                      layout='responsive'
-                      height={150}
-                      width={150}
                       className='lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded-md w-full object-cover object-center mb-6'
                       src={article.social_image}
                     />
@@ -36,13 +32,11 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
                   <p className='leading-relaxed text-sm text-gray-600'>{article.description}</p>
                 </div>
                 <time className='p-4 text-gray-500 text-xs flex items-end'>
-                  <Image
-                    layout='fixed'
-                    width={40}
-                    height={40}
+                  <img
+                    
                     src={article?.user?.profile_image}
                     alt={article.user.name}
-                    className='rounded-full'
+                    className='rounded-full w-16 h-16 mr-1'
                   />
                   <p className='ml-2 opacity-50'>
                     by {article.user.name} on
