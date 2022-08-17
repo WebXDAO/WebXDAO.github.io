@@ -73,7 +73,7 @@ export function getStaticProps() {
   const data = [
     {
       name: 'David Leal',
-      bio: 'Open-source maintainer/contributor 💻 Bot/website maintainer for @Heptagram 🤖 @Minetest mod/game maintainer & creator 🎮 Discord moderator in 20+ servers 🛡 Open-source/DSA mentor 🛠',
+      bio: 'Open-source advocate and maintainer 🥑 Managing 30+ communities 🚀 Game and app developer 🎮 Mentor & supporter 💖 Love contributing to communities!',
       imgUrl: 'https://github.com/Panquesito7.png',
       twitterUrl: 'https://twitter.com/David_Leal_7',
       githubUrl: 'https://github.com/Panquesito7'
@@ -109,9 +109,9 @@ export function getStaticProps() {
     {
       name: 'Krish Gupta',
       bio: "Started my tech journey on 30th September 2021. Since then, I am learning new things and growing my network. I love to chat, collaborate and contribute. I am an open sourcer, that's my complete bio.",
-      imgUrl: 'https://github.com/krshdev.png',
-      twitterUrl: 'https://twitter.com/krishguptadev',
-      githubUrl: 'https://github.com/krishguptadev'
+      imgUrl: 'https://github.com/krshkodes.png',
+      twitterUrl: 'https://twitter.com/krshkodes',
+      githubUrl: 'https://github.com/krshkodes'
     }
   ]
   return {
