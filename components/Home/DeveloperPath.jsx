@@ -81,7 +81,7 @@ const DeveloperPath = () => {
 
         <div className='flex justify-center items-center py-5'>
           <a
-            href='https://github.com/web3community/blockchain-dev-path'
+            href='https://github.com/WebXDAO/blockchain-dev-path'
             target='_blank'
             rel='noreferrer'
           >

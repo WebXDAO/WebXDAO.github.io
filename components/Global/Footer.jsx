@@ -3,7 +3,7 @@ const Footer = () => {
   const settings = {
     name: 'WebXDAO',
     author: 'WebXDAO',
-    url: 'https://web3community.github.io'
+    url: 'https://WebXDAO.github.io'
   }
   const socials = [
     {
@@ -14,20 +14,20 @@ const Footer = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/web3community/',
+      url: 'https://www.instagram.com/WebXDAO/',
       icon: FaInstagram,
       text: 'Check our content at Instagram'
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/web3community',
+      url: 'https://twitter.com/WebXDAO',
       icon: FaTwitter,
       text: 'Follow us via Twitter'
     },
 
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/company/web3community',
+      url: 'https://www.linkedin.com/company/WebXDAO',
       icon: FaLinkedin,
       text: 'Connect with us at LinkedIn'
     },

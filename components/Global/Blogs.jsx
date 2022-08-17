@@ -52,7 +52,7 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
       </div>
       {!contentOnly && (
         <div className='flex justify-center'>
-          <a href='https://dev.to/web3community' target='_blank' rel='noreferrer'>
+          <a href='https://dev.to/WebXDAO' target='_blank' rel='noreferrer'>
             <button className='bg-gray-700 text-white mx-auto lg:mx-0 rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out'>
               See All
             </button>
