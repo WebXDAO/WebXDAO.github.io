@@ -13,7 +13,7 @@ The content in this repository is temporary, we are making new web design for We
 
 ### 1\. Skip all of the steps below by using Gitpod, which would automatically do all of that for you
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/web3community.github.io)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/WebXDAO/WebXDAO.github.io)
 
 ### 2\. Clone this Repository
 

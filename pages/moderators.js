@@ -101,7 +101,7 @@ export function getStaticProps() {
     },
     {
       name: 'Max Kubik',
-      bio: 'Web2 Fullstack Software Engineer 💠 I build webapps and mobile apps for the industry field 🔧 Transitioning to Web3 stacks 🌠 Maintainer for @Web3community 🍬 Open-source newbie!',
+      bio: 'Web2 Fullstack Software Engineer 💠 I build webapps and mobile apps for the industry field 🔧 Transitioning to Web3 stacks 🌠 Maintainer for @WebXDAO 🍬 Open-source newbie!',
       imgUrl: 'https://github.com/mkubdev.png',
       twitterUrl: 'https://twitter.com/digikube1',
       githubUrl: 'https://github.com/mkubdev'
