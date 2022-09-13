@@ -39,7 +39,7 @@ const Navbar = () => {
             href='/'
             passHref
           >
-            <img src={prefix+'/logo.png'} alt='WebXDAO' className='w-24 h-14 md:w-36 md:h-20'/>
+            <img src={prefix+'/logo.png'} alt='WebXDAO' className='w-24 h-14 md:w-20 md:h-20'/>
           </Link>
         </div>
         <ul className='lg:flex hidden list-none flex-row justify-end items-center ml-auto'>
