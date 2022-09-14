@@ -9,13 +9,13 @@
   html {
     @apply font-sans;
   }
-  h1 {
+  /* h1 {
     @apply text-4xl tracking-tighter mb-3;
   }
 
   h3 {
     @apply text-2xl font-bold mb-3;
-  }
+  } */
 }
 .gradient {
   background: linear-gradient(90deg, #00007f 0%, #0086d6 100%);

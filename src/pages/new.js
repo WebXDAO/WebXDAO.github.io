@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import Hero from '../components/Home/Hero';
+import Content from '../components/Content';
+import Hero from '../components/Home/HeroSection/Hero';
+import Hero2 from '../components/Home/HeroSection/Hero2';
 
 export default function Home({ articles }) {
   return (
@@ -7,7 +9,11 @@ export default function Home({ articles }) {
       <Head>
         <title>WebXDAO - Opensource Community</title>
       </Head>
-      <Hero />
+      <div className="flex flex-col h-full">
+        {/* <Hero /> */}
+        <Hero2 />
+        {/* <Content></Content> */}
+      </div>
     </>
   );
 }

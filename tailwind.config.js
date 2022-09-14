@@ -16,6 +16,9 @@ module.exports = {
       },
       colors: {
         'cyber-webx': '#5f074d',
+        'hover-webx': '#5f074d',
+        gradient1: '#14111D',
+        gradient2: '#30122A',
       },
     },
   },
