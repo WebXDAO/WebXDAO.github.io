@@ -1,13 +1,13 @@
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { SiGithubsponsors } from 'react-icons/si';
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { SiGithubsponsors } from "react-icons/si";
 
 const navigation = [
-  { name: 'Blog', href: '/blog' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Community Partners', href: '/partners' },
-  { name: 'WebX Team', href: '/team' },
+  { name: "Blog", href: "/blog" },
+  { name: "Projects", href: "/projects" },
+  { name: "Community Partners", href: "/partners" },
+  { name: "WebX Team", href: "/team" },
 ];
 
 const Navbar = () => {
@@ -106,22 +106,7 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-              {/* <div className="mt-6 px-5">
-                <a
-                  href="#"
-                  className="block w-full rounded-md bg-indigo-600 py-3 px-4 text-center font-medium text-white shadow hover:bg-indigo-700"
-                >
-                  Start free trial
-                </a>
-              </div> */}
-              {/* <div className="mt-6 px-5">
-                <p className="text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-gray-900 hover:underline">
-                    Login
-                  </a>
-                </p>
-              </div> */}
+              {/* Add button here */}
             </div>
           </div>
         </Popover.Panel>

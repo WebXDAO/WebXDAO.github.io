@@ -1,10 +1,6 @@
-import Link from "next/link";
 import { SiGithubsponsors } from "react-icons/si";
+import Link from "next/link";
 
-/**
- * info:
- * - navigation: string
- */
 const navigation = [
   {
     name: "ABOUT US",
