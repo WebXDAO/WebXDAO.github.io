@@ -10,13 +10,14 @@
     @apply font-sans;
   }
   /* h1 {
-    @apply text-4xl tracking-tighter mb-3;
+    @apply mb-3 text-4xl tracking-tighter;
   }
 
   h3 {
-    @apply text-2xl font-bold mb-3;
+    @apply mb-3 text-2xl font-bold;
   } */
 }
+
 .gradient {
   background: linear-gradient(90deg, #00007f 0%, #0086d6 100%);
 }
@@ -42,14 +43,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
+  background: #13111c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #33323e;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }

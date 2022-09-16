@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import { SiGithubsponsors } from 'react-icons/si';
+
 const navigation = [
   { name: 'Blog', href: '/blog' },
   { name: 'Projects', href: '/projects' },
@@ -12,18 +12,6 @@ const navigation = [
 
 const Navbar = () => {
   return (
-    // <header className="bg-cover bg-white bg-opacity-10 min-h-16 h-16 text-white">
-    //   <div className="justify-center items-center flex h-full">
-    //     WebXDAO Navbar
-    //   </div>
-    //   {/* <div className=" flex h-full">
-    //     <div className="flex justify-between items-center">
-    //       <div className="bg-red-500">1</div>
-    //       <div className="bg-lime-500">2</div>
-    //       <div className="bg-sky-500">3</div>
-    //     </div>
-    //   </div> */}
-    // </header>
     <Popover as="header" className="relative">
       <div className="bg-transparent pt-6">
         {/* NAVIGATION BAR */}
@@ -37,7 +25,7 @@ const Navbar = () => {
                 <span className="sr-only">WebX DAO</span>
                 <img
                   className="h-8 w-auto sm:h-10"
-                  src="/images/logo/webxdao_logo.png"
+                  src="/images/logo/white_logo.png"
                   alt=""
                 />
               </a>
@@ -90,17 +78,17 @@ const Navbar = () => {
           focus
           className="absolute inset-x-0 top-0 z-10 origin-top transform p-2 transition md:hidden"
         >
-          <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+          <div className="overflow-hidden rounded-lg backdrop-blur-sm bg-gradient1/50 shadow-xl ring-1 ring-white ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
+                  src="/images/logo/white_logo.png"
+                  alt="WebX DAO"
                 />
               </div>
               <div className="-mr-2">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white/20 p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyber-webx">
                   <span className="sr-only">Close menu</span>
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -112,28 +100,28 @@ const Navbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50"
+                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
                 ))}
               </div>
-              <div className="mt-6 px-5">
+              {/* <div className="mt-6 px-5">
                 <a
                   href="#"
                   className="block w-full rounded-md bg-indigo-600 py-3 px-4 text-center font-medium text-white shadow hover:bg-indigo-700"
                 >
                   Start free trial
                 </a>
-              </div>
-              <div className="mt-6 px-5">
+              </div> */}
+              {/* <div className="mt-6 px-5">
                 <p className="text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-gray-900 hover:underline">
                     Login
                   </a>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </Popover.Panel>

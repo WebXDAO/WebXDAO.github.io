@@ -1,25 +1,15 @@
 import Head from 'next/head';
-// import { Blogs } from '../components/Global/Blogs';
+import Hero from '../components/Home/HeroSection/Hero';
 
 export default function Home({ articles }) {
   return (
-    <div className="">
+    <>
       <Head>
-        <title>WebXDAO</title>
+        <title>WebXDAO - Opensource Community</title>
       </Head>
-    </div>
+      <div className="flex flex-col h-screen">
+        <Hero />
+      </div>
+    </>
   );
-}
-
-export async function getStaticProps() {
-  const res = await fetch('https://dev.to/api/articles?username=webxdao', {
-    method: 'GET',
-  });
-  const articles = await res.json();
-  return {
-    props: {
-      articles,
-    },
-    revalidate: 10,
-  };
 }
