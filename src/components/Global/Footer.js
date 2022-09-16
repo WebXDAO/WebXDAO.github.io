@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { SiGithubsponsors } from 'react-icons/si';
+import Link from "next/link";
+import { SiGithubsponsors } from "react-icons/si";
 
 /**
  * info:
@@ -7,35 +7,35 @@ import { SiGithubsponsors } from 'react-icons/si';
  */
 const navigation = [
   {
-    name: 'ABOUT US',
-    href: '/about',
+    name: "ABOUT US",
+    href: "/about",
     children: [
-      { name: 'Who we are?', href: '/about#who' },
-      { name: 'What we do?', href: '/about#what' },
-      { name: 'Team WebX', href: '/team' },
+      { name: "Who we are?", href: "/about#who" },
+      { name: "What we do?", href: "/about#what" },
+      { name: "Team WebX", href: "/team" },
     ],
   },
   {
-    name: 'SOCIALS',
-    href: '/',
+    name: "SOCIALS",
+    href: "/",
     children: [
-      { name: 'GitHub', href: '' },
-      { name: 'Twitter', href: '' },
-      { name: 'Discord', href: '' },
-      { name: 'LinkedIn', href: '' },
+      { name: "GitHub", href: "" },
+      { name: "Twitter", href: "" },
+      { name: "Discord", href: "" },
+      { name: "LinkedIn", href: "" },
     ],
   },
   {
-    name: 'CONTACT',
-    href: '/contact',
-    children: [{ name: 'Contact us', href: '' }],
+    name: "CONTACT",
+    href: "/contact",
+    children: [{ name: "Contact us", href: "" }],
   },
   {
-    name: 'PARTNERS',
-    href: '/partners',
+    name: "PARTNERS",
+    href: "/partners",
     children: [
-      { name: 'Our partners', href: '' },
-      { name: 'Get partner', href: '' },
+      { name: "Our partners", href: "" },
+      { name: "Get partner", href: "" },
     ],
   },
 ];
@@ -57,7 +57,7 @@ const Footer = () => {
               </a>
             </div>
             {/* 
-            <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500 sm:max-w-xs sm:mx-0 sm:text-left">
+            <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-white/80 sm:max-w-xs sm:mx-0 sm:text-left">
               Add organization description here!
             </p> */}
           </div>
@@ -65,7 +65,10 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
             {navigation.map((item) => (
               <>
-                <div key={item.name} className="text-center sm:text-left">
+                <div
+                  key={item.name + "_footer"}
+                  className="text-center sm:text-left"
+                >
                   <p className="text-sm font-medium text-white/90">
                     {item.name}
                   </p>
