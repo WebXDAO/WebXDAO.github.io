@@ -3,11 +3,11 @@ module.exports = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   exportPathMap: function () {
     return {
-      '/': { page: '/' }
-    }
+      "/": { page: "/" },
+    };
   },
   reactStrictMode: true,
   images: {
-    domains: ['res.cloudinary.com', 'github.com']
-  }
-}
+    domains: ["res.cloudinary.com", "github.com"],
+  },
+};
