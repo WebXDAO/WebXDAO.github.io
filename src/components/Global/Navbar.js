@@ -1,7 +1,9 @@
 import { Fragment } from "react";
+import Link from 'next/link';
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { SiGithubsponsors } from "react-icons/si";
+
 
 const navigation = [
   { name: "Blog", href: "/blog" },
@@ -21,14 +23,16 @@ const Navbar = () => {
         >
           <div className="flex flex-1 items-center">
             <div className="flex w-full items-center justify-between md:w-auto">
-              <a href="#">
-                <span className="sr-only">WebX DAO</span>
-                <img
-                  className="h-8 w-auto sm:h-10"
-                  src="/images/logo/white_logo.png"
-                  alt=""
-                />
-              </a>
+              <Link href={'/'}>
+                <>
+                  <span className="sr-only">WebX DAO</span>
+                  <img
+                    className="h-8 w-auto sm:h-10"
+                    src="/images/logo/white_logo.png"
+                    alt="WebX DAO White Logo"
+                  />
+                </>
+              </Link>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
                   <span className="sr-only">Open main menu</span>
