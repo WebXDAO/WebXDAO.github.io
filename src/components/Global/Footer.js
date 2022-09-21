@@ -46,7 +46,8 @@ const Footer = () => {
               <a href='#' className=''>
                 <p className='sr-only '>WebX DAO</p>
                 <img
-                  className='h-72  w-20 sm:h-10'
+                  style={{ width: "80px", height: "70px" }}
+                  className=' sm:h-10'
                   src='/images/logo/white_logo.png'
                   alt=''
                 />

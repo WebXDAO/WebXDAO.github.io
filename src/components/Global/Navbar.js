@@ -26,7 +26,8 @@ const Navbar = () => {
                 <>
                   <span className='sr-only'>WebX DAO</span>
                   <img
-                    className='h-72  w-16 sm:h-10'
+                    style={{ width: "60px", height: "60px" }}
+                    className=' sm:h-10'
                     src='/images/logo/white_logo.png'
                     alt='WebX DAO White Logo'
                   />
