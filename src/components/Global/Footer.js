@@ -1,37 +1,37 @@
-import { SiGithubsponsors } from "react-icons/si";
-import Link from "next/link";
+import { SiGithubsponsors } from 'react-icons/si';
+import Link from 'next/link';
 
 const navigation = [
   {
-    name: "ABOUT US",
-    href: "/about",
+    name: 'ABOUT US',
+    href: '/about',
     children: [
-      { name: "Who we are?", href: "/about#who" },
-      { name: "What we do?", href: "/about#what" },
-      { name: "Team WebX", href: "/team" },
+      { name: 'Who we are?', href: '/about#who' },
+      { name: 'What we do?', href: '/about#what' },
+      { name: 'Team WebX', href: '/team' },
     ],
   },
   {
-    name: "SOCIALS",
-    href: "/",
+    name: 'SOCIALS',
+    href: '/',
     children: [
-      { name: "GitHub", href: "" },
-      { name: "Twitter", href: "" },
-      { name: "Discord", href: "" },
-      { name: "LinkedIn", href: "" },
+      { name: 'GitHub', href: '' },
+      { name: 'Twitter', href: '' },
+      { name: 'Discord', href: '' },
+      { name: 'LinkedIn', href: '' },
     ],
   },
   {
-    name: "CONTACT",
-    href: "/contact",
-    children: [{ name: "Contact us", href: "" }],
+    name: 'CONTACT',
+    href: '/contact',
+    children: [{ name: 'Contact us', href: '' }],
   },
   {
-    name: "PARTNERS",
-    href: "/partners",
+    name: 'PARTNERS',
+    href: '/partners',
     children: [
-      { name: "Our partners", href: "" },
-      { name: "Get partner", href: "" },
+      { name: 'Our partners', href: '' },
+      { name: 'Get partner', href: '' },
     ],
   },
 ];
@@ -46,7 +46,7 @@ const Footer = () => {
               <a href='#' className=''>
                 <span className='sr-only '>WebX DAO</span>
                 <img
-                  style={{ width: "80px", height: "70px" }}
+                  style={{ width: '80px', height: '70px' }}
                   className=' sm:h-10'
                   src='/images/logo/white_logo.png'
                   alt=''
@@ -63,7 +63,7 @@ const Footer = () => {
             {navigation.map((item) => (
               <>
                 <div
-                  key={item.name + "_footer"}
+                  key={item.name + '_footer'}
                   className='text-center sm:text-left'
                 >
                   <p className='text-sm font-medium text-white/90'>
