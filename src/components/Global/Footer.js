@@ -44,7 +44,7 @@ const Footer = () => {
           <div>
             <div className='flex justify-center text-teal-600 sm:justify-start'>
               <a href='#' className=''>
-                <p className='sr-only '>WebX DAO</p>
+                <span className='sr-only '>WebX DAO</span>
                 <img
                   style={{ width: "80px", height: "70px" }}
                   className=' sm:h-10'
