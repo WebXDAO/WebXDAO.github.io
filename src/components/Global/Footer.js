@@ -38,17 +38,17 @@ const navigation = [
 
 const Footer = () => {
   return (
-    <footer className="bg-transparent">
-      <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <footer className='bg-transparent'>
+      <div className='max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24'>
+        <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
           <div>
-            <div className="flex justify-center text-teal-600 sm:justify-start">
-              <a href="#">
-                <span className="sr-only">WebX DAO</span>
+            <div className='flex justify-center text-teal-600 sm:justify-start'>
+              <a href='#' className=''>
+                <p className='sr-only '>WebX DAO</p>
                 <img
-                  className="w-auto h-8 sm:h-10"
-                  src="/images/logo/white_logo.png"
-                  alt=""
+                  className='h-72  w-20 sm:h-10'
+                  src='/images/logo/white_logo.png'
+                  alt=''
                 />
               </a>
             </div>
@@ -58,26 +58,26 @@ const Footer = () => {
             </p> */}
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
+          <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4'>
             {navigation.map((item) => (
               <>
                 <div
                   key={item.name + "_footer"}
-                  className="text-center sm:text-left"
+                  className='text-center sm:text-left'
                 >
-                  <p className="text-sm font-medium text-white/90">
+                  <p className='text-sm font-medium text-white/90'>
                     {item.name}
                   </p>
 
-                  <nav className="mt-8">
-                    <ul className="space-y-4 text-sm">
+                  <nav className='mt-8'>
+                    <ul className='space-y-4 text-sm'>
                       {item.children.map((child) => (
                         <li key={child.name}>
                           <Link
-                            className="transition text-white/60 hover:text-white/60/75"
-                            href="/"
+                            className='transition text-white/60 hover:text-white/60/75'
+                            href='/'
                           >
-                            <span className="text-white/60">{child.name}</span>
+                            <span className='text-white/60'>{child.name}</span>
                           </Link>
                         </li>
                       ))}
@@ -89,18 +89,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-6 mt-12">
-          <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-gray-500">
-              <span className="block sm:inline">All rights reserved.</span>
+        <div className='pt-6 mt-12'>
+          <div className='text-center sm:flex sm:justify-between sm:text-left'>
+            <p className='text-sm text-gray-500'>
+              <span className='block sm:inline'>All rights reserved.</span>
             </p>
 
-            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              <span className="flex items-center justify-center">
+            <p className='mt-4 text-sm text-gray-500 sm:order-first sm:mt-0'>
+              <span className='flex items-center justify-center'>
                 &copy; {new Date().getFullYear()} Made with
                 <SiGithubsponsors
-                  className="w-3 h-3 m-2 text-pink-600"
-                  aria-hidden="true"
+                  className='w-3 h-3 m-2 text-pink-600'
+                  aria-hidden='true'
                 />
                 by WebX DAO
               </span>
