@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="flex flex-1 items-center">
             <div className="flex w-full items-center justify-between md:w-auto">
               <Link href={'/'}>
-                <a href="/">
+                <a>
                   <span className="sr-only ">WebX DAO</span>
                   <img
                     className="h-8 w-auto sm:h-10 cursor-pointer"
