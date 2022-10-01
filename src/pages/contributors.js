@@ -27,9 +27,9 @@ const contributors = ({ data }) => {
                             return (
                                 <div className={styles.card} key={curElem.login}>
                                     <div className={styles.content}>
-                                        <div className={styles.imgBx}><a href={curElem.html_url} target="_blank"><img src={curElem.avatar_url} className={styles.img} /></a></div>
+                                        <div className={styles.imgBx}><a href={curElem.html_url} target="_blank" rel="noopener noreferrer"><img src={curElem.avatar_url} alt="Avatar" className={styles.img} /></a></div>
                                         <div className={styles.contentBx}>
-                                            <a href={curElem.html_url} target="_blank"><h3 className={styles.h3}>{curElem.login}</h3></a>
+                                            <a href={curElem.html_url} target="_blank" rel="noopener noreferrer"><h3 className={styles.h3}>{curElem.login}</h3></a>
                                             <h5 className={styles.h5}>
                                                 {curElem.contributions}
                                                 <svg className={styles.svg} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hands-helping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
