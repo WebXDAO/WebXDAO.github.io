@@ -45,7 +45,11 @@ const Footer = () => {
             <div className="flex justify-center text-teal-600 sm:justify-start">
               <a href="#">
                 <span className="sr-only">WebX DAO</span>
-                <img className="w-auto h-8 sm:h-10" src="/images/logo/white_logo.png" alt="" />
+                <img
+                  className="w-auto h-8 sm:h-10"
+                  src="/images/logo/white_logo.png"
+                  alt=""
+                />
               </a>
             </div>
             {/* 
@@ -55,16 +59,24 @@ const Footer = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
-            {navigation.map(item => (
+            {navigation.map((item) => (
               <>
-                <div key={item.name + '_footer'} className="text-center sm:text-left">
-                  <p className="text-sm font-medium text-white/90">{item.name}</p>
+                <div
+                  key={item.name + "_footer"}
+                  className="text-center sm:text-left"
+                >
+                  <p className="text-sm font-medium text-white/90">
+                    {item.name}
+                  </p>
 
-                  <nav className="mt-8" aria-label={item.name}>
+                  <nav className="mt-8">
                     <ul className="space-y-4 text-sm">
-                      {item.children.map(child => (
+                      {item.children.map((child) => (
                         <li key={child.name}>
-                          <Link className="transition text-white/60 hover:text-white/60/75" href="/">
+                          <Link
+                            className="transition text-white/60 hover:text-white/60/75"
+                            href="/"
+                          >
                             <span className="text-white/60">{child.name}</span>
                           </Link>
                         </li>
@@ -86,7 +98,10 @@ const Footer = () => {
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
               <span className="flex items-center justify-center">
                 &copy; {new Date().getFullYear()} Made with
-                <SiGithubsponsors className="w-3 h-3 m-2 text-pink-600" aria-hidden="true" />
+                <SiGithubsponsors
+                  className="w-3 h-3 m-2 text-pink-600"
+                  aria-hidden="true"
+                />
                 by WebX DAO
               </span>
             </p>
@@ -94,7 +109,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
+  );
 };
 
 export default Footer;
