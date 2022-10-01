@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { AiOutlineTwitter, AiOutlineGithub } from "react-icons/ai";
 import { NextSeo } from "next-seo";
+
 export default function Moderators({ moderatorsdata }) {
   const SEO = {
     title: "WebXDAO | Moderators",

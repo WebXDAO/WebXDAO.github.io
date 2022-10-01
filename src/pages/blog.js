@@ -1,22 +1,22 @@
-import Head from "next/head";
+import Head from 'next/head';
 // import { Blogs } from '../components/Global'
-import { NextSeo } from "next-seo";
+import { NextSeo } from 'next-seo';
+
 export default function Blog({ articles }) {
   const SEO = {
-    title: "WebXDAO | Blog",
+    title: 'WebXDAO | Blog',
     description:
-      "Blog page of WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.",
+      'Blog page of WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.',
     openGraph: {
-      type: "website",
-      locale: "en_US",
-      url: "https://webxdao.github.io/blog",
-      site_name: "WebXDAO Blog",
-      title: "WebXDAO | Blog",
+      type: 'website',
+      locale: 'en_US',
+      url: 'https://webxdao.github.io/blog',
+      site_name: 'WebXDAO Blog',
+      title: 'WebXDAO | Blog',
       description:
-        "Blog page of WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.",
+        'Blog page of WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.',
     },
   };
-
   return (
     <>
       <NextSeo {...SEO} />
@@ -34,8 +34,8 @@ export default function Blog({ articles }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("https://dev.to/api/articles?username=webxdao", {
-    method: "GET",
+  const res = await fetch('https://dev.to/api/articles?username=webxdao', {
+    method: 'GET',
   });
   const articles = await res.json();
   return {

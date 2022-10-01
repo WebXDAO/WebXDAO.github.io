@@ -7,7 +7,7 @@ export default function Home({ articles }) {
       <Head>
         <title>WebXDAO - Opensource Community</title>
       </Head>
-      <div className="flex flex-col h-screen">
+      <div className='flex flex-col h-screen'>
         <Hero />
       </div>
     </>
