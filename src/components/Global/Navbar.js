@@ -31,7 +31,7 @@ const Navbar = () => {
                     src="/images/logo/white_logo.png"
                     alt="WebX DAO White Logo"
                   />
-                </a>
+                </Link>
               </Link>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
