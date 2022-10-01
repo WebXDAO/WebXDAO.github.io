@@ -18,6 +18,10 @@ const contributors = ({ data }) => {
                 <title>Contributors | WebXDAO</title>
             </Head>
             <section>
+                <div className='absolute top-40 -left-16 w-96 h-96 bg-gradient-to-t from-[#1BFFFF] to-[#2E3192] rounded-full'></div>
+                <div className='absolute top-96 -right-80 w-[50rem] h-[50rem] bg-gradient-to-t from-[#FBB03B] to-[#D4145A] rounded-full'></div>
+                <div className='absolute top-[70rem] -left-72 w-[40rem] h-[40rem] bg-gradient-to-t from-[#ED1E79] to-[#662D8C] rounded-full'></div>
+                <div className='absolute top-[100rem] -right-16 w-96 h-96 bg-gradient-to-t from-[#FCEE21] to-[#009245] rounded-full'></div>
                 <div className='relative z-1 my-[40px] mx-0 flex justify-center items-center flex-wrap'>
 
                     {data.map((curElem) => {
