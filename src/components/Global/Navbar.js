@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import Link from 'next/link';
+import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { SiGithubsponsors } from "react-icons/si";
@@ -23,11 +23,11 @@ const Navbar = () => {
         >
           <div className="flex flex-1 items-center">
             <div className="flex w-full items-center justify-between md:w-auto">
-              <Link href={'/'}>
+              <Link href="/">
                 <>
-                  <span className="sr-only">WebX DAO</span>
+                  <span className="sr-only ">WebX DAO</span>
                   <img
-                    className="h-8 w-auto sm:h-10"
+                    className="h-8 w-auto sm:h-10 cursor-pointer"
                     src="/images/logo/white_logo.png"
                     alt="WebX DAO White Logo"
                   />
