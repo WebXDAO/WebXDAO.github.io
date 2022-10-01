@@ -1,8 +1,12 @@
-import Head from 'next/head';
-import { prefix } from '../constants';
-import { NextSeo } from 'next-seo';
+import React from 'react'
+import { NextSeo } from 'next-seo'
+import Image from 'next/image'
 
-export default function Projects({ projectsData }) {
+import FigmaImage from '../assets/images/projects/figma.png'
+import InVisionImage from '../assets/images/projects/inVision.png'
+import XDImage from '../assets/images/projects/xd.png'
+
+export default function Projects () {
   const SEO = {
     title: 'WebXDAO | Projects',
     description:
@@ -14,9 +18,39 @@ export default function Projects({ projectsData }) {
       site_name: 'WebXDAO Projects',
       title: 'WebXDAO | Projects',
       description:
-        'Projects: WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.',
+        'Projects: WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.'
+    }
+  }
+
+  const projectsData = [
+    {
+      name: 'InVision',
+      img: InVisionImage,
+      type: 'PREMIUM',
+      title: 'Start Here',
+      text: 'InVision is the digital product design platform used to make the worlds best customer experiences.',
+      tags: ['Documentation']
     },
-  };
+    {
+      name: 'Adobe XD',
+      img: XDImage,
+      type: 'FREE',
+      title: 'Blockchain Dev Path',
+      text: 'Adobe XD is your UI/UX design solution platform for website and mobile appcreation.',
+      tags: ['Documentation']
+    },
+    {
+      name: 'Figma',
+      img: FigmaImage,
+      type: 'FREE',
+      title: 'Website',
+      text: 'Figma helps the teams to create, test, and ship better designs from start to finish.',
+      tags: ['Tailwind Css', 'Eleventy', 'Alpine.js']
+    }
+  ]
+
+  const colors = { FREE: 'text-green-500', PREMIUM: 'text-yellow-500' }
+
   return (
     <>
       <NextSeo {...SEO} />
@@ -34,16 +68,19 @@ export default function Projects({ projectsData }) {
 
       <div className='container max-w-screen-xl mx-auto my-8 grid pb-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8 gap-6 px-8'>
         {projectsData.map(
-          ({ name, imgUrl, type, title, text, tags }, index) => (
+          ({ name, img, type, title, text, tags }, index) => (
             <div
               key={name + index}
               className='flex flex-col justify-between items-stretch col-span-3 md:col-span-1 cursor-pointer p-2 shadow rounded-md focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out'
             >
               <div className='bg-white p-4 rounded-lg flex flex-col justify-between'>
                 <div className='relative mb-6'>
-                  <img
+                  <Image
+                    layout='responsive'
+                    width='400px'
+                    height='400px'
                     className='lg:h-60 xl:h-56 md:h-64 h-72 w-full object-cover object-center rounded-md'
-                    src={prefix + imgUrl}
+                    src={img}
                     alt={name}
                   />
                 </div>
@@ -52,9 +89,7 @@ export default function Projects({ projectsData }) {
                     {title}
                   </h2>
                   <h3
-                    className={`tracking-widest ${
-                      type === 'FREE' ? 'text-green-500' : 'text-yellow-500'
-                    } text-sm font-semibold title-font`}
+                    className={'tracking-widest text-sm font-semibold title-font ' + colors[type]}
                   >
                     {type}
                   </h3>
@@ -80,39 +115,5 @@ export default function Projects({ projectsData }) {
         )}
       </div>
     </>
-  );
-}
-
-export function getStaticProps() {
-  const data = [
-    {
-      name: 'InVision',
-      imgUrl: '/blogs_inVision.png',
-      type: 'PREMIUM',
-      title: 'Start Here',
-      text: 'InVision is the digital product design platform used to make the worlds best customer experiences.',
-      tags: ['Documentation'],
-    },
-    {
-      name: 'Adobe XD',
-      imgUrl: '/blogs_xd.png',
-      type: 'FREE',
-      title: 'Blockchain Dev Path',
-      text: 'Adobe XD is your UI/UX design solution platform for website and mobile appcreation.',
-      tags: ['Documentation'],
-    },
-    {
-      name: 'Figma',
-      imgUrl: '/blogs_figma.png',
-      type: 'FREE',
-      title: 'Website',
-      text: 'Figma helps the teams to create, test, and ship better designs from start to finish.',
-      tags: ['Tailwind Css', 'Eleventy', 'Alpine.js'],
-    },
-  ];
-  return {
-    props: {
-      projectsData: data,
-    },
-  };
+  )
 }

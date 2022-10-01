@@ -1,7 +1,8 @@
-import Head from 'next/head';
-import Hero from '../components/Home/HeroSection/Hero';
+import React from 'react'
+import Head from 'next/head'
+import Hero from '../components/Home/HeroSection/Hero'
 
-export default function Home({ articles }) {
+export default function Home ({ articles }) {
   return (
     <>
       <Head>
@@ -11,5 +12,5 @@ export default function Home({ articles }) {
         <Hero />
       </div>
     </>
-  );
+  )
 }

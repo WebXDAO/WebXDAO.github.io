@@ -1,5 +1,6 @@
-import { VscGithub } from "react-icons/vsc";
-import Link from "next/link";
+import React from 'react'
+import { VscGithub } from 'react-icons/vsc'
+import Link from 'next/link'
 
 const CallToActionHero = () => {
   return (
@@ -23,7 +24,7 @@ const CallToActionHero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CallToActionHero;
+export default CallToActionHero

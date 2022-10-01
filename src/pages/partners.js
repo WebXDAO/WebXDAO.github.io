@@ -1,8 +1,11 @@
-import Head from 'next/head';
-import { prefix } from '../constants';
-import { NextSeo } from 'next-seo';
+import React from 'react'
+import { NextSeo } from 'next-seo'
+import Image from 'next/image'
 
-export default function Partners({ partnerData }) {
+import DevProtocolImage from '../assets/images/partners/devprotocol.png'
+import PlaceholderImage from '../assets/images/other/placeholder.png'
+
+export default function Partners () {
   const SEO = {
     title: 'WebXDAO | Partners',
     description:
@@ -14,9 +17,25 @@ export default function Partners({ partnerData }) {
       site_name: 'WebXDAO Partners',
       title: 'WebXDAO | Partners',
       description:
-        'Partners of WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.',
+        'Partners of WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.'
+    }
+  }
+
+  const partnerData = [
+    {
+      name: 'dev protocol',
+      img: DevProtocolImage,
+      title: 'DEV PROTOCOL',
+      text: 'Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.'
     },
-  };
+    {
+      name: 'logo1',
+      img: PlaceholderImage,
+      title: 'Logo 1',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    }
+  ]
+
   return (
     <>
       <NextSeo {...SEO} />
@@ -34,17 +53,17 @@ export default function Partners({ partnerData }) {
           <div className='container mx-auto'>
             <div className='flex flex-wrap gap-6'>
               <div className='text-black grid grid-col-1 p-3 gap-y-3 md:grid md:grid-cols-2 md:gap-3 md:p-3'>
-                {partnerData.map(({ name, title, imgUrl, text }, index) => (
+                {partnerData.map(({ name, title, img, text }, index) => (
                   <div
                     key={name + index}
                     className='cursor-pointer bg-white flex-1 rounded-md shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 hover:z-10 duration-300 ease-in-out p-4'
                   >
                     <div className='grid grid-cols-3 items-center justify-start overflow-hidden'>
                       <div className='relative col-span-1'>
-                        <img
+                        <Image
                           alt={name}
-                          className='bg-gray-50 p-5 rounded-md'
-                          src={prefix + imgUrl}
+                          className="bg-gray-50 p-5 rounded-md"
+                          src={img}
                         />
                       </div>
                       <div className='flex flex-col col-span-2 gap-y-3 pl-5'>
@@ -60,39 +79,5 @@ export default function Partners({ partnerData }) {
         </div>
       </div>
     </>
-  );
-}
-
-export function getStaticProps() {
-  const data = [
-    {
-      name: 'dev protocol',
-      imgUrl: '/logo 3.4.png',
-      title: 'DEV PROTOCOL',
-      text: 'Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.',
-    },
-    {
-      name: 'logo1',
-      imgUrl: '/logo 3 1.png',
-      title: 'Logo 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      name: 'logo2',
-      imgUrl: '/logo 3 2.png',
-      title: 'Logo 2',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      name: 'logo3',
-      imgUrl: '/logo 3 3.png',
-      title: 'Logo 3',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-  ];
-  return {
-    props: {
-      partnerData: data,
-    },
-  };
+  )
 }

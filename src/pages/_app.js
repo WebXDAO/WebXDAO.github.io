@@ -1,9 +1,10 @@
-import WebXLayout from '../layouts/WebXLayout';
-import '../styles/globals.css';
-import SEO from '../../next-seo.config';
-import { DefaultSeo } from 'next-seo';
+import React from 'react'
+import WebXLayout from '../layouts/WebXLayout'
+import '../styles/globals.css'
+import SEO from '../../next-seo.config'
+import { DefaultSeo } from 'next-seo'
 
-function MyApp({ Component, pageProps }) {
+function MyApp ({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
@@ -11,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </WebXLayout>
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

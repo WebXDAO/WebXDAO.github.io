@@ -1,4 +1,4 @@
-export default {
+export const config = {
   title: 'WebXDAO - Opensource Community',
   description:
     'WebXDAO is an open-source community working around the future of the web. Learn blockchain technology together.',
@@ -9,6 +9,6 @@ export default {
     site_name: 'WebXDAO',
     title: 'WebXDAO - Opensource Community',
     description:
-      'WebXDAO is an open-source community working around the future of the web. Learn blockchain technology together.',
-  },
-};
+      'WebXDAO is an open-source community working around the future of the web. Learn blockchain technology together.'
+  }
+}

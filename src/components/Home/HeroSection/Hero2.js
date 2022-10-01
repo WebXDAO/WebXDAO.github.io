@@ -1,7 +1,8 @@
-import CallToActionHero from './CallToActionHero';
-import DiscordButton from './DiscordButton';
-import ContributeButton from './ContributeButton';
-import Image from 'next/image';
+import React from 'react'
+import CallToActionHero from './CallToActionHero'
+import DiscordButton from './DiscordButton'
+import ContributeButton from './ContributeButton'
+import Image from 'next/image'
 
 /**
  * hint: use h-screen to make a fullscreen hero banner
@@ -42,7 +43,7 @@ const Hero2 = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero2

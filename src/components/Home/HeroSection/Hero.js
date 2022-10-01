@@ -1,9 +1,13 @@
-import CallToActionHero from './CallToActionHero';
-import DiscordButton from './DiscordButton';
-import ContributeButton from './ContributeButton';
-import Link from 'next/link';
+import React from 'react'
+import CallToActionHero from './CallToActionHero'
+import DiscordButton from './DiscordButton'
+import ContributeButton from './ContributeButton'
+import Link from 'next/link'
 
-export default function Hero() {
+import IceCubeImage from '../../../assets/images/other/ice-cube.png'
+import Image from 'next/image'
+
+export default function Hero () {
   return (
     <>
       <div className="relative h-screen overflow-hidden">
@@ -48,11 +52,12 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-                  <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                    <img
-                      className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                      src="/images/shapes/12.png"
-                      alt=""
+                  <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex items-center justify-center h-full">
+                    <Image
+                      layout='intrinsic'
+                      className="lg:absolute lg:inset-y-0 lg:left-0"
+                      src={IceCubeImage}
+                      alt="WebXDAO: Open source community working around the future of the web"
                     />
                   </div>
                 </div>
@@ -62,5 +67,5 @@ export default function Hero() {
         </section>
       </div>
     </>
-  );
+  )
 }
