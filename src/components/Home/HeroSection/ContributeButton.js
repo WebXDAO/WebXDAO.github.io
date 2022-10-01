@@ -13,7 +13,7 @@ const ContributeButton = () => {
         Contribute
       </motion.a>
     </>
-  )
+  );
 };
 
 export default ContributeButton;

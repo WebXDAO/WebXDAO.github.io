@@ -15,7 +15,7 @@ const DiscordButton = () => {
         <FaDiscord className="w-5 h-5 ml-3 -mr-1" aria-hidden="true" />
       </motion.a>
     </>
-  )
+  );
 };
 
 export default DiscordButton;
