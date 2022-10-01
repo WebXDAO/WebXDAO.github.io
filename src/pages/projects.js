@@ -1,12 +1,24 @@
-import Head from 'next/head';
-import { prefix } from '../constants';
-
+import Head from "next/head";
+import { prefix } from "../constants";
+import { NextSeo } from "next-seo";
 export default function Projects({ projectsData }) {
+  const SEO = {
+    title: "WebXDAO | Projects",
+    description:
+      "Projects: WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.",
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      url: "https://webxdao.github.io/projects",
+      site_name: "WebXDAO Projects",
+      title: "WebXDAO | Projects",
+      description:
+        "Projects: WebXDAO, an open-source community working around the future of the web. Learn blockchain technology together.",
+    },
+  };
   return (
     <>
-      <Head>
-        <title>Projects | WebXDAO</title>
-      </Head>
+      <NextSeo {...SEO} />
       <section className="text-white text-center bg-[#00007f]">
         <div className="px-20 py-20">
           <h1 className="font-bold text-3xl md:text-5xl antialiased">
@@ -40,7 +52,7 @@ export default function Projects({ projectsData }) {
                   </h2>
                   <h3
                     className={`tracking-widest ${
-                      type === 'FREE' ? 'text-green-500' : 'text-yellow-500'
+                      type === "FREE" ? "text-green-500" : "text-yellow-500"
                     } text-sm font-semibold title-font`}
                   >
                     {type}
@@ -73,28 +85,28 @@ export default function Projects({ projectsData }) {
 export function getStaticProps() {
   const data = [
     {
-      name: 'InVision',
-      imgUrl: '/blogs_inVision.png',
-      type: 'PREMIUM',
-      title: 'Start Here',
-      text: 'InVision is the digital product design platform used to make the worlds best customer experiences.',
-      tags: ['Documentation'],
+      name: "InVision",
+      imgUrl: "/blogs_inVision.png",
+      type: "PREMIUM",
+      title: "Start Here",
+      text: "InVision is the digital product design platform used to make the worlds best customer experiences.",
+      tags: ["Documentation"],
     },
     {
-      name: 'Adobe XD',
-      imgUrl: '/blogs_xd.png',
-      type: 'FREE',
-      title: 'Blockchain Dev Path',
-      text: 'Adobe XD is your UI/UX design solution platform for website and mobile appcreation.',
-      tags: ['Documentation'],
+      name: "Adobe XD",
+      imgUrl: "/blogs_xd.png",
+      type: "FREE",
+      title: "Blockchain Dev Path",
+      text: "Adobe XD is your UI/UX design solution platform for website and mobile appcreation.",
+      tags: ["Documentation"],
     },
     {
-      name: 'Figma',
-      imgUrl: '/blogs_figma.png',
-      type: 'FREE',
-      title: 'Website',
-      text: 'Figma helps the teams to create, test, and ship better designs from start to finish.',
-      tags: ['Tailwind Css', 'Eleventy', 'Alpine.js'],
+      name: "Figma",
+      imgUrl: "/blogs_figma.png",
+      type: "FREE",
+      title: "Website",
+      text: "Figma helps the teams to create, test, and ship better designs from start to finish.",
+      tags: ["Tailwind Css", "Eleventy", "Alpine.js"],
     },
   ];
   return {
