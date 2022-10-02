@@ -27,10 +27,10 @@
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.13"
   },
-  "description": "webx dao website",
+  "description": "WebXDAO website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pradumnasaraf/WebXDAO.github.io.git"
+    "url": "git+https://github.com/WebXDAO/WebXDAO.github.io.git"
   },
   "keywords": [
     "javascript",
@@ -42,6 +42,6 @@
   "author": "WebXDAO",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pradumnasaraf/WebXDAO.github.io/issues"
+    "url": "https://github.com/WebXDAO/WebXDAO.github.io/issues"
   }
 }
