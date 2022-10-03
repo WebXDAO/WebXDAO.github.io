@@ -46,7 +46,7 @@ const Footer = () => {
               <a href="#">
                 <span className="sr-only">WebX DAO</span>
                 <img
-                  className="w-auto h-8 sm:h-10"
+                  className="w-auto h-16 sm:h-10"
                   src="/images/logo/white_logo.png"
                   alt=""
                 />
@@ -63,13 +63,13 @@ const Footer = () => {
               <>
                 <div
                   key={item.name + "_footer"}
-                  className="text-center sm:text-left"
+                  className="sm:text-left"
                 >
-                  <p className="text-sm font-medium text-white/90">
+                  <p className="text-lg sm:text-sm font-medium text-white/90">
                     {item.name}
                   </p>
 
-                  <nav className="mt-8" aria-label={item.name}>
+                  <nav className="mt-4 sm:mt-8" aria-label={item.name}>
                     <ul className="space-y-4 text-sm">
                       {item.children.map((child) => (
                         <li key={child.name}>
@@ -89,13 +89,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-6 mt-12">
+        <div className="pt-6 mt-5 sm:mt-12">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <p className="text-sm text-gray-500">
               <span className="block sm:inline">All rights reserved.</span>
             </p>
 
-            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+            <p className="mt-1 text-sm text-gray-500 sm:order-first sm:mt-0">
               <span className="flex items-center justify-center">
                 &copy; {new Date().getFullYear()} Made with
                 <SiGithubsponsors

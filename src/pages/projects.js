@@ -19,7 +19,7 @@ export default function Projects({ projectsData }) {
         </div>
       </section>
 
-      <div className="container max-w-screen-xl mx-auto my-8 grid pb-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8 gap-6 px-8">
+      <div className="container max-w-screen-xl mx-auto my-8 grid pb-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-0 sm:mb-8 gap-6 px-8">
         {projectsData.map(
           ({ name, imgUrl, type, title, text, tags }, index) => (
             <div

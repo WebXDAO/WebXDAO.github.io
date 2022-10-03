@@ -15,10 +15,10 @@ const navigation = [
 const Navbar = () => {
   return (
     <Popover as="header" className="relative">
-      <div className="bg-transparent pt-6">
+      <div className="bg-transparent pt-4 sm:pt-6">
         {/* NAVIGATION BAR */}
         <nav
-          className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
+          className="relative mx-auto mb-4 flex max-w-7xl items-center justify-between px-4 sm:px-6"
           aria-label="Global"
         >
           <div className="flex flex-1 items-center">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <>
                   <span className="sr-only ">WebX DAO</span>
                   <img
-                    className="h-8 w-auto sm:h-10 cursor-pointer"
+                    className="h-10 w-auto sm:h-10 cursor-pointer"
                     src="/images/logo/white_logo.png"
                     alt="WebX DAO White Logo"
                   />
