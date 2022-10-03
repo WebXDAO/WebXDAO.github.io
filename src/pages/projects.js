@@ -8,11 +8,11 @@ export default function Projects({ projectsData }) {
         <title>Projects | WebXDAO</title>
       </Head>
       <section className="text-white text-center bg-[#00007f]">
-        <div className="px-20 py-20">
+        <div className="px-5 py-10 sm:p-20">
           <h1 className="font-bold text-3xl md:text-5xl antialiased">
             Resources/Projects
           </h1>
-          <div className="mt-6 text-xl font-light text-true-gray-500 antialiased">
+          <div className="mt-6 text-lg md:text-xl font-light text-true-gray-500 antialiased">
             Here you can find a list of good projects and resources to learn
             about Blockchain and Web 3.0
           </div>
@@ -29,25 +29,24 @@ export default function Projects({ projectsData }) {
               <div className="bg-white p-4 rounded-lg flex flex-col justify-between">
                 <div className="relative mb-6">
                   <img
-                    className="lg:h-60 xl:h-56 md:h-64 h-72 w-full object-cover object-center rounded-md"
+                    className="h-44 md:h-64 lg:h-60 xl:h-56 w-full object-cover object-center rounded-md"
                     src={prefix + imgUrl}
                     alt={name}
                   />
                 </div>
-                <div className="flex justify-between">
-                  <h2 className="text-xl text-gray-900 font-semibold mb-4">
+                <div className="flex justify-between items-center md:items-start mb-2 md:mb-4">
+                  <h2 className="text-lg md:text-xl text-gray-900 font-semibold">
                     {title}
                   </h2>
                   <h3
-                    className={`tracking-widest ${
-                      type === 'FREE' ? 'text-green-500' : 'text-yellow-500'
-                    } text-sm font-semibold title-font`}
+                    className={`tracking-widest ${type === 'FREE' ? 'text-green-500' : 'text-yellow-500'
+                      } text-sm font-semibold title-font`}
                   >
                     {type}
                   </h3>
                 </div>
 
-                <p className="leading-relaxed text-base text-gray-800 mb-5">
+                <p className="leading-relaxed text-sm md:text-base text-gray-800 mb-5">
                   {text}
                 </p>
 
