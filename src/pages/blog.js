@@ -29,16 +29,16 @@ const blogs = ({ data }) => {
           </div>
         </div>
 
-        <div className='absolute top-40 -left-16 xl:w-96 xl:h-96 xs:w-64 xs:h-64 bg-gradient-to-t from-[#1BFFFF] to-[#2E3192] rounded-full'></div>
-        <div className='absolute xl:top-96 xs:top-[50rem] xl:-right-80 xs:-right-0 xl:w-[50rem] xl:h-[50rem] xs:w-80 xs:h-80 bg-gradient-to-t from-[#FBB03B] to-[#D4145A] rounded-full'></div>
+        <div className='absolute top-40 -left-16 xl:w-96 xl:h-96 bg-gradient-to-t from-[#1BFFFF] to-[#2E3192] rounded-full'></div>
+        <div className='absolute top-96 -right-80 xl:w-[50rem] xl:h-[50rem] bg-gradient-to-t from-[#FBB03B] to-[#D4145A] rounded-full'></div>
 
         <section>
-          <div className='relative z-2 flex justify-center items-center flex-wrap my-7 mx-0'>
+          <div className='relative grid grid-cols-1 sm:grid-cols-2 z-2 flex justify-center items-center flex-wrap my-7 mx-0'>
 
             {data.map((curElem) => {
               return (
-                <div className='group z-2 relative w-min h-min bg-white bg-opacity-5 m-10 shadow-2xl rounded-2xl flex justify-conten items-center backdrop-filter backdrop-blur-md' key={curElem.id}>
-                  <div className='relative xl:w-[35rem] xs:w-[17rem] h-80 flex justify-center items-center flex-col opacity-70  hover:opacity-100'>
+                <div className='grid-items group z-2 relative w-min h-min bg-white bg-opacity-5 m-10 shadow-2xl rounded-2xl flex justify-conten items-center backdrop-filter backdrop-blur-md' key={curElem.id}>
+                  <div className='relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-70  hover:opacity-100'>
 
                     <div className='relative w-4/5 rounded-2xl truncate border-8 border-solid border-black/25 group-hover:-translate-y-6 duration-500'>
                       <img src={curElem.cover_image} alt='blog image' className='relative top-0 left-0 w-full h-full object-cover ' />
