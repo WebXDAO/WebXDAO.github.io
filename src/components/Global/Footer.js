@@ -69,7 +69,7 @@ const Footer = () => {
                     {item.name}
                   </p>
 
-                  <nav className="mt-8">
+                  <nav className="mt-8" aria-label={item.name}>
                     <ul className="space-y-4 text-sm">
                       {item.children.map((child) => (
                         <li key={child.name}>
