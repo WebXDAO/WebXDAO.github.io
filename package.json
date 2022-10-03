@@ -1,6 +1,7 @@
 {
   "name": "webxdao.github.io",
   "private": true,
+  "homepage": "https://webxdao.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -25,5 +26,22 @@
     "eslint-config-next": "12.3.0",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.13"
+  },
+  "description": "WebXDAO website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebXDAO/WebXDAO.github.io.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "tailwindcss",
+    "nextjs",
+    "webxdao"
+  ],
+  "author": "WebXDAO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebXDAO/WebXDAO.github.io/issues"
   }
 }
