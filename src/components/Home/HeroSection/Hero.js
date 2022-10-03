@@ -33,7 +33,7 @@ export default function Hero() {
                         </div>
                         <CallToActionHero></CallToActionHero>
                         <p className="mt-3 text-sm text-white/70 sm:mt-4">
-                          We are a opensource community working around the
+                          We are an opensource community working around the
                           future of the web. Learn blockchain technology
                           together. The community is powered by{' '}
                           <Link href="https://devprotocol.xyz/">
