@@ -23,16 +23,10 @@ const Blog = ({ data }) => {
           <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-white">
             Blogs
           </h1>
-          <div className="w-full mb-4">
-            <div className="w-64 h-1 py-0 mx-auto my-0 rounded-t opacity-25 gradient"></div>
-          </div>
         </div>
 
-        <div className="absolute top-40 -left-16 xl:w-96 xl:h-96 bg-gradient-to-t from-[#1BFFFF] to-[#2E3192] rounded-full"></div>
-        <div className="absolute top-96 -right-80 xl:w-[50rem] xl:h-[50rem] bg-gradient-to-t from-[#FBB03B] to-[#D4145A] rounded-full"></div>
-
         <section>
-          <div className="relative flex grid flex-wrap items-center justify-center grid-cols-1 mx-0 sm:grid-cols-2 z-2 my-7">
+          <div className="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7">
             {data.map((curElem) => {
               return (
                 <div
@@ -52,9 +46,7 @@ const Blog = ({ data }) => {
                         <b>{curElem.title}</b>
                         <br></br>
                         <br></br>
-                        <spam className="text-xs font-light lowercase">
-                          {curElem.description}
-                        </spam>
+                        <spam className="text-xs font-light lowercase">{curElem.description}</spam>
                         <a
                           href={curElem.url}
                           target="_blank"
