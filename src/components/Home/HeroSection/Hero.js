@@ -1,7 +1,7 @@
-import CallToActionHero from './CallToActionHero';
-import DiscordButton from './DiscordButton';
-import ContributeButton from './ContributeButton';
-import Link from 'next/link';
+import CallToActionHero from "./CallToActionHero";
+import DiscordButton from "./DiscordButton";
+import ContributeButton from "./ContributeButton";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -35,7 +35,7 @@ export default function Hero() {
                         <p className="mt-3 text-sm text-white/70 sm:mt-4">
                           We are an opensource community working around the
                           future of the web. Learn blockchain technology
-                          together. The community is powered by{' '}
+                          together. The community is powered by{" "}
                           <Link href="https://devprotocol.xyz/">
                             <a className="font-medium text-white">
                               Dev Protocol

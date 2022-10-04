@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { prefix } from '../constants';
+import Head from "next/head";
+import { prefix } from "../constants";
 
 export default function Partners({ partnerData }) {
   return (
@@ -53,28 +53,28 @@ export default function Partners({ partnerData }) {
 export function getStaticProps() {
   const data = [
     {
-      name: 'dev protocol',
-      imgUrl: '/logo 3.4.png',
-      title: 'DEV PROTOCOL',
-      text: 'Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.',
+      name: "dev protocol",
+      imgUrl: "/logo 3.4.png",
+      title: "DEV PROTOCOL",
+      text: "Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.",
     },
     {
-      name: 'logo1',
-      imgUrl: '/logo 3 1.png',
-      title: 'Logo 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: "logo1",
+      imgUrl: "/logo 3 1.png",
+      title: "Logo 1",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      name: 'logo2',
-      imgUrl: '/logo 3 2.png',
-      title: 'Logo 2',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: "logo2",
+      imgUrl: "/logo 3 2.png",
+      title: "Logo 2",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      name: 'logo3',
-      imgUrl: '/logo 3 3.png',
-      title: 'Logo 3',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: "logo3",
+      imgUrl: "/logo 3 3.png",
+      title: "Logo 3",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
   return {

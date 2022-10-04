@@ -1,7 +1,7 @@
-import CallToActionHero from './CallToActionHero';
-import DiscordButton from './DiscordButton';
-import ContributeButton from './ContributeButton';
-import Image from 'next/image';
+import CallToActionHero from "./CallToActionHero";
+import DiscordButton from "./DiscordButton";
+import ContributeButton from "./ContributeButton";
+import Image from "next/image";
 
 /**
  * hint: use h-screen to make a fullscreen hero banner
@@ -14,7 +14,7 @@ const Hero2 = () => {
           {/* 1 */}
           <div className="w-full text-center text-white md:text-left">
             <h1 className="text-6xl font-bold sm:text-7xl">
-              Build with us,{' '}
+              Build with us,{" "}
               <span className="sm:block">the future of web.</span>
             </h1>
 
