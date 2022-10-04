@@ -10,6 +10,7 @@ const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Community Partners", href: "/partners" },
   { name: "WebX Team", href: "/team" },
+  { name: "Contributors", href: "/contributors" },
 ];
 
 const Navbar = () => {
