@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "format": "npx prettier --write ."
   },
   "dependencies": {
     "@headlessui/react": "^1.7.1",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "prettier": "^2.7.1",
     "eslint": "8.6.0",
     "eslint-config-next": "12.3.0",
     "postcss": "^8.4.5",

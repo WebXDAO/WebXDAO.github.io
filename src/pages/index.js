@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import Hero from '../components/Home/HeroSection/Hero';
+import Head from "next/head";
+import Hero from "../components/Home/HeroSection/Hero";
 
 export default function Home({ articles }) {
   return (
