@@ -1,5 +1,5 @@
-import Navbar from '../components/Global/Navbar';
-import Footer from '../components/Global/Footer';
+import Navbar from "../components/Global/Navbar";
+import Footer from "../components/Global/Footer";
 
 export default function WebXLayout({ children }) {
   return (

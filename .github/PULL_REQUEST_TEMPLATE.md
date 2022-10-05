@@ -11,10 +11,12 @@ Closes: # <!-- issue number that will be closed through this PR -->
 ## Type of change
 
 What sort of change have you made:
+
 <!--
 Example how to mark a checkbox:-
 - [x] My code follows the code style of this project.
 -->
+
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Code style update (formatting, local variables)
@@ -27,10 +29,12 @@ Example how to mark a checkbox:-
 <!-- Describe how have you verified the changes made -->
 
 ## Checklist
+
 <!--
 Example how to mark a checkbox:-
 - [x] My code follows the code style of this project.
 -->
+
 - [ ] My code follows the guidelines of this project.
 - [ ] I have performed a self-review of my own code.
 - [ ] I have commented on my code, particularly wherever it was hard to understand.
@@ -41,9 +45,9 @@ Example how to mark a checkbox:-
 
 ## Screenshots (if applicable)
 
- Original           | Updated
- :--------------------: |:--------------------:
- original screenshot | updated screenshot |
+|      Original       |      Updated       |
+| :-----------------: | :----------------: |
+| original screenshot | updated screenshot |
 
 ## Code of Conduct
 

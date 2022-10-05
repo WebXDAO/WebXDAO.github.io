@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { prefix } from '../constants';
+import Head from "next/head";
+import { prefix } from "../constants";
 
 export default function Projects({ projectsData }) {
   return (
@@ -72,28 +72,28 @@ export default function Projects({ projectsData }) {
 export function getStaticProps() {
   const data = [
     {
-      name: 'InVision',
-      imgUrl: '/blogs_inVision.png',
-      type: 'PREMIUM',
-      title: 'Start Here',
-      text: 'InVision is the digital product design platform used to make the worlds best customer experiences.',
-      tags: ['Documentation'],
+      name: "InVision",
+      imgUrl: "/blogs_inVision.png",
+      type: "PREMIUM",
+      title: "Start Here",
+      text: "InVision is the digital product design platform used to make the worlds best customer experiences.",
+      tags: ["Documentation"],
     },
     {
-      name: 'Adobe XD',
-      imgUrl: '/blogs_xd.png',
-      type: 'FREE',
-      title: 'Blockchain Dev Path',
-      text: 'Adobe XD is your UI/UX design solution platform for website and mobile appcreation.',
-      tags: ['Documentation'],
+      name: "Adobe XD",
+      imgUrl: "/blogs_xd.png",
+      type: "FREE",
+      title: "Blockchain Dev Path",
+      text: "Adobe XD is your UI/UX design solution platform for website and mobile appcreation.",
+      tags: ["Documentation"],
     },
     {
-      name: 'Figma',
-      imgUrl: '/blogs_figma.png',
-      type: 'FREE',
-      title: 'Website',
-      text: 'Figma helps the teams to create, test, and ship better designs from start to finish.',
-      tags: ['Tailwind Css', 'Eleventy', 'Alpine.js'],
+      name: "Figma",
+      imgUrl: "/blogs_figma.png",
+      type: "FREE",
+      title: "Website",
+      text: "Figma helps the teams to create, test, and ship better designs from start to finish.",
+      tags: ["Tailwind Css", "Eleventy", "Alpine.js"],
     },
   ];
   return {

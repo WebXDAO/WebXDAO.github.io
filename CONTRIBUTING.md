@@ -48,12 +48,12 @@ Please follow all instructions in [the template](https://github.com/WebXDAO/WebX
 
 - Use the present tense. (Example: "Add feature" instead of "Added feature")
 - Use the imperative mood. (Example: "Move item to...", instead of "Moves item to...")
-- Limit the first line (also called the Subject Line) to *50 characters or less*.
+- Limit the first line (also called the Subject Line) to _50 characters or less_.
 - Capitalize the Subject Line.
 - Separate subject from body with a blank line.
 - Do not end the subject line with a period.
-- Wrap the body at *72 characters*.
-- Use the body to explain the *what*, *why*, *vs*, and *how*.
+- Wrap the body at _72 characters_.
+- Use the body to explain the _what_, _why_, _vs_, and _how_.
 - Reference [Issues](https://github.com/WebXDAO/WebXDAO.github.io/issues) and [Pull Requests](https://github.com/WebXDAO/WebXDAO.github.io/pulls) liberally after the first line.
 - Follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
@@ -65,7 +65,7 @@ Please follow all instructions in [the template](https://github.com/WebXDAO/WebX
 
 - Create a pull request which will be promptly reviewed and suggestions would be added to improve it.
 
-- Add Screenshots to help us know what changes you have done.  
+- Add Screenshots to help us know what changes you have done.
 
 ## 🤔 How to make a pull request
 
@@ -97,7 +97,8 @@ git checkout -b your-branch-name
 git add .
 git commit -m "<your_commit_message>"
 ```
-*Follow our commit guide from above*
+
+_Follow our commit guide from above_
 
 **7.** Push your local commits to the remote repo.
 
@@ -105,7 +106,7 @@ git commit -m "<your_commit_message>"
 git push origin your-branch-name
 ```
 
-**8.** Create a new [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) from ```your-branch-name```
+**8.** Create a new [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) from `your-branch-name`
 
 **9.** 🎉 Congratulations! You've made your first pull request! Now, you should just wait until the maintainers review your pull request.
 

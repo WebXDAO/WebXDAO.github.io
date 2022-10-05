@@ -1,6 +1,6 @@
-import { FaDiscord } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { FaDiscord } from "react-icons/fa";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const DiscordButton = () => {
   return (

@@ -1,5 +1,5 @@
-import WebXLayout from '../layouts/WebXLayout';
-import '../styles/globals.css';
+import WebXLayout from "../layouts/WebXLayout";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
