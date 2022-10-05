@@ -8,7 +8,7 @@ The content in this repository is temporary, we are making new web design for We
 
 ---
 
-## ⚡ Getting Started
+## 🚀 Getting Started
 
 > Make sure to read our [contributing guidelines](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/CONTRIBUTING.md)
 
