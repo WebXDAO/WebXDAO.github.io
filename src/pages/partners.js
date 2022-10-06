@@ -8,7 +8,7 @@ export default function Partners({ partnerData }) {
         <title>Community Partners | WebXDAO</title>
       </Head>
       <section className="text-white text-center bg-[#00007f]">
-        <div className="px-15 py-20">
+        <div className="px-16 py-20">
           <h1 className="font-bold text-5xl antialiased">Community Partners</h1>
           <div className="mt-6 text-xl font-light text-true-gray-500 antialiased">
             Our Valuable Community Partners
