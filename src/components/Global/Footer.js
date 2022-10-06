@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-teal-600 sm:justify-start">
-              <a href="#">
+              <a href="https://webxdao.github.io/">
                 <span className="sr-only">WebX DAO</span>
                 <img
                   className="w-auto h-16 sm:h-10"
