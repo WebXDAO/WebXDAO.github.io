@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
-    "format": "npx prettier --write ."
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.1",
@@ -27,7 +27,8 @@
     "eslint": "8.6.0",
     "eslint-config-next": "12.3.0",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.13"
+    "tailwindcss": "^3.0.13",
+    "husky": "^8.0.0"
   },
   "description": "WebXDAO website",
   "repository": {
