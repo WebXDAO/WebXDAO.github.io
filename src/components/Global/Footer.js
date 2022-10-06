@@ -1,40 +1,44 @@
-import { SiGithubsponsors } from "react-icons/si";
-import Link from "next/link";
+import React from 'react'
+import { SiGithubsponsors } from 'react-icons/si'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import Logo from '../../assets/images/logo/webxdao_white.png'
 
 const navigation = [
   {
-    name: "ABOUT US",
-    href: "/about",
+    name: 'ABOUT US',
+    href: '/about',
     children: [
-      { name: "Who we are?", href: "/about#who" },
-      { name: "What we do?", href: "/about#what" },
-      { name: "Team WebX", href: "/team" },
-    ],
+      { name: 'Who we are?', href: '/about#who' },
+      { name: 'What we do?', href: '/about#what' },
+      { name: 'Team WebX', href: '/team' }
+    ]
   },
   {
-    name: "SOCIALS",
-    href: "/",
+    name: 'SOCIALS',
+    href: '/',
     children: [
-      { name: "GitHub", href: "" },
-      { name: "Twitter", href: "" },
-      { name: "Discord", href: "" },
-      { name: "LinkedIn", href: "" },
-    ],
+      { name: 'GitHub', href: '' },
+      { name: 'Twitter', href: '' },
+      { name: 'Discord', href: '' },
+      { name: 'LinkedIn', href: '' }
+    ]
   },
   {
-    name: "CONTACT",
-    href: "/contact",
-    children: [{ name: "Contact us", href: "" }],
+    name: 'CONTACT',
+    href: '/contact',
+    children: [{ name: 'Contact us', href: '' }]
   },
   {
-    name: "PARTNERS",
-    href: "/partners",
+    name: 'PARTNERS',
+    href: '/partners',
     children: [
-      { name: "Our partners", href: "" },
-      { name: "Get partner", href: "" },
-    ],
-  },
-];
+      { name: 'Our partners', href: '' },
+      { name: 'Become a partner', href: '' }
+    ]
+  }
+]
 
 const Footer = () => {
   return (
@@ -45,14 +49,17 @@ const Footer = () => {
             <div className="flex justify-center text-teal-600 sm:justify-start">
               <a href="#">
                 <span className="sr-only">WebX DAO</span>
-                <img
-                  className="w-auto h-8 sm:h-10"
-                  src="/images/logo/white_logo.png"
-                  alt=""
+                <Image
+                  layout='fixed'
+                  height="32px"
+                  width="31.4px"
+                  className='sm:scale-120'
+                  src={Logo}
+                  alt="WebXDAO"
                 />
               </a>
             </div>
-            {/* 
+            {/*
             <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-white/80 sm:max-w-xs sm:mx-0 sm:text-left">
               Add organization description here!
             </p> */}
@@ -62,7 +69,7 @@ const Footer = () => {
             {navigation.map((item) => (
               <>
                 <div
-                  key={item.name + "_footer"}
+                  key={item.href.split('').slice(0, 1).join('') + '_footer'}
                   className="text-center sm:text-left"
                 >
                   <p className="text-sm font-medium text-white/90">
@@ -109,7 +116,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

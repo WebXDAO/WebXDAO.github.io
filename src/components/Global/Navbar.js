@@ -1,16 +1,18 @@
-import { Fragment } from "react";
-import Link from 'next/link';
-import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { SiGithubsponsors } from "react-icons/si";
+import React from 'react'
+import Link from 'next/link'
+import { Popover, Transition } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { SiGithubsponsors } from 'react-icons/si'
+import Image from 'next/image'
 
+import Logo from '../../assets/images/logo/webxdao_white.png'
 
 const navigation = [
-  { name: "Blog", href: "/blog" },
-  { name: "Projects", href: "/projects" },
-  { name: "Community Partners", href: "/partners" },
-  { name: "WebX Team", href: "/team" },
-];
+  { name: 'Blog', href: '/blog' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Community Partners', href: '/partners' },
+  { name: 'WebX Team', href: '/team' }
+]
 
 const Navbar = () => {
   return (
@@ -26,10 +28,13 @@ const Navbar = () => {
               <Link href={'/'}>
                 <>
                   <span className="sr-only">WebX DAO</span>
-                  <img
-                    className="h-8 w-auto sm:h-10"
-                    src="/images/logo/white_logo.png"
-                    alt="WebX DAO White Logo"
+                  <Image
+                    layout="fixed"
+                    height="32px"
+                    width="31.4px"
+                    className='sm:scale-120'
+                    src={Logo}
+                    alt="WebXDAO"
                   />
                 </>
               </Link>
@@ -70,7 +75,7 @@ const Navbar = () => {
       </div>
 
       <Transition
-        as={Fragment}
+        as={React.Fragment}
         enter="duration-150 ease-out"
         enterFrom="opacity-0 scale-95"
         enterTo="opacity-100 scale-100"
@@ -85,10 +90,13 @@ const Navbar = () => {
           <div className="overflow-hidden rounded-lg backdrop-blur-sm bg-gradient1/50 shadow-xl ring-1 ring-white ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
-                <img
-                  className="h-8 w-auto"
-                  src="/images/logo/white_logo.png"
-                  alt="WebX DAO"
+                <Image
+                  layout="fixed"
+                  height="32px"
+                  width="31.4px"
+                  className='sm:scale-120'
+                  src={Logo}
+                  alt="WebXDAO"
                 />
               </div>
               <div className="-mr-2">
@@ -116,7 +124,7 @@ const Navbar = () => {
         </Popover.Panel>
       </Transition>
     </Popover>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

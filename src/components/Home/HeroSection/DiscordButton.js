@@ -1,6 +1,7 @@
-import { FaDiscord } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import React from 'react'
+import { FaDiscord } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const DiscordButton = () => {
   return (
@@ -18,7 +19,7 @@ const DiscordButton = () => {
         </Link>
       </motion.button>
     </>
-  );
-};
+  )
+}
 
-export default DiscordButton;
+export default DiscordButton

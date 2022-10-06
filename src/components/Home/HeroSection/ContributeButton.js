@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import React from 'react'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const ContributeButton = () => {
   return (
@@ -16,7 +17,7 @@ const ContributeButton = () => {
         </Link>
       </motion.button>
     </>
-  );
-};
+  )
+}
 
-export default ContributeButton;
+export default ContributeButton
