@@ -27,7 +27,7 @@ export default function AboutSection() {
 													you will get to interact with some great folks and
 													learn blockchain technology together. This community
 													is in its initial stage so you can show your
-													leadership skills and help for everyone's success.
+													leadership skills and help for everyone&apos;s success.
 												</p>
 											</div>
 											<div className="lg:py-5 mt-3">
