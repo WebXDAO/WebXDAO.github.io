@@ -26,11 +26,13 @@ const Navbar = () => {
               <Link href="/">
                 <>
                   <span className="sr-only ">WebX DAO</span>
-                  <img
-                    className="h-10 w-auto sm:h-10 cursor-pointer"
-                    src="/images/logo/white_logo.png"
-                    alt="WebX DAO White Logo"
-                  />
+                  <a href="https://webxdao.github.io/">
+                    <img
+                      className="h-10 w-auto sm:h-10 cursor-pointer"
+                      src="/images/logo/white_logo.png"
+                      alt="WebX DAO White Logo"
+                    />
+                  </a>
                 </>
               </Link>
               <div className="flex items-center -mr-2 md:hidden">
