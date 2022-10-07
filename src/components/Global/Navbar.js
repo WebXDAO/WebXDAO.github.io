@@ -28,7 +28,7 @@ const Navbar = () => {
                   <a href="https://webxdao.github.io/">
                     <span className="sr-only ">WebX DAO</span>
                     <img
-                      className="h-10 w-auto sm:h-10 md:h-[4.2rem] cursor-pointer"
+                      className="h-12 w-auto sm:h-12 md:h-[4.2rem] cursor-pointer"
                       src="/images/logo/logo.png"
                       alt="WebX DAO White Logo"
                     />
@@ -82,7 +82,7 @@ const Navbar = () => {
           <div className="overflow-hidden rounded-lg shadow-xl backdrop-blur-sm bg-gradient1/50 ring-1 ring-white ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
-                <img className="w-auto h-8" src="/images/logo/white_logo.png" alt="WebX DAO" />
+                <img className="w-auto h-12" src="/images/logo/logo.png" alt="WebX DAO" />
               </div>
               <div className="-mr-2">
                 <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-white/20 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyber-webx">
@@ -97,7 +97,7 @@ const Navbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-2 text-base font-medium text-gray-100 rounded-md hover:bg-gray-50"
+                    className="block px-3 py-2 text-base font-medium text-gray-100 rounded-md hover:bg-gray-600"
                   >
                     {item.name}
                   </a>
