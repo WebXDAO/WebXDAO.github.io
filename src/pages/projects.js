@@ -3,7 +3,7 @@ import RepoCard from "../components/Projcts/ RepoCard";
 
 export const getStaticProps = async () => {
     try {
-        const res = await fetch('https://api.github.com/users/WebXDAO/repos');
+        const res = await fetch('https://api.github.com/orgs/WebXDAO/repos');
         const data = await res.json()
 
         if (!data) {
