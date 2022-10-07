@@ -45,7 +45,11 @@ const Footer = () => {
             <div className="flex justify-center text-teal-600 sm:justify-start">
               <a href="https://webxdao.github.io/">
                 <span className="sr-only">WebX DAO</span>
-                <img className="w-auto h-16 sm:h-10 md:h-12" src="/images/logo/Logo.svg" alt="" />
+                <img
+                  className="w-auto h-16 sm:h-10 md:h-[4.2rem]"
+                  src="/images/logo/logo.png"
+                  alt=""
+                />
               </a>
             </div>
             {/*

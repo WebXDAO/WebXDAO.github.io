@@ -28,8 +28,8 @@ const Navbar = () => {
                   <a href="https://webxdao.github.io/">
                     <span className="sr-only ">WebX DAO</span>
                     <img
-                      className="h-10 w-auto sm:h-10 md:h-12 cursor-pointer"
-                      src="/images/logo/Logo.svg"
+                      className="h-10 w-auto sm:h-10 md:h-[4.2rem] cursor-pointer"
+                      src="/images/logo/logo.png"
                       alt="WebX DAO White Logo"
                     />
                   </a>
