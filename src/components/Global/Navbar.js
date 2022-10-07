@@ -22,7 +22,7 @@ const Navbar = () => {
           aria-label="Global"
         >
           <div className="flex items-center flex-1">
-            <div className="flex items-center justify-between w-full md:w-auto">
+            <div className="flex items-center justify-between w-full lg:w-auto">
               <Link href="/">
                 <>
                   <a href="https://webxdao.github.io/">
@@ -35,7 +35,7 @@ const Navbar = () => {
                   </a>
                 </>
               </Link>
-              <div className="flex items-center -mr-2 md:hidden">
+              <div className="flex items-center justify-between -mr-2 lg:hidden ">
                 <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-transparent rounded-md focus-ring-inset hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon className="w-6 h-6" aria-hidden="true" />
@@ -44,8 +44,8 @@ const Navbar = () => {
             </div>
             {/* Add content here to get menu next to icon */}
           </div>
-          <div className="hidden md:flex md:items-center md:space-x-6">
-            <div className="hidden space-x-8 md:ml-10 md:flex">
+          <div className="hidden lg:flex lg:items-center md:space-x-6">
+            <div className="hidden space-x-8 lg:ml-10 lg:flex">
               {navigation.map((item) => (
                 <Link href={item.href} key={item.name}>
                   <a className="text-base font-medium text-white hover:text-gray-300">
@@ -77,12 +77,16 @@ const Navbar = () => {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 z-10 p-2 transition origin-top transform md:hidden"
+          className="absolute inset-x-0 top-0 z-10 p-2 transition origin-top transform lg:hidden"
         >
           <div className="overflow-hidden rounded-lg shadow-xl backdrop-blur-sm bg-gradient1/50 ring-1 ring-white ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
-                <img className="w-auto h-8" src="/images/logo/white_logo.png" alt="WebX DAO" />
+                <img
+                  className="w-auto h-10 sm:h-12 md:h-14 lg:h-16"
+                  src="/images/logo/logo.png"
+                  alt="WebX DAO"
+                />
               </div>
               <div className="-mr-2">
                 <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-white/20 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyber-webx">

@@ -15,31 +15,26 @@ export default function Hero() {
                   <div className="lg:py-24">
                     <h1 className="mt-4 text-5xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-7xl">
                       <span className="block">Build with us,</span>
-                      <span className="block text-white">
-                        the future of web.
-                      </span>
+                      <span className="block text-white">the future of web.</span>
                     </h1>
                     <p className="mt-3 text-base text-white/70 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                      We focus on building and talking about possible future
-                      usage of web technologies.
+                      We focus on building and talking about possible future usage of web
+                      technologies.
                     </p>
                     <div className="mt-8 sm:mt-6">
                       <div className="sm:mx-auto sm:max-w-7xl">
                         <div className="sm:flex">
-                          <div className="flex flex-col w-full mb-6 sm:mt-0 md:flex-row gap-x-4 gap-y-4">
+                          <div className="flex flex-col md:items-center md:justify-center lg:items-start lg:justify-start w-full mb-6 sm:mt-0 md:flex-row gap-x-4 gap-y-4">
                             <DiscordButton></DiscordButton>
                             <ContributeButton></ContributeButton>
                           </div>
                         </div>
                         <CallToActionHero></CallToActionHero>
                         <p className="mt-3 text-sm text-white/70 sm:mt-4">
-                          We are an opensource community working around the
-                          future of the web. Learn blockchain technology
-                          together. The community is powered by{" "}
+                          We are an opensource community working around the future of the web. Learn
+                          blockchain technology together. The community is powered by{" "}
                           <Link href="https://devprotocol.xyz/">
-                            <a className="font-medium text-white">
-                              Dev Protocol
-                            </a>
+                            <a className="font-medium text-white">Dev Protocol</a>
                           </Link>
                           .
                         </p>
