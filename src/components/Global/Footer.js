@@ -46,28 +46,23 @@ const Footer = () => {
               <a href="https://webxdao.github.io/">
                 <span className="sr-only">WebX DAO</span>
                 <img
-                  className="w-auto h-16 sm:h-10"
-                  src="/images/logo/white_logo.png"
+                  className="w-auto h-16 sm:h-10 md:h-[4.2rem]"
+                  src="/images/logo/logo.png"
                   alt=""
                 />
               </a>
             </div>
-            {/* 
+            {/*
             <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-white/80 sm:max-w-xs sm:mx-0 sm:text-left">
               Add organization description here!
-            </p> */}
+            </p>*/}
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
             {navigation.map((item) => (
               <>
-                <div
-                  key={item.name + "_footer"}
-                  className="sm:text-left"
-                >
-                  <p className="text-lg sm:text-sm font-medium text-white/90">
-                    {item.name}
-                  </p>
+                <div key={item.name + "_footer"} className="sm:text-left">
+                  <p className="text-lg sm:text-sm font-medium text-white/90">{item.name}</p>
 
                   <nav className="mt-4 sm:mt-8" aria-label={item.name}>
                     <ul className="space-y-4 text-sm">
@@ -98,10 +93,7 @@ const Footer = () => {
             <p className="mt-1 text-sm text-gray-500 sm:order-first sm:mt-0">
               <span className="flex items-center justify-center">
                 &copy; {new Date().getFullYear()} Made with
-                <SiGithubsponsors
-                  className="w-3 h-3 m-2 text-pink-600"
-                  aria-hidden="true"
-                />
+                <SiGithubsponsors className="w-3 h-3 m-2 text-pink-600" aria-hidden="true" />
                 by WebX DAO
               </span>
             </p>
