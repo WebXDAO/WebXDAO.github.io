@@ -24,16 +24,16 @@ const Navbar = () => {
           <div className="flex items-center flex-1">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link href="/">
-                <>
                   <a>
+                <>
                     <span className="sr-only ">WebX DAO</span>
                     <img
                       className="h-12 w-auto sm:h-12 md:h-[4.2rem] cursor-pointer"
                       src="/images/logo/logo.png"
                       alt="WebX DAO White Logo"
                     />
+                        </>
                   </a>
-                </>
               </Link>
               <div className="flex items-center -mr-2 md:hidden">
                 <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-transparent rounded-md focus-ring-inset hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
