@@ -7,24 +7,26 @@ export default function Partners({ partnerData }) {
       <Head>
         <title>Community Partners | WebXDAO</title>
       </Head>
-      <section className="text-white text-center bg-[#00007f]">
-        <div className="px-[3.3rem] py-20">
-          <h1 className="font-bold text-5xl antialiased">Community Partners</h1>
-          <div className="mt-6 text-xl font-light text-true-gray-500 antialiased">
+      <section className="py-8">
+        <div className="container max-w-5xl mx-auto">
+          <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-white">
+            Community Partners
+          </h1>
+          <div className="w-full mt-6 text-lg md:text-xl font-light leading-tight text-center text-white">
             Our Valuable Community Partners
           </div>
         </div>
       </section>
 
       <div className="flex flex-col">
-        <div className="bg-white pt-12 pb-12 flex-1">
+        <div className="pt-12 pb-12 flex-1">
           <div className="container mx-auto">
             <div className="flex flex-wrap gap-6">
-              <div className="text-black grid grid-col-1 p-3 gap-y-3 md:grid md:grid-cols-2 md:gap-3 md:p-3">
+              <div className="text-black grid grid-col-1 p-3 gap-y-3 md:grid md:grid-cols-2 md:gap-6 md:p-3">
                 {partnerData.map(({ name, title, imgUrl, text }, index) => (
                   <div
                     key={name + index}
-                    className="cursor-pointer bg-white flex-1 rounded-md shadow focus:outline-none focus:shadow-outline transform transition hover:shadow-lg hover:scale-105 hover:z-10 duration-300 ease-in-out p-4"
+                    className="cursor-pointer bg-white flex-1 shadow-2xl transform transition hover:shadow-lg hover:scale-105 hover:z-10 duration-300 ease-in-out p-4 bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md"
                   >
                     <div className="grid grid-cols-3 items-center justify-start overflow-hidden">
                       <div className="relative col-span-1">
@@ -35,8 +37,8 @@ export default function Partners({ partnerData }) {
                         />
                       </div>
                       <div className="flex flex-col col-span-2 gap-y-3 pl-5">
-                        <h4 className="text-xl font-semibold">{title}</h4>
-                        <p className="text-gray-800">{text}</p>
+                        <h4 className="text-xl text-gray-300 font-semibold">{title}</h4>
+                        <p className="text-gray-500">{text}</p>
                       </div>
                     </div>
                   </div>
