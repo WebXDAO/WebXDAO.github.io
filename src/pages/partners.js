@@ -55,27 +55,27 @@ export default function Partners({ partnerData }) {
 export function getStaticProps() {
   const data = [
     {
-      name: "dev protocol",
-      imgUrl: "/logo 3.4.png",
-      title: "DEV PROTOCOL",
+      name: "Dev Protocol",
+      imgUrl: "/images/logo/partners/DevProtocol.png",
+      title: "Dev Protocol",
       text: "Dev Protocol was designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.",
     },
     {
-      name: "logo1",
-      imgUrl: "/logo 3 1.png",
-      title: "Logo 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Lumos Labs",
+      imgUrl: "/images/logo/partners/LumosLabs.jpg",
+      title: "Lumos Labs",
+      text: "Lumos Labs is building a metaverse for builders and Web3 ecosystem enablers to share opportunities to build and scale-up.",
     },
     {
-      name: "logo2",
-      imgUrl: "/logo 3 2.png",
-      title: "Logo 2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "The Algorithms",
+      imgUrl: "/images/logo/partners/TheAlgorithms.png",
+      title: "The Algorithms",
+      text: "Open Source Community for learning Data Structures & Algorithms and their implementation in any Programming Language",
     },
     {
       name: "logo3",
       imgUrl: "/logo 3 3.png",
-      title: "Logo 3",
+      title: "FREE SLOT",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
