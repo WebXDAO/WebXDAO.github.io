@@ -1,0 +1,13 @@
+.git
+.husky 
+.github
+.gitignore
+.gitpod.yml
+.prettierrc 
+.eslintrc.json 
+
+LICENSE
+README.md
+Dockerfile
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
