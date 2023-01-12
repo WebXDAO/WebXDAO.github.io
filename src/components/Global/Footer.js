@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="flex justify-center text-teal-600 sm:justify-start">
               <a href="https://webxdao.github.io/">
                 <span className="sr-only">WebX DAO</span>
-                <img className="w-auto h-14 sm:h-16" src="/images/logo/logo.png" alt="" />
+                <img className="w-auto h-14 sm:h-16" src="/images/logo/logo.png" alt="WebX DAO Logo" />
               </a>
             </div>
             {/* 
@@ -66,7 +66,7 @@ const Footer = () => {
                         <li key={child.name}>
                           <Link
                             className="transition text-white/60 hover:text-white/60/75"
-                            href="/"
+                            href=""
                           >
                             <span className="text-white/60">{child.name}</span>
                           </Link>

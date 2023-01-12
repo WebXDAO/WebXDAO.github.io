@@ -30,10 +30,10 @@ const Blog = ({ data }) => {
             {data.map((curElem) => {
               return (
                 <div
-                  className="relative flex items-center m-10 bg-white shadow-2xl grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md"
+                  className="relative flex items-center m-7 bg-white shadow-2xl grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md"
                   key={curElem.id}
                 >
-                  <div className="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-70  hover:opacity-100">
+                  <div className="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] h-80 flex justify-center items-center flex-col opacity-70  hover:opacity-100">
                     <div className="relative w-4/5 truncate duration-500 border-8 border-solid rounded-2xl border-black/25 group-hover:-translate-y-6">
                       <img
                         src={curElem.cover_image}
@@ -47,13 +47,15 @@ const Blog = ({ data }) => {
                         <br></br>
                         <br></br>
                         <spam className="text-xs font-light lowercase">{curElem.description}</spam>
+                        <br></br>
+                        <br></br>
                         <a
                           href={curElem.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="pl-4 pr-4 m-auto mt-0 mb-0 text-base font-normal bg-green-500 rounded-md"
+                          className="inline-block rounded-md border border-transparent bg-green-500 py-3 px-8 text-center font-medium text-white"
                         >
-                          <b>Read</b>
+                          <b>Read More</b>
                         </a>
                       </h3>
                     </div>
