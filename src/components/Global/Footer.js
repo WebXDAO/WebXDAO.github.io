@@ -15,23 +15,23 @@ const navigation = [
     name: "SOCIALS",
     href: "/",
     children: [
-      { name: "GitHub", href: "" },
-      { name: "Twitter", href: "" },
-      { name: "Discord", href: "" },
-      { name: "LinkedIn", href: "" },
+      { name: "GitHub", href: "https://github.com/WebXDAO" },
+      { name: "Twitter", href: "https://twitter.com/WebXDAO" },
+      { name: "Discord", href: "https://discord.gg/JaJngac9" },
+      { name: "LinkedIn", href: "https://www.linkedin.com/company/76098793" },
     ],
   },
   {
     name: "CONTACT",
     href: "/contact",
-    children: [{ name: "Contact us", href: "" }],
+    children: [{ name: "Contact us", href: "https://discord.com/invite/TSRwqx4K2v" }],
   },
   {
     name: "PARTNERS",
     href: "/partners",
     children: [
-      { name: "Our partners", href: "" },
-      { name: "Get partner", href: "" },
+      { name: "Our partners", href: "/partners" },
+      { name: "Get partner", href: "/partners" },
     ],
   },
 ];
@@ -65,10 +65,10 @@ const Footer = () => {
                       {item.children.map((child) => (
                         <li key={child.name}>
                           <Link
-                            className="transition text-white/60 hover:text-white/60/75"
-                            href=""
+                            className="transition text-white/60 hover:text-white/60/75 "
+                            href={child.href}
                           >
-                            <span className="text-white/60">{child.name}</span>
+                            <span className="text-white/60 cursor-pointer">{child.name}</span>
                           </Link>
                         </li>
                       ))}
