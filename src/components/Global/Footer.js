@@ -31,7 +31,7 @@ const navigation = [
     href: "/partners",
     children: [
       { name: "Our partners", href: "/partners" },
-      { name: "Get partner", href: "/partners" },
+      { name: "Partner with us", href: "/partners" },
     ],
   },
 ];
