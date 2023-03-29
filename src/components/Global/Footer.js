@@ -24,7 +24,7 @@ const navigation = [
   {
     name: "CONTACT",
     href: "/contact",
-    children: [{ name: "Contact us", href: "https://discord.com/invite/TSRwqx4K2v" }],
+    children: [{ name: "Contact us", href: "web3opensourcecommunity@gmail.com" }],
   },
   {
     name: "PARTNERS",
