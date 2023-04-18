@@ -24,7 +24,7 @@ const navigation = [
   {
     name: "CONTACT",
     href: "/contact",
-    children: [{ name: "Contact us", href: "web3opensourcecommunity@gmail.com" }],
+    children: [{ name: "Contact us", href: "mailto:web3opensourcecommunity@gmail.com" }],
   },
   {
     name: "PARTNERS",
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-teal-600 sm:justify-start">
-              <a href="https://webxdao.github.io/">
+              <a href="https://webxdao.xyz">
                 <span className="sr-only">WebX DAO</span>
                 <img className="w-auto h-14 sm:h-16" src="/images/logo/logo.png" alt="WebX DAO Logo" />
               </a>
@@ -67,6 +67,7 @@ const Footer = () => {
                           <Link
                             className="transition text-white/60 hover:text-white/60/75 "
                             href={child.href}
+                            key = {child.name}
                           >
                             <span className="text-white/60 cursor-pointer">{child.name}</span>
                           </Link>
