@@ -10,13 +10,15 @@ const CallToActionHero = () => {
           <button className="w-full relative px-7 py-4 bg-black/80 rounded-lg leading-none flex items-center divide-x divide-gray-600 ">
             <span className="flex items-center space-x-5 ">
               <VscGithub className="w-6 h-6 text-cyber-webx hover:text-pink-600 hover:-rotate-6" />
-              <span className="pr-6 text-gray-100 text-sm md:text-base">
-                Hacktoberfest 2022
-              </span>
+              <Link href="https://hacktoberfest.com">
+                <span className="pr-6 text-gray-100 text-sm md:text-base">
+                  Hacktoberfest 2022
+                </span>
+              </Link>
             </span>
             <Link href="https://github.com/WebXDAO">
               <span className="pl-6 text-white/50 group-hover:text-gray-100 transition duration-200 text-sm md:text-base">
-                See GitHub org &rarr;
+                See GitHub organization &rarr;
               </span>
             </Link>
           </button>

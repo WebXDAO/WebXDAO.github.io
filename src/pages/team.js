@@ -51,13 +51,13 @@ const mod = [
     linkedinUrl: '#',
   },
   {
-    name: 'Krish Gupta',
+    name: 'Krish Gupta (a.k.a Emotidev)',
     role: 'Mods / Maintainer',
     imageUrl:
-      'https://github.com/krshkun.png',
-    githubUrl: 'https://github.com/krshkun',
-    twitterUrl: 'https://twitter.com/krshkun',
-    linkedinUrl: 'https://linkedin.com/in/krshkun',
+      'https://github.com/emotidev.png',
+    githubUrl: 'https://github.com/emotidev',
+    twitterUrl: 'https://twitter.com/emotidev',
+    linkedinUrl: 'https://linkedin.com/in/emotidev',
   },
   {
     name: 'Abhinav MV',

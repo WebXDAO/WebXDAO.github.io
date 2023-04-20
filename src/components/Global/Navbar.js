@@ -56,7 +56,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href="#"
+              href="https://github.com/WebXDAO"
               className="inline-flex items-center px-4 py-2 text-base font-medium text-gray-600 bg-gray-100 border border-transparent rounded-md hover:text-white/80 hover:bg-gray-700"
             >
               GitHub
