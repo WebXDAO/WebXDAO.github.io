@@ -4,10 +4,10 @@ import Link from "next/link";
 const navigation = [
   {
     name: "ABOUT US",
-    href: "/about",
+    href: "/about-us",
     children: [
-      { name: "Who we are?", href: "/about#who" },
-      { name: "What we do?", href: "/about#what" },
+      { name: "Who we are?", href: "/about-us#who" },
+      { name: "What we do?", href: "/about-us#what" },
       { name: "Team WebX", href: "/team" },
     ],
   },

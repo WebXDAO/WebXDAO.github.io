@@ -44,8 +44,8 @@ export default function AboutSection() {
 										<div className="justify-center flex items-center mt-3">
 											<img
 												className=" lg:w-50 sm:w-100"
-												src="/images/shapes/ossCommunity.png"
-												alt=""
+												src="/public/images/shapes/osscommunity.png"
+												alt="OSS Community"
 											/>
 										</div>
 									</div>
