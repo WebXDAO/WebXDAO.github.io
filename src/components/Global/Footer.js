@@ -58,7 +58,7 @@ const Footer = () => {
             {navigation.map((item) => (
               <>
                 <div key={item.name + "_footer"} className="sm:text-left">
-                  <p className="text-lg font-medium sm:text-sm text-white/90">{item.name}</p>
+                  <p className="text-lg sm:text-sm font-medium text-white/90">{item.name}</p>
 
                   <nav className="mt-4 sm:mt-8" aria-label={item.name}>
                     <ul className="space-y-4 text-sm">
@@ -69,7 +69,7 @@ const Footer = () => {
                             href={child.href}
                             key = {child.name}
                           >
-                            <span className="cursor-pointer text-white/60">{child.name}</span>
+                            <span className="text-white/60 cursor-pointer">{child.name}</span>
                           </Link>
                         </li>
                       ))}
