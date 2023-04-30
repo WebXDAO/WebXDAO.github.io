@@ -17,7 +17,7 @@ const navigation = [
     children: [
       { name: "GitHub", href: "https://github.com/WebXDAO" },
       { name: "Twitter", href: "https://twitter.com/WebXDAO" },
-      { name: "Discord", href: "https://dsc.gg/webxdao" },
+      { name: "Discord", href: "https://discord.webxdao.xyz/" },
       { name: "LinkedIn", href: "https://www.linkedin.com/company/76098793" },
     ],
   },
@@ -58,7 +58,7 @@ const Footer = () => {
             {navigation.map((item) => (
               <>
                 <div key={item.name + "_footer"} className="sm:text-left">
-                  <p className="text-lg sm:text-sm font-medium text-white/90">{item.name}</p>
+                  <p className="text-lg font-medium sm:text-sm text-white/90">{item.name}</p>
 
                   <nav className="mt-4 sm:mt-8" aria-label={item.name}>
                     <ul className="space-y-4 text-sm">
@@ -69,7 +69,7 @@ const Footer = () => {
                             href={child.href}
                             key = {child.name}
                           >
-                            <span className="text-white/60 cursor-pointer">{child.name}</span>
+                            <span className="cursor-pointer text-white/60">{child.name}</span>
                           </Link>
                         </li>
                       ))}
