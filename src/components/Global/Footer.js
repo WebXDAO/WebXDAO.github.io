@@ -17,7 +17,7 @@ const navigation = [
     children: [
       { name: "GitHub", href: "https://github.com/WebXDAO" },
       { name: "Twitter", href: "https://twitter.com/WebXDAO" },
-      { name: "Discord", href: "https://dsc.gg/webxdao" },
+      { name: "Discord", href: "https://discord.webxdao.xyz/" },
       { name: "LinkedIn", href: "https://www.linkedin.com/company/76098793" },
     ],
   },
