@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import Image from "next/image"
+import CursorHoverster from "@/components/cursor-hoverster"
 
 
 export default function IndexPage() {
@@ -13,13 +14,15 @@ export default function IndexPage() {
     <>
       {/* TODO: How can i put the image in the background.. absolute / relative thingy */}
 
-      <section className="flex flex-col items-center min-h-screen justify-center text-center relative">
+      <section className="flex flex-col items-center min-h-screen justify-center text-center relative overflow-hidden">
 
         <div className="flex flex-col relative z-10 gap-6">
           <div className="flex max-w-[980px] flex-col items-center gap-2 ">
 
-            <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Shapping <span className="text-indigo-600"> web</span> that will <br className="hidden sm:inline" />captivate the world.
+            <h1 className="text-3xl font-medium leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-700 to-slate-900 mix-blend-difference">
+              <span className="block">Shapping web</span>
+              <span className="block">that will captivate</span>
+              <span className="block">the world.</span>
             </h1>
 
           </div>
@@ -44,31 +47,22 @@ export default function IndexPage() {
             </Link>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
+          <div className="flex flex-col items-center gap-4 mt-10">
+            <p className="max-w-[700px] text-lg text-slate-900 dark:text-white sm:text-xl">
               Our community is based on open-source principles and e're focused on shaping the future of the web. Join us as we collaborate on projects, share knowledge, and build community.
             </p>
           </div>
         </div>
 
         <div className="absolute">
-          <Image src="/12.png" width={1200} height={1200} alt="logo" />
+          <Image src="/12.png" width={1200} height={1200} alt="logo" className="mix-blend-difference" />
         </div>
+
+        <Image src='/flying-card-001.png' alt="flying card 001" width={135} height={165} className="absolute top-[12rem] left-[12rem]" />
+
+        <Image src='/flying-card-002.png' alt="flying card 001" width={208} height={259} className="absolute bottom-[15rem] right-[12rem]" />
+        <CursorHoverster />
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       {/* Features */}
@@ -81,17 +75,16 @@ export default function IndexPage() {
           <div className="flex gap-4">
 
             <div className="flex items-center">
-              <Icons.twitter className="h-5 w-5 mr-1" />
+            <Icons.twitter className="h-5 w-5 mr-1 fill-current" />
               <span className="">Twitter</span>
             </div>
 
             <div className="flex items-center">
-              <Icons.discord className="h-5 w-5 mr-1" />
+              <Icons.discord className="h-5 w-5 mr-1 fill-current" />
               <span className="">Discord</span>
             </div>
           </div>
         
-
         </div>
       </section> */}
 
