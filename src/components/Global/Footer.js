@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const navigation = [
   {
-    name: "ABOUT US",
-    href: "/about-us",
+    name: "About Us",
+    href: "/about",
     children: [
       { name: "Who we are?", href: "/about-us#who" },
       { name: "What we do?", href: "/about-us#what" },
@@ -12,7 +12,7 @@ const navigation = [
     ],
   },
   {
-    name: "SOCIALS",
+    name: "Socials",
     href: "/",
     children: [
       { name: "GitHub", href: "https://github.com/WebXDAO" },
@@ -22,12 +22,12 @@ const navigation = [
     ],
   },
   {
-    name: "CONTACT",
+    name: "Contact",
     href: "/contact",
     children: [{ name: "Contact us", href: "mailto:web3opensourcecommunity@gmail.com" }],
   },
   {
-    name: "PARTNERS",
+    name: "Partners",
     href: "/partners",
     children: [
       { name: "Our partners", href: "/partners" },
@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="flex justify-center text-teal-600 sm:justify-start">
               <a href="https://webxdao.xyz">
                 <span className="sr-only">WebX DAO</span>
-                <img className="w-auto h-14 sm:h-16" src="/images/logo/logo.png" alt="WebX DAO Logo" />
+                <img className="w-auto sm:h-14 md:h-16 h-12" src="/images/logo/logo.png" alt="" />
               </a>
             </div>
             {/* 
@@ -60,16 +60,14 @@ const Footer = () => {
                 <div key={item.name + "_footer"} className="sm:text-left">
                   <p className="text-lg sm:text-sm font-medium text-white/90">{item.name}</p>
 
-                  <nav className="mt-4 sm:mt-8" aria-label={item.name}>
+                  <nav className="mt-4 sm:mt-3" aria-label={item.name}>
                     <ul className="space-y-4 text-sm">
                       {item.children.map((child) => (
                         <li key={child.name}>
-                          <Link
-                            className="transition text-white/60 hover:text-white/60/75 "
-                            href={child.href}
-                            key = {child.name}
-                          >
-                            <span className="text-white/60 cursor-pointer">{child.name}</span>
+                          <Link href="/">
+                            <span className="text-white/60 hover:text-white/95 transition cursor-pointer">
+                              {child.name}
+                            </span>
                           </Link>
                         </li>
                       ))}
