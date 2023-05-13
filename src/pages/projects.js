@@ -36,12 +36,12 @@ const Projects = ({ success = false, projectsData = [] }) => {
       <Head>
         <title>Projects | WebXDAO</title>
       </Head>
-      <section className="text-white text-center bg-[#00007f]">
-        <div className="px-5 py-10 sm:p-20">
-          <h1 className="font-bold text-3xl md:text-5xl antialiased">
+      <section className="py-8">
+        <div className="container max-w-5xl mx-auto">
+          <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-white">
             Resources/Projects
           </h1>
-          <div className="mt-6 text-lg md:text-xl font-light text-true-gray-500 antialiased">
+          <div className="w-full mt-6 text-lg md:text-xl font-light leading-tight text-center text-white">
             Here you can find a list of good projects and resources to learn
             about Blockchain and Web 3.0
           </div>

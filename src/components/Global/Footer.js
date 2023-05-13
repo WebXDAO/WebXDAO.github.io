@@ -6,8 +6,8 @@ const navigation = [
     name: "About Us",
     href: "/about",
     children: [
-      { name: "Who we are?", href: "/about#who" },
-      { name: "What we do?", href: "/about#what" },
+      { name: "Who we are?", href: "/about-us#who" },
+      { name: "What we do?", href: "/about-us#what" },
       { name: "Team WebX", href: "/team" },
     ],
   },
@@ -15,23 +15,23 @@ const navigation = [
     name: "Socials",
     href: "/",
     children: [
-      { name: "GitHub", href: "" },
-      { name: "Twitter", href: "" },
-      { name: "Discord", href: "" },
-      { name: "LinkedIn", href: "" },
+      { name: "GitHub", href: "https://github.com/WebXDAO" },
+      { name: "Twitter", href: "https://twitter.com/WebXDAO" },
+      { name: "Discord", href: "https://discord.webxdao.xyz/" },
+      { name: "LinkedIn", href: "https://www.linkedin.com/company/76098793" },
     ],
   },
   {
     name: "Contact",
     href: "/contact",
-    children: [{ name: "Contact us", href: "" }],
+    children: [{ name: "Contact us", href: "mailto:web3opensourcecommunity@gmail.com" }],
   },
   {
     name: "Partners",
     href: "/partners",
     children: [
-      { name: "Our partners", href: "" },
-      { name: "Get partner", href: "" },
+      { name: "Our partners", href: "/partners" },
+      { name: "Partner with us", href: "/partners" },
     ],
   },
 ];
@@ -43,15 +43,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-teal-600 sm:justify-start">
-              <a href="https://webxdao.github.io/">
+              <a href="https://webxdao.xyz">
                 <span className="sr-only">WebX DAO</span>
                 <img className="w-auto sm:h-14 md:h-16 h-12" src="/images/logo/logo.png" alt="" />
               </a>
             </div>
-            {/*
+            {/* 
             <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-white/80 sm:max-w-xs sm:mx-0 sm:text-left">
               Add organization description here!
-            </p>*/}
+            </p> */}
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">

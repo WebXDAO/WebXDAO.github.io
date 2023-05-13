@@ -1,20 +1,21 @@
 version: "3"
+
 services:
-  react-app:
-    restart: always
+  next-app:
     build:
-      context: ./
+      context: .
       dockerfile: Dockerfile
-    image: amazon-clone
+    image: webxdao-website
+    restart: always
     stdin_open: true
     ports:
       - "3000:3000"
     networks:
-      - app
+      - app-net
     volumes:
       - ./src:/app/src
-      - ./app/node_modules
+      - /app/node_modules
 
 networks:
-  app:
+  app-net:
     driver: bridge

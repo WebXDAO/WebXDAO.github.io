@@ -24,16 +24,16 @@ const Navbar = () => {
           <div className="flex items-center flex-1">
             <div className="flex items-center justify-between w-full lg:w-auto">
               <Link href="/">
+                  <a>
                 <>
-                  <a href="https://webxdao.github.io/">
                     <span className="sr-only ">WebX DAO</span>
                     <img
-                      className="h-10 w-auto sm:h-10 md:h-[4.2rem] cursor-pointer"
+                      className="h-12 w-auto sm:h-12 md:h-[4.2rem] cursor-pointer"
                       src="/images/logo/logo.png"
                       alt="WebX DAO White Logo"
                     />
+                        </>
                   </a>
-                </>
               </Link>
               <div className="flex items-center justify-between -mr-2 lg:hidden ">
                 <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-transparent rounded-md focus-ring-inset hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
@@ -56,7 +56,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href="#"
+              href="https://github.com/sponsors/WebXDAO"
               className="inline-flex items-center px-4 py-2 text-base font-medium text-gray-600 bg-gray-100 border border-transparent rounded-md hover:text-white/80 hover:bg-gray-700"
             >
               GitHub
@@ -101,7 +101,7 @@ const Navbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-2 text-base font-medium text-gray-100 rounded-md hover:bg-gray-50"
+                    className="block px-3 py-2 text-base font-medium text-gray-100 rounded-md hover:bg-gray-600"
                   >
                     {item.name}
                   </a>
