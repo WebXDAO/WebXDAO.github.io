@@ -18,7 +18,7 @@ export default function IndexPage() {
         <div className="flex flex-col relative z-10 gap-6">
           <div className="flex max-w-[980px] flex-col items-center gap-2 ">
 
-            <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Shapping <span className="text-indigo-600"> web</span> that will <br className="hidden sm:inline" />captivate the world.
             </h1>
 
@@ -26,7 +26,7 @@ export default function IndexPage() {
 
           <div className="flex gap-4 justify-center">
             <Link
-              href={siteConfig.links.docs}
+              href={siteConfig.links.webxdao_getstarted}
               target="_blank"
               rel="noreferrer"
               className={buttonVariants({ size: "lg" })}
@@ -36,7 +36,7 @@ export default function IndexPage() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href={siteConfig.links.github}
+              href={siteConfig.links.webxdao_gh}
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
               <Icons.gitHub className="h-5 w-5 mr-2" />

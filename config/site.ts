@@ -30,5 +30,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/shadcn/ui",
     docs: "https://ui.shadcn.com",
+    webxdao_gh: "https://github.com/WebXDAO/",
+    webxdao_getstarted: "https://github.com/WebXDAO/start-here"
   },
 }
