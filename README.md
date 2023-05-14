@@ -4,7 +4,7 @@
 ---
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/WebXDAO/WebXDAO.github.io/blob/master/LICENSE)
 
-The content in this repository is temporary, we are making new web design for WebX DAO. If you want to help, please message us on [Discord](https://discord.gg/TSRwqx4K2v)
+The content in this repository is temporary, we are making new web design for WebX DAO. If you want to help, please message us on [Discord]([https://discord.webxdao.xyz/)
 
 ---
 
