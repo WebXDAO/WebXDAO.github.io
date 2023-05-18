@@ -78,4 +78,35 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  .c-pointer {
+    width: 10vmin;
+    height: 10vmin;
+    background: radial-gradient(74% 86% at 67% 38%, #E638EAFF 10%, #073AFF00 100%),linear-gradient(77deg, #F8E7F7FF 2%, #8D8CF1FF 100%);
+    border-radius: 25%;
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    overflow: hidden;
+    filter: blur(100px);
+    animation: cursor 10s infinite;
+    box-shadow: 5vmin 5vmin 5vmin #9f3bf1;
+    z-index: 1;
+  }
+  
+  @keyframes cursor {
+    0% {
+      rotate: 0deg;
+      filter: blur(90px);
+    }
+    50% {
+      scale: 1.5;
+    }
+    100% {
+      rotate: 360deg;
+      filter: blur(80px);
+    }
+  }  
 }
