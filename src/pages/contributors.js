@@ -17,17 +17,17 @@ const contributors = ({ data }) => {
       <Head>
         <title>Contributors | WebXDAO</title>
       </Head>
-      <section className="py-8">
+      <section className="max-w-7xl mx-auto">
         <div className="container max-w-5xl mx-auto">
           <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-white">
             Contributors
           </h1>
         </div>
-        <div className="relative z-1 my-[40px] mx-0 flex justify-center items-center flex-wrap">
+        <div className="relative z-1 my-[40px] mx-0 flex justify-between items-center flex-wrap">
           {data.map((curElem) => {
             return (
               <div
-                className="relative flex items-center justify-center w-48 h-64 m-5 m-10 bg-white shadow-2xl group bg-opacity-5 rounded-2xl backdrop-filter backdrop-blur-md"
+                className="relative flex items-center justify-center w-48 h-64 mx-auto my-5 bg-white shadow-2xl group bg-opacity-5 rounded-2xl backdrop-filter backdrop-blur-md"
                 key={curElem.login}
               >
                 <div className="relative flex flex-col items-center justify-center opacity-70 hover:opacity-100">
