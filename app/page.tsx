@@ -100,7 +100,7 @@ export default function IndexPage() {
       </section>
 
       {/* Blurbs */}
-      <section className="flex py-0 px-40">
+      <section className="flex py-0 justify-center px-40">
         <div className="flex my-12 gap-8">
           <div className="flex flex-col gap-3 items-center justify-center text-center">
             <div className="p-8 bg-white border-l-3 border-opacity-38 shadow-md shadow-purple-300 rounded-lg border-white flex justify-center">
