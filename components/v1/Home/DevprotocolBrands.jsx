@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { prefix } from "../../constants";
+import Image from "next/image";
 
 const DevprotocolBrands = () => {
   const projects = [
@@ -25,36 +26,38 @@ const DevprotocolBrands = () => {
 
   return (
     <section className="bg-white py-8">
-      <div className="container max-w-5xl mx-auto m-8">
-        <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+      <div className="container m-8 mx-auto max-w-5xl">
+        <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-gray-800">
           Dev Protocol Brand
         </h1>
-        <p className="text-center text-gray-800 text-base px-6 mb-5 mx-10">
+        <p className="mx-10 mb-5 px-6 text-center text-base text-gray-800">
           Our Partner Open Source Projects
         </p>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        <div className="mb-4 w-full">
+          <div className="gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25"></div>
         </div>
       </div>
 
-      <div className="container mx-auto text-black max-w-screen-xl flex flex-wrap flex-col pt-4 mb-8 px-8">
-        <div className="items-center gap-6 text-black grid grid-cols-1 md:grid-cols-3">
+      <div className="container mx-auto mb-8 flex max-w-screen-xl flex-col flex-wrap px-8 pt-4 text-black">
+        <div className="grid grid-cols-1 items-center gap-6 text-black md:grid-cols-3">
           {projects.map(({ name, imgUrl, text, url }, index) => (
             <Link
               key={name + index}
               href={url}
               passHref
-              className="h-full group"
+              className="group h-full"
             >
-              <div className="mx-auto flex flex-col justify-evenly items-center h-full object-center text-center p-8 shadow cursor-pointer rounded-md focus:outline-none focus:shadow-outline transform bg-white transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
-                <div className="relative h-24 w-full flex-shrink-0">
-                  <img
+              <div className="focus:shadow-outline mx-auto flex h-full cursor-pointer flex-col items-center justify-evenly rounded-md bg-white object-center p-8 text-center shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg focus:outline-none">
+                <div className="relative h-24 w-full shrink-0">
+                  <Image
                     src={prefix + imgUrl}
+                    width={400}
+                    height={250}
                     alt={name}
                     className="object-contain"
                   />
                 </div>
-                <p className="text-gray-800 mt-8 mb-2 text-sm px-8 sm:px-4 h-full">
+                <p className="mb-2 mt-8 h-full px-8 text-sm text-gray-800 sm:px-4">
                   {text}
                 </p>
               </div>

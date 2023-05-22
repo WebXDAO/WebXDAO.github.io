@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { prefix } from "../../constants";
 
 const Testimonials = () => {
@@ -27,24 +28,24 @@ const Testimonials = () => {
 
   return (
     <section className="bg-gray-50 py-8">
-      <div className="container max-w-5xl mx-auto m-8">
-        <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+      <div className="container m-8 mx-auto max-w-5xl">
+        <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-gray-800">
           Testimonials
         </h1>
-        <p className="text-center text-gray-800 text-base px-6 mb-5 mx-10">
+        <p className="mx-10 mb-5 px-6 text-center text-base text-gray-800">
           Community Members Experience
         </p>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        <div className="mb-4 w-full">
+          <div className="gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25"></div>
         </div>
       </div>
 
-      <div className="lg:container mx-auto flex flex-wrap pt-4 mb-8 px-8 pb-12">
-        <div className="items-center gap-6 text-black grid grid-cols-1 md:grid-cols-3">
+      <div className="mx-auto mb-8 flex flex-wrap px-8 pb-12 pt-4 lg:container">
+        <div className="grid grid-cols-1 items-center gap-6 text-black md:grid-cols-3">
           {data.map(({ name, imgUrl, userTitle, rating, text }, index) => (
             <div
               key={name + index}
-              className="mx-auto flex flex-col justify-evenly h-full content-start p-6 shadow cursor-pointer rounded-md focus:outline-none focus:shadow-outline transform bg-white transition hover:shadow-lg hover:scale-105 duration-300 ease-in-out"
+              className="focus:shadow-outline mx-auto flex h-full cursor-pointer flex-col content-start justify-evenly rounded-md bg-white p-6 shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg focus:outline-none"
             >
               <div className="flex py-4">
                 <div className="flex items-center">
@@ -52,7 +53,7 @@ const Testimonials = () => {
                     (item, index) => (
                       <svg
                         key={item + index}
-                        className="mx-1 w-4 h-4 fill-current text-yellow-500"
+                        className="mx-1 h-4 w-4 fill-current text-yellow-500"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -64,7 +65,7 @@ const Testimonials = () => {
                     (item, index) => (
                       <svg
                         key={item + index}
-                        className="mx-1 w-4 h-4 fill-current text-gray-400"
+                        className="mx-1 h-4 w-4 fill-current text-gray-400"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -74,21 +75,23 @@ const Testimonials = () => {
                   )}
                 </div>
               </div>
-              <p className="text-gray-600 text-base mb-2">{text}</p>
+              <p className="mb-2 text-base text-gray-600">{text}</p>
               <div className="flex flex-row items-center justify-start py-2">
-                <div className="relative h-16 w-16 flex-shrink-0">
-                  <img
+                <div className="relative h-16 w-16 shrink-0">
+                  <Image
                     src={prefix + imgUrl}
+                    width={400}
+                    height={250}
                     alt={name}
                     className="object-contain"
                   />
                 </div>
 
                 <div className="flex flex-col justify-center pl-3">
-                  <div className="w-full font-bold text-xl text-gray-800">
+                  <div className="w-full text-xl font-bold text-gray-800">
                     {name}
                   </div>
-                  <p className="text-gray-800 text-base">{userTitle}</p>
+                  <p className="text-base text-gray-800">{userTitle}</p>
                 </div>
               </div>
             </div>

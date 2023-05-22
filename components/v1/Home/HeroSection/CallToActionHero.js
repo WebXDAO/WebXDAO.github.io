@@ -3,21 +3,21 @@ import Link from "next/link";
 
 const CallToActionHero = () => {
   return (
-    <div className="pb-2 flex">
-      <div className="w-full grid gap-8 items-start">
-        <div className="relative group">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-fuchsia-700 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-          <button className="w-full relative px-7 py-4 bg-black/80 rounded-lg leading-none flex items-center divide-x divide-gray-600 ">
+    <div className="flex pb-2">
+      <div className="grid w-full items-start gap-8">
+        <div className="group relative">
+          <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-fuchsia-700 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
+          <button className="relative flex w-full items-center divide-x divide-gray-600 rounded-lg bg-black/80 px-7 py-4 leading-none ">
             <span className="flex items-center space-x-5 ">
-              <VscGithub className="w-6 h-6 text-cyber-webx hover:text-pink-600 hover:-rotate-6" />
+              <VscGithub className="text-cyber-webx h-6 w-6 hover:-rotate-6 hover:text-pink-600" />
               <Link href="https://hacktoberfest.com">
-                <span className="pr-6 text-gray-100 text-sm md:text-base">
+                <span className="pr-6 text-sm text-gray-100 md:text-base">
                   Hacktoberfest 2022
                 </span>
               </Link>
             </span>
             <Link href="https://github.com/WebXDAO">
-              <span className="pl-6 text-white/50 group-hover:text-gray-100 transition duration-200 text-sm md:text-base">
+              <span className="pl-6 text-sm text-white/50 transition duration-200 group-hover:text-gray-100 md:text-base">
                 See GitHub organization &rarr;
               </span>
             </Link>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { prefix } from "../../constants";
 
 const DeveloperPath = () => {
@@ -32,28 +33,30 @@ const DeveloperPath = () => {
   return (
     <section className="bg-gray-50">
       <div className="container mx-auto max-w-7xl pt-8">
-        <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+        <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-gray-800">
           Blockchain Developer Path
         </h1>
-        <p className="text-center text-gray-800 text-base px-6 mb-5 mx-10">
+        <p className="mx-10 mb-5 px-6 text-center text-base text-gray-800">
           The latest field in the tech industry
         </p>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        <div className="mb-4 w-full">
+          <div className="gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25"></div>
         </div>
 
-        <div className="text-black grid grid-col-1 p-3 gap-y-3 md:grid md:grid-cols-2 md:gap-3 md:p-3">
+        <div className="grid-col-1 grid gap-y-3 p-3 text-black md:grid md:grid-cols-2 md:gap-3 md:p-3">
           {devPaths.map(({ name, imgUrl, text, url }, index) => (
             <div
               key={name + index}
-              className="bg-white flex-1 rounded-md shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 hover:shadow-lg hover:z-20 duration-300 ease-in-out p-4"
+              className="focus:shadow-outline flex-1 rounded-md bg-white p-4 shadow transition duration-300 ease-in-out hover:z-20 hover:scale-105 hover:shadow-lg focus:outline-none"
             >
               <div className="flex items-center justify-start overflow-hidden">
-                <div className="relative bg-contain w-1/3">
-                  <img
-                    alt={name}
-                    className="bg-gray-50 p-5 rounded-md"
+                <div className="relative w-1/3 bg-contain">
+                  <Image
                     src={prefix + imgUrl}
+                    width={400}
+                    height={250}
+                    alt={name}
+                    className="rounded-md bg-gray-50 p-5"
                   />
                 </div>
                 <div id="body" className="flex flex-col gap-y-3 pl-5">
@@ -63,13 +66,13 @@ const DeveloperPath = () => {
                   <p id="caption" className="text-gray-800">
                     {text}
                   </p>
-                  <div id="label" className="flex text-sm gap-x-3">
+                  <div id="label" className="flex gap-x-3 text-sm">
                     <a href={url}>
-                      <button className="cursor-pointer font-semibold bg-blue-100 text-blue-600  rounded-md py-2 px-4 focus:outline-none">
+                      <button className="cursor-pointer rounded-md bg-blue-100 px-4  py-2 font-semibold text-blue-600 focus:outline-none">
                         Take me there!
                       </button>
                     </a>
-                    <button className="font-semibold bg-blue-100 text-blue-600 rounded-md py-2 px-4 focus:outline-none">
+                    <button className="rounded-md bg-blue-100 px-4 py-2 font-semibold text-blue-600 focus:outline-none">
                       Development
                     </button>
                   </div>
@@ -79,13 +82,13 @@ const DeveloperPath = () => {
           ))}
         </div>
 
-        <div className="flex justify-center items-center py-5">
+        <div className="flex items-center justify-center py-5">
           <a
             href="https://github.com/WebXDAO/blockchain-dev-path"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="bg-gray-700 text-white rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out">
+            <button className="hover:scale-85 rounded-md bg-gray-700 px-8 py-2 text-white shadow transition duration-300 ease-in-out hover:shadow-lg">
               See All
             </button>
           </a>
