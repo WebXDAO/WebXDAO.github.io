@@ -15,10 +15,10 @@ export default function IndexPage() {
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden text-center">
         <div className="relative z-10 flex flex-col gap-6">
           <div className="flex max-w-[980px] flex-col items-center gap-2 ">
-            <h1 className="bg-gradient-to-r from-indigo-700 via-purple-700 to-slate-900 bg-clip-text text-3xl font-medium leading-tight tracking-tighter text-transparent mix-blend-difference sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block">Shaping web</span>
-              <span className="block">that will captivate</span>
-              <span className="block">the world.</span>
+            <h1 className="bg-gradient-to-r from-indigo-700 via-purple-700 to-slate-900 bg-clip-text text-3xl font-extrabold leading-tight text-transparent mix-blend-difference sm:text-5xl md:text-6xl lg:text-7xl">
+              <span className="block font-gilroy">Shaping <span className=" italic text-blue-700">web</span></span>
+              <span className="block font-gilroy">that will captivate</span>
+              <span className="block font-gilroy">the world.</span>
             </h1>
           </div>
 
@@ -29,7 +29,7 @@ export default function IndexPage() {
               rel="noreferrer"
               className={buttonVariants({ size: "lg" })}
             >
-              Get started
+              Get Started
             </Link>
             <Link
               target="_blank"
@@ -43,7 +43,7 @@ export default function IndexPage() {
           </div>
 
           <div className="mt-10 flex flex-col items-center gap-4">
-            <p className="max-w-[700px] text-lg text-slate-900 dark:text-white sm:text-xl">
+            <p className="max-w-[700px] text-slate-950 dark:text-white">
               Our community is based on open-source principles and we&apos;re focused on shaping the
               future of the web. Join us as we collaborate on projects, share knowledge, and build
               community.
@@ -82,7 +82,7 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="px-32 text-xl font-semibold font-gilroy leading-tight sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
@@ -138,7 +138,7 @@ export default function IndexPage() {
       {/* Partners */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="px-32 text-xl font-semibold font-gilroy leading-tight sm:text-2xl md:text-3xl lg:text-2xl">
             Get to know our Community Partners
           </h3>
           <h2>Community Partners we highly value</h2>
