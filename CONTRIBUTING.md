@@ -114,8 +114,15 @@ git push origin your-branch-name
 
 #### Good Practice ✅
 
-- Comment on the issue to get assigned
 - Create an issue before you make a Pull Request
+- Comment on the issue to get assigned
+- First come, first serve
+
+## GirlScript Summer of Code'23 Guidelines 💻
+
+- Create an issue before you make a Pull Request
+- Comment on the issue to get assigned
+- First come, first serve
 
 #### Bad Practice ❌
 
