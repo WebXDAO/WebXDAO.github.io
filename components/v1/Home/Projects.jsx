@@ -25,24 +25,24 @@ const Projects = () => {
 
   return (
     <section className="bg-white py-8">
-      <div className="container mx-auto flex flex-wrap pt-4 pb-12">
+      <div className="container mx-auto flex flex-wrap pb-12 pt-4">
         {projectsData.map((item, index) => (
           <div
             key={item.title + index}
-            className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center"
+            className="flex w-full shrink grow flex-col p-6 text-center md:w-1/3"
           >
-            <div className="flex-1 bg-white overflow-hidden">
+            <div className="flex-1 overflow-hidden bg-white">
               <a
                 href="#"
                 className="flex flex-wrap no-underline  hover:no-underline"
               >
-                <div className={`w-full font-bold text-3xl px-6 ${item.color}`}>
+                <div className={`w-full px-6 text-3xl font-bold ${item.color}`}>
                   {item.num}+
                 </div>
-                <div className="w-full font-bold text-xl text-gray-900 px-6 p-5">
+                <div className="w-full p-5 px-6 text-xl font-bold text-gray-900">
                   {item.title}
                 </div>
-                <p className="text-gray-800 text-base px-6 mb-5 text-center mx-10">
+                <p className="mx-10 mb-5 px-6 text-center text-base text-gray-800">
                   {item.text}
                 </p>
               </a>
