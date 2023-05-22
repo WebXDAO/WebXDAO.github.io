@@ -27,7 +27,7 @@ export const siteConfig = {
   ],
   links: {
     twitter: "https://twitter.com/WebXDAO",
-    github: "https://github.com/WebXDAO/WebXDAO.github.io",
+    github: "https://github.com/WebXDAO",
     // docs: "https://ui.shadcn.com",
     webxdao_gh: "https://github.com/WebXDAO/",
     webxdao_getstarted: "https://github.com/WebXDAO/start-here",
