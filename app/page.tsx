@@ -86,15 +86,25 @@ export default function IndexPage() {
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
+          <Link  target="_blank"
+              rel="noreferrer"
+              href={siteConfig.links.webxdao_twitter} >
             <div className="flex items-center">
+              
               <Icons.twitter className="mr-1 h-5 w-5 cursor-pointer fill-current" />
               <span className="cursor-pointer">Twitter</span>
-            </div>
-
+              
+              </div>
+              </Link>
+              
+              <Link  target="_blank"
+              rel="noreferrer"
+              href={siteConfig.links.webxdao_discord} >
             <div className="flex items-center">
               <Icons.discord className="mr-1 h-5 w-5 cursor-pointer fill-current" />
               <span className="cursor-pointer">Discord</span>
             </div>
+            </Link>
           </div>
         </div>
       </section>
