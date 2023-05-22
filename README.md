@@ -28,19 +28,13 @@ git clone https://github.com/WebXDAO/WebXDAO.github.io.git
 cd WebXDAO.github.io
 ```
 
-### 4\. Use this branch to contribute to the new design
-
-```
-git checkout v3
-```
-
-### 5\. Install dependencies
+### 4\. Install dependencies
 
 ```
 npm install
 ```
 
-### 6\. Run Nextjs
+### 5\. Run Nextjs
 
 ```
 npm run dev
