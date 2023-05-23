@@ -4,6 +4,7 @@ import Partners from "@/components/containers/Partners";
 import CursorHoverster from "@/components/cursor-hoverster";
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
+import ScrollToTopButton from "@/components/ui/TopButton";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
@@ -214,6 +215,7 @@ export default function IndexPage() {
 
           </div>
       </section> */}
+      <ScrollToTopButton />
     </>
   );
 }
