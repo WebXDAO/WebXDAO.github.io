@@ -1,5 +1,6 @@
 // 'use client'
 
+import Partners from "@/components/containers/Partners";
 import CursorHoverster from "@/components/cursor-hoverster";
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
@@ -146,83 +147,7 @@ export default function IndexPage() {
       </section>
 
       {/* Partners */}
-      <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
-        <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
-            Get to know our Community Partners
-          </h3>
-          <h2>Community Partners we highly value</h2>
-        </div>
-
-        <div className="mt-10 flex flex-row gap-32">
-          <div className="border-l-3 max-w-sm overflow-hidden rounded-lg bg-white shadow-md shadow-purple-300">
-            <Image className="w-full" src="/Dev-protocol-1.png" width={400} height={250} alt="" />
-            <div className="px-6 py-4">
-              <p className="text-base text-gray-700">
-                Dev Protocol is designed as a unique protocol to fairly evaluate OSS, which has been
-                economically undervalued for decades. It is built on the Ethereum blockchain and
-                brings economic value to all open source activities.
-              </p>
-            </div>
-            <div className="flex justify-end px-6 pb-2 pt-4">
-              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
-                <Image
-                  src="/Arrow1.png"
-                  alt="arrow"
-                  width={15}
-                  height={18}
-                  className="my-auto flex items-center"
-                />
-                Read More
-              </span>
-            </div>
-          </div>
-
-          <div className="border-l-3 max-w-sm overflow-hidden rounded-lg bg-white shadow-md shadow-purple-300">
-            <Image className="w-full" src="/The-Algorithms-1.png" width={400} height={250} alt="" />
-            <div className="px-6 py-4">
-              <p className="text-base text-gray-700">
-                The Algorithms is an open source community for learning Data Structures & Algorithms
-                and their implementation in any Programming Language.
-              </p>
-            </div>
-            <div className="mt-10 flex justify-end px-6 pb-2 pt-4">
-              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
-                <Image
-                  src="/Arrow1.png"
-                  alt="arrow"
-                  width={15}
-                  height={18}
-                  className="my-auto flex items-center"
-                />
-                Read More
-              </span>
-            </div>
-          </div>
-
-          <div className="border-l-3  max-w-sm overflow-hidden rounded-lg bg-white shadow-md shadow-purple-300">
-            <Image className="w-full" src="/Lumos-Labs-1.png" width={400} height={250} alt="Sunset in the mountains" />
-            <div className="px-6 py-4">
-              <p className="text-base text-gray-700">
-                Lumos labs is building a metaverse for builders and Web3 ecosystem enablers to share
-                opportunities to build scale-up.
-              </p>
-            </div>
-            <div className="mt-12 flex justify-end px-6 pb-2 pt-4">
-              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
-                <Image
-                  src="/Arrow1.png"
-                  alt="arrow"
-                  width={15}
-                  height={18}
-                  className="my-auto flex items-center"
-                />
-                Read More
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Partners />
 
       {/* Features */}
       {/* <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 justify-center text-center">
