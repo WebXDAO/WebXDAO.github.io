@@ -83,28 +83,22 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 inline-block text-transparent bg-clip-text sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
-          <Link  target="_blank"
-              rel="noreferrer"
-              href={siteConfig.links.webxdao_twitter} >
-            <div className="flex items-center">
-              
-              <Icons.twitter className="mr-1 h-5 w-5 cursor-pointer fill-current" />
-              <span className="cursor-pointer">Twitter</span>
-              
+            <Link target="_blank" rel="noreferrer" href={siteConfig.links.webxdao_twitter}>
+              <div className="flex items-center">
+                <Icons.twitter className="mr-1 h-5 w-5 cursor-pointer fill-current" />
+                <span className="cursor-pointer">Twitter</span>
               </div>
-              </Link>
-              
-              <Link  target="_blank"
-              rel="noreferrer"
-              href={siteConfig.links.webxdao_discord} >
-            <div className="flex items-center">
-              <Icons.discord className="mr-1 h-5 w-5 cursor-pointer fill-current" />
-              <span className="cursor-pointer">Discord</span>
-            </div>
+            </Link>
+
+            <Link target="_blank" rel="noreferrer" href={siteConfig.links.webxdao_discord}>
+              <div className="flex items-center">
+                <Icons.discord className="mr-1 h-5 w-5 cursor-pointer fill-current" />
+                <span className="cursor-pointer">Discord</span>
+              </div>
             </Link>
           </div>
         </div>
