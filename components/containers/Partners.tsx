@@ -42,13 +42,13 @@ const Partners: FC<PartnersProps> = ({}) => {
         </p>
       </div>
       <div className="flex px-6 pt-4">
-        <Link href={url} className="font-inter text-14.0418 mb-2 flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
+        <Link href={url} className="font-inter text-14.0418 mb-2 flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black transition duration-400 ease-in hover:bg-indigo-800 hover:text-white hover:border-indigo-800 ">
           <Image
             src="/Arrow1.png"
             alt="arrow"
             width={15}
             height={18}
-            className="my-auto flex items-center"
+            className="my-auto flex items-center hover:invert"
           />
           Read More
         </Link>
