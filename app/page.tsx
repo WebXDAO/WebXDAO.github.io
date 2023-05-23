@@ -7,9 +7,11 @@ import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function IndexPage() {
   return (
     <>
+    
       {/* TODO: How can i put the image in the background.. absolute / relative thingy */}
 
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden text-center">
@@ -165,13 +167,13 @@ export default function IndexPage() {
               </p>
             </div>
             <div className="flex justify-end px-6 pb-2 pt-4">
-              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
+              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black transition duration-400 ease-in hover:bg-indigo-800 hover:text-white hover:border-indigo-800">
                 <Image
                   src="/Arrow1.png"
                   alt="arrow"
                   width={15}
                   height={18}
-                  className="my-auto flex items-center"
+                  className="my-auto flex items-center hover:invert" 
                 />
                 Read More
               </span>
@@ -187,13 +189,13 @@ export default function IndexPage() {
               </p>
             </div>
             <div className="mt-10 flex justify-end px-6 pb-2 pt-4">
-              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
+              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black transition duration-400 ease-in hover:bg-indigo-800 hover:text-white hover:border-indigo-800">
                 <Image
                   src="/Arrow1.png"
                   alt="arrow"
                   width={15}
                   height={18}
-                  className="my-auto flex items-center"
+                  className="my-auto flex items-center hover:invert"
                 />
                 Read More
               </span>
@@ -209,13 +211,13 @@ export default function IndexPage() {
               </p>
             </div>
             <div className="mt-12 flex justify-end px-6 pb-2 pt-4">
-              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
+              <span className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black transition duration-400 ease-in hover:bg-indigo-800 hover:text-white hover:border-indigo-800">
                 <Image
                   src="/Arrow1.png"
                   alt="arrow"
                   width={15}
                   height={18}
-                  className="my-auto flex items-center"
+                  className="my-auto flex items-center hover:invert"
                 />
                 Read More
               </span>
