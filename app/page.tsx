@@ -87,24 +87,24 @@ export default function IndexPage() {
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
-          <Link  target="_blank"
+            <Link target="_blank"
               rel="noreferrer"
               href={siteConfig.links.webxdao_twitter} >
-            <div className="flex items-center">
-              
-              <Icons.twitter className="mr-1 h-5 w-5 cursor-pointer fill-current" />
-              <span className="cursor-pointer">Twitter</span>
-              
+              <div className="flex items-center">
+
+                <Icons.twitter className="mr-1 h-5 w-5 cursor-pointer fill-current" />
+                <span className="cursor-pointer">Twitter</span>
+
               </div>
-              </Link>
-              
-              <Link  target="_blank"
+            </Link>
+
+            <Link target="_blank"
               rel="noreferrer"
               href={siteConfig.links.webxdao_discord} >
-            <div className="flex items-center">
-              <Icons.discord className="mr-1 h-5 w-5 cursor-pointer fill-current" />
-              <span className="cursor-pointer">Discord</span>
-            </div>
+              <div className="flex items-center">
+                <Icons.discord className="mr-1 h-5 w-5 cursor-pointer fill-current" />
+                <span className="cursor-pointer">Discord</span>
+              </div>
             </Link>
           </div>
         </div>
@@ -214,6 +214,82 @@ export default function IndexPage() {
 
           </div>
       </section> */}
+
+
+      {/* Footer Section */}
+      <section >
+
+        <div className="bg-white dark:bg-background h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center p-20">
+          <div className="p-5 ">
+            <ul>
+              <p className="text-slate-900 dark:text-white font-bold text-3xl pb-6">
+                <span><img src="logo.png" alt="logo_image" className="w-auto sm:h-14 md:h-16 h-12" /></span>
+                WebXDAO
+              </p>
+              <div className="flex gap-6 pb-5">
+                <Link href={siteConfig.links.webxdao_discord} target="_blank">
+                  <Icons.discord className="cursor-pointer" width={25} height={25} />
+                </Link>
+                <Link href={siteConfig.links.webxdao_twitter} target="_blank">
+                  <Icons.twitter className="cursor-pointer" width={25} height={25} />
+                </Link>
+                <Link href={siteConfig.links.webxdao_gh} target="_blank">
+                  <Icons.gitHub className="cursor-pointer" width={25} height={25} />
+                </Link>
+                <Link href={siteConfig.links.webxdao_linkedin} target="_blank">
+                  <Icons.linkedin className="cursor-pointer" width={25} height={25} />
+                </Link>
+
+              </div>
+            </ul>
+
+          </div>
+
+          <div className="p-5">
+            <ul>
+              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">About Us</p>
+              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                Who we are?
+              </li>
+              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                What we do?
+              </li>
+              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                Team WebX
+              </li>
+            </ul>
+          </div>
+
+          <div className="p-5">
+            <ul>
+              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Contact</p>
+              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                Contact us
+              </li>
+            </ul>
+          </div>
+          <div className="p-5">
+            <ul>
+              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Partner</p>
+              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                Our Partners
+              </li>
+              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                Partner with us
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="dark:bg-background flex flex-col justify-center items-center text-center  p-5 bg-white">
+          <h1 className=" text-slate-900 dark:text-white font-semibold select-none">
+            © 2023 All rights reserved | Build with ❤ by{" "}
+            <span className="hover:text-blue-600 font-semibold cursor-pointer select-none">
+              WebXDAO{" "}
+            </span>
+          </h1>
+        </div>
+
+      </section>
     </>
   );
 }
