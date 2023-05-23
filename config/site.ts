@@ -26,12 +26,13 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/WebXDAO",
-    github: "https://github.com/WebXDAO",
+    //twitter: "https://twitter.com/WebXDAO",
+    //github: "https://github.com/WebXDAO",
     // docs: "https://ui.shadcn.com",
     webxdao_gh: "https://github.com/WebXDAO/",
     webxdao_getstarted: "https://github.com/WebXDAO/start-here",
     webxdao_discord:"https://discord.webxdao.xyz/",
-    webxdao_twitter:"https://twitter.com/WebXDAO"
+    webxdao_twitter:"https://twitter.com/WebXDAO",
+    webxdao_linkedin:"https://www.linkedin.com/company/webxdao/"
   },
 };
