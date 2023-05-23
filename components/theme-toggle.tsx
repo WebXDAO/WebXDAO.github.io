@@ -1,6 +1,6 @@
 "use client"
 
-import * as React from "react"
+import  React,{useState,useEffect} from "react"
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
@@ -9,16 +9,11 @@ import { Icons } from "@/components/icons"
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
 
-  let sysMode:String|null=null;
-
-  // Check if the system is in dark mode
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    // Dark mode is enabled
-    sysMode="dark";
-  } else {
-    // Light mode is enabled
-    sysMode="light";
-  }
+  const [sysMode, setSysMode] = useState('');
+  useEffect(() => {
+    const matchDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setSysMode(matchDarkMode ? 'dark' : 'light');
+  }, []);
   
   return (
     <Button
