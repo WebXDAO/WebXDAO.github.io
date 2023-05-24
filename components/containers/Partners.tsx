@@ -2,27 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-interface PartnersProps {}
+interface PartnersProps { }
 
 const data = [
     {
         img: "/Dev-protocol-1.png",
         para: "Dev Protocol is designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.",
-        url: "",
+        url: "https://devprotocol.xyz/",
     },
     {
         img: "/The-Algorithms-1.png",
         para: "The Algorithms is an open source community for learning Data Structures & Algorithms and their implementation in any Programming Language.",
-        url: "",
+        url: "https://the-algorithms.com/",
     },
     {
         img: "/Lumos-Labs-1.png",
         para: "Lumos labs is building a metaverse for builders and Web3 ecosystem enablers to share opportunities to build scale-up.",
-        url: "",
+        url: "https://twitter.com/lumoslabsHQ",
     },
 ];
 
-const Partners: FC<PartnersProps> = ({}) => {
+const Partners: FC<PartnersProps> = ({ }) => {
     return (
         <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6  md:py-10">
             <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2">
@@ -39,23 +39,18 @@ const Partners: FC<PartnersProps> = ({}) => {
                         <div className="grow px-6 py-4">
                             <p className="text-justify text-sm text-gray-700">{para}</p>
                         </div>
-                        <div className="flex px-6 pt-4">
-                            <Link href={url} className="font-inter text-14.0418 mb-2 flex cursor-pointer gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black">
-                                <Image src="/Arrow1.png" alt="arrow" width={15} height={18} className="my-auto flex items-center" />
-                                Read More
+                        <div className="flex px-6 py-4">
+                            <Link
+                                href={url}
+                                target="_blank"
+                                className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black group transition ease-in hover:bg-indigo-800 hover:border-indigo-800"
+                            >
+                                <Image src="/Arrow1.png" alt="arrow" width={15} height={18} className="my-auto flex items-center group-hover:invert transition duration-500 ease-in filter " />
+                                <span className="group-hover:invert transition duration-500 ease-in">Read More</span>
                             </Link>
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="flex px-6 pt-4">
-                <Link
-                    href={url}
-                    className="w-fit-content font-inter text-14.0418 mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black group transition ease-in hover:bg-indigo-800 hover:border-indigo-800"
-                >
-                    <Image src="/Arrow1.png" alt="arrow" width={15} height={18} className="my-auto flex items-center group-hover:invert transition duration-500 ease-in filter " />
-                    <span className="group-hover:invert transition duration-500 ease-in">Read More</span>
-                </Link>
             </div>
         </section>
     );
