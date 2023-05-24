@@ -40,7 +40,7 @@ The process described here has several goals:
 - Engage the community in working toward the best possible!
 - Enable a sustainable system for maintainers to review contributions
 
-Please follow all instructions in [the template](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/.github/pull_request_template.md)
+Please follow all instructions in [the template](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## Style Guide for Git Commit Messages :memo:
 
