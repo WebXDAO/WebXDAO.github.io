@@ -35,11 +35,11 @@ export default function IndexPage() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href={siteConfig.links.webxdao_gh}
+              href="https://guild.xyz/webx-dao"
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
-              <Icons.gitHub className="mr-2 h-5 w-5" />
-              GitHub
+              <img src="/guild-logo.png" className="mr-2 h-5 w-5" />
+                Guild.xyz
             </Link>
           </div>
 
@@ -168,13 +168,13 @@ export default function IndexPage() {
               <span className="">Discord</span>
             </div>
           </div>
-        
+
         </div>
       </section> */}
 
       {/* Blurbs: not ok.. i should not use grid */}
       {/* <section className="flex">
-        
+
           <div className="flex my-12 gap-8">
 
             <div className="flex flex-col gap-3">
@@ -187,7 +187,7 @@ export default function IndexPage() {
               <span className="text-sm">Collaborate with other members to achieve
                 common goals and objectives.</span>
             </div>
-            
+
             <div className="flex flex-col gap-3">
               <div className="shadow-lg p-8 rounded-md border-2 border-transparent flex justify-center">
               <Icons.zap className="h-5 w-5 mr-1" />
