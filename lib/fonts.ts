@@ -23,12 +23,12 @@ export const fontRoboto = FontRoboto({
 export const fontGilroy = localFont({
   src: [
     {
-      path: '../public/fonts/Gilroy/Gilroy-Medium.ttf',
+      path: '../public/fonts/gilroy/Gilroy-Medium.ttf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Gilroy/Gilroy-SemiBold.ttf',
+      path: '../public/fonts/gilroy/Gilroy-SemiBold.ttf',
       weight: '600',
       style: 'normal'
     }
