@@ -216,7 +216,7 @@ export default function IndexPage() {
       from-violet-950 from-10% via-violet-950 via-30% to-background to-90% dark:bg-gradient-to-t "
       >
         <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
-          <div className="py-5 flex ">
+          <div className="flex py-5 ">
             <ul>
               <div className="flex">
                 <div className="flex pb-6 text-3xl  text-slate-900 dark:text-white  ">
@@ -273,7 +273,7 @@ export default function IndexPage() {
             </ul>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-1 md:gap-8">
+          <div className="flex flex-col gap-1 md:flex-row md:gap-8">
             <div className="px-5">
               <ul>
                 <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
@@ -314,9 +314,9 @@ export default function IndexPage() {
 
         </div>
 
-        <div className="flex flex-col  h-1/2 w-full content-center py-8 px-4">
-          <div className="py-5 flex flex-col">
-            <div className="flex pt-3 max-sm:ml-18">
+        <div className="flex h-1/2  w-full flex-col content-center px-4 py-8">
+          <div className="flex flex-col py-5">
+            <div className="max-sm:ml-18 flex pt-3">
               Powered by
               <img src="Footlogo1.png" alt="logo_image" className="-mt-2" />
               <img src="Footlogo2.png" alt="logo_image" className="h-6" />
