@@ -7,7 +7,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
-
+import ScrollToTopButton from "@/components/ui/TopButton";
 export default function IndexPage() {
   return (
     <>
@@ -213,24 +213,24 @@ export default function IndexPage() {
 
       <section
         className="
-      dark:bg-gradient-to-t from-violet-950 from-10% via-violet-950 via-30% to-background to-90% ..."
+      dark:bg-gradient-to-t from-violet-950 from-10% via-violet-950 via-30% to-background to-90% "
       >
-        <div className="h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center py-20 gap-80">
+        <div className="flex h-1/2 w-full flex-col content-center justify-around gap-80 py-20 md:flex-row md:items-start">
           <div className="py-5 ">
             <ul>
               <div className="flex">
-                <p className="flex text-slate-900 dark:text-white  text-3xl pb-6 ">
+                <p className="flex pb-6 text-3xl  text-slate-900 dark:text-white ">
                   <span>
                     <img
                       src="logo.png"
                       alt="logo_image"
-                      className="w-auto  sm:h-14 md:h-20 h-20 "
+                      className="h-20  w-auto sm:h-14 md:h-20 "
                     />
                   </span>
                   <div className="whitespace-pre-wrap ">
                     <h1 className="mt-3 text-lg ">WEBX</h1>
 
-                    <h1 className=" text-2xl -mt-2 font-bold">DAO</h1>
+                    <h1 className=" -mt-2 text-2xl font-bold">DAO</h1>
                   </div>
                 </p>
               </div>
@@ -241,28 +241,28 @@ export default function IndexPage() {
                   className="dark:fill-white "
                 >
                   <Icons.discord
-                    className="cursor-pointer hover:fill-blue-800 hover:scale-150 transition duration-500"
+                    className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link href={siteConfig.links.webxdao_twitter} target="_blank">
                   <Icons.twitter
-                    className="cursor-pointer hover:fill-blue-800 hover:scale-150 transition duration-500"
+                    className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link href={siteConfig.links.webxdao_gh} target="_blank">
                   <Icons.gitHub
-                    className="cursor-pointer hover:fill-blue-800 hover:scale-150 transition duration-500"
+                    className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link href={siteConfig.links.webxdao_linkedin} target="_blank">
                   <Icons.linkedin
-                    className="cursor-pointer hover:fill-blue-800  hover:scale-150 transition duration-500"
+                    className="cursor-pointer transition  duration-500 hover:scale-150 hover:fill-blue-800"
                     width={25}
                     height={25}
                   />
@@ -274,16 +274,16 @@ export default function IndexPage() {
           <div className="flex ">
             <div className="p-5 ">
               <ul>
-                <p className="text-slate-900 dark:text-white font-normal text-xl pb-3 select-none">
+                <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   About Us
                 </p>
-                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                   Who we are?
                 </li>
-                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                   What we do?
                 </li>
-                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                   Team WebX
                 </li>
               </ul>
@@ -291,43 +291,43 @@ export default function IndexPage() {
 
             <div className="p-5">
               <ul>
-                <p className="text-slate-900 dark:text-white font-normal text-xl pb-3 select-none">
+                <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   Contact
                 </p>
-                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                   Contact us
                 </li>
               </ul>
             </div>
             <div className="p-5">
               <ul>
-                <p className="text-slate-900 dark:text-white font-normal text-xl pb-3 select-none">
+                <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   Partner
                 </p>
 
-                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                   Partner with us
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="flex gap-72 justify-center mt-20 ">
-          <div className=" flex flex-col  items-center text-center  pt-4  ">
-            <h1 className=" text-slate-900 dark:text-white font-medium select-none text-base">
+        <div className="mt-20 flex justify-center gap-96 ">
+          <div className=" flex flex-col  items-center pt-4  text-center  ">
+            <h1 className=" select-none text-base font-medium text-slate-900 dark:text-white">
               © 2023 All rights reserved | Build with ❤ by{" "}
-              <span className="hover:text-blue-600  cursor-pointer select-none">WebXDAO </span>
+              <span className="cursor-pointer  select-none hover:text-blue-600">WebXDAO </span>
             </h1>
           </div>
-          <div className=" text-slate-500 dark:text-white text-base font-medium pl-36">
+          <div className=" pl-36 text-base font-medium text-slate-500 dark:text-white">
             <div className="flex  ">
-              <div className="pt-3  flex ">
+              <div className="flex  pt-3 ">
                 Powered by
                 <img src="Footlogo1.png" alt="logo_image" className=" -mt-2" />
                 <img src="Footlogo2.png" alt="logo_image" className=" h-6 " />
               </div>
               <div className="p-2">
-                <a className=" hover:text-blue-600 px-8">Terms</a>
+                <a className=" px-8 hover:text-blue-600">Terms</a>
                 <a href="#" className="px-8 hover:text-blue-600">
                   Privacy
                 </a>
@@ -339,6 +339,7 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
+       <ScrollToTopButton />
     </>
   );
 }
