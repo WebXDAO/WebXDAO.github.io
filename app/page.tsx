@@ -213,7 +213,7 @@ export default function IndexPage() {
 
       <section
         className="
-      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% dark:bg-gradient-to-t "
+      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% dark:bg-gradient-to-t px-8"
       >
         <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
           <div className="flex py-5 ">
