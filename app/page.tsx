@@ -214,17 +214,19 @@ export default function IndexPage() {
       <section
         className="
       from-violet-950 from-10% via-violet-950 via-30% to-background to-90% dark:bg-gradient-to-t "
-      >-
-        <div className="flex h-1/2 w-full flex-col content-center justify-around gap-80 max-sm:gap-10 py-20 md:flex-row md:items-start  max-sm:items-center">
-          <div className="py-5 ">
+      >
+        <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
+          <div className="py-5 flex ">
             <ul>
               <div className="flex">
-                <p className="flex pb-6 text-3xl  text-slate-900 dark:text-white  ">
+                <div className="flex pb-6 text-3xl  text-slate-900 dark:text-white  ">
                   <span>
-                    <img
-                      src="logo.png"
+                    <Image
+                      src="/logo.png"
                       alt="logo_image"
                       className="h-20  w-auto sm:h-14 md:h-20 "
+                      height={240}
+                      width={240}
                     />
                   </span>
                   <div className="whitespace-pre-wrap ">
@@ -232,7 +234,7 @@ export default function IndexPage() {
 
                     <h1 className=" -mt-2 text-2xl font-bold">DAO</h1>
                   </div>
-                </p>
+                </div>
               </div>
               <div className="flex gap-5 px-5  ">
                 <Link
@@ -271,8 +273,8 @@ export default function IndexPage() {
             </ul>
           </div>
 
-          <div className="flex   ">
-            <div className="p-5  ">
+          <div className="flex flex-col md:flex-row gap-1 md:gap-8">
+            <div className="px-5">
               <ul>
                 <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   About Us
@@ -288,8 +290,7 @@ export default function IndexPage() {
                 </li>
               </ul>
             </div>
-
-            <div className="p-5">
+            <div className="px-5">
               <ul>
                 <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   Contact
@@ -299,48 +300,35 @@ export default function IndexPage() {
                 </li>
               </ul>
             </div>
-            <div className="p-5">
+            <div className="px-5">
               <ul>
                 <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   Partner
                 </p>
-
                 <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                   Partner with us
                 </li>
               </ul>
             </div>
           </div>
+
         </div>
-        <div className="mt-20 max-sm:mt-4 flex max-sm:flex-col justify-center gap-96 max-sm:gap-1 ">
-          <div className=" flex flex-col  items-center pt-4    ">
-            <h1 className=" select-none text-base font-medium text-slate-900 dark:text-white max-sm:items-left ">
-              © 2023 All rights reserved | Build with ❤ by{" "}
-              <span className="cursor-pointer  select-none hover:text-blue-600">WebXDAO </span>
-            </h1>
-          </div>
-          <div className=" pl-36 max-sm:pl-10 max-sm:items-center text-base font-medium text-slate-500 dark:text-white max-sm:text-sm">
-            <div className="flex max-sm:flex-col max-sm:items-center ">
-              <div className="flex  pt-3 max-sm:ml-18  ">
-                Powered by
-                <img src="Footlogo1.png" alt="logo_image" className=" -mt-2" />
-                <img src="Footlogo2.png" alt="logo_image" className=" h-6 " />
-              </div>
-              <div className="p-2  ">
-                <a className=" px-8 hover:text-blue-600 ">Terms</a>
-                <a href="#" className="px-8 hover:text-blue-600">
-                  Privacy
-                </a>
-                <a href="#" className="px-8 hover:text-blue-600">
-                  Cookies
-                </a>
-              </div>
+
+        <div className="flex flex-col  h-1/2 w-full content-center py-8 px-4">
+          <div className="py-5 flex flex-col">
+            <div className="flex pt-3 max-sm:ml-18">
+              Powered by
+              <img src="Footlogo1.png" alt="logo_image" className="-mt-2" />
+              <img src="Footlogo2.png" alt="logo_image" className="h-6" />
             </div>
+            <h4 className="select-none text-base font-medium text-slate-900 dark:text-white">
+              © 2023 All rights reserved | Build with ❤ by{" "}
+              <span className="cursor-pointer select-none hover:text-blue-600">WebXDAO </span>
+            </h4>
           </div>
-           
         </div>
       </section>
-       <ScrollToTopButton />
+      <ScrollToTopButton />
     </>
   );
 }
