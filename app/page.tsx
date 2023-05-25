@@ -83,7 +83,7 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="inline-block bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
@@ -214,8 +214,8 @@ export default function IndexPage() {
         className="
       dark:bg-gradient-to-t from-violet-950 from-10% via-violet-950 via-30% to-background to-90% ..."
       >
-        <div className="h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center p-20">
-          <div className="p-5 ml-2 ">
+        <div className="h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center py-20 gap-80">
+          <div className="py-5 ">
             <ul>
               <div className="flex">
                 <p className="flex text-slate-900 dark:text-white  text-3xl pb-6 ">
@@ -270,19 +270,19 @@ export default function IndexPage() {
             </ul>
           </div>
 
-          <div className="flex">
-            <div className="p-5">
+          <div className="flex ">
+            <div className="p-5 ">
               <ul>
-                <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">
+                <p className="text-slate-900 dark:text-white font-normal text-xl pb-3 select-none">
                   About Us
                 </p>
-                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
                   Who we are?
                 </li>
-                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
                   What we do?
                 </li>
-                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
                   Team WebX
                 </li>
               </ul>
@@ -290,50 +290,50 @@ export default function IndexPage() {
 
             <div className="p-5">
               <ul>
-                <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">
+                <p className="text-slate-900 dark:text-white font-normal text-xl pb-3 select-none">
                   Contact
                 </p>
-                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
                   Contact us
                 </li>
               </ul>
             </div>
             <div className="p-5">
               <ul>
-                <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">
+                <p className="text-slate-900 dark:text-white font-normal text-xl pb-3 select-none">
                   Partner
                 </p>
 
-                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                <li className="text-gray-500 text-base pb-2 font-normal cursor-pointer">
                   Partner with us
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="flex gap-96 justify-center mt-16 ">
-          <div className=" flex flex-col  items-center text-center  p-5 ">
-            <h1 className=" text-slate-900 dark:text-white font-semibold select-none">
+        <div className="flex gap-72 justify-center mt-20 ">
+          <div className=" flex flex-col  items-center text-center  pt-4  ">
+            <h1 className=" text-slate-900 dark:text-white font-medium select-none text-base">
               © 2023 All rights reserved | Build with ❤ by{" "}
-              <span className="hover:text-blue-600 font-semibold cursor-pointer select-none">
-                WebXDAO{" "}
-              </span>
+              <span className="hover:text-blue-600  cursor-pointer select-none">WebXDAO </span>
             </h1>
           </div>
-          <div className="justify-around ml-6 text-slate-500 dark:text-white">
-            <div>
-              <a href="#" className="p-6 hover:text-blue-600 ">
+          <div className=" text-slate-500 dark:text-white text-base font-medium pl-36">
+            <div className="flex  ">
+              <div className="pt-3  flex ">
                 Powered by
-              </a>
-              <a href="#" className="p-6 hover:text-blue-600">
-                Trems
-              </a>
-              <a href="#" className="p-6 hover:text-blue-600">
-                Privacy
-              </a>
-              <a href="#" className="p-6 hover:text-blue-600">
-                Cookies
-              </a>
+                <img src="Footlogo1.png" alt="logo_image" className=" -mt-2" />
+                <img src="Footlogo2.png" alt="logo_image" className=" h-6 " />
+              </div>
+              <div className="p-2">
+                <a className=" hover:text-blue-600 px-8">Terms</a>
+                <a href="#" className="px-8 hover:text-blue-600">
+                  Privacy
+                </a>
+                <a href="#" className="px-8 hover:text-blue-600">
+                  Cookies
+                </a>
+              </div>
             </div>
           </div>
         </div>
