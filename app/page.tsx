@@ -35,10 +35,10 @@ export default function IndexPage() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href="https://guild.xyz/webx-dao"
+              href={siteConfig.links.webxdao_guild}
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
-              <img src="/guild-logo.png" className="mr-2 h-5 w-5" />
+              <Image alt="guild.xyz logo" src="/guild-logo.png" className="mr-2 h-5 w-5 rounded-full" width={150} height={150}/>
                 Guild.xyz
             </Link>
           </div>
