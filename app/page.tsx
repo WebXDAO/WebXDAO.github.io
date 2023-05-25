@@ -84,7 +84,7 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 inline-block text-transparent bg-clip-text sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="inline-block bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text px-32 text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
@@ -213,11 +213,11 @@ export default function IndexPage() {
       {/* Footer Section */}
       <section >
 
-        <div className="bg-white dark:bg-background h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center p-20">
+        <div className="flex h-1/2 w-full flex-col content-center justify-around bg-white p-20 dark:bg-background md:flex-row md:items-start">
           <div className="p-5 ">
             <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-3xl pb-6">
-                <span><img src="logo.png" alt="logo_image" className="w-auto sm:h-14 md:h-16 h-12" /></span>
+              <p className="pb-6 text-3xl font-bold text-slate-900 dark:text-white">
+                <span><Image src="/logo.png" alt="logo_image" width={64} height={64} className="h-12 w-auto sm:h-14 md:h-16" /></span>
                 WebXDAO
               </p>
               <div className="flex gap-6 pb-5">
@@ -241,14 +241,14 @@ export default function IndexPage() {
 
           <div className="p-5">
             <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">About Us</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+              <p className="select-none pb-3 text-2xl font-bold text-slate-900 dark:text-white">About Us</p>
+              <li className="text-md cursor-pointer pb-2 font-semibold text-gray-500">
                 Who we are?
               </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+              <li className="text-md cursor-pointer pb-2 font-semibold text-gray-500">
                 What we do?
               </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+              <li className="text-md cursor-pointer pb-2 font-semibold text-gray-500">
                 Team WebX
               </li>
             </ul>
@@ -256,28 +256,28 @@ export default function IndexPage() {
 
           <div className="p-5">
             <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Contact</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+              <p className="select-none pb-3 text-2xl font-bold text-slate-900 dark:text-white">Contact</p>
+              <li className="text-md cursor-pointer pb-2 font-semibold text-gray-500">
                 Contact us
               </li>
             </ul>
           </div>
           <div className="p-5">
             <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Partner</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+              <p className="select-none pb-3 text-2xl font-bold text-slate-900 dark:text-white">Partner</p>
+              <li className="text-md cursor-pointer pb-2 font-semibold text-gray-500">
                 Our Partners
               </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+              <li className="text-md cursor-pointer pb-2 font-semibold text-gray-500">
                 Partner with us
               </li>
             </ul>
           </div>
         </div>
-        <div className="dark:bg-background flex flex-col justify-center items-center text-center  p-5 bg-white">
-          <h1 className=" text-slate-900 dark:text-white font-semibold select-none">
+        <div className="flex flex-col items-center justify-center bg-white p-5  text-center dark:bg-background">
+          <h1 className=" select-none font-semibold text-slate-900 dark:text-white">
             © 2023 All rights reserved | Build with ❤ by{" "}
-            <span className="hover:text-blue-600 font-semibold cursor-pointer select-none">
+            <span className="cursor-pointer select-none font-semibold hover:text-blue-600">
               WebXDAO{" "}
             </span>
           </h1>
