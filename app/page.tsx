@@ -217,7 +217,7 @@ export default function IndexPage() {
           <div className="p-5 ">
             <ul>
               <p className="pb-6 text-3xl font-bold text-slate-900 dark:text-white">
-                <span><Image src="/logo.png" alt="logo_image" width={64} height={64} className="h-12 w-auto sm:h-14 md:h-16" /></span>
+                <span><Image src="logo.png" alt="logo_image" className="h-12 w-auto sm:h-14 md:h-16" width={16} height={12}  /></span>
                 WebXDAO
               </p>
               <div className="flex gap-6 pb-5">
