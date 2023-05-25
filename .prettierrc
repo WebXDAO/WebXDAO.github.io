@@ -5,5 +5,10 @@
   "printWidth": 100,
   "tabWidth": 2,
   "semi": true,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "pluginSearchDirs": false,
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ]
 }
