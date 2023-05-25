@@ -213,7 +213,7 @@ export default function IndexPage() {
 
       <section
         className="
-      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% dark:bg-gradient-to-t px-8"
+      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% px-8 dark:bg-gradient-to-t"
       >
         <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
           <div className="flex py-5 ">
@@ -315,12 +315,7 @@ export default function IndexPage() {
         </div>
 
         <div className="flex h-1/2  w-full flex-col content-center px-4 py-8">
-          <div className="flex flex-col py-5">
-            <div className="max-sm:ml-18 flex pt-3">
-              Powered by
-              <img src="Footlogo1.png" alt="logo_image" className="-mt-2" />
-              <img src="Footlogo2.png" alt="logo_image" className="h-6" />
-            </div>
+          <div className="flex py-5">
             <h4 className="select-none text-base font-medium text-slate-900 dark:text-white">
               © 2023 All rights reserved | Build with ❤ by{" "}
               <span className="cursor-pointer select-none hover:text-blue-600">WebXDAO </span>
