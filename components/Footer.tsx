@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-      <section
+      <footer
         className="
       from-violet-950 from-10% via-violet-950 via-30% to-background to-90% px-8 dark:bg-gradient-to-t"
       >
@@ -115,6 +115,6 @@ export default function Footer() {
             </h4>
           </div>
         </div>
-      </section>
+      </footer>
     );
 }
