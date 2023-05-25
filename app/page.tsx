@@ -213,13 +213,13 @@ export default function IndexPage() {
 
       <section
         className="
-      dark:bg-gradient-to-t from-violet-950 from-10% via-violet-950 via-30% to-background to-90% "
-      >
-        <div className="flex h-1/2 w-full flex-col content-center justify-around gap-80 py-20 md:flex-row md:items-start">
+      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% dark:bg-gradient-to-t "
+      >-
+        <div className="flex h-1/2 w-full flex-col content-center justify-around gap-80 max-sm:gap-10 py-20 md:flex-row md:items-start  max-sm:items-center">
           <div className="py-5 ">
             <ul>
               <div className="flex">
-                <p className="flex pb-6 text-3xl  text-slate-900 dark:text-white ">
+                <p className="flex pb-6 text-3xl  text-slate-900 dark:text-white  ">
                   <span>
                     <img
                       src="logo.png"
@@ -271,8 +271,8 @@ export default function IndexPage() {
             </ul>
           </div>
 
-          <div className="flex ">
-            <div className="p-5 ">
+          <div className="flex   ">
+            <div className="p-5  ">
               <ul>
                 <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                   About Us
@@ -312,22 +312,22 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-        <div className="mt-20 flex justify-center gap-96 ">
-          <div className=" flex flex-col  items-center pt-4  text-center  ">
-            <h1 className=" select-none text-base font-medium text-slate-900 dark:text-white">
+        <div className="mt-20 max-sm:mt-4 flex max-sm:flex-col justify-center gap-96 max-sm:gap-1 ">
+          <div className=" flex flex-col  items-center pt-4    ">
+            <h1 className=" select-none text-base font-medium text-slate-900 dark:text-white max-sm:items-left ">
               © 2023 All rights reserved | Build with ❤ by{" "}
               <span className="cursor-pointer  select-none hover:text-blue-600">WebXDAO </span>
             </h1>
           </div>
-          <div className=" pl-36 text-base font-medium text-slate-500 dark:text-white">
-            <div className="flex  ">
-              <div className="flex  pt-3 ">
+          <div className=" pl-36 max-sm:pl-10 max-sm:items-center text-base font-medium text-slate-500 dark:text-white max-sm:text-sm">
+            <div className="flex max-sm:flex-col max-sm:items-center ">
+              <div className="flex  pt-3 max-sm:ml-18  ">
                 Powered by
                 <img src="Footlogo1.png" alt="logo_image" className=" -mt-2" />
                 <img src="Footlogo2.png" alt="logo_image" className=" h-6 " />
               </div>
-              <div className="p-2">
-                <a className=" px-8 hover:text-blue-600">Terms</a>
+              <div className="p-2  ">
+                <a className=" px-8 hover:text-blue-600 ">Terms</a>
                 <a href="#" className="px-8 hover:text-blue-600">
                   Privacy
                 </a>
@@ -337,6 +337,7 @@ export default function IndexPage() {
               </div>
             </div>
           </div>
+           
         </div>
       </section>
        <ScrollToTopButton />
