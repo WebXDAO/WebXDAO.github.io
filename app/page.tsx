@@ -4,7 +4,6 @@ import Partners from "@/components/containers/Partners";
 import CursorHoverster from "@/components/cursor-hoverster";
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
-import ScrollToTopButton from "@/components/ui/TopButton";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
@@ -84,7 +83,7 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 inline-block text-transparent bg-clip-text sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
@@ -211,80 +210,134 @@ export default function IndexPage() {
       </section> */}
 
       {/* Footer Section */}
-      <section >
-
-        <div className="bg-white dark:bg-background h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center p-20">
-          <div className="p-5 ">
+      <section
+        className="
+      dark:bg-gradient-to-t from-violet-950 from-10% via-violet-950 via-30% to-background to-90% ..."
+      >
+        <div className="h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center p-20">
+          <div className="p-5 ml-2 ">
             <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-3xl pb-6">
-                <span><img src="logo.png" alt="logo_image" className="w-auto sm:h-14 md:h-16 h-12" /></span>
-                WebXDAO
-              </p>
-              <div className="flex gap-6 pb-5">
-                <Link href={siteConfig.links.webxdao_discord} target="_blank">
-                  <Icons.discord className="cursor-pointer" width={25} height={25} />
+              <div className="flex">
+                <p className="flex text-slate-900 dark:text-white  text-3xl pb-6 ">
+                  <span>
+                    <img
+                      src="logo.png"
+                      alt="logo_image"
+                      className="w-auto  sm:h-14 md:h-20 h-20 "
+                    />
+                  </span>
+                  <div className="whitespace-pre-wrap ">
+                    <h1 className="mt-3 text-lg ">WEBX</h1>
+
+                    <h1 className=" text-2xl -mt-2 font-bold">DAO</h1>
+                  </div>
+                </p>
+              </div>
+              <div className="flex gap-5 px-5  ">
+                <Link
+                  href={siteConfig.links.webxdao_discord}
+                  target="_blank"
+                  className="dark:fill-white "
+                >
+                  <Icons.discord
+                    className="cursor-pointer hover:fill-blue-800 hover:scale-150 transition duration-500"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
                 <Link href={siteConfig.links.webxdao_twitter} target="_blank">
-                  <Icons.twitter className="cursor-pointer" width={25} height={25} />
+                  <Icons.twitter
+                    className="cursor-pointer hover:fill-blue-800 hover:scale-150 transition duration-500"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
                 <Link href={siteConfig.links.webxdao_gh} target="_blank">
-                  <Icons.gitHub className="cursor-pointer" width={25} height={25} />
+                  <Icons.gitHub
+                    className="cursor-pointer hover:fill-blue-800 hover:scale-150 transition duration-500"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
                 <Link href={siteConfig.links.webxdao_linkedin} target="_blank">
-                  <Icons.linkedin className="cursor-pointer" width={25} height={25} />
+                  <Icons.linkedin
+                    className="cursor-pointer hover:fill-blue-800  hover:scale-150 transition duration-500"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
-
               </div>
             </ul>
-
           </div>
 
-          <div className="p-5">
-            <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">About Us</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Who we are?
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                What we do?
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Team WebX
-              </li>
-            </ul>
-          </div>
+          <div className="flex">
+            <div className="p-5">
+              <ul>
+                <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">
+                  About Us
+                </p>
+                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                  Who we are?
+                </li>
+                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                  What we do?
+                </li>
+                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                  Team WebX
+                </li>
+              </ul>
+            </div>
 
-          <div className="p-5">
-            <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Contact</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Contact us
-              </li>
-            </ul>
-          </div>
-          <div className="p-5">
-            <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Partner</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Our Partners
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Partner with us
-              </li>
-            </ul>
+            <div className="p-5">
+              <ul>
+                <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">
+                  Contact
+                </p>
+                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                  Contact us
+                </li>
+              </ul>
+            </div>
+            <div className="p-5">
+              <ul>
+                <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">
+                  Partner
+                </p>
+
+                <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
+                  Partner with us
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="dark:bg-background flex flex-col justify-center items-center text-center  p-5 bg-white">
-          <h1 className=" text-slate-900 dark:text-white font-semibold select-none">
-            © 2023 All rights reserved | Build with ❤ by{" "}
-            <span className="hover:text-blue-600 font-semibold cursor-pointer select-none">
-              WebXDAO{" "}
-            </span>
-          </h1>
+        <div className="flex gap-96 justify-center mt-16 ">
+          <div className=" flex flex-col  items-center text-center  p-5 ">
+            <h1 className=" text-slate-900 dark:text-white font-semibold select-none">
+              © 2023 All rights reserved | Build with ❤ by{" "}
+              <span className="hover:text-blue-600 font-semibold cursor-pointer select-none">
+                WebXDAO{" "}
+              </span>
+            </h1>
+          </div>
+          <div className="justify-around ml-6 text-slate-500 dark:text-white">
+            <div>
+              <a href="#" className="p-6 hover:text-blue-600 ">
+                Powered by
+              </a>
+              <a href="#" className="p-6 hover:text-blue-600">
+                Trems
+              </a>
+              <a href="#" className="p-6 hover:text-blue-600">
+                Privacy
+              </a>
+              <a href="#" className="p-6 hover:text-blue-600">
+                Cookies
+              </a>
+            </div>
+          </div>
         </div>
-
       </section>
-      <ScrollToTopButton />
     </>
   );
 }
