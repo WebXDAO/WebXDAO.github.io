@@ -50,7 +50,7 @@ export function MainNav({ items }: MainNavProps) {
                     <Link
                       key={index}
                       href={item.href}
-                      className={`font-poppins } cursor-pointer text-[16px] 
+                      className={`font-poppins cursor-pointer text-[16px] font-medium`}
                   font-medium`}
                       onClick={() => {
                         setToggle(!toggle);
