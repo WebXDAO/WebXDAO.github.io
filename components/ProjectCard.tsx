@@ -1,16 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
-import { FaStar } from "react-icons/fa";
+import { Icons } from "./icons";
 
 const ProjectCard = ({
   full_name,
   url,
-  owner,
   description,
 }: {
   full_name: string;
   url: string;
-  owner: any;
   description: string;
 }) => {
   return (
@@ -29,9 +26,7 @@ const ProjectCard = ({
             target="_blank"
             className="w-fit-content font-inter text-14.0418 group m-auto mb-0 flex items-center gap-6 rounded border-2 border-black px-4 py-1 font-semibold text-black transition ease-in hover:border-indigo-800 hover:bg-indigo-800 hover:text-white dark:border-white dark:text-white"
           >
-            <Image
-              src="/arrow-up-right.png"
-              alt="arrow"
+            <Icons.ArrowUpRight
               width={20}
               height={18}
               className="dark:color-white my-auto flex items-center transition duration-500 ease-in group-hover:invert"
