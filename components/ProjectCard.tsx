@@ -19,7 +19,6 @@ const ProjectCard = ({
         <div className="flex flex-row">
           {/*<img src={owner?.avatar_url} className="rounded h-40 w-40"/>*/}
           <p>
-            <span className="text-black-500 font-semibold">{owner.login}/</span>
             <span className="text-black-300 font-semibold">{full_name}</span>
           </p>
         </div>
