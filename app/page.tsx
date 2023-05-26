@@ -105,8 +105,8 @@ export default function IndexPage() {
       </section>
 
       {/* Blurbs */}
-      <section className="flex justify-center px-40 py-0">
-        <div className="my-12 flex gap-8">
+      <section className=" flex justify-center px-4 py-0 md:px-10">
+        <div className="my-12 flex flex-col md:flex-row md:gap-8">
           <div className="flex flex-col items-center justify-center gap-3 text-center">
             <div className="border-l-3 flex justify-center rounded-lg border-white bg-white p-8 shadow-md shadow-purple-300">
               <Icons.collaborate className="h-15 w-15 mr-1" />
@@ -117,18 +117,17 @@ export default function IndexPage() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-3 text-center">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 text-center md:mt-0">
             <div className="border-l-3 flex justify-center rounded-lg border-white bg-white p-8 shadow-md shadow-purple-300">
               <Icons.blockchain className="h-15 w-15 mr-1" />
             </div>
             <div className="text-lg font-bold">Blockchain</div>
             <span className="text-sm">
-              Dedicated to exploring new ways to leverage the power Of this transformative
-              technology.
+              Dedicated to exploring new ways to leverage the power of this transformative technology.
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-3 text-center">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 text-center md:mt-0">
             <div className="border-l-3 flex justify-center rounded-lg border-white bg-white p-8 shadow-md shadow-purple-300">
               <Icons.decentralization className="h-15 w-15 mr-1" />
             </div>
@@ -139,6 +138,7 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
+
 
       {/* Partners */}
       <Partners />
