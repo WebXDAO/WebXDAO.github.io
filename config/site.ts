@@ -33,6 +33,7 @@ export const siteConfig = {
     webxdao_getstarted: "https://github.com/WebXDAO/start-here",
     webxdao_discord:"https://discord.webxdao.xyz/",
     webxdao_twitter:"https://twitter.com/WebXDAO",
-    webxdao_linkedin:"https://www.linkedin.com/company/webxdao/"
+    webxdao_linkedin:"https://www.linkedin.com/company/webxdao/",
+    webxdao_guild: "https://guild.xyz/webx-dao"
   },
 };

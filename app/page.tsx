@@ -4,11 +4,10 @@ import Partners from "@/components/containers/Partners";
 import CursorHoverster from "@/components/cursor-hoverster";
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
-import ScrollToTopButton from "@/components/ui/TopButton";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
-
+import ScrollToTopButton from "@/components/ui/TopButton";
 export default function IndexPage() {
   return (
     <>
@@ -36,11 +35,11 @@ export default function IndexPage() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href={siteConfig.links.webxdao_gh}
+              href={siteConfig.links.webxdao_guild}
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
-              <Icons.gitHub className="mr-2 h-5 w-5" />
-              GitHub
+              <Image alt="guild.xyz logo" src="/guild-logo.png" className="mr-2 h-5 w-5 rounded-full" width={150} height={150}/>
+                Guild.xyz
             </Link>
           </div>
 
@@ -84,7 +83,7 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 inline-block text-transparent bg-clip-text sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="inline-block bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text px-32 text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
@@ -163,13 +162,13 @@ export default function IndexPage() {
               <span className="">Discord</span>
             </div>
           </div>
-        
+
         </div>
       </section> */}
 
       {/* Blurbs: not ok.. i should not use grid */}
       {/* <section className="flex">
-        
+
           <div className="flex my-12 gap-8">
 
             <div className="flex flex-col gap-3">
@@ -182,7 +181,7 @@ export default function IndexPage() {
               <span className="text-sm">Collaborate with other members to achieve
                 common goals and objectives.</span>
             </div>
-            
+
             <div className="flex flex-col gap-3">
               <div className="shadow-lg p-8 rounded-md border-2 border-transparent flex justify-center">
               <Icons.zap className="h-5 w-5 mr-1" />
@@ -211,78 +210,118 @@ export default function IndexPage() {
       </section> */}
 
       {/* Footer Section */}
-      <section >
 
-        <div className="bg-white dark:bg-background h-1/2 w-full flex md:flex-row flex-col justify-around md:items-start content-center p-20">
-          <div className="p-5 ">
+      <section
+        className="
+      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% px-8 dark:bg-gradient-to-t"
+      >
+        <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
+          <div className="flex py-5 ">
             <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-3xl pb-6">
-                <span><img src="logo.png" alt="logo_image" className="w-auto sm:h-14 md:h-16 h-12" /></span>
-                WebXDAO
-              </p>
-              <div className="flex gap-6 pb-5">
-                <Link href={siteConfig.links.webxdao_discord} target="_blank">
-                  <Icons.discord className="cursor-pointer" width={25} height={25} />
+              <div className="flex">
+                <div className="flex pb-6 text-3xl  text-slate-900 dark:text-white  ">
+                  <span>
+                    <Image
+                      src="/logo.png"
+                      alt="logo_image"
+                      className="h-20  w-auto sm:h-14 md:h-20 "
+                      height={240}
+                      width={240}
+                    />
+                  </span>
+                  <div className="whitespace-pre-wrap ">
+                    <h1 className="mt-3 text-lg ">WEBX</h1>
+
+                    <h1 className=" -mt-2 text-2xl font-bold">DAO</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-5 px-5  ">
+                <Link
+                  href={siteConfig.links.webxdao_discord}
+                  target="_blank"
+                  className="dark:fill-white "
+                >
+                  <Icons.discord
+                    className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
                 <Link href={siteConfig.links.webxdao_twitter} target="_blank">
-                  <Icons.twitter className="cursor-pointer" width={25} height={25} />
+                  <Icons.twitter
+                    className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
                 <Link href={siteConfig.links.webxdao_gh} target="_blank">
-                  <Icons.gitHub className="cursor-pointer" width={25} height={25} />
+                  <Icons.gitHub
+                    className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
                 <Link href={siteConfig.links.webxdao_linkedin} target="_blank">
-                  <Icons.linkedin className="cursor-pointer" width={25} height={25} />
+                  <Icons.linkedin
+                    className="cursor-pointer transition  duration-500 hover:scale-150 hover:fill-blue-800"
+                    width={25}
+                    height={25}
+                  />
                 </Link>
-
               </div>
             </ul>
-
           </div>
 
-          <div className="p-5">
-            <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">About Us</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Who we are?
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                What we do?
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Team WebX
-              </li>
-            </ul>
+          <div className="flex flex-col gap-1 md:flex-row md:gap-8">
+            <div className="px-5">
+              <ul>
+                <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
+                  About Us
+                </p>
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+                  Who we are?
+                </li>
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+                  What we do?
+                </li>
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+                  Team WebX
+                </li>
+              </ul>
+            </div>
+            <div className="px-5">
+              <ul>
+                <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
+                  Contact
+                </p>
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+                  Contact us
+                </li>
+              </ul>
+            </div>
+            <div className="px-5">
+              <ul>
+                <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
+                  Partner
+                </p>
+                <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+                  Partner with us
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="p-5">
-            <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Contact</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Contact us
-              </li>
-            </ul>
-          </div>
-          <div className="p-5">
-            <ul>
-              <p className="text-slate-900 dark:text-white font-bold text-2xl pb-3 select-none">Partner</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Our Partners
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold cursor-pointer">
-                Partner with us
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="dark:bg-background flex flex-col justify-center items-center text-center  p-5 bg-white">
-          <h1 className=" text-slate-900 dark:text-white font-semibold select-none">
-            © 2023 All rights reserved | Build with ❤ by{" "}
-            <span className="hover:text-blue-600 font-semibold cursor-pointer select-none">
-              WebXDAO{" "}
-            </span>
-          </h1>
         </div>
 
+        <div className="flex h-1/2  w-full flex-col content-center px-4 py-8">
+          <div className="flex py-5">
+            <h4 className="select-none text-base font-medium text-slate-900 dark:text-white">
+              © 2023 All rights reserved | Build with ❤ by{" "}
+              <span className="cursor-pointer select-none hover:text-blue-600">WebXDAO </span>
+            </h4>
+          </div>
+        </div>
       </section>
       <ScrollToTopButton />
     </>

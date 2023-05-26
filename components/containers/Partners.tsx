@@ -26,7 +26,7 @@ const Partners: FC<PartnersProps> = ({ }) => {
     return (
         <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6  md:py-10">
             <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2">
-                <h3 className="px-32 text-xl font-extrabold leading-tight tracking-tighter bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 inline-block text-transparent bg-clip-text sm:text-2xl md:text-3xl lg:text-2xl">
+                <h3 className="inline-block bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text px-32 text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
                     Get to know our Community Partners
                 </h3>
                 <h2>Community Partners we highly value</h2>
@@ -34,7 +34,7 @@ const Partners: FC<PartnersProps> = ({ }) => {
 
             <div className="mt-10 flex flex-wrap justify-center gap-24">
                 {data.map(({ img, para, url }, index) => (
-                    <div key={index} className="cursor-pointer transition-all duration-200 ease-in transform sm:hover:scale-105 hover:z-50 flex max-w-xs flex-col rounded-lg bg-white shadow-md shadow-purple-300">
+                    <div key={index} className="flex max-w-xs cursor-pointer flex-col rounded-lg bg-white shadow-md shadow-purple-300 transition-all duration-200 ease-in hover:z-50 sm:hover:scale-105">
                         <Image className="w-full" src={img} width={400} height={250} alt="" />
                         <div className="grow px-6 py-4">
                             <p className="text-justify text-sm text-gray-700">{para}</p>
@@ -43,12 +43,10 @@ const Partners: FC<PartnersProps> = ({ }) => {
                             <Link
                                 href={url}
                                 target="_blank"
-                                className="m-auto w-fit-content font-inter text-14.0418 mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black group transition ease-in hover:bg-indigo-800 hover:border-indigo-800"
+                                className="w-fit-content font-inter text-14.0418 group mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black transition ease-in hover:border-indigo-800 hover:bg-indigo-800"
                             >
-                                <Image src="/Arrow1.png" alt="arrow" width={15} height={18} className="my-auto flex items-center group-hover:invert transition duration-500 ease-in filter " />
-                              
-                                <span className=" group-hover:invert transition duration-500 ease-in">Read More</span>
-                               
+                                <Image src="/Arrow1.png" alt="arrow" width={15} height={18} className="my-auto flex items-center transition duration-500 ease-in group-hover:invert" />
+                                <span className="transition duration-500 ease-in group-hover:invert">Read More</span>
                             </Link>
                         </div>
                     </div>

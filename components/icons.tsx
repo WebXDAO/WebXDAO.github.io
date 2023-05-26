@@ -20,6 +20,7 @@ export const Icons = {
   users: Users,
   zap: Zap,
   rocket: Rocket,
+  
   collaborate: (props: LucideProps) => (
     <svg width="43" height="41" viewBox="0 0 43 41" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
