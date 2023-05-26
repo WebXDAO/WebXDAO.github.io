@@ -24,10 +24,12 @@ export function MainNav({ items }: MainNavProps) {
       {/* desktop width navbar */}
       <div className="flex w-full justify-between">
         {/* Brand Logo | home page link  */}
-        <div className="relative flex h-[60px] w-[130px] shrink-0 flex-row items-center mr-6">
+        <div className="relative mr-6 flex h-[60px] w-[130px] shrink-0 flex-row items-center">
+          {/* logo hidden on dark mode */}
           <Link href="/" className="w-100 block dark:hidden">
             <Image src="/logo-v3-full.png" fill={true} alt="logo" />
           </Link>
+          {/* logo hidden on light mode */}
           <Link href="/" className="w-100 hidden dark:block">
             <Image src="/logo-v3-full-dark.png" fill={true} alt="logo" />
           </Link>
@@ -140,7 +142,7 @@ export function MainNav({ items }: MainNavProps) {
                   )
               )}
               {/* Container - Social Links and Theme Toggler */}
-              <div className="flex-row items-center flex relative left-[-11px]">
+              <div className="relative left-[-11px] flex flex-row items-center">
                 {/* Github Link with Logo */}
                 <Link
                   href={siteConfig.links.webxdao_gh}
