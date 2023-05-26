@@ -6,6 +6,8 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ui/TopButton";
 
 export const metadata: Metadata = {
   title: {
@@ -38,6 +40,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
               <div className="flex-1">{children}</div>
+              <Footer />
+              <ScrollToTopButton />
             </div>
             <TailwindIndicator />
           </ThemeProvider>

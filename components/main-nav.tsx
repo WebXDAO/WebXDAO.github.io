@@ -41,17 +41,16 @@ export function MainNav({ items }: MainNavProps) {
           <nav
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute border border-solid border-white top-20 bg-[#171717] text-[#b4b0d0] left-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } black-gradient absolute left-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl border border-solid border-white bg-[#171717] p-6 text-[#b4b0d0]`}
           >
-            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+            <ul className="flex flex-1 list-none flex-col items-start justify-end gap-4">
               {items?.map(
                 (item, index) =>
                   item.href && (
                     <Link
                       key={index}
                       href={item.href}
-                      className={`font-poppins font-medium cursor-pointer text-[16px] 
-                  }`}
+                      className={`font-poppins cursor-pointer text-[16px] font-medium`}
                       onClick={() => {
                         setToggle(!toggle);
                       }}
