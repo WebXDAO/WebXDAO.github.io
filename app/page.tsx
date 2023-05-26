@@ -9,6 +9,9 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/ui/TopButton";
 export default function IndexPage() {
+
+  let year = new Date().getFullYear();
+
   return (
     <>
       {/* TODO: How can i put the image in the background.. absolute / relative thingy */}
@@ -317,7 +320,7 @@ export default function IndexPage() {
         <div className="flex h-1/2  w-full flex-col content-center px-4 py-8">
           <div className="flex py-5">
             <h4 className="select-none text-base font-medium text-slate-900 dark:text-white">
-              © 2023 All rights reserved | Build with ❤ by{" "}
+              © {year} All rights reserved | Build with ❤ by{" "}
               <span className="cursor-pointer select-none hover:text-blue-600">WebXDAO </span>
             </h4>
           </div>
