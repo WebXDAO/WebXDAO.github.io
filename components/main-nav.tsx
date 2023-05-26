@@ -18,7 +18,7 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   const [toggle, setToggle] = useState<boolean>(false);
   return (
-    <div className="flex min-w-full justify-between">
+    <div className="flex justify-between max-md:min-w-full">
       <div className="md:hidden">
         <div
           className={`${toggle ? "hidden" : "block"} md:hidden`}
