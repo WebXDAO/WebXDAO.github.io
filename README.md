@@ -1,3 +1,7 @@
+# WebX DAO Website v3
+
+Welcome to the WebX DAO Website v3 repository! This repository contains the code and assets for the new design of the WebX DAO website
+
 [![Open in GitPod](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/WebXDAO/WebXDAO.github.io)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/WebXDAO/WebXDAO.github.io/blob/master/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/WebXDAO/WebXDAO.github.io)
@@ -39,8 +43,14 @@ npm install
 ```
 npm run dev
 ```
+## ✨ Contributing
 
+We welcome contributions from the community to help improve this project. If you would like to contribute, please follow our contributing guidelines.
+
+If you have any questions or need assistance, please feel free to reach out to us on Discord.
 ## ⚡ Our valuable Contributors
+
+We would like to acknowledge and thank our valuable contributors for their contributions to this project. Together, we are making the WebX DAO website even better!
 
 <p align="center"><a href="https://github.com/WebXDAO/WebXDAO.github.io/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=WebXDAO/WebXDAO.github.io" />
