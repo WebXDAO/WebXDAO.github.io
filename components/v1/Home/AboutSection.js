@@ -29,7 +29,7 @@ export default function AboutSection() {
                           everyone. As our community is in its initial stage, there is a unique opportunity for you to showcase your leadership skills and make a meaningful impact. Help shape the growth of this community by sharing your knowledge, insights, and expertise to benefit everyone involved. Together, we can build a thriving ecosystem where everyone can thrive and succeed&apos;s success.
                         </p>
                       </div>
-                      <div classN    ame="mt-3 lg:py-5">
+                      <div className="mt-3 lg:py-5">
                         <h1 className="text-center text-5xl font-bold tracking-tight text-white sm:text-6xl  xl:text-4xl">
                           <span className="block">The Mission?</span>
                         </h1>
