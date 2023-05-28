@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import { cn } from '@/lib/utils'
-import { fontGilroy } from '@/lib/fonts'
 import ContributorCard from '@/components/ContributorCard';
 
 async function getContributorData() {
