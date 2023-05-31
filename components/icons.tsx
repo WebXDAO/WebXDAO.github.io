@@ -7,6 +7,7 @@ import {
   Users,
   Zap,
   Rocket,
+  ArrowUpRight,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -20,7 +21,7 @@ export const Icons = {
   users: Users,
   zap: Zap,
   rocket: Rocket,
-  
+  ArrowUpRight: ArrowUpRight,
   collaborate: (props: LucideProps) => (
     <svg width="43" height="41" viewBox="0 0 43 41" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
