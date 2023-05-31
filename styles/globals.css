@@ -179,3 +179,16 @@
     }
   }  
 }
+
+@media screen and (max-width: 420px) {
+  footer{
+    width: 440px;
+    overflow-x: hidden;
+  }
+  .container{
+    width: auto;
+  }
+  #sticky-top{
+    width: 440px;
+  }
+}

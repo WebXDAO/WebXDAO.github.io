@@ -21,7 +21,7 @@ export default async function ContributorsPage() {
   
   return (
     <>
-      <section className="container mt-20 flex flex-wrap p-11">
+      <section id='githubList' className="container mt-20 flex flex-wrap p-11 mx-auto md:w-auto">
         {contributorList.map(({ id, login, html_url, contributions}:{ id:number, login:string, html_url:string, contributions:number }) => {
           return (
             <ContributorCard

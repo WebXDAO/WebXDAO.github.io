@@ -16,13 +16,14 @@ const navigation = [
 const Navbar = () => {
   return (
     <Popover as="header" className="relative">
-      <div className="bg-transparent pt-4 sm:pt-6">
+      <div className="bg-transparent pt-4 sm:pt-6 md:w-auto">
         {/* NAVIGATION BAR */}
         <nav
           className="relative mx-auto mb-4 flex max-w-7xl items-center justify-between px-4 sm:px-6"
           aria-label="Global"
         >
-          <div className="flex flex-1 items-center">
+          {/* <div className="flex flex-1 items-center"> */}
+          <div className="flex items-center">
             <div className="flex w-full items-center justify-between lg:w-auto">
               <Link href="/">
                 <a>
