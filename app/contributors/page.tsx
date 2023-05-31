@@ -8,9 +8,9 @@ async function getContributorData() {
   const res = await fetch('https://api.github.com/repos/WebXDAO/WebXDAO.github.io/contributors?anon=1');
 
   // handle errors
-  if(!res.ok)
+  if (!res.ok)
     throw new Error('Failed to fetch Contributor\'s data from Github!');
-  
+
   // returns a promise
   return res.json();
 }
@@ -18,7 +18,7 @@ async function getContributorData() {
 export default async function ContributorsPage() {
 
   const contributorList = await getContributorData();
-  
+
   return (
     <>
       <section id='githubList' className="container mx-auto mt-20 flex flex-wrap p-11 md:w-auto">
