@@ -34,8 +34,8 @@ const Partners: FC<PartnersProps> = ({ }) => {
 
             <div className="mt-10 flex flex-wrap justify-center gap-24">
                 {data.map(({ img, para, url }, index) => (
-                    <div key={index} className="flex max-w-xs cursor-pointer flex-col rounded-lg bg-white shadow-md shadow-purple-300 transition-all duration-200 ease-in hover:z-50 sm:hover:scale-105">
-                        <Image className="w-full" src={img} width={400} height={250} alt="" />
+                    <div key={index} className="flex max-w-xs cursor-pointer flex-col rounded-lg bg-white shadow-md shadow-purple-300 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400 sm:hover:scale-105">
+                        <Image className="w-full rounded-md p-2" src={img} width={400} height={250} alt="" />
                         <div className="grow px-6 py-4">
                             <p className="text-justify text-sm text-gray-700">{para}</p>
                         </div>
@@ -43,10 +43,10 @@ const Partners: FC<PartnersProps> = ({ }) => {
                             <Link
                                 href={url}
                                 target="_blank"
-                                className="w-fit-content font-inter text-14.0418 group mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 font-semibold text-black transition ease-in hover:border-indigo-800 hover:bg-indigo-800"
+                                className="w-fit-content font-inter text-14.0418 group mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 text-black transition delay-0 ease-in hover:border-none hover:bg-slate-500 hover:font-semibold"
                             >
-                                <Image src="/Arrow1.png" alt="arrow" width={15} height={18} className="my-auto flex items-center transition duration-500 ease-in group-hover:invert" />
-                                <span className="transition duration-500 ease-in group-hover:invert">Read More</span>
+                                <Image src="/Arrow1.png" alt="arrow" width={15} height={15} className="my-auto flex items-center transition duration-100 ease-in group-hover:invert" />
+                                <span className="transition duration-100 ease-in group-hover:invert">Read More</span>
                             </Link>
                         </div>
                     </div>
