@@ -14,7 +14,7 @@ export default function ContributorCard({
     <>
       <a
         className={cn(
-          "m-2 flex cursor-pointer space-x-4 whitespace-nowrap rounded-xl border border-black px-[25px] py-[16px] align-middle text-[26px] font-semibold leading-[31px] transition-all hover:shadow-lg active:shadow-sm active:ring-2 active:ring-[#411AFF] dark:border-[#3d60ba] dark:font-medium dark:shadow-[#1f2840]",
+          "m-2 flex cursor-pointer space-x-4 whitespace-nowrap rounded-xl border border-black p-2 align-middle text-xl font-semibold leading-[31px] transition-all hover:shadow-lg active:shadow-sm active:ring-2 active:ring-[#411AFF] dark:border-[#3d60ba] dark:font-medium dark:shadow-[#1f2840]",
           fontGilroy.className
         )}
         href={profileLink}
