@@ -1,15 +1,14 @@
-import { siteConfig } from "@/config/site";
-import Link from "next/link";
 import { Icons } from "@/components/icons";
+import { siteConfig } from "@/config/site";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
+  let year = new Date().getFullYear();
+
   return (
-    <footer
-      className=" 
-      from-violet-950 from-10% via-violet-950 via-30% to-background to-90% px-8 dark:bg-gradient-to-t"
-    >
-      <div className="container flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
+    <footer className="mt-16 from-violet-950 from-10% via-violet-950 via-30% to-background to-90% px-8 dark:bg-gradient-to-t">
+      <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
         <div className="flex py-5 ">
           <ul>
             <div className="flex">
@@ -79,9 +78,7 @@ export default function Footer() {
               <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                 What we do?
               </li>
-              <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">
-                Team WebX
-              </li>
+              <li className="cursor-pointer pb-2 text-base font-normal text-gray-500">Team WebX</li>
             </ul>
           </div>
           <div className="px-5">
@@ -109,8 +106,8 @@ export default function Footer() {
 
       <div className="flex h-1/2  w-full flex-col content-center px-4 py-8">
         <div className="flex py-5">
-          <h4 className="select-none text-center text-base font-medium text-slate-900 dark:text-white">
-            © 2023 All rights reserved | Build with ❤ by{" "}
+          <h4 className="select-none text-base font-medium text-slate-900 dark:text-white">
+            © {year} All rights reserved | Build with ❤ by{" "}
             <span className="cursor-pointer select-none hover:text-blue-600">WebXDAO </span>
           </h4>
         </div>
