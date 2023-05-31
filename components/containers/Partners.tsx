@@ -25,8 +25,8 @@ const data = [
 const Partners: FC<PartnersProps> = ({ }) => {
     return (
         <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6  md:py-10">
-            <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2">
-                <h3 className="inline-block bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text px-32 text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
+            <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2 text-center">
+                <h3 className="inline-block max-w-2xl bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
                     Get to know our Community Partners
                 </h3>
                 <h2>Community Partners we highly value</h2>

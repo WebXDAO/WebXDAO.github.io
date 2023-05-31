@@ -7,7 +7,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
-import ScrollToTopButton from "@/components/ui/TopButton";
+
 export default function IndexPage() {
 
   let year = new Date().getFullYear();
@@ -86,7 +86,7 @@ export default function IndexPage() {
       {/* Headline */}
       <section className="container mt-20 grid items-center justify-center gap-6 pb-8 pt-6 text-center md:py-10">
         <div className="flex max-w-[980px] flex-col items-center gap-2">
-          <h3 className="inline-block bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text px-32 text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
+          <h3 className="inline-block max-w-2xl bg-gradient-to-r from-indigo-700 via-purple-400 to-slate-400 bg-clip-text text-xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-2xl md:text-3xl lg:text-2xl">
             Become an integral part of a dynamic and vibrant network of like-minded developers
           </h3>
           <div className="mt-4 flex gap-4">
@@ -108,8 +108,8 @@ export default function IndexPage() {
       </section>
 
       {/* Blurbs */}
-      <section className="flex justify-center px-40 py-0">
-        <div className="my-12 flex gap-8">
+      <section className=" flex justify-center px-4 py-0 md:px-10">
+        <div className="my-12 flex flex-col md:flex-row md:gap-8">
           <div className="flex flex-col items-center justify-center gap-3 text-center">
             <div className="border-l-3 flex justify-center rounded-lg border-white bg-white p-8 shadow-md shadow-purple-300">
               <Icons.collaborate className="h-15 w-15 mr-1" />
@@ -120,18 +120,17 @@ export default function IndexPage() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-3 text-center">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 text-center md:mt-0">
             <div className="border-l-3 flex justify-center rounded-lg border-white bg-white p-8 shadow-md shadow-purple-300">
               <Icons.blockchain className="h-15 w-15 mr-1" />
             </div>
             <div className="text-lg font-bold">Blockchain</div>
             <span className="text-sm">
-              Dedicated to exploring new ways to leverage the power Of this transformative
-              technology.
+              Dedicated to exploring new ways to leverage the power of this transformative technology.
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-3 text-center">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 text-center md:mt-0">
             <div className="border-l-3 flex justify-center rounded-lg border-white bg-white p-8 shadow-md shadow-purple-300">
               <Icons.decentralization className="h-15 w-15 mr-1" />
             </div>
@@ -142,6 +141,7 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
+
 
       {/* Partners */}
       <Partners />
