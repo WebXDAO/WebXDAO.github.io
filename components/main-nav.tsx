@@ -10,6 +10,8 @@ import * as React from "react";
 import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
+import { buttonVariants } from "./ui/button";
+import { ThemeToggle } from "./theme-toggle";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -18,8 +20,86 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   const [toggle, setToggle] = useState<boolean>(false);
   return (
-    <div className="flex justify-between max-md:min-w-full">
-      <div className="md:hidden">
+    <div className="flex min-w-full justify-between">
+      {/* desktop width navbar */}
+      <div className="flex w-full justify-between">
+        {/* Brand Logo | home page link  */}
+        <div className="relative mr-6 flex h-[60px] w-[130px] shrink-0 flex-row items-center">
+          {/* logo hidden on dark mode */}
+          <Link href="/" className="w-100 block dark:hidden">
+            <Image src="/logo-v3-full.png" fill={true} alt="logo" />
+          </Link>
+          {/* logo hidden on light mode */}
+          <Link href="/" className="w-100 hidden dark:block">
+            <Image src="/logo-v3-full-dark.png" fill={true} alt="logo" />
+          </Link>
+        </div>
+        {/* container with both nav links and Logos */}
+        <div className="flex flex-row md:space-x-6 lg:space-x-12">
+          {/* Container - Navigation page links */}
+          <div className="min-w-[430px]: flex flex-row align-baseline">
+            {items?.length ? (
+              <nav className="hidden justify-between md:flex md:gap-6 lg:gap-12">
+                {items?.map(
+                  (item, index) =>
+                    item.href && (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className={cn(
+                          "flex items-center whitespace-nowrap text-xl font-semibold sm:text-sm",
+                          item.disabled && "cursor-not-allowed opacity-80"
+                        )}
+                      >
+                        {item.title}
+                      </Link>
+                    )
+                )}
+              </nav>
+            ) : null}
+          </div>
+          {/* Container - Social Links and Theme Toggler */}
+          <div className="hidden flex-row items-center md:flex">
+            {/* Github Link with Logo */}
+            <Link
+              href={siteConfig.links.webxdao_gh}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.gitHub className="h-5 w-5" />
+                <span className="sr-only">GitHub</span>
+              </div>
+            </Link>
+            {/* Twitter Link with Logo */}
+            <Link
+              href={siteConfig.links.webxdao_twitter}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.twitter className="h-5 w-5 fill-current" />
+                <span className="sr-only">Twitter</span>
+              </div>
+            </Link>
+            {/* Theme Toggle Button  */}
+            <ThemeToggle />
+          </div>
+        </div>
+      </div>
+      {/* mobile hamburger menu */}
+      <div className="flex items-center md:hidden">
+        {/* humburger menu logo  */}
         <div
           className={`${toggle ? "hidden" : "block"} md:hidden`}
           onClick={() => {
@@ -28,6 +108,7 @@ export function MainNav({ items }: MainNavProps) {
         >
           <BiMenuAltRight size={40} />
         </div>
+        {/* hamburger menu close log  */}
         <div
           className={`${!toggle ? "hidden" : "block"}  md:hidden`}
           onClick={() => {
@@ -36,7 +117,7 @@ export function MainNav({ items }: MainNavProps) {
         >
           <MdOutlineClose size={40} />
         </div>
-
+        {/* hamburger menu container*/}
         {items?.length ? (
           <nav
             className={`${
@@ -59,35 +140,44 @@ export function MainNav({ items }: MainNavProps) {
                     </Link>
                   )
               )}
-            </ul>
-          </nav>
-        ) : null}
-      </div>
-      <div className="flex gap-6 md:gap-10">
-        <Link href="/" className="items-center space-x-2 md:flex">
-          {/* <Icons.logo className="h-6 w-6" /> */}
-          <Image src="/logo.png" width={50} height={50} alt="logo" />
-          <div className="right-0"></div>
-          <span className="hidden font-bold md:inline-block">{siteConfig.name}</span>
-        </Link>
-
-        {items?.length ? (
-          <nav className="hidden gap-6 md:flex">
-            {items?.map(
-              (item, index) =>
-                item.href && (
-                  <Link
-                    key={index}
-                    href={item.href}
-                    className={cn(
-                      "flex items-center text-lg font-semibold text-muted-foreground sm:text-sm",
-                      item.disabled && "cursor-not-allowed opacity-80"
-                    )}
+              {/* Container - Social Links and Theme Toggler */}
+              <div className="relative left-[-11px] flex flex-row items-center">
+                {/* Github Link with Logo */}
+                <Link
+                  href={siteConfig.links.webxdao_gh}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div
+                    className={buttonVariants({
+                      size: "sm",
+                      variant: "ghost",
+                    })}
                   >
-                    {item.title}
-                  </Link>
-                )
-            )}
+                    <Icons.gitHub className="h-5 w-5" />
+                    <span className="sr-only">GitHub</span>
+                  </div>
+                </Link>
+                {/* Twitter Link with Logo */}
+                <Link
+                  href={siteConfig.links.webxdao_twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div
+                    className={buttonVariants({
+                      size: "sm",
+                      variant: "ghost",
+                    })}
+                  >
+                    <Icons.twitter className="h-5 w-5 fill-current" />
+                    <span className="sr-only">Twitter</span>
+                  </div>
+                </Link>
+                {/* Theme Toggle Button  */}
+                <ThemeToggle />
+              </div>
+            </ul>
           </nav>
         ) : null}
       </div>
