@@ -1,8 +1,8 @@
-import Star from "../../components/star";
 import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import Head from "next/head";
 import ProjectCard from "../../components/ProjectCard";
+import Star from "../../components/star";
 
 async function getRepoData() {
   const res = await fetch("https://api.github.com/orgs/WebXDAO/repos");
@@ -38,8 +38,20 @@ export default async function Projects() {
             </div>
             <Star height={90} width={90} />
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="900" height="2" className="-mx-52 mb-11 mt-auto hidden lg:flex">
-            <line x1="0" y1="0" x2="1000" y2="0" strokeWidth="2" className="stroke-black dark:stroke-white"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="900"
+            height="2"
+            className="-mx-52 mb-11 mt-auto hidden lg:flex"
+          >
+            <line
+              x1="0"
+              y1="0"
+              x2="1000"
+              y2="0"
+              strokeWidth="2"
+              className="stroke-black dark:stroke-white"
+            />
           </svg>
         </div>
         <div className="mt-6 flex justify-center text-center text-lg font-light leading-tight text-black dark:text-white md:text-xl">

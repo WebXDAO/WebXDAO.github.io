@@ -6,12 +6,11 @@ import { cn } from "@/lib/utils";
 import { NavItem } from "@/types/nav";
 import Image from "next/image";
 import Link from "next/link";
-import * as React from "react";
 import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
-import { buttonVariants } from "./ui/button";
 import { ThemeToggle } from "./theme-toggle";
+import { buttonVariants } from "./ui/button";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -61,11 +60,7 @@ export function MainNav({ items }: MainNavProps) {
           {/* Container - Social Links and Theme Toggler */}
           <div className="hidden flex-row items-center md:flex">
             {/* Github Link with Logo */}
-            <Link
-              href={siteConfig.links.webxdao_gh}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href={siteConfig.links.webxdao_gh} target="_blank" rel="noreferrer">
               <div
                 className={buttonVariants({
                   size: "sm",
@@ -77,11 +72,7 @@ export function MainNav({ items }: MainNavProps) {
               </div>
             </Link>
             {/* Twitter Link with Logo */}
-            <Link
-              href={siteConfig.links.webxdao_twitter}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href={siteConfig.links.webxdao_twitter} target="_blank" rel="noreferrer">
               <div
                 className={buttonVariants({
                   size: "sm",
@@ -143,11 +134,7 @@ export function MainNav({ items }: MainNavProps) {
               {/* Container - Social Links and Theme Toggler */}
               <div className="relative left-[-11px] flex flex-row items-center">
                 {/* Github Link with Logo */}
-                <Link
-                  href={siteConfig.links.webxdao_gh}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link href={siteConfig.links.webxdao_gh} target="_blank" rel="noreferrer">
                   <div
                     className={buttonVariants({
                       size: "sm",
@@ -159,11 +146,7 @@ export function MainNav({ items }: MainNavProps) {
                   </div>
                 </Link>
                 {/* Twitter Link with Logo */}
-                <Link
-                  href={siteConfig.links.webxdao_twitter}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link href={siteConfig.links.webxdao_twitter} target="_blank" rel="noreferrer">
                   <div
                     className={buttonVariants({
                       size: "sm",
