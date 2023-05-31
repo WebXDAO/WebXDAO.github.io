@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="flex h-1/2  w-full flex-col content-center px-4 py-8">
           <div className="flex py-5">
-            <h4 className="select-none text-base font-medium text-slate-900 dark:text-white text-center">
+            <h4 className="select-none text-center text-base font-medium text-slate-900 dark:text-white">
               © 2023 All rights reserved | Build with ❤ by{" "}
               <span className="cursor-pointer select-none hover:text-blue-600">WebXDAO </span>
             </h4>
