@@ -21,17 +21,16 @@ body:
     validations:
       required: false
   - type: checkboxes
-    id: consent
-    attributes:
-      label: Would you like to work on this issue?
-      options:
-        - label: Yes, I want to work on this issue!
-          required: false
-  - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
+      label: Checklist
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/WebXDAO/.github/blob/main/CODE_OF_CONDUCT.md)
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: "I have read the [Contributing Guidelines](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/CONTRIBUTING.md)"
           required: true
+        - label: "I have checked the existing [issues](https://github.com/WebXDAO/WebXDAO.github.io/issues)"
+          required: true
+        - label: "I am willing to work on this issue (optional)"
+          required: false
+        - label: "I am a GSSoC'23 contributor"
+          required: false
