@@ -65,6 +65,8 @@ export function MainNav({ items }: MainNavProps) {
               href={siteConfig.links.webxdao_gh}
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit us on Github"
+              title="Github (External Link)"
             >
               <div
                 className={buttonVariants({
@@ -81,6 +83,8 @@ export function MainNav({ items }: MainNavProps) {
               href={siteConfig.links.webxdao_twitter}
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit us on Twitter"
+              title="Twitter (External Link)"
             >
               <div
                 className={buttonVariants({
@@ -146,6 +150,8 @@ export function MainNav({ items }: MainNavProps) {
                 <Link
                   href={siteConfig.links.webxdao_gh}
                   target="_blank"
+                  aria-label="Visit us on Github"
+                  title="Github (External Link)"
                   rel="noreferrer"
                 >
                   <div
@@ -162,6 +168,8 @@ export function MainNav({ items }: MainNavProps) {
                 <Link
                   href={siteConfig.links.webxdao_twitter}
                   target="_blank"
+                  aria-label="Visit us on Twitter"
+                  title="Twitter (External Link)"
                   rel="noreferrer"
                 >
                   <div
