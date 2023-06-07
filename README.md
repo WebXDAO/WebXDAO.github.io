@@ -1,5 +1,5 @@
 [![Open in GitPod](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/WebXDAO/WebXDAO.github.io)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/WebXDAO/WebXDAO.github.io/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/WebXDAO/WebXDAO.github.io)
 
 The content in this repository is temporary, as we are working on a new web design for WebX DAO, which is available in the [website v3 project](https://github.com/orgs/WebXDAO/projects/9). 
