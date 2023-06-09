@@ -1,6 +1,6 @@
 {
-  "name": "next-template",
-  "version": "0.0.2",
+  "name": "webxdao.github.io",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -49,5 +49,24 @@
     "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "^3.3.1",
     "typescript": "^4.9.3"
-  }
+  },
+  "description": "Official website for the WebXDAO organization.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebXDAO/WebXDAO.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "dao",
+    "web",
+    "metaverse",
+    "blockchain",
+    "opensource"
+  ],
+  "author": "WebXDAO team and community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebXDAO/WebXDAO.github.io/issues"
+  },
+  "homepage": "https://github.com/WebXDAO/WebXDAO.github.io#readme"
 }
