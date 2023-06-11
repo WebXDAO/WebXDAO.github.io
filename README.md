@@ -12,9 +12,13 @@ If you need any assistance, please feel free to message us on [Discord](https://
 
 > Before you begin, make sure to read our [contributing guidelines](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/CONTRIBUTING.md).
 
-### 1. Skip all the steps below by using Gitpod, which automates the setup process
+### Skip all the steps below by using Gitpod, which automates the setup process
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/WebXDAO/WebXDAO.github.io)
+
+### 1. Fork the repository
+
+Fork the repository on the [fork page](https://github.com/WebXDAO/WebXDAO.github.io/fork).
 
 ### 2. Check the Node.js version on your local machine
 
@@ -30,7 +34,7 @@ If Node.js is not installed, you can download it from [nodejs.org](https://nodej
 To clone this repository to your local machine, run the following command:
 
 ```
-git clone https://github.com/WebXDAO/WebXDAO.github.io.git
+git clone https://github.com/<your-username>/WebXDAO.github.io.git
 ```
 
 ### 4. Navigate to the Directory
@@ -58,6 +62,7 @@ npm run dev
 ```
 
 ### Important Points to Remember
+
 - Make sure your local environment has Node.js installed, with a minimum version of 16 (node >= v16).
 - If you need to change the Node.js version for your development environment, you can use a version manager like [nvm](https://github.com/nvm-sh/nvm).
 
