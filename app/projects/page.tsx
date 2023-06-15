@@ -61,17 +61,12 @@ export default async function Projects() {
               html_url: string;
               index: number;
             }) => (
-              <div
+              <ProjectCard
                 key={index}
-                className="focus:shadow-outline col-span-3 flex cursor-pointer flex-col items-stretch justify-between rounded-md p-2 transition duration-300 ease-in-out hover:scale-105 focus:outline-none md:col-span-1"
-              >
-                <ProjectCard
-                  key={index}
-                  full_name={full_name}
-                  description={description}
-                  url={html_url}
-                />
-              </div>
+                full_name={full_name}
+                description={description}
+                url={html_url}
+              />
             )
           )}
       </div>

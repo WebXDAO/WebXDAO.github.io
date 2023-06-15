@@ -17,8 +17,8 @@ const data = [
     },
     {
         img: "/Lumos-Labs-1.png",
-        para: "Lumos labs is building a metaverse for builders and Web3 ecosystem enablers to share opportunities to build scale-up.",
-        url: "https://twitter.com/lumoslabsHQ",
+        para: "Lumos Labs is building a metaverse for builders and Web3 ecosystem enablers to share opportunities to build scale-up.",
+        url: "https://www.lumoslabs.co/",
     },
 ];
 
