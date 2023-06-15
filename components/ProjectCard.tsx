@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { Icons } from "./icons";
 import { Button, buttonVariants } from "./ui/button";
+import { ImArrowUpRight2 } from "react-icons/im";
+import { cn }  from "../lib/utils";
+import { fontSans } from "@/lib/fonts";
 
 const ProjectCard = ({
   full_name,
@@ -12,27 +14,26 @@ const ProjectCard = ({
   description: string;
 }) => {
   return (
-    <div className="bg-white-900/60 dark:border-white-700 flex h-full w-full flex-col justify-between rounded-lg border p-5 shadow">
-      <div>
-        <div className="flex flex-row">
-          {/*<img src={owner?.avatar_url} className="rounded h-40 w-40"/>*/}
-          <p>
-            <span className="text-black-300 font-semibold">{full_name}</span>
-          </p>
+    <>
+      {/* Project Card Container */}
+      <div className={cn(fontSans.variable ,"flex w-[356px] flex-col items-start justify-between gap-8 justify-self-center rounded-[10px] border border-black/5 px-[28px] pb-[24px] pt-[28px] shadow-[0px_0px_10px_0px_#00000010] hover:shadow-sm dark:border-white/20 dark:shadow-[0px_0px_10px_0px_#FFFFFF25] md:w-full md:lg:min-h-[240px]")}>
+        {/* Heading and Description Container */}
+        <div className="flex flex-col items-start gap-3">
+          {/* Heading */}
+          <h2 className="text-base font-bold">{full_name}</h2>
+          {/* Description */}
+          <p className="text-justify text-base font-normal dark:text-white/50">{description}</p>
         </div>
-        <p className="dark:text-white-500 mt-3 text-xs text-gray-500">{description}</p>
-        <div className="flex items-center justify-center px-2 py-4">
-          <Link
-            href={url}
-            target="_blank"
-            rel="noreferrer"
-            className={buttonVariants({ size: "lg" })}
-          >
-            Read more
-          </Link> 
-        </div>
+        {/* Read More Button */}
+        <Link
+          href={url}
+          className="border-3 flex w-fit flex-row items-center justify-start gap-1 rounded-[10px] border border-black bg-white px-2 py-1 transition-all hover:shadow-sm hover:outline hover:outline-1 dark:border-white/60 dark:bg-black"
+        >
+          <ImArrowUpRight2/>
+          <span className="text-sm font-semibold dark:text-white">Read More</span>
+        </Link>
       </div>
-    </div>
+    </>
   );
 };
 
