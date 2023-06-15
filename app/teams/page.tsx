@@ -4,14 +4,14 @@ import { cn } from "@/lib/utils";
 import Head from "next/head";
 import TeamCard from "@/components/TeamCard";
 
-export default async function Projects() {
+export default async function Teams() {
   return (
     <>
       <Head>
-        <title>Projects | WebXDAO</title>
+        <title>Teams | WebXDAO</title>
       </Head>
-      <section className="py-8">
-        <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap">
+      <section className="py-8 w-full overflow-hidden">
+        <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap ">
           <h1
             className={cn(
               "w-max-content my-2 w-full text-center text-7xl font-semibold leading-tight text-slate-900 dark:text-white lg:text-left",
@@ -30,21 +30,21 @@ export default async function Projects() {
             <line x1="0" y1="0" x2="1000" y2="0" strokeWidth="2" className="stroke-black dark:stroke-white"/>
           </svg>
         </div>
-        <div className="mt-6 flex justify-center text-left text-lg font-light leading-tight text-black dark:text-white md:text-xl">
+        <div className="mt-6 flex justify-center text-lg font-light leading-tight text-black dark:text-white md:text-xl lg:text-left sm:text-center ">
         As online collaborators with a strong commitment to Open Source contributions.<br></br>
         We have come together to establish WebX DAO.
         </div>
       </section>
 
-      <div className="container mx-auto flex justify-center gap-10">
+      <div className="container mx-auto justify-center gap-10 lg:flex sm:block ">
       <TeamCard Name="Vincent Villafuerte" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
       <TeamCard Name="Shubham Kukreti  " position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
       <TeamCard Name="Ritvik Shukla" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
       <TeamCard Name="Maxime Kubik" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
       </div>
       <h1 className="text-center mt-10 font-bold">WebX Guild Maintainers and Moderators</h1>
-      <h1 className="text-center mt-5">The essential role of our community projects' maintainers and moderators is to ensure the <br/>proper functioning of our codebase and foster a welcoming and engaged community.</h1>
-      <div className="container mx-auto flex justify-center gap-10 mt-10">
+      <h1 className="text-center mt-5">The essential role of our community projects &apos; maintainers and moderators is to ensure the <br/>proper functioning of our codebase and foster a welcoming and engaged community.</h1>
+      <div className="container mx-auto justify-center gap-10 mt-10 mb-10 lg:flex sm:block">
       <TeamCard Name="David Leal" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
       <TeamCard Name="Krish Gupta" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
       <TeamCard Name="Abhinav MV" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
