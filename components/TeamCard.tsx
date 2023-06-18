@@ -18,9 +18,9 @@ const TeamCard = ({
   return (
     <div>
         <div className="border-2 border-black my-5 mx-auto" style={{backgroundColor: "white" , width: "150px", height:"150px" ,borderRadius: "50%"}}></div>
-        <h1 className="text-center my-5">{Name}</h1>
-        <h2 className="my-5 text-center">{position}</h2>
-        <div className="flex gap-4 px-5 my-5 place-content-center">
+        <h1 className="text-center my-1">{Name}</h1>
+        <h2 className="my-1 text-center">{position}</h2>
+        <div className="flex gap-4 px-5 my-6 place-content-center">
         <Link href={github_url} target="_blank">
                 <Icons.gitHub
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
