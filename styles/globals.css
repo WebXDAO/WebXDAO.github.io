@@ -197,3 +197,22 @@
   background: linear-gradient(#8034e4,#E638EAFF);
   background-clip: content-box;
 }
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8034e4 #E638EAFF;
+}
+
+/* Internet Explorer and Microsoft Edge */
+*::-ms-scrollbar {
+  width: 16px;
+}
+
+*::-ms-scrollbar-track {
+  background: transparent;
+}
+
+*::-ms-scrollbar-thumb {
+  background: linear-gradient(#8034e4, #E638EAFF);
+}
