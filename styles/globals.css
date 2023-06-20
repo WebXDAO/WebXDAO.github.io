@@ -176,9 +176,7 @@
   *::-ms-scrollbar-thumb {
     background: linear-gradient(#8034e4, #E638EAFF);
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
