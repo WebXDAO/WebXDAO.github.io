@@ -10,7 +10,7 @@ export default function Main () {
         <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-12 text-center">
         <div className="relative z-10 flex flex-col gap-6">
           <div className="flex max-w-[980px] flex-col items-center gap-2 ">
-            <h1 className="bg-gradient-to-r from-indigo-700 via-purple-700 to-slate-900 bg-clip-text text-3xl font-medium leading-tight tracking-tighter text-transparent mix-blend-difference sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="bg-gradient-to-r from-indigo-700 via-purple-700 to-slate-400 bg-clip-text text-3xl font-medium leading-tight tracking-tighter text-transparent mix-blend-difference sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="block">Shaping web</span>
               <span className="block">that will captivate</span>
               <span className="block">the world.</span>
