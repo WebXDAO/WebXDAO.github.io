@@ -32,9 +32,9 @@ const Partners: FC<PartnersProps> = ({ }) => {
                 <h2>Community Partners we highly value</h2>
             </div>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-24">
+            <div className="mt-10 flex flex-wrap justify-center gap-10">
                 {data.map(({ img, para, url }, index) => (
-                    <div key={index} className="flex max-w-xs cursor-pointer flex-col rounded-lg bg-white shadow-md shadow-purple-300 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400 sm:hover:scale-105">                        <Image className="w-full rounded-md p-2" src={img} width={400} height={250} alt="" />
+                    <div key={index} className="flex max-w-[400px] cursor-pointer flex-col rounded-lg bg-white shadow-md shadow-purple-300 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400 sm:hover:scale-105">                        <Image className="w-full rounded-md p-2" src={img} width={600} height={450} alt="" />
                         <div className="grow px-6 py-4">
                             <p className="text-justify text-sm text-gray-700">{para}</p>
                         </div>
