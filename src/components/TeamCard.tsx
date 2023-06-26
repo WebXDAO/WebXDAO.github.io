@@ -17,10 +17,10 @@ const TeamCard = ({
   }) => {
   return (
     <div>
-        <div className="border-2 border-black my-5 mx-auto" style={{backgroundColor: "white" , width: "150px", height:"150px" ,borderRadius: "50%"}}></div>
-        <h1 className="text-center my-1">{Name}</h1>
+        <div className="mx-auto my-5 border-2 border-black" style={{backgroundColor: "white" , width: "150px", height:"150px" ,borderRadius: "50%"}}></div>
+        <h1 className="my-1 text-center">{Name}</h1>
         <h2 className="my-1 text-center">{position}</h2>
-        <div className="flex gap-4 px-5 my-6 place-content-center">
+        <div className="my-6 flex place-content-center gap-4 px-5">
         <Link href={github_url} target="_blank">
                 <Icons.gitHub
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
