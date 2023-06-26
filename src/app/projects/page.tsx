@@ -22,7 +22,7 @@ export default async function Projects() {
       <Head>
         <title>Projects | WebXDAO</title>
       </Head>
-      <section className="py-8">
+      <section className="py-8 overflow-hidden w-full">
         <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap">
           <h1
             className={cn(
