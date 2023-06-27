@@ -7,7 +7,7 @@ export default function Footer() {
   let year = new Date().getFullYear();
 
   return (
-    <footer className="mt-16 from-violet-950 from-10% via-violet-950 via-30% to-background to-90% px-8 dark:bg-gradient-to-t">
+    <footer className="mt-16 bg-[#1B1B1B] p-11 px-8 dark:bg-gradient-to-t">
       <div className="flex h-1/2 w-full flex-col content-center justify-between py-8 md:flex-row md:items-start ">
         <div className="flex py-5 ">
           <ul>
