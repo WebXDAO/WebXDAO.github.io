@@ -37,7 +37,7 @@ function Card({title, desc, icon}: Cards) {
         {icon}
       </div>
       <div className="text-lg font-bold">{title}</div>
-      <span className="text-sm max-w-xs">
+      <span className="max-w-xs text-sm">
         {desc}
       </span>
     </div>
