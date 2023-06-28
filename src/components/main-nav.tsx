@@ -27,11 +27,11 @@ export function MainNav({ items }: MainNavProps) {
         <div className="relative mr-6 flex h-[60px] w-[130px] shrink-0 flex-row items-center">
           {/* logo hidden on dark mode */}
           <Link href="/" className="w-100 block dark:hidden">
-            <Image src="/logo-v3-full.png" fill={true} alt="logo" />
+            <Image src="/logo-v3-full.png" sizes="(max-width: 768px) 100vw" fill={true} alt="logo" />
           </Link>
           {/* logo hidden on light mode */}
           <Link href="/" className="w-100 hidden dark:block">
-            <Image src="/logo-v3-full-dark.png" fill={true} alt="logo" />
+            <Image src="/logo-v3-full-dark.png" sizes="(max-width: 768px) 100vw" fill={true} alt="logo" />
           </Link>
         </div>
         {/* container with both nav links and Logos */}
