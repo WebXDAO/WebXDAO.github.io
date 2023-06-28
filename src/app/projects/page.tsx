@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Head from "next/head";
 import ProjectCard from "../../components/ProjectCard";
 
+
 async function getRepoData() {
   const res = await fetch("https://api.github.com/orgs/WebXDAO/repos");
 
@@ -14,9 +15,15 @@ async function getRepoData() {
   return res.json();
 }
 
+
+ 
+
 export default async function Projects() {
   const projectsData = await getRepoData();
   console.log(projectsData);
+
+  
+
   return (
     <>
       <Head>
@@ -49,7 +56,7 @@ export default async function Projects() {
 
       <div className="container mx-auto my-8 mb-0 grid max-w-screen-xl grid-cols-1 gap-6 px-8 pb-8 sm:mb-8 md:grid-cols-2 lg:grid-cols-3">
         {projectsData.length > 0 &&
-          projectsData.map(
+          projectsData.map(Projects)(
             ({
               full_name,
               description,

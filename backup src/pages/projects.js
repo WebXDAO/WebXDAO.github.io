@@ -1,6 +1,8 @@
 import Head from "next/head";
 import RepoCard from "../components/Projcts/ RepoCard";
 
+
+
 export const getStaticProps = async () => {
     try {
         const res = await fetch('https://api.github.com/orgs/WebXDAO/repos');
@@ -30,7 +32,10 @@ export const getStaticProps = async () => {
     }
 }
 
+
 const Projects = ({ success = false, projectsData = [] }) => {
+  
+  
   return (
     <>
       <Head>

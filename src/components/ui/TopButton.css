@@ -19,7 +19,8 @@
   }
   
   .scrollToTopButton:hover {
-    opacity: 1;
+    opacity: 1.5;
+    background-color: rgb(152, 6, 201);
   }
   
   .scrollToTopIcon {
