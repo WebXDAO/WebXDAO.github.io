@@ -21,8 +21,8 @@ export function MainNav({ items }: MainNavProps) {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleClose = useCallback(
-    (e: any) => {
-      if (menuRef.current && !menuRef.current?.contains(e.target)) {
+    (e: Event) => {
+      if (menuRef.current && !menuRef.current?.contains(e.target as Node | null)) {
         setToggle(false);
       }
     },
