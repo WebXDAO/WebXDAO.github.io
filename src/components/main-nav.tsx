@@ -41,7 +41,7 @@ export function MainNav({ items }: MainNavProps) {
   }, [handleClose, toggle]);
 
   return (
-    <div ref={menuRef} className="flex min-w-full justify-between">
+    <div className="flex min-w-full justify-between">
       {/* desktop width navbar */}
       <div className="flex w-full justify-between">
         {/* Brand Logo | home page link  */}
@@ -133,7 +133,7 @@ export function MainNav({ items }: MainNavProps) {
         </div>
       </div>
       {/* mobile hamburger menu */}
-      <div className="flex items-center md:hidden">
+      <div ref={menuRef} className="flex items-center md:hidden">
         {/* humburger menu logo  */}
         <div
           className={`${toggle ? "hidden" : "block"} md:hidden`}
