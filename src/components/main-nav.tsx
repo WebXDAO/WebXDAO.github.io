@@ -126,7 +126,7 @@ export function MainNav({ items }: MainNavProps) {
           <nav
             className={`${
               !toggle ? "hidden" : "flex"
-            } black-gradient absolute left-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl border border-solid border-white bg-[#171717] p-6 text-[#b4b0d0]`}
+            } black-gradient absolute right-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl border border-solid border-white bg-[#171717] p-6 text-[#b4b0d0]`}
           >
             <ul className="flex flex-1 list-none flex-col items-start justify-end gap-4">
               {items?.map(
