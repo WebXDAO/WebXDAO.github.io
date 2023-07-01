@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { NavItem } from "@/types/nav";
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 import { ThemeToggle } from "./theme-toggle";
@@ -20,25 +20,23 @@ export function MainNav({ items }: MainNavProps) {
   const [toggle, setToggle] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const handleClose = useCallback(
-    (e: Event) => {
+  useEffect(() => {
+    if (!toggle) return;
+
+    const handleClose = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current?.contains(e.target as Node | null)) {
         setToggle(false);
       }
-    },
-    [menuRef]
-  );
-  
-  useEffect(() => {
-    if (!toggle) return;
+    };
+
     window.addEventListener("click", handleClose);
-    window.addEventListener("scroll", handleClose);
+    window.addEventListener("scroll", handleClose as EventListener);
 
     return () => {
       window.removeEventListener("click", handleClose);
-      window.removeEventListener("scroll", handleClose);
+      window.removeEventListener("scroll", handleClose as EventListener);
     };
-  }, [handleClose, toggle]);
+  }, [toggle]);
 
   return (
     <div className="flex min-w-full justify-between">
