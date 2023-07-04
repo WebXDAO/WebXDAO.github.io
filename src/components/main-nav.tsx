@@ -6,12 +6,11 @@ import { cn } from "@/lib/utils";
 import { NavItem } from "@/types/nav";
 import Image from "next/image";
 import Link from "next/link";
-import * as React from "react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
-import { buttonVariants } from "./ui/button";
 import { ThemeToggle } from "./theme-toggle";
+import { buttonVariants } from "./ui/button";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -19,6 +18,26 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   const [toggle, setToggle] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!toggle) return;
+
+    const handleClose = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current?.contains(e.target as Node | null)) {
+        setToggle(false);
+      }
+    };
+
+    window.addEventListener("click", handleClose);
+    window.addEventListener("scroll", handleClose as EventListener);
+
+    return () => {
+      window.removeEventListener("click", handleClose);
+      window.removeEventListener("scroll", handleClose as EventListener);
+    };
+  }, [toggle]);
+
   return (
     <div className="flex min-w-full justify-between">
       {/* desktop width navbar */}
@@ -27,11 +46,21 @@ export function MainNav({ items }: MainNavProps) {
         <div className="relative mr-6 flex h-[60px] w-[130px] shrink-0 flex-row items-center">
           {/* logo hidden on dark mode */}
           <Link href="/" className="w-100 block dark:hidden">
-            <Image src="/logo-v3-full.png" sizes="(max-width: 768px) 100vw" fill={true} alt="logo" />
+            <Image
+              src="/logo-v3-full.png"
+              sizes="(max-width: 768px) 100vw"
+              fill={true}
+              alt="logo"
+            />
           </Link>
           {/* logo hidden on light mode */}
           <Link href="/" className="w-100 hidden dark:block">
-            <Image src="/logo-v3-full-dark.png" sizes="(max-width: 768px) 100vw" fill={true} alt="logo" />
+            <Image
+              src="/logo-v3-full-dark.png"
+              sizes="(max-width: 768px) 100vw"
+              fill={true}
+              alt="logo"
+            />
           </Link>
         </div>
         {/* container with both nav links and Logos */}
@@ -102,7 +131,7 @@ export function MainNav({ items }: MainNavProps) {
         </div>
       </div>
       {/* mobile hamburger menu */}
-      <div className="flex items-center md:hidden">
+      <div ref={menuRef} className="flex items-center md:hidden">
         {/* humburger menu logo  */}
         <div
           className={`${toggle ? "hidden" : "block"} md:hidden`}
