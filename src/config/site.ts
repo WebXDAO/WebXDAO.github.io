@@ -18,7 +18,7 @@ export const siteConfig = {
     },
     {
       title: "WebX Team",
-      href: "/teams",
+      href: "/team",
     },
     {
       title: "Contributors",
