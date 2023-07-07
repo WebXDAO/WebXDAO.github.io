@@ -26,15 +26,19 @@ export default async function ContributorsPage() {
 
   return (
     <>
-      <section className="container mt-10 flex flex-wrap justify-center gap-8 p-8">
+      <section className="container grid place-items-center p-8">
+        <div className="max-w-2xl text-center">
+          <h1 className="text-3xl font-bold mb-4">Contributors</h1>
+          <p>
+            Join the WebX DAO community and shape the decentralized web alongside like-minded
+            contributors passionate about innovation.
+          </p>
+        </div>
+        <div className="container mt-10 flex flex-wrap justify-center gap-8">
         {contributorList.map((data: Card) => {
-          return (
-            <ContributorCard
-              key={data.id}
-              data={data}
-            />
-          );
+          return <ContributorCard key={data.id} data={data} />;
         })}
+        </div>
       </section>
     </>
   );
