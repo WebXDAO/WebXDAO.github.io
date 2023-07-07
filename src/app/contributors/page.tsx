@@ -28,7 +28,7 @@ export default async function ContributorsPage() {
     <>
       <section className="container grid place-items-center p-8">
         <div className="max-w-2xl text-center">
-          <h1 className="text-3xl font-bold mb-4">Contributors</h1>
+          <h1 className="mb-4 text-3xl font-bold">Contributors</h1>
           <p>
             Join the WebX DAO community and shape the decentralized web alongside like-minded
             contributors passionate about innovation.
