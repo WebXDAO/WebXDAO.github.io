@@ -3,12 +3,12 @@
 # file/directory            user
 
 # Default reviewers/codeowners for all code changes
-* @WebXDAO/
+* @WebXDAO/webx-core
 
 # Reviewer by email for html files
 
 # Reviewer by organization Team
-/src/* @WebXDAO/webx-guild-developer WebXDAO/gssoc-mentors
+/src/* @WebXDAO/webx-guild-developer @WebXDAO/gssoc-mentors
 
 
 # Reviewer by specific folders
