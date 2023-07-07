@@ -4,6 +4,8 @@
 
 @layer base {
   .light {
+    --svg: #000 !important;
+
     --background: 0 0% 100% !important;
     --foreground: 222.2 47.4% 11.2% !important;
 
@@ -37,6 +39,8 @@
   }
 
   .dark {
+    --svg: #fff !important;
+
     --background: 224 71% 4% !important;
     --foreground: 213 31% 91% !important;
 
@@ -71,6 +75,8 @@
 
   @media (prefers-color-scheme: dark) {
     :root {
+      --svg: #fff;
+
       --background: 224 71% 4%;
       --foreground: 213 31% 91%;
 
@@ -105,6 +111,7 @@
 
     @media (prefers-color-scheme: light) {
       :root {
+        --svg: #000; 
         --background: 0 0% 100%;
         --foreground: 222.2 47.4% 11.2%;
 

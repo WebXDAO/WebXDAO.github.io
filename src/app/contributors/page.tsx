@@ -1,33 +1,39 @@
-import ContributorCard from '@/components/ContributorCard';
+import ContributorCard from "@/components/ContributorCard";
 
 async function getContributorData() {
   // fetch contributors using Github REST API
-  const res = await fetch('https://api.github.com/repos/WebXDAO/WebXDAO.github.io/contributors?anon=1');
+  const res = await fetch(
+    "https://api.github.com/repos/WebXDAO/WebXDAO.github.io/contributors?anon=1"
+  );
 
   // handle errors
-  if (!res.ok)
-    throw new Error('Failed to fetch Contributor\'s data from Github!');
+  if (!res.ok) throw new Error("Failed to fetch Contributor's data from Github!");
 
   // returns a promise
   return res.json();
 }
 
-export default async function ContributorsPage() {
+interface Card {
+  id: number;
+  login: string;
+  html_url: string;
+  contributions: number;
+  avatar_url: string;
+}
 
+export default async function ContributorsPage() {
   const contributorList = await getContributorData();
 
   return (
     <>
-      <section className="container mt-10 flex flex-wrap p-8">
-        {contributorList.map(({ id, login, html_url, contributions }: { id: number, login: string, html_url: string, contributions: number }) => {
+      <section className="container mt-10 flex flex-wrap justify-center gap-8 p-8">
+        {contributorList.map((data: Card) => {
           return (
             <ContributorCard
-              key={id}
-              username={login}
-              commits={contributions}
-              profileLink={html_url}
+              key={data.id}
+              data={data}
             />
-          )
+          );
         })}
       </section>
     </>
