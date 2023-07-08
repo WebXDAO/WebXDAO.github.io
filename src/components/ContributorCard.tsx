@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import { RiHistoryLine } from "react-icons/ri";
 import { Icons } from "./icons";
 
 interface Card {
@@ -13,7 +14,7 @@ interface Card {
   avatar_url: string;
 }
 
-export default function ContributorCard({data}: {data: Card}) {
+export default function ContributorCard({ data }: { data: Card }) {
   return (
     <div className="flex h-80 w-72 flex-col items-center justify-between rounded-lg border border-black p-4 dark:border-white">
       <div
@@ -33,9 +34,16 @@ export default function ContributorCard({data}: {data: Card}) {
         height={120}
         className="rounded-full border"
       />
-      <div className="mb-2 text-2xl">
+      <div className="mb-2 flex gap-12 text-2xl">
         <Link href={data.html_url} target="_blank" className="duration-150 hover:text-[#411AFF]">
           <FaGithub />
+        </Link>
+        <Link
+          href={`https://github.com/WebXDAO/WebXDAO.github.io/commits?author=${data.login}`}
+          target="_blank"
+          className="duration-150 hover:text-[#411AFF]"
+        >
+          <RiHistoryLine />
         </Link>
       </div>
     </div>
