@@ -1,5 +1,6 @@
 import ContributorCard from "@/components/ContributorCard";
 
+
 async function getContributorData() {
   // fetch contributors using Github REST API
   const res = await fetch(
@@ -14,6 +15,7 @@ async function getContributorData() {
 }
 
 interface Card {
+  type: string;
   id: number;
   login: string;
   html_url: string;
@@ -23,7 +25,8 @@ interface Card {
 
 export default async function ContributorsPage() {
   const contributorList = await getContributorData();
-
+  const filteredContributors = contributorList.filter((data: Card) => data.type !== "Bot");
+  
   return (
     <>
       <section className="container grid place-items-center p-8">
@@ -35,9 +38,9 @@ export default async function ContributorsPage() {
           </p>
         </div>
         <div className="container mt-10 flex flex-wrap justify-center gap-8">
-        {contributorList.map((data: Card) => {
-          return <ContributorCard key={data.id} data={data} />;
-        })}
+          {filteredContributors.map((data: Card) => {
+            return <ContributorCard key={data.id} data={data} />;
+          })}
         </div>
       </section>
     </>
