@@ -1,19 +1,9 @@
 import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-
-
 import Image from "next/image";
-
-
 import Link from "next/link";
-
-
 import { FaGithub } from "react-icons/fa";
-
-
 import { Icons } from "./icons";
-
-
 
 interface Card {
   id: number;
