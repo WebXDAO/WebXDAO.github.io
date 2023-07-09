@@ -2,8 +2,7 @@ import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { RiHistoryLine } from "react-icons/ri";
+import { FaGithub, FaLaptopCode } from "react-icons/fa";
 import { Icons } from "./icons";
 
 interface Card {
@@ -43,7 +42,7 @@ export default function ContributorCard({ data }: { data: Card }) {
           target="_blank"
           className="duration-150 hover:text-[#411AFF]"
         >
-          <RiHistoryLine />
+          <FaLaptopCode />
         </Link>
       </div>
     </div>
