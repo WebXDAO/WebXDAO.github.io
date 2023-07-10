@@ -5,7 +5,7 @@ import TeamCard from "@/components/TeamCard";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'WebX Team',
+  title: 'Team',
 }
 
 export default async function Team() {
