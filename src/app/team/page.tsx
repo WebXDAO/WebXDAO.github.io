@@ -1,15 +1,16 @@
-import Star from "../../components/star";
+import Star from "@/components/star";
 import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import Head from "next/head";
 import TeamCard from "@/components/TeamCard";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'WebX Team',
+}
 
 export default async function Team() {
   return (
     <>
-      <Head>
-        <title>Team | WebXDAO</title>
-      </Head>
       <section className="w-full overflow-hidden py-8">
         <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap ">
           <h1

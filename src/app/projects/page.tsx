@@ -1,8 +1,12 @@
-import Star from "../../components/star";
+import Star from "@/components/star";
 import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import Head from "next/head";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+}
 
 async function getRepoData() {
   const res = await fetch("https://api.github.com/orgs/WebXDAO/repos");
@@ -16,12 +20,9 @@ async function getRepoData() {
 
 export default async function Projects() {
   const projectsData = await getRepoData();
-  console.log(projectsData);
+  // console.log(projectsData);
   return (
     <>
-      <Head>
-        <title>Projects | WebXDAO</title>
-      </Head>
       <section className="w-full overflow-hidden py-8">
         <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap">
           <h1
