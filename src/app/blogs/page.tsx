@@ -3,6 +3,7 @@ import Star from "@/components/star";
 import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import Blog from "./Blog";
+import PCard from "./PCard";
 // import { Blogs } from '../components/Global'
 
 
@@ -41,6 +42,8 @@ export default function BlogPage() {
         </div>
       </section>
 
+        <PCard />
+      
       <main className="mx-auto grid max-w-6xl gap-8 px-4">
         <div className="mx-auto max-w-5xl">
           <h1 className="my-10 text-center text-xl font-bold">Categories</h1>
