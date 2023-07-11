@@ -4,17 +4,6 @@ import Link from "next/link";
 import { FaGithub,FaLinkedin,FaTwitter } from "react-icons/fa";
 import pCardData from "./pCardData";
 
-import { Swiper,SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-// import required modules
-import { FreeMode } from 'swiper/modules';
-
-
-
 export default function PCard() {
   return (
     <section className="my-8 md:ml-32">
