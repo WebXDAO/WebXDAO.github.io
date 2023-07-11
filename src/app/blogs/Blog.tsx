@@ -33,7 +33,7 @@ export default async function Blog() {
       </div>
       <div className="mt-10 flex flex-wrap justify-center gap-16">
         {dataT.map((curElem: any) => (
-          <div className="bg-whie flex max-w-xs cursor-pointer flex-col rounded-lg bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:scale-105">
+          <div className="bg-whie flex max-w-xs flex-col rounded-lg bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1">
             <Image
               className="w-full rounded-md border"
               src={curElem.cover_image}
