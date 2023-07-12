@@ -1,5 +1,9 @@
 import ContributorCard from "@/components/ContributorCard";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Contributors",
+};
 
 async function getContributorData() {
   // fetch contributors using Github REST API

@@ -1,6 +1,10 @@
-import Head from "next/head";
 import Image from "next/image";
 // import { Blogs } from '../components/Global'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 
 async function getData() {
@@ -30,9 +34,6 @@ export default async function BlogPage({
 
   return (
     <>
-      <Head>
-        <title>Blog | WebXDAO</title>
-      </Head>
       <section className="py-8">
         <div className="container mx-auto max-w-5xl">
           <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-white">
