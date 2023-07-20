@@ -4,17 +4,18 @@ import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import Blog from "./Blog";
 import PCard from "./PCard";
-// import { Blogs } from '../components/Global'
+// import { Blogs } from '@/components/Global'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 
 export default function BlogPage() {
 
   return (
     <>
-      <Head>
-        <title>Blog | WebXDAO</title>
-      </Head>
       <section className="w-full overflow-hidden py-8">
         <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap ">
           <h1
