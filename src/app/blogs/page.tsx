@@ -1,5 +1,10 @@
-import Image from "next/image";
-// import { Blogs } from '../components/Global'
+import Head from "next/head";
+import Star from "@/components/star";
+import { fontGilroy } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import Blog from "./Blog";
+import PCard from "./PCard";
+// import { Blogs } from '@/components/Global'
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,84 +12,53 @@ export const metadata: Metadata = {
 };
 
 
-async function getData() {
-  const res = await fetch('https://dev.to/api/articles?username=webxdao');
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-
-  // Recommendation: handle errors
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data');
-  }
-
-  return res.json();
-}
-
-export default async function BlogPage({
-  params: { data },
-}:{
-  params: { data: [] };
-}) {
-  // Initiate dev.to API request
-  const blogData = getData();
-
-  // Wait for the promises to resolve
-  const [dataT] = await Promise.all([blogData]);
+export default function BlogPage() {
 
   return (
     <>
-      <section className="py-8">
-        <div className="container mx-auto max-w-5xl">
-          <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-white">
-            Blogs
+      <section className="w-full overflow-hidden py-8">
+        <div className="container mx-auto flex max-w-5xl flex-row flex-wrap justify-around lg:flex-nowrap ">
+          <h1
+            className={cn(
+              "w-max-content my-2 w-full text-center text-7xl font-semibold leading-tight text-slate-900 dark:text-white lg:text-left",
+              fontGilroy.className
+            )}
+          >
+            Dev Blog
           </h1>
-        </div>
-
-        <section>
-          <div className="z-2 relative mx-0 my-7 flex grid-cols-1 flex-wrap items-center justify-center">
-
-            {dataT.map((curElem: any) => {
-              return (
-                <div
-                  className="grid-items z-2 justify-conten group relative m-7 flex h-min w-min items-center rounded-2xl bg-white/5 shadow-2xl backdrop-blur-md"
-                  key={curElem.id}
-                >
-                  <div className="relative flex h-80 w-[17.5rem] flex-col items-center justify-center opacity-70 hover:opacity-100 sm:w-[15.5rem] md:w-[19rem]  lg:w-[27rem]">
-                    <div className="relative w-4/5 truncate rounded-2xl border-8 border-solid border-black/25 duration-500 group-hover:-translate-y-6">
-                      <Image
-                        src={curElem.cover_image}
-                        width={400}
-                        height={250}
-                        alt="blog image"
-                        className="relative left-0 top-0 h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="relative m-0 flex-wrap items-center justify-center text-center">
-                      <h3 className="mx-2.5 mb-2.5 mt-5 text-center text-sm font-medium uppercase leading-4 tracking-wider text-white duration-500 group-hover:-translate-y-6">
-                        <b>{curElem.title}</b>
-                        <br></br>
-                        <br></br>
-                        <span className="text-xs font-light lowercase">{curElem.description}</span>
-                        <br></br>
-                        <br></br>
-                        <a
-                          href={curElem.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block rounded-md border border-transparent bg-green-500 px-8 py-3 text-center font-medium text-white"
-                        >
-                          <b>Read More</b>
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="mt-9 hidden gap-20 lg:flex">
+            <div className="my-auto flex">
+              <Star height={40} width={40} />
+            </div>
+            <Star height={90} width={90} />
           </div>
-        </section>
+          <svg xmlns="http://www.w3.org/2000/svg" width="900" height="2" className="-mx-52 mb-11 mt-auto hidden lg:flex">
+            <line x1="0" y1="0" x2="1000" y2="0" strokeWidth="2" className="stroke-black dark:stroke-white"/>
+          </svg>
+        </div>
+        <div className="ml-4 mr-1 mt-6 flex justify-center text-lg font-light leading-tight text-black dark:text-white sm:text-center md:text-xl lg:text-left ">
+          Our primary emphasis is on cutting-edge platforms in the industry, ensuring that{" "}
+          <br className="max-md:hidden" />
+          you are equipped with the necessary skills for your future endeavors.
+        </div>
       </section>
+
+        <PCard />
+      
+      <main className="mx-auto grid max-w-6xl gap-8 px-4">
+        <div className="mx-auto max-w-5xl">
+          <h1 className="my-10 text-center text-xl font-bold">Categories</h1>
+          <div className="flex flex-wrap justify-center gap-9 sm:gap-14">
+            {["Dapp", "Open Source", "Blockchain", "Community", "Hackathons"].map((name) => (
+              <div className="w-40 rounded py-2 text-center shadow-md shadow-purple-400/40">
+                {name}
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* @ts-expect-error Async Server Component */}
+        <Blog />
+      </main>
     </>
   );
-};
+}

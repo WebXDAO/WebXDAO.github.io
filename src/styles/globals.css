@@ -147,6 +147,11 @@
   }
 
   /*Scroll Bar*/
+
+  .no-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
   ::-webkit-scrollbar {
     width: 16px;
     /* Width of the entire scrollbar */
