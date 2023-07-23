@@ -1,14 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-async function getData() {
-  const res = await fetch("https://dev.to/api/articles?username=webxdao");
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
+interface BlogData {
+  cover_image: string;
+  title: string;
+  description: string;
+  url: string;
+}
 
-  // Recommendation: handle errors
+async function getData(): Promise<BlogData[]> {
+  const res = await fetch("https://dev.to/api/articles?username=webxdao");
+
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
 
@@ -17,10 +20,7 @@ async function getData() {
 
 export default async function Blog() {
   // Initiate dev.to API request
-  const blogData = getData();
-
-  // Wait for the promises to resolve
-  const [dataT] = await Promise.all([blogData]);
+  const blogData: BlogData[] = await getData();
 
   return (
     <section className="mt-20">
@@ -32,8 +32,11 @@ export default async function Blog() {
         </p>
       </div>
       <div className="mt-10 flex flex-wrap justify-center gap-16">
-        {dataT.map((curElem: any) => (
-          <div className="bg-whie flex max-w-xs flex-col rounded-lg bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1">
+        {blogData.map((curElem) => (
+          <div
+            key={curElem.title}
+            className="flex max-w-xs flex-col rounded-lg bg-white p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1"
+          >
             <Image
               className="w-full rounded-md border"
               src={curElem.cover_image}
