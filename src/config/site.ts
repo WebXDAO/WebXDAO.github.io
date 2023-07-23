@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       title: "Blog",
-      href: "/",
+      href: "/blogs",
     },
     {
       title: "Projects",
@@ -18,7 +18,7 @@ export const siteConfig = {
     },
     {
       title: "WebX Team",
-      href: "/teams",
+      href: "/team",
     },
     {
       title: "Contributors",
