@@ -39,7 +39,15 @@ export default async function Blog() {
           >
             <Image
               className="w-full rounded-md border"
-              src={curElem.cover_image || ""}
+       {curElem.cover_image && (
+          <Image
+            src={curElem.cover_image}
+            alt={curElem.title}
+            width={400}
+            height={250}
+            // ...
+          />
+        )}
               width={400}
               height={250}
               alt=""
