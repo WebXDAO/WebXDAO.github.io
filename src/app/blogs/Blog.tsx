@@ -37,21 +37,15 @@ export default async function Blog() {
             key={curElem.title}
             className="flex max-w-xs flex-col rounded-lg bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1"
           >
-            <Image
-              className="w-full rounded-md border"
-       {curElem.cover_image && (
-          <Image
-            src={curElem.cover_image}
-            alt={curElem.title}
-            width={400}
-            height={250}
-            // ...
-          />
-        )}
-              width={400}
-              height={250}
-              alt=""
-            />
+            {curElem.cover_image && (
+              <Image
+                className="w-full rounded-md border"
+                src={curElem.cover_image}
+                alt={curElem.title}
+                width={400}
+                height={250}
+              />
+            )}
             <div className="grow px-6 py-4">
               <h3 className="mb-4 text-center text-sm font-bold uppercase leading-4 tracking-wider">
                 {curElem.title}
