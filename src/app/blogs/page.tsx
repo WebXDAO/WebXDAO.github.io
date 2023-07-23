@@ -47,7 +47,7 @@ export default function BlogPage() {
       
       <main className="mx-auto grid max-w-6xl gap-8 px-4">
         <div className="mx-auto max-w-5xl">
-          <h1 className="my-10 text-center text-xl font-bold">Categories</h1>
+          <h1 className="my-10 text-center text-2xl font-bold">Categories</h1>
           <div className="flex flex-wrap justify-center gap-9 sm:gap-14">
             {["Dapp", "Open Source", "Blockchain", "Community", "Hackathons"].map((name) => (
               <div className="w-40 rounded py-2 text-center shadow-md shadow-purple-400/40">
