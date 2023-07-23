@@ -35,7 +35,7 @@ export default async function Blog() {
         {blogData.map((curElem) => (
           <div
             key={curElem.title}
-            className="flex max-w-xs flex-col rounded-lg bg-white p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1"
+            className="flex max-w-xs flex-col rounded-lg bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-all duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1"
           >
             <Image
               className="w-full rounded-md border"
