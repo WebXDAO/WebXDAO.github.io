@@ -1,7 +1,6 @@
+import { createDefaultImageCover } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-
-
 
 interface BlogData {
   cover_image: string;
@@ -46,8 +45,10 @@ export default async function Blog() {
 }
 
 function BCard({ data }: { data: BlogData }) {
-  const defaultImg = `https://og-image-rest-generator.fly.dev/seo-banner?head=Blog&writer=Punk%20Blogger&logo=https://avatars.githubusercontent.com/u/89759498?s=200&v=4&template=facebook-minimal&title=${data.title}&author=${data.user.username}`;
-  const imgSrc = data.cover_image ?? defaultImg;
+  const imgSrc = data.cover_image ?? createDefaultImageCover({
+    title: data.title,
+    username: data.user.username,
+  });
   return (
     <div className="flex max-w-xs flex-col rounded-lg border bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-transform duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1">
       <Image
