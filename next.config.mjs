@@ -5,7 +5,12 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["res.cloudinary.com", "github.com", "avatars.githubusercontent.com"],
+    domains: [
+      "res.cloudinary.com",
+      "github.com",
+      "avatars.githubusercontent.com",
+      "og-image-rest-generator.fly.dev",
+    ],
   },
 };
 

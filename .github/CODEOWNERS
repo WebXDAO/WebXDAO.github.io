@@ -1,0 +1,13 @@
+# pattern:
+
+# file/directory            user
+
+# Default reviewers/codeowners for all code changes
+* @WebXDAO/webx-core @WebXDAO/webx-guild-developer
+
+# Reviewer by organization Team
+
+# Reviewer by specific folders
+
+# Reviewer by specific files
+*.md @Panquesito7
