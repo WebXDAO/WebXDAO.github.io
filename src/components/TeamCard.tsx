@@ -21,21 +21,30 @@ const TeamCard = ({
         <h1 className="my-1 text-center">{Name}</h1>
         <h2 className="my-1 text-center">{position}</h2>
         <div className="my-6 flex place-content-center gap-4 px-5">
-        <Link href={github_url} target="_blank">
+        <Link href={github_url} target="_blank"                   
+                  aria-label="Visit us on GitHub"
+                  title="GitHub (External Link)"
+                  rel="noopener noreferrer">
                 <Icons.gitHub
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                   width={25}
                   height={25}
                 />
         </Link>
-        <Link href={twitter_url} target="_blank">
+        <Link href={twitter_url} target="_blank"                   
+                  aria-label="Visit us on Twitter"
+                  title="Twitter (External Link)"
+                  rel="noopener noreferrer">
                 <Icons.twitter
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                   width={25}
                   height={25}
                 />
         </Link>
-        <Link href={linkedin_url} target="_blank">
+        <Link href={linkedin_url} target="_blank"                   
+                  aria-label="Visit us on Linkedin"
+                  title="Linkedin (External Link)"
+                  rel="noopener noreferrer">
                 <Icons.linkedin
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                   width={25}
