@@ -35,7 +35,7 @@ export default function ContributorCard({ data }: { data: Card }) {
       />
       <div className="mb-2 flex gap-12 text-2xl">
         <Link href={data.html_url} target="_blank"                   
-                  aria-label="Visit us on GitHub"
+                  aria-label="GitHub Profile"
                   title="GitHub (External Link)"
                   rel="noopener noreferrer" className="duration-150 hover:text-[#411AFF]">
           <FaGithub />
