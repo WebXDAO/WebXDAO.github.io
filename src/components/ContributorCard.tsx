@@ -43,7 +43,7 @@ export default function ContributorCard({ data }: { data: Card }) {
         <Link
           href={`https://github.com/WebXDAO/WebXDAO.github.io/commits?author=${data.login}`}
           target="_blank"
-          aria-label="Visit us on LaptopCode"
+          aria-label="Visit Code Contributions"
           title="LaptopCode (External Link)"
           rel="noopener noreferrer"
           className="duration-150 hover:text-[#411AFF]"
