@@ -50,21 +50,23 @@ const Navbar = () => {
           <div className="hidden md:space-x-6 lg:flex lg:items-center">
             <div className="hidden space-x-8 lg:ml-10 lg:flex">
               {navigation.map((item) => (
-                <Link href={item.href} key={item.name}>
-                  <a className="text-base font-medium text-white hover:text-gray-300">
-                    {item.name}
-                  </a>
+                <Link
+                  href={item.href}
+                  key={item.name}
+                  className="text-base font-medium text-white hover:text-gray-300"
+                >
+                  {item.name}
                 </Link>
               ))}
             </div>
 
-            <a
+            <Link
               href="https://github.com/sponsors/WebXDAO"
               className="inline-flex items-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-700 hover:text-white/80"
             >
               GitHub
               <SiGithubsponsors className="ml-3 h-5 w-5 text-pink-600" aria-hidden="true" />
-            </a>
+            </Link>
           </div>
         </nav>
       </div>
@@ -103,13 +105,13 @@ const Navbar = () => {
             <div className="pb-6 pt-5">
               <div className="space-y-1 px-2">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-600"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               {/* Add button here */}

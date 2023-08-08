@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -13,11 +14,11 @@ export default function NotFound() {
           <div className=" my-8 text-2xl text-gray-400">
             It seems like you wandered off too far! You must return back to our guild!
           </div>
-          <a
+          <Link
             href="/"
             className="duration-400 inline rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-base font-medium leading-6 text-white shadow-2xl transition-all hover:bg-blue-500 focus:outline-none active:bg-blue-300">
             Return Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

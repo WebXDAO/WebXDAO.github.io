@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 const Projects = () => {
   const projectsData = [
     {
@@ -32,7 +34,7 @@ const Projects = () => {
             className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center"
           >
             <div className="flex-1 bg-white overflow-hidden">
-              <a
+              <Link
                 href="#"
                 className="flex flex-wrap no-underline  hover:no-underline"
               >
@@ -45,7 +47,7 @@ const Projects = () => {
                 <p className="text-gray-800 text-base px-6 mb-5 text-center mx-10">
                   {item.text}
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

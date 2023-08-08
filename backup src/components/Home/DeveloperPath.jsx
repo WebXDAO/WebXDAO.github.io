@@ -1,4 +1,5 @@
 import { prefix } from "../../constants";
+import Link from "next/link";
 
 const DeveloperPath = () => {
   const devPaths = [
@@ -64,11 +65,11 @@ const DeveloperPath = () => {
                     {text}
                   </p>
                   <div id="label" className="flex text-sm gap-x-3">
-                    <a href={url}>
+                    <Link href={url}>
                       <button className="cursor-pointer font-semibold bg-blue-100 text-blue-600  rounded-md py-2 px-4 focus:outline-none">
                         Take me there!
                       </button>
-                    </a>
+                    </Link>
                     <button className="font-semibold bg-blue-100 text-blue-600 rounded-md py-2 px-4 focus:outline-none">
                       Development
                     </button>
@@ -80,7 +81,7 @@ const DeveloperPath = () => {
         </div>
 
         <div className="flex justify-center items-center py-5">
-          <a
+          <Link
             href="https://github.com/WebXDAO/blockchain-dev-path"
             target="_blank"
             rel="noreferrer"
@@ -88,7 +89,7 @@ const DeveloperPath = () => {
             <button className="bg-gray-700 text-white rounded-md py-2 px-8 shadow transform transition hover:scale-85 hover:shadow-lg duration-300 ease-in-out">
               See All
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

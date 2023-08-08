@@ -1,9 +1,10 @@
 import { FaStar } from "react-icons/fa";
+import Link from "next/link";
 
 const RepoCard = ({ repo }) => {
     const { name, html_url, stargazers_count, language, owner, description, forks_count, open_issues, topics } = repo;
     return (
-        <a href={html_url} target="_blank" rel="noopener noreferrer"
+        <Link href={html_url} target="_blank" rel="noopener noreferrer"
             className="bg-slate-900/60 border flex flex-col justify-between rounded-lg border-gray-700 p-5 shadow delay-100 h-full duration-200 w-full">
             <div>
                 <div className="flex flex-row">
@@ -67,7 +68,7 @@ const RepoCard = ({ repo }) => {
                     </div>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 
