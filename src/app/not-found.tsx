@@ -7,7 +7,7 @@ export default function NotFound() {
         <div className="mx-8 w-full text-center lg:w-1/2">
           <div className=" mb-8  text-7xl font-bold "style={{ color: 'rgba(65, 26, 255, 1)' }}>Oops!</div>
           <div className="flex justify-center">
-            <Image src="/Frame.png"  width={300} height={300} alt="404 Error" />
+            <Image src="/Frame.webp"  width={300} height={300} alt="404 Error" />
           </div>
           <div className=" my-8 text-4xl  font-bold"style={{ color: 'rgba(65, 26, 255, 1)' }}>Page not found</div>
           <div className=" my-8 text-2xl text-gray-400">

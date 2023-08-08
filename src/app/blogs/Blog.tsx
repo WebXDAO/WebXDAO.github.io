@@ -71,7 +71,7 @@ function BCard({ data }: { data: BlogData }) {
           className="w-fit-content font-inter text-14.0418 group mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 text-black transition delay-0 ease-in hover:border-slate-500 hover:bg-slate-500 hover:font-semibold dark:border-white/80 dark:text-white dark:hover:border-slate-500"
         >
           <Image
-            src="/Arrow1.png"
+            src="/Arrow1.webp"
             alt="arrow"
             width={15}
             height={15}

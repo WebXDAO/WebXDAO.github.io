@@ -29,7 +29,7 @@ const Navbar = () => {
                   <>
                     <span className="sr-only ">WebX DAO</span>
                     <Image
-                      src="/images/logo/logo.png"
+                      src="/public/logo.webp"
                       width={12}
                       height={12}
                       className="h-12 w-auto cursor-pointer sm:h-12 md:h-[4.2rem]"
@@ -89,7 +89,7 @@ const Navbar = () => {
                   className="h-10 w-auto sm:h-12 md:h-14 lg:h-16"
                   width={16}
                   height={16}
-                  src="/images/logo/logo.png"
+                  src="/public/logo.webp"
                   alt="WebX DAO"
                 />
               </div>

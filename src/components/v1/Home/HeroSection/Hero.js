@@ -47,7 +47,7 @@ export default function Hero() {
                   <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                     <Image
                       className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                      src="/images/shapes/12.png"
+                      src="/public/12.webp"
                        width={400}
                        height={250}
                       alt=""

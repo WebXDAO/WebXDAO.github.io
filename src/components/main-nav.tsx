@@ -47,7 +47,7 @@ export function MainNav({ items }: MainNavProps) {
           {/* logo hidden on dark mode */}
           <Link href="/" className="w-100 block dark:hidden">
             <Image
-              src="/logo-v3-full.png"
+              src="/logo-v3-full.webp"
               sizes="(max-width: 768px) 100vw"
               fill={true}
               alt="logo"
@@ -56,7 +56,7 @@ export function MainNav({ items }: MainNavProps) {
           {/* logo hidden on light mode */}
           <Link href="/" className="w-100 hidden dark:block">
             <Image
-              src="/logo-v3-full-dark.png"
+              src="/logo-v3-full-dark.webp"
               sizes="(max-width: 768px) 100vw"
               fill={true}
               alt="logo"

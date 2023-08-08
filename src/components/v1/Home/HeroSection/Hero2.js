@@ -32,7 +32,7 @@ const Hero2 = () => {
           {/* 2 */}
           <div className="w-full items-center justify-center text-center text-white md:text-left">
             <Image
-              src="/images/shapes/1.png"
+              src="/public/blog/1.webp"
               alt="WebXDAO logo"
               layout=""
               width={750}

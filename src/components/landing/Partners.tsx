@@ -6,17 +6,17 @@ interface PartnersProps { }
 
 const data = [
     {
-        img: "/Dev-protocol-1.png",
+        img: "/Dev-protocol-1.webp",
         para: "Dev Protocol is designed as a unique protocol to fairly evaluate OSS, which has been economically undervalued for decades. It is built on the Ethereum blockchain and brings economic value to all open source activities.",
         url: "https://devprotocol.xyz/",
     },
     {
-        img: "/The-Algorithms-1.png",
+        img: "/The-Algorithms-1.webp",
         para: "The Algorithms is an open source community for learning Data Structures & Algorithms and their implementation in any Programming Language.",
         url: "https://the-algorithms.com/",
     },
     {
-        img: "/Lumos-Labs-1.png",
+        img: "/Lumos-Labs-1.webp",
         para: "Lumos Labs is building a metaverse for builders and Web3 ecosystem enablers to share opportunities to build scale-up.",
         url: "https://www.lumoslabs.co/",
     },
@@ -45,7 +45,7 @@ const Partners: FC<PartnersProps> = ({ }) => {
                                 target="_blank"
                                 className="w-fit-content font-inter text-14.0418 group mb-0 mr-auto flex items-center gap-6 rounded border-2 border-solid border-black px-4 py-1 text-black transition delay-0 ease-in hover:border-none hover:bg-slate-500 hover:font-semibold"
                             >
-                                <Image src="/Arrow1.png" alt="arrow" width={15} height={15} className="my-auto flex items-center transition duration-100 ease-in group-hover:invert" />
+                                <Image src="/Arrow1.webp" alt="arrow" width={15} height={15} className="my-auto flex items-center transition duration-100 ease-in group-hover:invert" />
                                 <span className="transition duration-100 ease-in group-hover:invert">Read More</span>
                             </Link>
                         </div>

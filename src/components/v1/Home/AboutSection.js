@@ -42,7 +42,7 @@ export default function AboutSection() {
                     </div>
                     <div className="mt-3 flex items-center justify-center">
                       <Image
-                        src="/images/shapes/12.png"
+                        src="/public/12.webp"
                         width={400}
                         height={250}
                         className="w-96 max-w-full"

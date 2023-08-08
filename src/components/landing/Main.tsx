@@ -32,7 +32,7 @@ export default function Main () {
               href={siteConfig.links.webxdao_guild}
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
-              <Image alt="guild.xyz logo" src="/guild-logo.png" className="mr-2 h-5 w-5 rounded-full" width={150} height={150}/>
+              <Image alt="guild.xyz logo" src="/guild-logo.webp" className="mr-2 h-5 w-5 rounded-full" width={150} height={150}/>
                 Guild.xyz
             </Link>
           </div>
@@ -48,7 +48,7 @@ export default function Main () {
 
         <div className="absolute">
           <Image
-            src="/12.png"
+            src="/12.webp"
             width={1200}
             height={1200}
             alt="logo"
@@ -57,7 +57,7 @@ export default function Main () {
         </div>
 
         <Image
-          src="/flying-card-001.png"
+          src="/flying-card-001.webp"
           alt="flying card 001"
           width={135}
           height={165}
@@ -65,7 +65,7 @@ export default function Main () {
         />
 
         <Image
-          src="/flying-card-002.png"
+          src="/flying-card-002.webp"
           alt="flying card 001"
           width={208}
           height={259}

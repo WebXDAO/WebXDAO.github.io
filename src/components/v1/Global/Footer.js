@@ -48,7 +48,7 @@ const Footer = () => {
                 <span className="sr-only">WebX DAO</span>
                 <Image
                   className="h-12 w-auto sm:h-14 md:h-16"
-                  src="/images/logo/logo.png"
+                  src="/public/logo.webp"
                   width={16}
                   height={16}
                   alt="WebX DAO logo"

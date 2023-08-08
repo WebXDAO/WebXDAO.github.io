@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="flex pb-6 text-3xl  text-slate-900 dark:text-white  ">
                 <span>
                   <Image
-                    src="/logo.png"
+                    src="/logo.webp"
                     alt="logo_image"
                     className="h-20  w-auto sm:h-14 md:h-20 "
                     height={240}

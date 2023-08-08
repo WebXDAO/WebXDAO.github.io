@@ -14,7 +14,7 @@ export default function PCard() {
           <div className="max-w-[20rem]">
             <div className="relative flex w-80 overflow-hidden rounded-md">
               <Image
-                src={`/blog/${data.bgImg}.png`}
+                src={`/blog/${data.bgImg}.webp`}
                 width={320}
                 height={420}
                 alt=""
