@@ -27,7 +27,7 @@ export default function Home({ articles }) {
         <meta property="instagram:username" content="" />
         <meta name="twitter:site" content="https://twitter.com/WebXDAO" />
         <meta property="discord:server" content="835424705410236427" />
-        <meta property="discord:invite" content="https://discord.com/invite/tyEW2gVhdF" />
+        <meta property="discord:invite" content="https://discord.webxdao.xyz/" />
       </Head>
       <div className="flex h-screen flex-col">
         <Hero />
