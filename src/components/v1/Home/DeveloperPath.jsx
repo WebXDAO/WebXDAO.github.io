@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { prefix } from "../../constants";
+import Link from "next/link";
 
 const DeveloperPath = () => {
   const devPaths = [
@@ -67,11 +68,11 @@ const DeveloperPath = () => {
                     {text}
                   </p>
                   <div id="label" className="flex gap-x-3 text-sm">
-                    <a href={url}>
+                    <Link href={url}>
                       <button className="cursor-pointer rounded-md bg-blue-100 px-4  py-2 font-semibold text-blue-600 focus:outline-none">
                         Take me there!
                       </button>
-                    </a>
+                    </Link>
                     <button className="rounded-md bg-blue-100 px-4 py-2 font-semibold text-blue-600 focus:outline-none">
                       Development
                     </button>
@@ -83,7 +84,7 @@ const DeveloperPath = () => {
         </div>
 
         <div className="flex items-center justify-center py-5">
-          <a
+          <Link
             href="https://github.com/WebXDAO/blockchain-dev-path"
             target="_blank"
             rel="noreferrer"
@@ -91,7 +92,7 @@ const DeveloperPath = () => {
             <button className="hover:scale-85 rounded-md bg-gray-700 px-8 py-2 text-white shadow transition duration-300 ease-in-out hover:shadow-lg">
               See All
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
   const res = await fetch("https://api.github.com/repos/WebXDAO/webXDAO.github.io/contributors");
@@ -17,39 +18,39 @@ const contributors = ({ data }) => {
       <Head>
         <title>Contributors | WebXDAO</title>
       </Head>
-      <section className="max-w-7xl mx-auto">
-        <div className="container max-w-5xl mx-auto">
-          <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-white">
+      <section className="mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-5xl">
+          <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-white">
             Contributors
           </h1>
         </div>
-        <div className="relative z-1 my-[40px] mx-0 flex justify-between items-center flex-wrap">
+        <div className="z-1 relative mx-0 my-[40px] flex flex-wrap items-center justify-between">
           {data.map((curElem) => {
             return (
               <div
-                className="relative flex items-center justify-center w-48 h-64 mx-auto my-5 bg-white shadow-2xl group bg-opacity-5 rounded-2xl backdrop-filter backdrop-blur-md"
+                className="group relative mx-auto my-5 flex h-64 w-48 items-center justify-center rounded-2xl bg-white bg-opacity-5 shadow-2xl backdrop-blur-md backdrop-filter"
                 key={curElem.login}
               >
                 <div className="relative flex flex-col items-center justify-center opacity-70 hover:opacity-100">
-                  <div className="relative w-40 h-40 overflow-hidden truncate duration-500 border-8 border-solid rounded-full border-black/25 group-hover:-translate-y-6">
-                    <a href={curElem.html_url} target="_blank" rel="noopener noreferrer">
+                  <div className="relative h-40 w-40 overflow-hidden truncate rounded-full border-8 border-solid border-black/25 duration-500 group-hover:-translate-y-6">
+                    <Link href={curElem.html_url} target="_blank" rel="noopener noreferrer">
                       <img
                         src={curElem.avatar_url}
                         alt="Avatar"
-                        className="relative top-0 left-0 object-cover w-full h-full"
+                        className="relative left-0 top-0 h-full w-full object-cover"
                       />
-                    </a>
+                    </Link>
                   </div>
-                  <div className="relative flex-wrap items-center justify-center mx-0 my-0 text-center">
-                    <a href={curElem.html_url} target="_blank" rel="noopener noreferrer">
-                      <h3 className="group-hover:-translate-y-6 duration-500 text-white uppercase font-medium text-sm text-center tracking-wider mt-5 mr-2.5 ml-2.5 mb-2.5 leading-4">
+                  <div className="relative mx-0 my-0 flex-wrap items-center justify-center text-center">
+                    <Link href={curElem.html_url} target="_blank" rel="noopener noreferrer">
+                      <h3 className="mb-2.5 ml-2.5 mr-2.5 mt-5 text-center text-sm font-medium uppercase leading-4 tracking-wider text-white duration-500 group-hover:-translate-y-6">
                         {curElem.login}
                       </h3>
-                    </a>
-                    <h5 className="pl-4 pr-4 m-auto mt-0 mb-0 text-base font-normal duration-500 bg-green-500 rounded-md group-hover:-translate-y-6 w-fit h-fit">
+                    </Link>
+                    <h5 className="m-auto mb-0 mt-0 h-fit w-fit rounded-md bg-green-500 pl-4 pr-4 text-base font-normal duration-500 group-hover:-translate-y-6">
                       {curElem.contributions}
                       <svg
-                        className="overflow-visible inline-block w-[1.25em] lowercase h-[1em] align-[-0.125em]"
+                        className="inline-block h-[1em] w-[1.25em] overflow-visible align-[-0.125em] lowercase"
                         aria-hidden="true"
                         focusable="false"
                         data-prefix="fas"
