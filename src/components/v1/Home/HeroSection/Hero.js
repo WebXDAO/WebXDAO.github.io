@@ -1,8 +1,8 @@
-import CallToActionHero from "./CallToActionHero";
-import DiscordButton from "./DiscordButton";
-import ContributeButton from "./ContributeButton";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import CallToActionHero from "./CallToActionHero";
+import ContributeButton from "./ContributeButton";
+import DiscordButton from "./DiscordButton";
 
 export default function Hero() {
   return (
@@ -34,8 +34,8 @@ export default function Hero() {
                         <p className="mt-3 text-sm text-white/70 sm:mt-4">
                           We are an opensource community working around the future of the web. Learn
                           blockchain technology together. The community is powered by{" "}
-                          <Link href="https://devprotocol.xyz/">
-                            <a className="font-medium text-white">Dev Protocol</a>
+                          <Link href="https://devprotocol.xyz/" className="font-medium text-white">
+                            Dev Protocol
                           </Link>
                           .
                         </p>
@@ -47,9 +47,15 @@ export default function Hero() {
                   <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                     <Image
                       className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+
                       src="/public/12.webp"
                        width={400}
                        height={250}
+
+                      src="/images/shapes/12.png"
+                      width={400}
+                      height={250}
+
                       alt=""
                     />
                   </div>

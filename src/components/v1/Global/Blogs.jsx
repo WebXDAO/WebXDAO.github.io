@@ -60,11 +60,11 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
       </div>
       {!contentOnly && (
         <div className="flex justify-center">
-          <a href="https://dev.to/WebXDAO" target="_blank" rel="noreferrer">
+          <Link href="https://dev.to/WebXDAO" target="_blank" rel="noreferrer">
             <button className="hover:scale-85 mx-auto rounded-md bg-gray-700 px-8 py-2 text-white shadow transition duration-300 ease-in-out hover:shadow-lg lg:mx-0">
               See All
             </button>
-          </a>
+          </Link>
         </div>
       )}
     </section>

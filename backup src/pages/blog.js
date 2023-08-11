@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 // import { Blogs } from '../components/Global'
 
 export const getStaticProps = async () => {
@@ -19,44 +20,44 @@ const Blog = ({ data }) => {
         <title>Blog | WebXDAO</title>
       </Head>
       <section className="py-8">
-        <div className="container max-w-5xl mx-auto">
-          <h1 className="w-full my-2 text-4xl font-bold leading-tight text-center text-white">
+        <div className="container mx-auto max-w-5xl">
+          <h1 className="my-2 w-full text-center text-4xl font-bold leading-tight text-white">
             Blogs
           </h1>
         </div>
 
         <section>
-          <div className="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7">
+          <div className="z-2 relative mx-0 my-7 flex grid-cols-1 flex-wrap items-center justify-center">
             {data.map((curElem) => {
               return (
                 <div
-                  className="relative flex items-center m-7 bg-white shadow-2xl grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md"
+                  className="grid-items z-2 justify-conten group relative m-7 flex h-min w-min items-center rounded-2xl bg-white bg-opacity-5 shadow-2xl backdrop-blur-md backdrop-filter"
                   key={curElem.id}
                 >
-                  <div className="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] h-80 flex justify-center items-center flex-col opacity-70  hover:opacity-100">
-                    <div className="relative w-4/5 truncate duration-500 border-8 border-solid rounded-2xl border-black/25 group-hover:-translate-y-6">
+                  <div className="relative flex h-80 w-[17.5rem] flex-col items-center justify-center opacity-70 hover:opacity-100 sm:w-[15.5rem] md:w-[19rem]  lg:w-[27rem]">
+                    <div className="relative w-4/5 truncate rounded-2xl border-8 border-solid border-black/25 duration-500 group-hover:-translate-y-6">
                       <img
                         src={curElem.cover_image}
                         alt="blog image"
-                        className="relative top-0 left-0 object-cover w-full h-full"
+                        className="relative left-0 top-0 h-full w-full object-cover"
                       />
                     </div>
-                    <div className="relative flex-wrap items-center justify-center mx-0 my-0 text-center">
-                      <h3 className="group-hover:-translate-y-6 duration-500 text-white uppercase font-medium text-sm text-center tracking-wider mt-5 mr-2.5 ml-2.5 mb-2.5 leading-4">
+                    <div className="relative mx-0 my-0 flex-wrap items-center justify-center text-center">
+                      <h3 className="mb-2.5 ml-2.5 mr-2.5 mt-5 text-center text-sm font-medium uppercase leading-4 tracking-wider text-white duration-500 group-hover:-translate-y-6">
                         <b>{curElem.title}</b>
                         <br></br>
                         <br></br>
                         <spam className="text-xs font-light lowercase">{curElem.description}</spam>
                         <br></br>
                         <br></br>
-                        <a
+                        <Link
                           href={curElem.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block rounded-md border border-transparent bg-green-500 py-3 px-8 text-center font-medium text-white"
+                          className="inline-block rounded-md border border-transparent bg-green-500 px-8 py-3 text-center font-medium text-white"
                         >
                           <b>Read More</b>
-                        </a>
+                        </Link>
                       </h3>
                     </div>
                   </div>

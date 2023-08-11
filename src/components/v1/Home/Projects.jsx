@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Projects = () => {
   const projectsData = [
     {
@@ -32,7 +34,7 @@ const Projects = () => {
             className="flex w-full shrink grow flex-col p-6 text-center md:w-1/3"
           >
             <div className="flex-1 overflow-hidden bg-white">
-              <a
+              <Link
                 href="#"
                 className="flex flex-wrap no-underline  hover:no-underline"
               >
@@ -45,7 +47,7 @@ const Projects = () => {
                 <p className="mx-10 mb-5 px-6 text-center text-base text-gray-800">
                   {item.text}
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

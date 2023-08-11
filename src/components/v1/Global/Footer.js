@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-teal-600 sm:justify-start">
-              <a href="https://webxdao.xyz">
+              <Link href="https://webxdao.xyz">
                 <span className="sr-only">WebX DAO</span>
                 <Image
                   className="h-12 w-auto sm:h-14 md:h-16"
@@ -53,7 +53,7 @@ const Footer = () => {
                   height={16}
                   alt="WebX DAO logo"
                 />
-              </a>
+              </Link>
             </div>
             {/* 
             <p className="max-w-md mx-auto mt-6 leading-relaxed text-center text-white/80 sm:max-w-xs sm:mx-0 sm:text-left">
