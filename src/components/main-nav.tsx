@@ -7,7 +7,7 @@ import { NavItem } from "@/types/nav";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { useEffect,useRef,useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 import { ThemeToggle } from "./theme-toggle";
