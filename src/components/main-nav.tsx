@@ -6,7 +6,8 @@ import { cn } from "@/lib/utils";
 import { NavItem } from "@/types/nav";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { usePathname } from 'next/navigation';
+import { useEffect,useRef,useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 import { ThemeToggle } from "./theme-toggle";
@@ -19,6 +20,7 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   const [toggle, setToggle] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (!toggle) return;
@@ -77,7 +79,8 @@ export function MainNav({ items }: MainNavProps) {
                         href={item.href}
                         className={cn(
                           "flex items-center whitespace-nowrap text-xl font-semibold sm:text-sm",
-                          item.disabled && "cursor-not-allowed opacity-80"
+                          item.disabled && "cursor-not-allowed opacity-80",
+                          (item.href === pathname) && "text-purple-600"
                         )}
                       >
                         {item.title}
