@@ -107,7 +107,7 @@ export default function Footer() {
               <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                 Contact
               </p>
-              <a href="mailto:someone@example.com" className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+              <a href="mailto:contact@webxdao.xyz" className="cursor-pointer pb-2 text-base font-normal text-gray-500">
                 Contact us
               </a >
             </ul>
