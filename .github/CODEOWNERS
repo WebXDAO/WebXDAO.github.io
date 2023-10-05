@@ -1,13 +1,26 @@
-# pattern:
+# Codeowners file for WebXDAO.github.io repository
 
-# file/directory            user
+# This file defines the code owners for the WebXDAO repository. Code owners are responsible for reviewing and approving any changes to the code in their respective areas.
 
 # Default reviewers/codeowners for all code changes
-* @WebXDAO/webx-core @WebXDAO/webx-guild-developer
+* @WebXDAO/webx-core
 
-# Reviewer by organization Team
+# Files
+*.md @Panquesito7 
+Readme.md @mkubdev @vinzvinci
+.gitignore @mkubdev @vinzvinci @darkterminal
+LICENSE  @mkubdev @vinzvinci
+.github/workflows/ @Panquesito7 @WebXDAO/webx-core
+src/components/ @darkterminal @WebXDAO/webx-core
+src/lib/ @WebXDAO/webx-core @darkterminal
 
-# Reviewer by specific folders
+## Directories
+.github/ @WebXDAO/webx-core @Panquesito7 @darkterminal 
+package.json @Panquesito7 @darkterminal @WebXDAO/webx-core
+public/ @Panquesito7 @WebXDAO/webx-core
+src/  @WebXDAO/webx-core @Panquesito7 @darkterminal @WebXDAO/webx-guild-developer
 
-# Reviewer by specific files
-*.md @Panquesito7
+## Special cases
+# Any changes to the CODEOWNERS file must be approved by @WebXDAO/webx-core @darkterminal.
+# Any changes to the .gitattributes file must be approved by @mkubdev @vinzvinci @darkterminal.
+# Any changes to the .gitignore file must be approved by @mkubdev @vinzvinci @darkterminal.
