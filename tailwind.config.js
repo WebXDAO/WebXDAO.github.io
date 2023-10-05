@@ -16,9 +16,6 @@ module.exports = {
       },
     },
     extend: {
-      zIndex: {
-        999: 999,
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
