@@ -12,13 +12,13 @@ Readme.md @mkubdev @vinzvinci
 LICENSE  @mkubdev @vinzvinci
 .github/workflows/ @Panquesito7 @WebXDAO/webx-core
 src/components/ @darkterminal @WebXDAO/webx-core
-src/lib/ @CBID2 @WebXDAO/webx-core @darkterminal
+src/lib/ @WebXDAO/webx-core @darkterminal
 
 ## Directories
 .github/ @WebXDAO/webx-core @Panquesito7 @darkterminal 
 package.json @Panquesito7 @darkterminal @WebXDAO/webx-core
 public/ @Panquesito7 @WebXDAO/webx-core
-src/  @WebXDAO/webx-core @Panquesito7 @darkterminal @WebXDAO/webx-guild-developers
+src/  @WebXDAO/webx-core @Panquesito7 @darkterminal @WebXDAO/webx-guild-developer
 
 ## Special cases
 # Any changes to the CODEOWNERS file must be approved by @WebXDAO/webx-core @darkterminal.
