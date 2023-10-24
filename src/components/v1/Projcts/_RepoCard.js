@@ -18,7 +18,7 @@ const RepoCard = ({ repo }) => {
       href={html_url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex h-full w-full flex-col justify-between rounded-lg border border-gray-700 bg-slate-900/60 p-5 shadow delay-100 duration-200"
+      className="flex h-full w-full flex-col justify-between rounded-lg border border-gray-700 bg-slate-900/60 p-5 shadow duration-200 delay-100"
     >
       <div>
         <div className="flex flex-row">
