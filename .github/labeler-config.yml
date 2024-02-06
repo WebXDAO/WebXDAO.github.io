@@ -43,7 +43,7 @@ filters:
     events: [pull_request]
     targets: [title]
 
-    - label: "v3"
+  - label: "v3"
     regexs:
       - /\v3\b/
       - /v3/i
