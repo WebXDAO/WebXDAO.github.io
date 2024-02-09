@@ -1,8 +1,9 @@
+<!-- markdownlint-disable first-line-h1 -->
 [![Open in GitPod](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/WebXDAO/WebXDAO.github.io)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/WebXDAO/WebXDAO.github.io/blob/main/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/WebXDAO/WebXDAO.github.io)
 
-The content in this repository is temporary, as we are working on a new web design for WebX DAO, which is available in the [website v3 project](https://github.com/orgs/WebXDAO/projects/9). 
+The content in this repository is temporary, as we are working on a new web design for WebX DAO, which is available in the [website v3 project](https://github.com/orgs/WebXDAO/projects/9).
 
 If you need any assistance, please feel free to message us on [Discord](https://discord.webxdao.xyz/).
 
@@ -24,16 +25,17 @@ Fork the repository on the [fork page](https://github.com/WebXDAO/WebXDAO.github
 
 Ensure that you have Node.js installed. You can check the Node.js version by running the following command:
 
-```
+```bash
 node --version
 ```
+
 If Node.js is not installed, you can download it from [nodejs.org](https://nodejs.org/en).
 
 ### 3. Clone this Repository
 
 To clone this repository to your local machine, run the following command:
 
-```
+```bash
 git clone https://github.com/<your-username>/WebXDAO.github.io.git
 ```
 
@@ -41,7 +43,7 @@ git clone https://github.com/<your-username>/WebXDAO.github.io.git
 
 Change your working directory to the cloned repository:
 
-```
+```bash
 cd WebXDAO.github.io
 ```
 
@@ -49,7 +51,7 @@ cd WebXDAO.github.io
 
 Install the required dependencies by running the following command:
 
-```
+```bash
 npm install
 ```
 
@@ -57,7 +59,7 @@ npm install
 
 Start the Next.js development server with the following command:
 
-```
+```bash
 npm run dev
 ```
 
@@ -68,6 +70,4 @@ npm run dev
 
 ## ⚡ Our Valuable Contributors
 
-<p align="center"><a href="https://github.com/WebXDAO/WebXDAO.github.io/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=WebXDAO/WebXDAO.github.io" />
-</a></p>
+[![Contributors](https://contributors-img.web.app/image?repo=WebXDAO/WebXDAO.github.io)](https://github.com/WebXDAO/WebXDAO.github.io/graphs/contributors)
