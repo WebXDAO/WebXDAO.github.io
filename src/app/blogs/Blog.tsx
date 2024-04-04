@@ -9,7 +9,7 @@ interface BlogData {
   url: string;
   user: {
     username: string;
-  }
+  };
 }
 
 async function getData(): Promise<BlogData[]> {
@@ -36,19 +36,19 @@ export default async function Blog() {
         </p>
       </div>
       <div className="mt-10 flex flex-wrap justify-center gap-16">
-        {blogData.map((data) => (
-          <BCard key={data.title} data={data} />
-        ))}
+        {blogData && blogData.map((data) => <BCard key={data.title} data={data} />)}
       </div>
     </section>
   );
 }
 
 function BCard({ data }: { data: BlogData }) {
-  const imgSrc = data.cover_image ?? createDefaultImageCover({
-    title: data.title,
-    username: data.user.username,
-  });
+  const imgSrc =
+    data.cover_image ??
+    createDefaultImageCover({
+      title: data.title,
+      username: data.user.username,
+    });
   return (
     <div className="flex max-w-xs flex-col rounded-lg border bg-white/5 p-2 shadow-md shadow-purple-400/40 transition-transform duration-200 ease-in hover:z-50 hover:shadow-lg hover:shadow-purple-400/60 sm:hover:-translate-y-1">
       <Image
