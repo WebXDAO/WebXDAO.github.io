@@ -95,7 +95,7 @@ const Footer = () => {
             <p className="mt-1 text-sm text-gray-500 sm:order-first sm:mt-0">
               <span className="flex items-center justify-center">
                 &copy; {new Date().getFullYear()} Made with
-                <SiGithubsponsors className="m-2 h-3 w-3 text-pink-600" aria-hidden="true" />
+                <SiGithubsponsors className="m-2 size-3 text-pink-600" aria-hidden="true" />
                 by WebX DAO
               </span>
             </p>

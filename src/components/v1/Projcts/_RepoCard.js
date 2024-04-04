@@ -18,7 +18,7 @@ const RepoCard = ({ repo }) => {
       href={html_url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex h-full w-full flex-col justify-between rounded-lg border border-gray-700 bg-slate-900/60 p-5 shadow duration-200 delay-100"
+      className="flex size-full flex-col justify-between rounded-lg border border-gray-700 bg-slate-900/60 p-5 shadow delay-100 duration-200"
     >
       <div>
         <div className="flex flex-row">
@@ -45,7 +45,7 @@ const RepoCard = ({ repo }) => {
         <span className="text-xs text-gray-500">{language}</span>
         <div className="flex flex-row justify-between">
           <div className="ml-3 flex flex-row text-gray-500 hover:text-white">
-            <FaStar className="h-4 w-4" />
+            <FaStar className="size-4" />
             <span className="ml-1 text-xs">{stargazers_count}</span>
           </div>
           <div className="ml-3 flex flex-row text-gray-500 hover:text-white">

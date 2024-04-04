@@ -34,10 +34,14 @@ export default function ContributorCard({ data }: { data: Card }) {
         className="rounded-full border"
       />
       <div className="mb-2 flex gap-12 text-2xl">
-        <Link href={data.html_url} target="_blank"                   
-                  aria-label="GitHub Profile"
-                  title="GitHub (External Link)"
-                  rel="noopener noreferrer" className="duration-150 hover:text-[#411AFF]">
+        <Link
+          href={data.html_url}
+          target="_blank"
+          aria-label="GitHub Profile"
+          title="GitHub (External Link)"
+          rel="noopener noreferrer"
+          className="duration-150 hover:text-[#411AFF]"
+        >
           <FaGithub />
         </Link>
         <Link

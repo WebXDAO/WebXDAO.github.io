@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { NavItem } from "@/types/nav";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
@@ -80,7 +80,7 @@ export function MainNav({ items }: MainNavProps) {
                         className={cn(
                           "flex items-center whitespace-nowrap text-xl font-semibold sm:text-sm",
                           item.disabled && "cursor-not-allowed opacity-80",
-                          (item.href === pathname) && "text-purple-600"
+                          item.href === pathname && "text-purple-600"
                         )}
                       >
                         {item.title}
@@ -106,7 +106,7 @@ export function MainNav({ items }: MainNavProps) {
                   variant: "ghost",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5" />
+                <Icons.gitHub className="size-5" />
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
@@ -124,7 +124,7 @@ export function MainNav({ items }: MainNavProps) {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
+                <Icons.twitter className="size-5 fill-current" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
@@ -192,7 +192,7 @@ export function MainNav({ items }: MainNavProps) {
                       variant: "ghost",
                     })}
                   >
-                    <Icons.gitHub className="h-5 w-5" />
+                    <Icons.gitHub className="size-5" />
                     <span className="sr-only">GitHub</span>
                   </div>
                 </Link>
@@ -210,7 +210,7 @@ export function MainNav({ items }: MainNavProps) {
                       variant: "ghost",
                     })}
                   >
-                    <Icons.twitter className="h-5 w-5 fill-current" />
+                    <Icons.twitter className="size-5 fill-current" />
                     <span className="sr-only">Twitter</span>
                   </div>
                 </Link>

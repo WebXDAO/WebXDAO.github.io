@@ -35,7 +35,7 @@ export default function Footer() {
                 target="_blank"
                 aria-label="Join us on Discord"
                 title="Discord (External Link)"
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 className="dark:fill-white "
               >
                 <Icons.discord
@@ -44,39 +44,39 @@ export default function Footer() {
                   height={25}
                 />
               </Link>
-              <Link 
-                  href={siteConfig.links.webxdao_twitter}
-                  target="_blank"
-                  aria-label="Visit us on Twitter"
-                  title="Twitter (External Link)"
-                  rel="noopener noreferrer"
-                >
+              <Link
+                href={siteConfig.links.webxdao_twitter}
+                target="_blank"
+                aria-label="Visit us on Twitter"
+                title="Twitter (External Link)"
+                rel="noopener noreferrer"
+              >
                 <Icons.twitter
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                   width={25}
                   height={25}
                 />
               </Link>
-              <Link 
-                  href={siteConfig.links.webxdao_gh} 
-                  target="_blank"
-                  aria-label="Visit us on Github"
-                  title="Github (External Link)"
-                  rel="noopener noreferrer" 
-                >
+              <Link
+                href={siteConfig.links.webxdao_gh}
+                target="_blank"
+                aria-label="Visit us on Github"
+                title="Github (External Link)"
+                rel="noopener noreferrer"
+              >
                 <Icons.gitHub
                   className="cursor-pointer transition duration-500 hover:scale-150 hover:fill-blue-800"
                   width={25}
                   height={25}
                 />
               </Link>
-              <Link 
-                  href={siteConfig.links.webxdao_linkedin} 
-                  target="_blank"
-                  aria-label="Visit us on Linkedin"
-                  title="Linkedin (External Link)"
-                  rel="noopener noreferrer" 
-                >
+              <Link
+                href={siteConfig.links.webxdao_linkedin}
+                target="_blank"
+                aria-label="Visit us on Linkedin"
+                title="Linkedin (External Link)"
+                rel="noopener noreferrer"
+              >
                 <Icons.linkedin
                   className="cursor-pointer transition  duration-500 hover:scale-150 hover:fill-blue-800"
                   width={25}
@@ -107,9 +107,12 @@ export default function Footer() {
               <p className="select-none pb-3 text-xl font-normal text-slate-900 dark:text-white">
                 Contact
               </p>
-              <a href="mailto:contact@webxdao.xyz" className="cursor-pointer pb-2 text-base font-normal text-gray-500">
+              <a
+                href="mailto:contact@webxdao.xyz"
+                className="cursor-pointer pb-2 text-base font-normal text-gray-500"
+              >
                 Contact us
-              </a >
+              </a>
             </ul>
           </div>
           <div className="px-5">

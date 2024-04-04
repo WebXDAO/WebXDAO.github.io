@@ -53,7 +53,7 @@ const Testimonials = () => {
                     (item, index) => (
                       <svg
                         key={item + index}
-                        className="mx-1 h-4 w-4 fill-current text-yellow-500"
+                        className="mx-1 size-4 fill-current text-yellow-500"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -65,7 +65,7 @@ const Testimonials = () => {
                     (item, index) => (
                       <svg
                         key={item + index}
-                        className="mx-1 h-4 w-4 fill-current text-gray-400"
+                        className="mx-1 size-4 fill-current text-gray-400"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -77,7 +77,7 @@ const Testimonials = () => {
               </div>
               <p className="mb-2 text-base text-gray-600">{text}</p>
               <div className="flex flex-row items-center justify-start py-2">
-                <div className="relative h-16 w-16 shrink-0">
+                <div className="relative size-16 shrink-0">
                   <Image
                     src={prefix + imgUrl}
                     width={400}

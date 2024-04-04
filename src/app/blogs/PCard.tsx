@@ -1,17 +1,15 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub,FaLinkedin,FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import pCardData from "./pCardData";
 
 export default function PCard() {
   return (
     <section className="my-8 md:ml-32">
-      <div
-        className="no-scroll flex select-none gap-8 overflow-x-auto px-6"
-      >
-        {pCardData.map((data) => (
-          <div className="max-w-[20rem]">
+      <div className="no-scroll flex select-none gap-8 overflow-x-auto px-6">
+        {pCardData.map((data, i) => (
+          <div key={i} className="max-w-80">
             <div className="relative flex w-80 overflow-hidden rounded-md">
               <Image
                 src={`/blog/${data.bgImg}.png`}
@@ -46,9 +44,7 @@ export default function PCard() {
               </div>
             </div>
             <div className="grow px-2 py-4">
-              <h3 className="text-sm font-bold">
-                {data.title}
-              </h3>
+              <h3 className="text-sm font-bold">{data.title}</h3>
               <p className="text-justify text-sm text-gray-700 dark:text-gray-300">{data.desc}</p>
             </div>
           </div>

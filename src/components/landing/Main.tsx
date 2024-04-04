@@ -1,11 +1,10 @@
-import { siteConfig } from "@/config/site"
-import Link from "next/link"
-import { buttonVariants } from "@/components/ui/button";
-import Image from "next/image";
 import CursorHoverster from "@/components/cursor-hoverster";
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import Image from "next/image";
+import Link from "next/link";
 
-
-export default function Main () {
+export default function Main() {
     return (
         <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-12 text-center">
         <div className="relative z-10 flex flex-col gap-6">
@@ -32,7 +31,13 @@ export default function Main () {
               href={siteConfig.links.webxdao_guild}
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
-              <Image alt="guild.xyz logo" src="/guild-logo.png" className="mr-2 h-5 w-5 rounded-full" width={150} height={150}/>
+            <Image
+              alt="guild.xyz logo"
+              src="/guild-logo.png"
+              className="mr-2 size-5 rounded-full"
+              width={150}
+              height={150}
+            />
                 Guild.xyz
             </Link>
           </div>
@@ -61,7 +66,7 @@ export default function Main () {
           alt="flying card 001"
           width={135}
           height={165}
-          className="absolute left-[12rem] top-[12rem]"
+        className="absolute left-48 top-48"
         />
 
         <Image
@@ -69,9 +74,9 @@ export default function Main () {
           alt="flying card 001"
           width={208}
           height={259}
-          className="absolute bottom-[15rem] right-[12rem]"
+        className="absolute bottom-60 right-48"
         />
         <CursorHoverster />
       </section>
-    )
+  );
 }

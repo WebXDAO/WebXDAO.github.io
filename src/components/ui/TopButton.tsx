@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
-import './TopButton.css'; 
+import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import "./TopButton.css";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -25,7 +25,7 @@ const ScrollToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 

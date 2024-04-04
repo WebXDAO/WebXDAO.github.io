@@ -1,6 +1,4 @@
-import React from "react";
-
-const Star = ({height, width} : {height: number, width: number}) => {
+const Star = ({ height, width }: { height: number; width: number }) => {
   const spikes = 24; // Number of edges
   const outerRadius = 12; // Outer radius of the star
   const innerRadius = 5; // Inner radius of the star
@@ -18,7 +16,13 @@ const Star = ({height, width} : {height: number, width: number}) => {
   const path = `M ${points.join("L")} Z`;
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 25 25" className="dark:fill-white">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 25 25"
+      className="dark:fill-white"
+    >
       <path d={path} />
     </svg>
   );

@@ -41,7 +41,7 @@ const Navbar = () => {
               <div className="-mr-2 flex items-center justify-between lg:hidden ">
                 <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
                   <span className="sr-only">Open main menu</span>
-                  <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                  <Bars3Icon className="size-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
             </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
               className="inline-flex items-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-700 hover:text-white/80"
             >
               GitHub
-              <SiGithubsponsors className="ml-3 h-5 w-5 text-pink-600" aria-hidden="true" />
+              <SiGithubsponsors className="ml-3 size-5 text-pink-600" aria-hidden="true" />
             </Link>
           </div>
         </nav>
@@ -98,7 +98,7 @@ const Navbar = () => {
               <div className="-mr-2">
                 <Popover.Button className="focus:ring-cyber-webx inline-flex items-center justify-center rounded-md bg-white/20 p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
                   <span className="sr-only">Close menu</span>
-                  <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                  <XMarkIcon className="size-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
             </div>

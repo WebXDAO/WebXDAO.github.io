@@ -30,7 +30,7 @@ interface Card {
 export default async function ContributorsPage() {
   const contributorList = await getContributorData();
   const filteredContributors = contributorList.filter((data: Card) => data.type !== "Bot");
-  
+
   return (
     <>
       <section className="container grid place-items-center p-8">

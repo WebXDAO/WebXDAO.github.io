@@ -44,7 +44,7 @@ const Blogs = ({ articles, contentOnly = false, show = articles.length }) => {
                     alt={article.user.name}
                     width={70}
                     height={70}
-                    className="mr-1 h-16 w-16 rounded-full"
+                    className="mr-1 size-16 rounded-full"
                   />
                   <p className="ml-2 opacity-50">
                     by {article.user.name} on

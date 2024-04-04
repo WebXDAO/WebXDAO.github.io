@@ -1,12 +1,12 @@
 import Star from "@/components/star";
+import TeamCard from "@/components/TeamCard";
 import { fontGilroy } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import TeamCard from "@/components/TeamCard";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Team',
-}
+  title: "Team",
+};
 
 export default async function Team() {
   return (
@@ -27,28 +27,86 @@ export default async function Team() {
             </div>
             <Star height={90} width={90} />
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="900" height="2" className="-mx-52 mb-11 mt-auto hidden lg:flex">
-            <line x1="0" y1="0" x2="1000" y2="0" strokeWidth="2" className="stroke-black dark:stroke-white"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="900"
+            height="2"
+            className="-mx-52 mb-11 mt-auto hidden lg:flex"
+          >
+            <line
+              x1="0"
+              y1="0"
+              x2="1000"
+              y2="0"
+              strokeWidth="2"
+              className="stroke-black dark:stroke-white"
+            />
           </svg>
         </div>
         <div className="ml-4 mr-1 mt-6 flex justify-center text-lg font-light leading-tight text-black dark:text-white sm:text-center md:text-xl lg:text-left ">
-        As online collaborators with a strong commitment to Open Source contributions.<br></br>
-        We have come together to establish WebX DAO.
+          As online collaborators with a strong commitment to Open Source contributions.<br></br>
+          We have come together to establish WebX DAO.
         </div>
       </section>
 
       <div className="container mx-auto grid-cols-2 justify-center gap-10 sm:block md:grid lg:flex ">
-      <TeamCard Name="Vincent Villafuerte" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
-      <TeamCard Name="Shubham Kukreti  " position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
-      <TeamCard Name="Ritvik Shukla" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
-      <TeamCard Name="Maxime Kubik" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
+        <TeamCard
+          Name="Vincent Villafuerte"
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
+        <TeamCard
+          Name="Shubham Kukreti  "
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
+        <TeamCard
+          Name="Ritvik Shukla"
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
+        <TeamCard
+          Name="Maxime Kubik"
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
       </div>
       <h1 className="mt-10 text-center font-bold">WebX Guild Maintainers and Moderators</h1>
-      <h1 className="mt-5 text-center">The essential role of our community projects &apos; maintainers and moderators is to ensure the <br/>proper functioning of our codebase and foster a welcoming and engaged community.</h1>
+      <h1 className="mt-5 text-center">
+        The essential role of our community projects &apos; maintainers and moderators is to ensure
+        the <br />
+        proper functioning of our codebase and foster a welcoming and engaged community.
+      </h1>
       <div className="container mx-auto my-10 grid-cols-2 justify-center gap-10 sm:block md:grid lg:flex">
-      <TeamCard Name="David Leal" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
-      <TeamCard Name="Krish Gupta" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
-      <TeamCard Name="Abhinav MV" position="WebX Guild Core" github_url="" linkedin_url="" twitter_url=""/>
+        <TeamCard
+          Name="David Leal"
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
+        <TeamCard
+          Name="Krish Gupta"
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
+        <TeamCard
+          Name="Abhinav MV"
+          position="WebX Guild Core"
+          github_url=""
+          linkedin_url=""
+          twitter_url=""
+        />
       </div>
     </>
   );

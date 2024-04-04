@@ -12,7 +12,7 @@ const DiscordButton = () => {
         href="https://discord.webxdao.xyz/"
       >
         Join WebXDAO
-        <FaDiscord className="-mr-1 ml-3 h-5 w-5" aria-hidden="true" />
+        <FaDiscord className="-mr-1 ml-3 size-5" aria-hidden="true" />
       </motion.a>
     </>
   );

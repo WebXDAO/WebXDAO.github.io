@@ -1,13 +1,12 @@
-import ScrollToTopButton from "@/components/ui/TopButton";
-import Partners from "@/components/landing/Partners";
+import { Icons } from "@/components/icons";
 import Blurbs from "@/components/landing/Blurbs";
 import Main from "@/components/landing/Main";
-import { Icons } from "@/components/icons";
+import Partners from "@/components/landing/Partners";
+import ScrollToTopButton from "@/components/ui/TopButton";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export default function IndexPage() {
-
   return (
     <>
       {/* TODO: How can i put the image in the background.. absolute / relative thingy */}
@@ -22,13 +21,13 @@ export default function IndexPage() {
           <div className="mt-4 flex gap-4">
             <Link target="_blank" rel="noreferrer" href={siteConfig.links.webxdao_twitter}>
               <div className="flex items-center">
-                <Icons.twitter className="mr-1 h-5 w-5 cursor-pointer fill-current" />
+                <Icons.twitter className="mr-1 size-5 cursor-pointer fill-current" />
                 <span className="cursor-pointer">Twitter</span>
               </div>
             </Link>
             <Link target="_blank" rel="noreferrer" href={siteConfig.links.webxdao_discord}>
               <div className="flex items-center">
-                <Icons.discord className="mr-1 h-5 w-5 cursor-pointer fill-current" />
+                <Icons.discord className="mr-1 size-5 cursor-pointer fill-current" />
                 <span className="cursor-pointer">Discord</span>
               </div>
             </Link>
